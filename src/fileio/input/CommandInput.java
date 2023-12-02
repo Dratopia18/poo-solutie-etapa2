@@ -21,6 +21,8 @@ public final class CommandInput {
     private List<SongInput> songs;
     private String date;
     private Integer price;
+    private List<EpisodeInput> episodes;
+    private String nextPage;
 
     public CommandInput() {
     }
@@ -168,6 +170,22 @@ public final class CommandInput {
         this.price = price;
     }
 
+    public List<EpisodeInput> getEpisodes() {
+        return episodes;
+    }
+
+    public void setEpisodes(List<EpisodeInput> episodes) {
+        this.episodes = episodes;
+    }
+
+    public String getNextPage() {
+        return nextPage;
+    }
+
+    public void setNextPage(String nextPage) {
+        this.nextPage = nextPage;
+    }
+
     @Override
     public String toString() {
         return "CommandInput{" +
@@ -182,13 +200,15 @@ public final class CommandInput {
                 ", playlistName='" + playlistName + '\'' +
                 ", seed=" + seed +
                 ", age=" + age +
-                ", city=" + city +
+                ", city='" + city + '\'' +
                 ", name='" + name + '\'' +
                 ", releaseYear='" + releaseYear + '\'' +
                 ", description='" + description + '\'' +
                 ", songs='" + songs + '\'' +
                 ", date='" + date + '\'' +
                 ", price=" + price +
+                ", episodes='" + episodes + '\'' +
+                ", nextPage='" + nextPage + '\'' +
                 '}';
     }
 }

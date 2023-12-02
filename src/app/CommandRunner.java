@@ -16,9 +16,13 @@ public class CommandRunner {
 
     public static ObjectNode search(CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
+        if (user == null) {
+            ObjectNode objectNode = objectMapper.createObjectNode();
+            objectNode.put("message", "User not found");
+            return objectNode;
+        }
         Filters filters = new Filters(commandInput.getFilters());
         String type = commandInput.getType();
-
         ArrayList<String> results = user.search(filters, type);
         String message = "Search returned " + results.size() + " results";
 
@@ -34,7 +38,11 @@ public class CommandRunner {
 
     public static ObjectNode select(CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
-
+        if (user == null) {
+            ObjectNode objectNode = objectMapper.createObjectNode();
+            objectNode.put("error", "User not found");
+            return objectNode;
+        }
         String message = user.select(commandInput.getItemNumber());
 
         ObjectNode objectNode = objectMapper.createObjectNode();
@@ -48,6 +56,11 @@ public class CommandRunner {
 
     public static ObjectNode load(CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
+        if (user == null) {
+            ObjectNode objectNode = objectMapper.createObjectNode();
+            objectNode.put("error", "User not found");
+            return objectNode;
+        }
         String message = user.load();
 
         ObjectNode objectNode = objectMapper.createObjectNode();
@@ -61,6 +74,11 @@ public class CommandRunner {
 
     public static ObjectNode playPause(CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
+        if (user == null) {
+            ObjectNode objectNode = objectMapper.createObjectNode();
+            objectNode.put("error", "User not found");
+            return objectNode;
+        }
         String message = user.playPause();
 
         ObjectNode objectNode = objectMapper.createObjectNode();
@@ -74,6 +92,11 @@ public class CommandRunner {
 
     public static ObjectNode repeat(CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
+        if (user == null) {
+            ObjectNode objectNode = objectMapper.createObjectNode();
+            objectNode.put("error", "User not found");
+            return objectNode;
+        }
         String message = user.repeat();
 
         ObjectNode objectNode = objectMapper.createObjectNode();
@@ -87,6 +110,11 @@ public class CommandRunner {
 
     public static ObjectNode shuffle(CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
+        if (user == null) {
+            ObjectNode objectNode = objectMapper.createObjectNode();
+            objectNode.put("error", "User not found");
+            return objectNode;
+        }
         Integer seed = commandInput.getSeed();
         String message = user.shuffle(seed);
 
@@ -101,6 +129,11 @@ public class CommandRunner {
 
     public static ObjectNode forward(CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
+        if (user == null) {
+            ObjectNode objectNode = objectMapper.createObjectNode();
+            objectNode.put("error", "User not found");
+            return objectNode;
+        }
         String message = user.forward();
 
         ObjectNode objectNode = objectMapper.createObjectNode();
@@ -114,6 +147,11 @@ public class CommandRunner {
 
     public static ObjectNode backward(CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
+        if (user == null) {
+            ObjectNode objectNode = objectMapper.createObjectNode();
+            objectNode.put("error", "User not found");
+            return objectNode;
+        }
         String message = user.backward();
 
         ObjectNode objectNode = objectMapper.createObjectNode();
@@ -127,6 +165,11 @@ public class CommandRunner {
 
     public static ObjectNode like(CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
+        if (user == null) {
+            ObjectNode objectNode = objectMapper.createObjectNode();
+            objectNode.put("error", "User not found");
+            return objectNode;
+        }
         String message = user.like();
 
         ObjectNode objectNode = objectMapper.createObjectNode();
@@ -140,6 +183,11 @@ public class CommandRunner {
 
     public static ObjectNode next(CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
+        if (user == null) {
+            ObjectNode objectNode = objectMapper.createObjectNode();
+            objectNode.put("error", "User not found");
+            return objectNode;
+        }
         String message = user.next();
 
         ObjectNode objectNode = objectMapper.createObjectNode();
@@ -153,6 +201,11 @@ public class CommandRunner {
 
     public static ObjectNode prev(CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
+        if (user == null) {
+            ObjectNode objectNode = objectMapper.createObjectNode();
+            objectNode.put("error", "User not found");
+            return objectNode;
+        }
         String message = user.prev();
 
         ObjectNode objectNode = objectMapper.createObjectNode();
@@ -166,6 +219,11 @@ public class CommandRunner {
 
     public static ObjectNode createPlaylist(CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
+        if (user == null) {
+            ObjectNode objectNode = objectMapper.createObjectNode();
+            objectNode.put("error", "User not found");
+            return objectNode;
+        }
         String message = user.createPlaylist(commandInput.getPlaylistName(), commandInput.getTimestamp());
 
         ObjectNode objectNode = objectMapper.createObjectNode();
@@ -179,6 +237,11 @@ public class CommandRunner {
 
     public static ObjectNode addRemoveInPlaylist(CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
+        if (user == null) {
+            ObjectNode objectNode = objectMapper.createObjectNode();
+            objectNode.put("error", "User not found");
+            return objectNode;
+        }
         String message = user.addRemoveInPlaylist(commandInput.getPlaylistId());
 
         ObjectNode objectNode = objectMapper.createObjectNode();
@@ -192,6 +255,11 @@ public class CommandRunner {
 
     public static ObjectNode switchVisibility(CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
+        if (user == null) {
+            ObjectNode objectNode = objectMapper.createObjectNode();
+            objectNode.put("error", "User not found");
+            return objectNode;
+        }
         String message = user.switchPlaylistVisibility(commandInput.getPlaylistId());
 
         ObjectNode objectNode = objectMapper.createObjectNode();
@@ -205,6 +273,11 @@ public class CommandRunner {
 
     public static ObjectNode showPlaylists(CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
+        if (user == null) {
+            ObjectNode objectNode = objectMapper.createObjectNode();
+            objectNode.put("error", "User not found");
+            return objectNode;
+        }
         ArrayList<PlaylistOutput> playlists = user.showPlaylists();
 
         ObjectNode objectNode = objectMapper.createObjectNode();
@@ -218,6 +291,11 @@ public class CommandRunner {
 
     public static ObjectNode follow(CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
+        if (user == null) {
+            ObjectNode objectNode = objectMapper.createObjectNode();
+            objectNode.put("error", "User not found");
+            return objectNode;
+        }
         String message = user.follow();
 
         ObjectNode objectNode = objectMapper.createObjectNode();
@@ -231,6 +309,11 @@ public class CommandRunner {
 
     public static ObjectNode status(CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
+        if (user == null) {
+            ObjectNode objectNode = objectMapper.createObjectNode();
+            objectNode.put("error", "User not found");
+            return objectNode;
+        }
         PlayerStats stats = user.getPlayerStats();
 
         ObjectNode objectNode = objectMapper.createObjectNode();
@@ -244,6 +327,11 @@ public class CommandRunner {
 
     public static ObjectNode showLikedSongs(CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
+        if (user == null) {
+            ObjectNode objectNode = objectMapper.createObjectNode();
+            objectNode.put("error", "User not found");
+            return objectNode;
+        }
         ArrayList<String> songs = user.showPreferredSongs();
 
         ObjectNode objectNode = objectMapper.createObjectNode();
@@ -257,6 +345,11 @@ public class CommandRunner {
 
     public static ObjectNode getPreferredGenre(CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
+        if (user == null) {
+            ObjectNode objectNode = objectMapper.createObjectNode();
+            objectNode.put("error", "User not found");
+            return objectNode;
+        }
         String preferredGenre = user.getPreferredGenre();
 
         ObjectNode objectNode = objectMapper.createObjectNode();

@@ -1,5 +1,6 @@
 package app.user;
 
+import app.Admin;
 import app.audio.Collections.AudioCollection;
 import app.audio.Collections.Playlist;
 import app.audio.Collections.PlaylistOutput;
@@ -32,7 +33,7 @@ public class User {
     private final Player player;
     private final SearchBar searchBar;
     private boolean lastSearched;
-
+    private boolean onlineStatus;
     public User(String username, int age, String city) {
         this.username = username;
         this.age = age;
@@ -43,6 +44,7 @@ public class User {
         player = new Player();
         searchBar = new SearchBar(username);
         lastSearched = false;
+        onlineStatus = true;
     }
 
     public ArrayList<String> search(Filters filters, String type) {
@@ -316,7 +318,22 @@ public class User {
         String preferredGenre = mostLikedIndex != -1 ? genres[mostLikedIndex] : "unknown";
         return "This user's preferred genre is %s.".formatted(preferredGenre);
     }
-
+    public String SwitchConnectionStatus(String targetUsername) {
+        User targetUser = Admin.getUser(targetUsername);
+        if(targetUser == null) {
+            return "The username " + targetUser + "doesn't exist.";
+        }
+        if(!(targetUser instanceof NormalUser)) {
+            return targetUsername + " is not a normal user.";
+        }
+        NormalUser normalUser = (NormalUser) targetUser;
+        normalUser.switchOnlineStatus();
+        if(!normalUser.isOnline()) {
+            player.stop();
+            searchBar.clearSelection();
+        }
+        return targetUsername + " has changed status successfully.";
+    }
     public void simulateTime(int time) {
         player.simulatePlayer(time);
     }

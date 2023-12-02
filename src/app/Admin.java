@@ -57,7 +57,6 @@ public class Admin {
         }
         return playlists;
     }
-
     public static User getUser(String username) {
         for (User user : users) {
             if (user.getUsername().equals(username)) {

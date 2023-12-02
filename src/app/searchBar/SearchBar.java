@@ -96,6 +96,12 @@ public class SearchBar {
                 }
 
                 break;
+            case "album":
+                entries = new ArrayList<>();
+            case "artist":
+                entries = new ArrayList<>();
+            case "host":
+                entries = new ArrayList<>();
             default:
                 entries = new ArrayList<>();
         }

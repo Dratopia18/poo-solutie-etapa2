@@ -15,7 +15,10 @@ public class Enums { // diferite enumuri, le-am gurpat pe toate intr-un loc
     public enum SearchType {
         SONG,
         PLAYLIST,
-        PODCAST
+        PODCAST,
+        ALBUM,
+        ARTIST,
+        HOST
     }
 
     public enum RepeatMode {
