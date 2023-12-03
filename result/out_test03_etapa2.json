@@ -10,6 +10,11 @@
   "timestamp" : 70,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "switchConnectionStatus",
+  "user" : "alice22",
+  "timestamp" : 87,
+  "message" : "alice22 is not a normal user."
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 105,

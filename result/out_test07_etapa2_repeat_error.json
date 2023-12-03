@@ -1,24 +1,9 @@
 [ {
-  "command" : "addUser",
-  "user" : "melodymaster",
-  "timestamp" : 1,
-  "message" : "The username melodymaster has been added successfully."
-}, {
-  "command" : "addAlbum",
-  "user" : "melodymaster",
-  "timestamp" : 2,
-  "message" : "melodymaster has added new album successfully."
-}, {
-  "command" : "addUser",
-  "user" : "rhythmicrider58",
-  "timestamp" : 30,
-  "message" : "The username rhythmicrider58 has been added successfully."
-}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 1000,
-  "message" : "Search returned 1 results",
-  "results" : [ "Night Pulse" ]
+  "message" : "Search returned 0 results",
+  "results" : [ ]
 }, {
   "command" : "repeat",
   "user" : "emily30",
@@ -28,49 +13,42 @@
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 1100,
-  "message" : "Successfully selected Night Pulse."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "emily30",
   "timestamp" : 1120,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
-  "command" : "search",
-  "user" : "rhythmicrider58",
-  "timestamp" : 1170,
-  "message" : "Search returned 5 results",
-  "results" : [ "Sicko Mode", "Stargazing", "Sicko Mode", "Swimming Pools (Drank)", "Synth Symphony" ]
+  "message" : "User not found"
 }, {
   "command" : "status",
   "user" : "emily30",
   "timestamp" : 1190,
   "stats" : {
-    "name" : "Night Pulse",
-    "remainedTime" : 170,
+    "name" : "",
+    "remainedTime" : 0,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : false
+    "paused" : true
   }
 }, {
   "command" : "repeat",
   "user" : "emily30",
   "timestamp" : 1191,
-  "message" : "Repeat mode changed to repeat once."
+  "message" : "Please load a source before setting the repeat status."
 }, {
   "command" : "repeat",
   "user" : "emily30",
   "timestamp" : 1192,
-  "message" : "Repeat mode changed to repeat infinite."
+  "message" : "Please load a source before setting the repeat status."
 }, {
   "command" : "repeat",
   "user" : "emily30",
   "timestamp" : 2000,
-  "message" : "Repeat mode changed to no repeat."
+  "message" : "Please load a source before setting the repeat status."
 }, {
-  "command" : "select",
-  "user" : "rhythmicrider58",
-  "timestamp" : 2050,
-  "message" : "Successfully selected Synth Symphony."
+  "error" : "User not found"
 }, {
   "command" : "status",
   "user" : "emily30",
@@ -88,10 +66,7 @@
   "timestamp" : 2135,
   "message" : "Please load a source before setting the repeat status."
 }, {
-  "command" : "load",
-  "user" : "rhythmicrider58",
-  "timestamp" : 2185,
-  "message" : "Playback loaded successfully."
+  "error" : "User not found"
 }, {
   "command" : "status",
   "user" : "emily30",
@@ -115,30 +90,11 @@
   "timestamp" : 2290,
   "message" : "Please load a source before setting the repeat status."
 }, {
-  "command" : "like",
-  "user" : "rhythmicrider58",
-  "timestamp" : 2295,
-  "message" : "Like registered successfully."
+  "error" : "User not found"
 }, {
-  "command" : "repeat",
-  "user" : "rhythmicrider58",
-  "timestamp" : 2480,
-  "message" : "Repeat mode changed to repeat once."
+  "error" : "User not found"
 }, {
-  "command" : "forward",
-  "user" : "rhythmicrider58",
-  "timestamp" : 2555,
-  "message" : "The loaded source is not a podcast."
-}, {
-  "command" : "changePage",
-  "user" : "rhythmicrider58",
-  "timestamp" : 2755,
-  "message" : "rhythmicrider58 accessed LikedContent successfully."
-}, {
-  "command" : "deleteUser",
-  "user" : "melodymaster",
-  "timestamp" : 2760,
-  "message" : "melodymaster can't be deleted."
+  "error" : "User not found"
 }, {
   "command" : "load",
   "user" : "emily30",
@@ -172,11 +128,7 @@
   "timestamp" : 3190,
   "message" : "Successfully selected 99 Problems."
 }, {
-  "command" : "search",
-  "user" : "rhythmicrider58",
-  "timestamp" : 3190,
-  "message" : "Search returned 1 results",
-  "results" : [ "My favourite songs" ]
+  "message" : "User not found"
 }, {
   "command" : "load",
   "user" : "emily30",
@@ -199,10 +151,7 @@
     "paused" : false
   }
 }, {
-  "command" : "select",
-  "user" : "rhythmicrider58",
-  "timestamp" : 3225,
-  "message" : "Successfully selected My favourite songs."
+  "error" : "User not found"
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
@@ -220,10 +169,7 @@
   "timestamp" : 3270,
   "message" : "Please load a source before setting the repeat status."
 }, {
-  "command" : "follow",
-  "user" : "rhythmicrider58",
-  "timestamp" : 3285,
-  "message" : "Playlist followed successfully."
+  "error" : "User not found"
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -234,11 +180,6 @@
   "user" : "emily30",
   "timestamp" : 3295,
   "message" : "Please load a source before setting the repeat status."
-}, {
-  "user" : "rhythmicrider58",
-  "command" : "printCurrentPage",
-  "timestamp" : 3300,
-  "message" : "Liked songs:\n\t[Synth Symphony - melodymaster]\n\nFollowed playlists:\n\t[My favourite songs - emily30]"
 }, {
   "command" : "status",
   "user" : "emily30",
@@ -251,32 +192,14 @@
     "paused" : true
   }
 }, {
-  "command" : "changePage",
-  "user" : "rhythmicrider58",
-  "timestamp" : 3320,
-  "message" : "rhythmicrider58 accessed Home successfully."
-}, {
   "command" : "repeat",
   "user" : "emily30",
   "timestamp" : 3335,
   "message" : "Please load a source before setting the repeat status."
 }, {
-  "command" : "deleteUser",
-  "user" : "melodymaster",
-  "timestamp" : 3335,
-  "message" : "melodymaster was successfully deleted."
+  "message" : "User not found"
 }, {
-  "command" : "search",
-  "user" : "rhythmicrider58",
-  "timestamp" : 3380,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
-}, {
-  "command" : "search",
-  "user" : "rhythmicrider58",
-  "timestamp" : 3395,
-  "message" : "Search returned 1 results",
-  "results" : [ "Shape of You" ]
+  "message" : "User not found"
 }, {
   "command" : "status",
   "user" : "emily30",
@@ -294,10 +217,7 @@
   "timestamp" : 3405,
   "message" : "A playlist with the same name already exists."
 }, {
-  "command" : "select",
-  "user" : "rhythmicrider58",
-  "timestamp" : 3410,
-  "message" : "Successfully selected Shape of You."
+  "error" : "User not found"
 }, {
   "command" : "repeat",
   "user" : "emily30",
@@ -311,26 +231,10 @@
     "name" : "My favourite songs",
     "songs" : [ "99 Problems" ],
     "visibility" : "public",
-    "followers" : 1
+    "followers" : 0
   } ]
 }, {
-  "command" : "load",
-  "user" : "rhythmicrider58",
-  "timestamp" : 3440,
-  "message" : "Playback loaded successfully."
+  "error" : "User not found"
 }, {
-  "command" : "deleteUser",
-  "user" : "emily30",
-  "timestamp" : 3443,
-  "message" : "emily30 was successfully deleted."
-}, {
-  "command" : "like",
-  "user" : "rhythmicrider58",
-  "timestamp" : 3445,
-  "message" : "Like registered successfully."
-}, {
-  "user" : "rhythmicrider58",
-  "command" : "printCurrentPage",
-  "timestamp" : 7000,
-  "message" : "Liked songs:\n\t[Shape of You]\n\nFollowed playlists:\n\t[]"
+  "error" : "User not found"
 } ]

@@ -321,12 +321,11 @@ public class User {
     public String SwitchConnectionStatus(String targetUsername) {
         User targetUser = Admin.getUser(targetUsername);
         if(targetUser == null) {
-            return "The username " + targetUser + "doesn't exist.";
+            return "The username " + targetUsername + "doesn't exist.";
         }
-        if(!(targetUser instanceof NormalUser)) {
+        if(!(targetUser instanceof NormalUser normalUser)) {
             return targetUsername + " is not a normal user.";
         }
-        NormalUser normalUser = (NormalUser) targetUser;
         normalUser.switchOnlineStatus();
         if(!normalUser.isOnline()) {
             player.stop();

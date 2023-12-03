@@ -75,11 +75,28 @@
   "message" : "Search returned 2 results",
   "results" : [ "How I Built This", "TED Radio Hour" ]
 }, {
+  "command" : "switchConnectionStatus",
+  "user" : "alice22",
+  "timestamp" : 130,
+  "message" : "alice22 is not a normal user."
+}, {
+  "command" : "switchConnectionStatus",
+  "user" : "bob35",
+  "timestamp" : 140,
+  "message" : "bob35 is not a normal user."
+}, {
+  "message" : "User not found"
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 180,
   "message" : "Search returned 4 results",
   "results" : [ "Stairway to Heaven", "Black Dog", "Whole Lotta Love", "Good Times Bad Times" ]
+}, {
+  "command" : "switchConnectionStatus",
+  "user" : "alice22",
+  "timestamp" : 210,
+  "message" : "alice22 is not a normal user."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -107,6 +124,11 @@
     "shuffle" : false,
     "paused" : false
   }
+}, {
+  "command" : "switchConnectionStatus",
+  "user" : "alice22",
+  "timestamp" : 430,
+  "message" : "alice22 is not a normal user."
 }, {
   "command" : "status",
   "user" : "alice22",

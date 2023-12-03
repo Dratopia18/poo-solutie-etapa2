@@ -1,5 +1,5 @@
 [ {
-  "error" : "User not found"
+  "message" : "User not found"
 }, {
   "command" : "select",
   "user" : "alice22",
@@ -35,7 +35,7 @@
   "timestamp" : 1159,
   "message" : "Please load a source before returning to the previous track."
 }, {
-  "error" : "User not found"
+  "message" : "User not found"
 }, {
   "error" : "User not found"
 }, {
