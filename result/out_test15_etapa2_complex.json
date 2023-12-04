@@ -1,4 +1,499 @@
 [ {
+  "command" : "addUser",
+  "timestamp" : 100,
+  "user" : "barmstrong",
+  "message" : "The username barmstrong has been added successfully."
+}, {
+  "command" : "addUser",
+  "timestamp" : 101,
+  "user" : "matthewporter",
+  "message" : "The username matthewporter has been added successfully."
+}, {
+  "command" : "addUser",
+  "timestamp" : 102,
+  "user" : "nancymontgomery",
+  "message" : "The username nancymontgomery has been added successfully."
+}, {
+  "command" : "addUser",
+  "timestamp" : 103,
+  "user" : "nancymontgomery",
+  "message" : "The username nancymontgomery has been added successfully."
+}, {
+  "command" : "addUser",
+  "timestamp" : 104,
+  "user" : "amanda16",
+  "message" : "The username amanda16 has been added successfully."
+}, {
+  "command" : "addUser",
+  "timestamp" : 105,
+  "user" : "conniealvarez",
+  "message" : "The username conniealvarez has been added successfully."
+}, {
+  "command" : "addUser",
+  "timestamp" : 106,
+  "user" : "barmstrong",
+  "message" : "The username barmstrong has been added successfully."
+}, {
+  "command" : "addUser",
+  "timestamp" : 107,
+  "user" : "cbutler",
+  "message" : "The username cbutler has been added successfully."
+}, {
+  "command" : "addUser",
+  "timestamp" : 108,
+  "user" : "jacobdean",
+  "message" : "The username jacobdean has been added successfully."
+}, {
+  "command" : "addUser",
+  "timestamp" : 109,
+  "user" : "jacobdean",
+  "message" : "The username jacobdean has been added successfully."
+}, {
+  "command" : "addUser",
+  "timestamp" : 110,
+  "user" : "jenningsbeth",
+  "message" : "The username jenningsbeth has been added successfully."
+}, {
+  "command" : "addUser",
+  "timestamp" : 111,
+  "user" : "conniealvarez",
+  "message" : "The username conniealvarez has been added successfully."
+}, {
+  "command" : "addUser",
+  "timestamp" : 112,
+  "user" : "conniealvarez",
+  "message" : "The username conniealvarez has been added successfully."
+}, {
+  "command" : "addUser",
+  "timestamp" : 113,
+  "user" : "nancymontgomery",
+  "message" : "The username nancymontgomery has been added successfully."
+}, {
+  "command" : "addUser",
+  "timestamp" : 114,
+  "user" : "charlesgarcia",
+  "message" : "The username charlesgarcia has been added successfully."
+}, {
+  "command" : "addUser",
+  "timestamp" : 115,
+  "user" : "jenningsbeth",
+  "message" : "The username jenningsbeth has been added successfully."
+}, {
+  "command" : "addUser",
+  "timestamp" : 116,
+  "user" : "matthewfernandez",
+  "message" : "The username matthewfernandez has been added successfully."
+}, {
+  "command" : "addUser",
+  "timestamp" : 117,
+  "user" : "leslie27",
+  "message" : "The username leslie27 has been added successfully."
+}, {
+  "command" : "addUser",
+  "timestamp" : 118,
+  "user" : "amanda16",
+  "message" : "The username amanda16 has been added successfully."
+}, {
+  "command" : "addUser",
+  "timestamp" : 119,
+  "user" : "jacobdean",
+  "message" : "The username jacobdean has been added successfully."
+}, {
+  "command" : "addUser",
+  "timestamp" : 120,
+  "user" : "conniealvarez",
+  "message" : "The username conniealvarez has been added successfully."
+}, {
+  "command" : "addUser",
+  "timestamp" : 121,
+  "user" : "leslie27",
+  "message" : "The username leslie27 has been added successfully."
+}, {
+  "command" : "addUser",
+  "timestamp" : 122,
+  "user" : "amanda16",
+  "message" : "The username amanda16 has been added successfully."
+}, {
+  "command" : "addUser",
+  "timestamp" : 123,
+  "user" : "amanda16",
+  "message" : "The username amanda16 has been added successfully."
+}, {
+  "command" : "addUser",
+  "timestamp" : 124,
+  "user" : "matthewfernandez",
+  "message" : "The username matthewfernandez has been added successfully."
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 125,
+  "message" : "jacobdean has the same song at least twice in this album."
+}, {
+  "error" : "The username charlesgarcia doesn't exist."
+}, {
+  "command" : "addAlbum",
+  "user" : "cbutler",
+  "timestamp" : 127,
+  "message" : "cbutler has added new album successfully."
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 128,
+  "message" : "jacobdean has added new album successfully."
+}, {
+  "command" : "addAlbum",
+  "user" : "amanda16",
+  "timestamp" : 129,
+  "message" : "amanda16 has added new album successfully."
+}, {
+  "command" : "addAlbum",
+  "user" : "jenningsbeth",
+  "timestamp" : 130,
+  "message" : "jenningsbeth has the same song at least twice in this album."
+}, {
+  "error" : "The username conniealvarez doesn't exist."
+}, {
+  "command" : "addAlbum",
+  "user" : "leslie27",
+  "timestamp" : 132,
+  "message" : "leslie27 has added new album successfully."
+}, {
+  "error" : "The username conniealvarez doesn't exist."
+}, {
+  "command" : "addAlbum",
+  "user" : "matthewfernandez",
+  "timestamp" : 134,
+  "message" : "matthewfernandez has added new album successfully."
+}, {
+  "command" : "addAlbum",
+  "user" : "jenningsbeth",
+  "timestamp" : 135,
+  "message" : "jenningsbeth has added new album successfully."
+}, {
+  "error" : "The username conniealvarez doesn't exist."
+}, {
+  "command" : "addAlbum",
+  "user" : "nancymontgomery",
+  "timestamp" : 137,
+  "message" : "nancymontgomery has the same song at least twice in this album."
+}, {
+  "command" : "addAlbum",
+  "user" : "matthewfernandez",
+  "timestamp" : 138,
+  "message" : "matthewfernandez has the same song at least twice in this album."
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 139,
+  "message" : "jacobdean has the same song at least twice in this album."
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 140,
+  "message" : "jacobdean has the same song at least twice in this album."
+}, {
+  "command" : "addAlbum",
+  "user" : "leslie27",
+  "timestamp" : 141,
+  "message" : "leslie27 has added new album successfully."
+}, {
+  "error" : "The username conniealvarez doesn't exist."
+}, {
+  "command" : "addAlbum",
+  "user" : "barmstrong",
+  "timestamp" : 143,
+  "message" : "barmstrong has added new album successfully."
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 144,
+  "message" : "jacobdean has added new album successfully."
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 145,
+  "message" : "jacobdean has added new album successfully."
+}, {
+  "command" : "addAlbum",
+  "user" : "amanda16",
+  "timestamp" : 146,
+  "message" : "amanda16 has added new album successfully."
+}, {
+  "error" : "The username conniealvarez doesn't exist."
+}, {
+  "command" : "addAlbum",
+  "user" : "cbutler",
+  "timestamp" : 148,
+  "message" : "cbutler has the same song at least twice in this album."
+}, {
+  "error" : "The username conniealvarez doesn't exist."
+}, {
+  "error" : "The username conniealvarez doesn't exist."
+}, {
+  "command" : "addAlbum",
+  "user" : "barmstrong",
+  "timestamp" : 151,
+  "message" : "barmstrong has the same song at least twice in this album."
+}, {
+  "error" : "The username conniealvarez doesn't exist."
+}, {
+  "command" : "addAlbum",
+  "user" : "matthewfernandez",
+  "timestamp" : 153,
+  "message" : "matthewfernandez has the same song at least twice in this album."
+}, {
+  "command" : "addAlbum",
+  "user" : "matthewfernandez",
+  "timestamp" : 154,
+  "message" : "matthewfernandez has the same song at least twice in this album."
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 155,
+  "message" : "jacobdean has the same song at least twice in this album."
+}, {
+  "command" : "addAlbum",
+  "user" : "amanda16",
+  "timestamp" : 156,
+  "message" : "amanda16 has the same song at least twice in this album."
+}, {
+  "command" : "addAlbum",
+  "user" : "amanda16",
+  "timestamp" : 157,
+  "message" : "amanda16 has added new album successfully."
+}, {
+  "error" : "The username conniealvarez doesn't exist."
+}, {
+  "command" : "addAlbum",
+  "user" : "cbutler",
+  "timestamp" : 159,
+  "message" : "cbutler has the same song at least twice in this album."
+}, {
+  "command" : "addAlbum",
+  "user" : "barmstrong",
+  "timestamp" : 160,
+  "message" : "barmstrong has added new album successfully."
+}, {
+  "command" : "addAlbum",
+  "user" : "jenningsbeth",
+  "timestamp" : 161,
+  "message" : "jenningsbeth has the same song at least twice in this album."
+}, {
+  "command" : "addAlbum",
+  "user" : "leslie27",
+  "timestamp" : 162,
+  "message" : "leslie27 has added new album successfully."
+}, {
+  "command" : "addAlbum",
+  "user" : "barmstrong",
+  "timestamp" : 163,
+  "message" : "barmstrong has added new album successfully."
+}, {
+  "error" : "The username conniealvarez doesn't exist."
+}, {
+  "command" : "addAlbum",
+  "user" : "leslie27",
+  "timestamp" : 165,
+  "message" : "leslie27 has added new album successfully."
+}, {
+  "error" : "The username conniealvarez doesn't exist."
+}, {
+  "command" : "addAlbum",
+  "user" : "jenningsbeth",
+  "timestamp" : 167,
+  "message" : "jenningsbeth has the same song at least twice in this album."
+}, {
+  "error" : "The username conniealvarez doesn't exist."
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 169,
+  "message" : "jacobdean has the same song at least twice in this album."
+}, {
+  "command" : "addAlbum",
+  "user" : "matthewfernandez",
+  "timestamp" : 170,
+  "message" : "matthewfernandez has added new album successfully."
+}, {
+  "command" : "addAlbum",
+  "user" : "jenningsbeth",
+  "timestamp" : 171,
+  "message" : "jenningsbeth has the same song at least twice in this album."
+}, {
+  "command" : "addAlbum",
+  "user" : "cbutler",
+  "timestamp" : 172,
+  "message" : "cbutler has the same song at least twice in this album."
+}, {
+  "command" : "addAlbum",
+  "user" : "amanda16",
+  "timestamp" : 173,
+  "message" : "amanda16 has the same song at least twice in this album."
+}, {
+  "command" : "addAlbum",
+  "user" : "barmstrong",
+  "timestamp" : 174,
+  "message" : "barmstrong has added new album successfully."
+}, {
+  "command" : "showAlbums",
+  "user" : "barmstrong",
+  "timestamp" : 175,
+  "result" : [ {
+    "name" : "Groovy Revolution",
+    "songs" : [ "Mystique Harmonize", "Harmony Mystique", "Whisper Pandora", "Pulse Solitude", "Harmony Glow", "Pinnacle Celestial", "Paradox Echo", "Heart Tranquility", "Serendipity Twilight" ]
+  }, {
+    "name" : "Blue Dirt",
+    "songs" : [ "Love Love", "Soul Love", "Mystique Bliss", "Melody Colors", "Infinity Paradox", "Harmony Bliss", "Euphoria Celestial", "Serendipity Enigma", "Essence Colors", "Twilight Serenade" ]
+  }, {
+    "name" : "Teen Technology",
+    "songs" : [ "Paradox Aurora", "Heart Ethereal", "Colors Bliss", "Euphoria Eclipse", "Cascade Solitude", "Cascade Sunset", "Odyssey Pinnacle", "Dance Infinity", "Euphoria Aurora", "Whisper Echo", "Celestial Crescendo" ]
+  }, {
+    "name" : "Chill Hood",
+    "songs" : [ "Enigma Glow", "Euphoria Twilight", "Colors Echo", "Infinity Soul", "Twilight Lullaby", "Luminescence Zephyr", "Dream Whisper", "Odyssey Rapture", "Serenade Infinity", "Tranquility Odyssey", "Harmony Rapture", "Lullaby Melody", "Rapture Euphoria" ]
+  } ]
+}, {
+  "command" : "showAlbums",
+  "user" : "matthewporter",
+  "timestamp" : 176,
+  "result" : [ ]
+}, {
+  "command" : "showAlbums",
+  "user" : "amanda16",
+  "timestamp" : 178,
+  "result" : [ {
+    "name" : "Heroic Hood",
+    "songs" : [ "Ethereal Rapture", "Whirlwind Whirlwind", "Echo Odyssey", "Eclipse Luminescence", "Adventure Essence", "Essence Rhythm", "Sunset Pinnacle", "Crescendo Ethereal", "Rapture Harmonize", "Melody Whisper", "Dance Harmony" ]
+  }, {
+    "name" : "Bad Harmonies",
+    "songs" : [ "Odyssey Serendipity", "Sunset Essence", "Soul Celestial", "Ethereal Starlight", "Sunset Infinity", "Rapture Twilight", "Infinity Euphoria", "Voyage Pulse" ]
+  }, {
+    "name" : "Teen Dreams",
+    "songs" : [ "Luminescence Crescendo", "Bliss Rhythm", "Echo Pinnacle", "Zephyr Eclipse", "Voyage Solitude", "Sunset Melody", "Colors Rapture" ]
+  } ]
+}, {
+  "command" : "showAlbums",
+  "user" : "cbutler",
+  "timestamp" : 179,
+  "result" : [ {
+    "name" : "Heroic Harmonies",
+    "songs" : [ "Heart Bliss", "Pinnacle Euphoria", "Whirlwind Solitude", "Sunset Night", "Whirlwind Serenade", "Enigma Euphoria", "Essence Voyage", "Adventure Cascade", "Aurora Voyage", "Zephyr Twilight" ]
+  } ]
+}, {
+  "command" : "showAlbums",
+  "user" : "jacobdean",
+  "timestamp" : 180,
+  "result" : [ {
+    "name" : "Chill Funeral ",
+    "songs" : [ "Serendipity Serendipity", "Melody Sunset", "Rapture Odyssey", "Mystique Radiance", "Cascade Mystique", "Dance Pinnacle", "Essence Cascade", "Radiance Starlight" ]
+  }, {
+    "name" : "Bad Guide",
+    "songs" : [ "Celestial Soul", "Utopia Harmony", "Dream Infinity", "Ethereal Velvet", "Soul Mystique", "Love Colors", "Celestial Dream", "Tranquility Zephyr" ]
+  }, {
+    "name" : "Breezy Autumn",
+    "songs" : [ "Whisper Paradox", "Radiance Voyage", "Euphoria Eclipse", "Pandora Mystique", "Cascade Serendipity", "Pulse Whisper", "Paradox Pulse", "Whirlwind Pulse", "Dance Harmonize", "Reflection Night", "Voyage Velvet", "Colors Serendipity" ]
+  } ]
+}, {
+  "command" : "showAlbums",
+  "user" : "jacobdean",
+  "timestamp" : 181,
+  "result" : [ {
+    "name" : "Chill Funeral ",
+    "songs" : [ "Serendipity Serendipity", "Melody Sunset", "Rapture Odyssey", "Mystique Radiance", "Cascade Mystique", "Dance Pinnacle", "Essence Cascade", "Radiance Starlight" ]
+  }, {
+    "name" : "Bad Guide",
+    "songs" : [ "Celestial Soul", "Utopia Harmony", "Dream Infinity", "Ethereal Velvet", "Soul Mystique", "Love Colors", "Celestial Dream", "Tranquility Zephyr" ]
+  }, {
+    "name" : "Breezy Autumn",
+    "songs" : [ "Whisper Paradox", "Radiance Voyage", "Euphoria Eclipse", "Pandora Mystique", "Cascade Serendipity", "Pulse Whisper", "Paradox Pulse", "Whirlwind Pulse", "Dance Harmonize", "Reflection Night", "Voyage Velvet", "Colors Serendipity" ]
+  } ]
+}, {
+  "command" : "showAlbums",
+  "user" : "matthewfernandez",
+  "timestamp" : 183,
+  "result" : [ {
+    "name" : "Bad Funeral ",
+    "songs" : [ "Radiance Velvet", "Mystique Euphoria", "Crescendo Night", "Glow Glow", "Cascade Melody", "Celestial Dance", "Bliss Sunset", "Love Serendipity", "Velvet Utopia", "Tranquility Paradox", "Twilight Ethereal", "Mystique Pinnacle", "Aurora Dream" ]
+  }, {
+    "name" : "Bad Guide",
+    "songs" : [ "Rhythm Voyage", "Aurora Rapture", "Twilight Zephyr", "Zephyr Eclipse", "Starlight Euphoria", "Bliss Radiance", "Luminescence Whirlwind" ]
+  } ]
+}, {
+  "command" : "showAlbums",
+  "user" : "leslie27",
+  "timestamp" : 184,
+  "result" : [ {
+    "name" : "Electric Harmonies",
+    "songs" : [ "Celestial Lullaby", "Harmonize Eclipse", "Euphoria Sunset", "Dream Love", "Glow Whisper", "Celestial Heart", "Love Echo", "Zephyr Reflection", "Rapture Dream", "Rapture Infinity" ]
+  }, {
+    "name" : "Groovy View",
+    "songs" : [ "Whisper Pulse", "Radiance Euphoria", "Odyssey Rapture", "Dream Rhythm", "Euphoria Luminescence", "Voyage Cascade", "Dance Harmonize", "Ethereal Solitude", "Aurora Velvet" ]
+  }, {
+    "name" : "Bad Hood",
+    "songs" : [ "Night Utopia", "Celestial Harmony", "Harmonize Enigma", "Melody Melody", "Melody Paradox", "Cascade Reflection", "Essence Mystique", "Serendipity Melody", "Heart Utopia", "Pulse Infinity" ]
+  }, {
+    "name" : "Teen Funeral ",
+    "songs" : [ "Melody Echo", "Paradox Echo", "Luminescence Rhythm", "Zephyr Velvet", "Serendipity Love", "Night Cascade", "Mystique Voyage", "Soul Soul", "Sunset Whisper" ]
+  } ]
+}, {
+  "command" : "showAlbums",
+  "user" : "amanda16",
+  "timestamp" : 185,
+  "result" : [ {
+    "name" : "Heroic Hood",
+    "songs" : [ "Ethereal Rapture", "Whirlwind Whirlwind", "Echo Odyssey", "Eclipse Luminescence", "Adventure Essence", "Essence Rhythm", "Sunset Pinnacle", "Crescendo Ethereal", "Rapture Harmonize", "Melody Whisper", "Dance Harmony" ]
+  }, {
+    "name" : "Bad Harmonies",
+    "songs" : [ "Odyssey Serendipity", "Sunset Essence", "Soul Celestial", "Ethereal Starlight", "Sunset Infinity", "Rapture Twilight", "Infinity Euphoria", "Voyage Pulse" ]
+  }, {
+    "name" : "Teen Dreams",
+    "songs" : [ "Luminescence Crescendo", "Bliss Rhythm", "Echo Pinnacle", "Zephyr Eclipse", "Voyage Solitude", "Sunset Melody", "Colors Rapture" ]
+  } ]
+}, {
+  "command" : "showAlbums",
+  "user" : "leslie27",
+  "timestamp" : 186,
+  "result" : [ {
+    "name" : "Electric Harmonies",
+    "songs" : [ "Celestial Lullaby", "Harmonize Eclipse", "Euphoria Sunset", "Dream Love", "Glow Whisper", "Celestial Heart", "Love Echo", "Zephyr Reflection", "Rapture Dream", "Rapture Infinity" ]
+  }, {
+    "name" : "Groovy View",
+    "songs" : [ "Whisper Pulse", "Radiance Euphoria", "Odyssey Rapture", "Dream Rhythm", "Euphoria Luminescence", "Voyage Cascade", "Dance Harmonize", "Ethereal Solitude", "Aurora Velvet" ]
+  }, {
+    "name" : "Bad Hood",
+    "songs" : [ "Night Utopia", "Celestial Harmony", "Harmonize Enigma", "Melody Melody", "Melody Paradox", "Cascade Reflection", "Essence Mystique", "Serendipity Melody", "Heart Utopia", "Pulse Infinity" ]
+  }, {
+    "name" : "Teen Funeral ",
+    "songs" : [ "Melody Echo", "Paradox Echo", "Luminescence Rhythm", "Zephyr Velvet", "Serendipity Love", "Night Cascade", "Mystique Voyage", "Soul Soul", "Sunset Whisper" ]
+  } ]
+}, {
+  "command" : "showAlbums",
+  "user" : "amanda16",
+  "timestamp" : 187,
+  "result" : [ {
+    "name" : "Heroic Hood",
+    "songs" : [ "Ethereal Rapture", "Whirlwind Whirlwind", "Echo Odyssey", "Eclipse Luminescence", "Adventure Essence", "Essence Rhythm", "Sunset Pinnacle", "Crescendo Ethereal", "Rapture Harmonize", "Melody Whisper", "Dance Harmony" ]
+  }, {
+    "name" : "Bad Harmonies",
+    "songs" : [ "Odyssey Serendipity", "Sunset Essence", "Soul Celestial", "Ethereal Starlight", "Sunset Infinity", "Rapture Twilight", "Infinity Euphoria", "Voyage Pulse" ]
+  }, {
+    "name" : "Teen Dreams",
+    "songs" : [ "Luminescence Crescendo", "Bliss Rhythm", "Echo Pinnacle", "Zephyr Eclipse", "Voyage Solitude", "Sunset Melody", "Colors Rapture" ]
+  } ]
+}, {
+  "command" : "showAlbums",
+  "user" : "amanda16",
+  "timestamp" : 188,
+  "result" : [ {
+    "name" : "Heroic Hood",
+    "songs" : [ "Ethereal Rapture", "Whirlwind Whirlwind", "Echo Odyssey", "Eclipse Luminescence", "Adventure Essence", "Essence Rhythm", "Sunset Pinnacle", "Crescendo Ethereal", "Rapture Harmonize", "Melody Whisper", "Dance Harmony" ]
+  }, {
+    "name" : "Bad Harmonies",
+    "songs" : [ "Odyssey Serendipity", "Sunset Essence", "Soul Celestial", "Ethereal Starlight", "Sunset Infinity", "Rapture Twilight", "Infinity Euphoria", "Voyage Pulse" ]
+  }, {
+    "name" : "Teen Dreams",
+    "songs" : [ "Luminescence Crescendo", "Bliss Rhythm", "Echo Pinnacle", "Zephyr Eclipse", "Voyage Solitude", "Sunset Melody", "Colors Rapture" ]
+  } ]
+}, {
   "command" : "switchVisibility",
   "user" : "alice22",
   "timestamp" : 189,
@@ -4359,7 +4854,7 @@
   "command" : "switchConnectionStatus",
   "user" : "alice22",
   "timestamp" : 5409,
-  "message" : "alice22 is not a normal user."
+  "message" : "alice22 has changed status successfully."
 }, {
   "command" : "status",
   "user" : "alice22",
@@ -4375,9 +4870,16 @@
   "command" : "switchConnectionStatus",
   "user" : "alice22",
   "timestamp" : 5419,
-  "message" : "alice22 is not a normal user."
+  "message" : "alice22 has changed status successfully."
 }, {
-  "message" : "User not found"
+  "command" : "switchConnectionStatus",
+  "user" : "barmstrong",
+  "timestamp" : 5419,
+  "message" : "The username barmstrong doesn't exist."
+}, {
+  "command" : "getOnlineUsers",
+  "timestamp" : 5419,
+  "result" : [ "alice22", "bob35", "carol19", "david27", "emily30", "frank21", "grace25", "henry26", "irene33", "jack29" ]
 }, {
   "command" : "shuffle",
   "user" : "alice22",
@@ -4446,7 +4948,7 @@
   "command" : "switchConnectionStatus",
   "user" : "bob35",
   "timestamp" : 5720,
-  "message" : "bob35 is not a normal user."
+  "message" : "bob35 has changed status successfully."
 }, {
   "command" : "status",
   "user" : "bob35",
@@ -4462,9 +4964,16 @@
   "command" : "switchConnectionStatus",
   "user" : "bob35",
   "timestamp" : 5730,
-  "message" : "bob35 is not a normal user."
+  "message" : "bob35 has changed status successfully."
 }, {
-  "message" : "User not found"
+  "command" : "switchConnectionStatus",
+  "user" : "barmstrong",
+  "timestamp" : 5730,
+  "message" : "The username barmstrong doesn't exist."
+}, {
+  "command" : "getOnlineUsers",
+  "timestamp" : 5730,
+  "result" : [ "alice22", "bob35", "carol19", "david27", "emily30", "frank21", "grace25", "henry26", "irene33", "jack29" ]
 }, {
   "command" : "shuffle",
   "user" : "bob35",
@@ -4533,7 +5042,7 @@
   "command" : "switchConnectionStatus",
   "user" : "carol19",
   "timestamp" : 6031,
-  "message" : "carol19 is not a normal user."
+  "message" : "carol19 has changed status successfully."
 }, {
   "command" : "status",
   "user" : "carol19",
@@ -4549,9 +5058,16 @@
   "command" : "switchConnectionStatus",
   "user" : "carol19",
   "timestamp" : 6041,
-  "message" : "carol19 is not a normal user."
+  "message" : "carol19 has changed status successfully."
 }, {
-  "message" : "User not found"
+  "command" : "switchConnectionStatus",
+  "user" : "barmstrong",
+  "timestamp" : 6041,
+  "message" : "The username barmstrong doesn't exist."
+}, {
+  "command" : "getOnlineUsers",
+  "timestamp" : 6041,
+  "result" : [ "alice22", "bob35", "carol19", "david27", "emily30", "frank21", "grace25", "henry26", "irene33", "jack29" ]
 }, {
   "command" : "shuffle",
   "user" : "carol19",
@@ -4620,7 +5136,7 @@
   "command" : "switchConnectionStatus",
   "user" : "david27",
   "timestamp" : 6342,
-  "message" : "david27 is not a normal user."
+  "message" : "david27 has changed status successfully."
 }, {
   "command" : "status",
   "user" : "david27",
@@ -4636,9 +5152,16 @@
   "command" : "switchConnectionStatus",
   "user" : "david27",
   "timestamp" : 6352,
-  "message" : "david27 is not a normal user."
+  "message" : "david27 has changed status successfully."
 }, {
-  "message" : "User not found"
+  "command" : "switchConnectionStatus",
+  "user" : "barmstrong",
+  "timestamp" : 6352,
+  "message" : "The username barmstrong doesn't exist."
+}, {
+  "command" : "getOnlineUsers",
+  "timestamp" : 6352,
+  "result" : [ "alice22", "bob35", "carol19", "david27", "emily30", "frank21", "grace25", "henry26", "irene33", "jack29" ]
 }, {
   "command" : "shuffle",
   "user" : "david27",
@@ -4707,7 +5230,7 @@
   "command" : "switchConnectionStatus",
   "user" : "emily30",
   "timestamp" : 6653,
-  "message" : "emily30 is not a normal user."
+  "message" : "emily30 has changed status successfully."
 }, {
   "command" : "status",
   "user" : "emily30",
@@ -4723,9 +5246,16 @@
   "command" : "switchConnectionStatus",
   "user" : "emily30",
   "timestamp" : 6663,
-  "message" : "emily30 is not a normal user."
+  "message" : "emily30 has changed status successfully."
 }, {
-  "message" : "User not found"
+  "command" : "switchConnectionStatus",
+  "user" : "barmstrong",
+  "timestamp" : 6663,
+  "message" : "The username barmstrong doesn't exist."
+}, {
+  "command" : "getOnlineUsers",
+  "timestamp" : 6663,
+  "result" : [ "alice22", "bob35", "carol19", "david27", "emily30", "frank21", "grace25", "henry26", "irene33", "jack29" ]
 }, {
   "command" : "shuffle",
   "user" : "emily30",
@@ -4794,7 +5324,7 @@
   "command" : "switchConnectionStatus",
   "user" : "frank21",
   "timestamp" : 6964,
-  "message" : "frank21 is not a normal user."
+  "message" : "frank21 has changed status successfully."
 }, {
   "command" : "status",
   "user" : "frank21",
@@ -4810,9 +5340,16 @@
   "command" : "switchConnectionStatus",
   "user" : "frank21",
   "timestamp" : 6974,
-  "message" : "frank21 is not a normal user."
+  "message" : "frank21 has changed status successfully."
 }, {
-  "message" : "User not found"
+  "command" : "switchConnectionStatus",
+  "user" : "barmstrong",
+  "timestamp" : 6974,
+  "message" : "The username barmstrong doesn't exist."
+}, {
+  "command" : "getOnlineUsers",
+  "timestamp" : 6974,
+  "result" : [ "alice22", "bob35", "carol19", "david27", "emily30", "frank21", "grace25", "henry26", "irene33", "jack29" ]
 }, {
   "command" : "shuffle",
   "user" : "frank21",
@@ -4881,7 +5418,7 @@
   "command" : "switchConnectionStatus",
   "user" : "grace25",
   "timestamp" : 7275,
-  "message" : "grace25 is not a normal user."
+  "message" : "grace25 has changed status successfully."
 }, {
   "command" : "status",
   "user" : "grace25",
@@ -4897,9 +5434,16 @@
   "command" : "switchConnectionStatus",
   "user" : "grace25",
   "timestamp" : 7285,
-  "message" : "grace25 is not a normal user."
+  "message" : "grace25 has changed status successfully."
 }, {
-  "message" : "User not found"
+  "command" : "switchConnectionStatus",
+  "user" : "barmstrong",
+  "timestamp" : 7285,
+  "message" : "The username barmstrong doesn't exist."
+}, {
+  "command" : "getOnlineUsers",
+  "timestamp" : 7285,
+  "result" : [ "alice22", "bob35", "carol19", "david27", "emily30", "frank21", "grace25", "henry26", "irene33", "jack29" ]
 }, {
   "command" : "shuffle",
   "user" : "grace25",
@@ -4968,7 +5512,7 @@
   "command" : "switchConnectionStatus",
   "user" : "henry26",
   "timestamp" : 7586,
-  "message" : "henry26 is not a normal user."
+  "message" : "henry26 has changed status successfully."
 }, {
   "command" : "status",
   "user" : "henry26",
@@ -4984,9 +5528,16 @@
   "command" : "switchConnectionStatus",
   "user" : "henry26",
   "timestamp" : 7596,
-  "message" : "henry26 is not a normal user."
+  "message" : "henry26 has changed status successfully."
 }, {
-  "message" : "User not found"
+  "command" : "switchConnectionStatus",
+  "user" : "barmstrong",
+  "timestamp" : 7596,
+  "message" : "The username barmstrong doesn't exist."
+}, {
+  "command" : "getOnlineUsers",
+  "timestamp" : 7596,
+  "result" : [ "alice22", "bob35", "carol19", "david27", "emily30", "frank21", "grace25", "henry26", "irene33", "jack29" ]
 }, {
   "command" : "shuffle",
   "user" : "henry26",
@@ -5055,7 +5606,7 @@
   "command" : "switchConnectionStatus",
   "user" : "irene33",
   "timestamp" : 7897,
-  "message" : "irene33 is not a normal user."
+  "message" : "irene33 has changed status successfully."
 }, {
   "command" : "status",
   "user" : "irene33",
@@ -5071,9 +5622,16 @@
   "command" : "switchConnectionStatus",
   "user" : "irene33",
   "timestamp" : 7907,
-  "message" : "irene33 is not a normal user."
+  "message" : "irene33 has changed status successfully."
 }, {
-  "message" : "User not found"
+  "command" : "switchConnectionStatus",
+  "user" : "barmstrong",
+  "timestamp" : 7907,
+  "message" : "The username barmstrong doesn't exist."
+}, {
+  "command" : "getOnlineUsers",
+  "timestamp" : 7907,
+  "result" : [ "alice22", "bob35", "carol19", "david27", "emily30", "frank21", "grace25", "henry26", "irene33", "jack29" ]
 }, {
   "command" : "shuffle",
   "user" : "irene33",
@@ -5142,7 +5700,7 @@
   "command" : "switchConnectionStatus",
   "user" : "jack29",
   "timestamp" : 8208,
-  "message" : "jack29 is not a normal user."
+  "message" : "jack29 has changed status successfully."
 }, {
   "command" : "status",
   "user" : "jack29",
@@ -5158,9 +5716,16 @@
   "command" : "switchConnectionStatus",
   "user" : "jack29",
   "timestamp" : 8218,
-  "message" : "jack29 is not a normal user."
+  "message" : "jack29 has changed status successfully."
 }, {
-  "message" : "User not found"
+  "command" : "switchConnectionStatus",
+  "user" : "barmstrong",
+  "timestamp" : 8218,
+  "message" : "The username barmstrong doesn't exist."
+}, {
+  "command" : "getOnlineUsers",
+  "timestamp" : 8218,
+  "result" : [ "alice22", "bob35", "carol19", "david27", "emily30", "frank21", "grace25", "henry26", "irene33", "jack29" ]
 }, {
   "command" : "shuffle",
   "user" : "jack29",
@@ -8227,6 +8792,8 @@
     "paused" : true
   }
 }, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 10279,
@@ -8262,6 +8829,12 @@
   "user" : "alice22",
   "timestamp" : 10279,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -8299,6 +8872,12 @@
   "timestamp" : 10289,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 10299,
@@ -8334,6 +8913,12 @@
   "user" : "carol19",
   "timestamp" : 10299,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -8371,6 +8956,12 @@
   "timestamp" : 10309,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 10319,
@@ -8406,6 +8997,12 @@
   "user" : "emily30",
   "timestamp" : 10319,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -8443,6 +9040,12 @@
   "timestamp" : 10329,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 10339,
@@ -8478,6 +9081,12 @@
   "user" : "grace25",
   "timestamp" : 10339,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -8515,6 +9124,12 @@
   "timestamp" : 10349,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 10359,
@@ -8550,6 +9165,12 @@
   "user" : "irene33",
   "timestamp" : 10359,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -8587,6 +9208,12 @@
   "timestamp" : 10369,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 10379,
@@ -8622,6 +9249,12 @@
   "user" : "alice22",
   "timestamp" : 10379,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -8659,6 +9292,12 @@
   "timestamp" : 10389,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 10399,
@@ -8694,6 +9333,12 @@
   "user" : "carol19",
   "timestamp" : 10399,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -8731,6 +9376,12 @@
   "timestamp" : 10409,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 10419,
@@ -8766,6 +9417,12 @@
   "user" : "emily30",
   "timestamp" : 10419,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -8803,6 +9460,12 @@
   "timestamp" : 10429,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 10439,
@@ -8838,6 +9501,12 @@
   "user" : "grace25",
   "timestamp" : 10439,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -8875,6 +9544,12 @@
   "timestamp" : 10449,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 10459,
@@ -8910,6 +9585,12 @@
   "user" : "irene33",
   "timestamp" : 10459,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -8947,6 +9628,12 @@
   "timestamp" : 10469,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 10479,
@@ -8982,6 +9669,12 @@
   "user" : "alice22",
   "timestamp" : 10479,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -9019,6 +9712,12 @@
   "timestamp" : 10489,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 10499,
@@ -9054,6 +9753,12 @@
   "user" : "carol19",
   "timestamp" : 10499,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -9091,6 +9796,12 @@
   "timestamp" : 10509,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 10519,
@@ -9126,6 +9837,12 @@
   "user" : "emily30",
   "timestamp" : 10519,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -9163,6 +9880,12 @@
   "timestamp" : 10529,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 10539,
@@ -9198,6 +9921,12 @@
   "user" : "grace25",
   "timestamp" : 10539,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -9235,6 +9964,12 @@
   "timestamp" : 10549,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 10559,
@@ -9270,6 +10005,12 @@
   "user" : "irene33",
   "timestamp" : 10559,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -9307,6 +10048,12 @@
   "timestamp" : 10569,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 10579,
@@ -9342,6 +10089,12 @@
   "user" : "alice22",
   "timestamp" : 10579,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -9379,6 +10132,12 @@
   "timestamp" : 10589,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 10599,
@@ -9414,6 +10173,12 @@
   "user" : "carol19",
   "timestamp" : 10599,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -9451,6 +10216,12 @@
   "timestamp" : 10609,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 10619,
@@ -9486,6 +10257,12 @@
   "user" : "emily30",
   "timestamp" : 10619,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -9523,6 +10300,12 @@
   "timestamp" : 10629,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 10639,
@@ -9558,6 +10341,12 @@
   "user" : "grace25",
   "timestamp" : 10639,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -9595,6 +10384,12 @@
   "timestamp" : 10649,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 10659,
@@ -9630,6 +10425,12 @@
   "user" : "irene33",
   "timestamp" : 10659,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -9667,6 +10468,12 @@
   "timestamp" : 10669,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 10679,
@@ -9702,6 +10509,12 @@
   "user" : "alice22",
   "timestamp" : 10679,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -9739,6 +10552,12 @@
   "timestamp" : 10689,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 10699,
@@ -9774,6 +10593,12 @@
   "user" : "carol19",
   "timestamp" : 10699,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -9811,6 +10636,12 @@
   "timestamp" : 10709,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 10719,
@@ -9846,6 +10677,12 @@
   "user" : "emily30",
   "timestamp" : 10719,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -9883,6 +10720,12 @@
   "timestamp" : 10729,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 10739,
@@ -9918,6 +10761,12 @@
   "user" : "grace25",
   "timestamp" : 10739,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -9955,6 +10804,12 @@
   "timestamp" : 10749,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 10759,
@@ -9990,6 +10845,12 @@
   "user" : "irene33",
   "timestamp" : 10759,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -10027,6 +10888,12 @@
   "timestamp" : 10769,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 10779,
@@ -10062,6 +10929,12 @@
   "user" : "alice22",
   "timestamp" : 10779,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -10099,6 +10972,12 @@
   "timestamp" : 10789,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 10799,
@@ -10134,6 +11013,12 @@
   "user" : "carol19",
   "timestamp" : 10799,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -10171,6 +11056,12 @@
   "timestamp" : 10809,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 10819,
@@ -10206,6 +11097,12 @@
   "user" : "emily30",
   "timestamp" : 10819,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -10243,6 +11140,12 @@
   "timestamp" : 10829,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 10839,
@@ -10278,6 +11181,12 @@
   "user" : "grace25",
   "timestamp" : 10839,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -10315,6 +11224,12 @@
   "timestamp" : 10849,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 10859,
@@ -10350,6 +11265,12 @@
   "user" : "irene33",
   "timestamp" : 10859,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -10387,6 +11308,12 @@
   "timestamp" : 10869,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 10879,
@@ -10422,6 +11349,12 @@
   "user" : "alice22",
   "timestamp" : 10879,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -10459,6 +11392,12 @@
   "timestamp" : 10889,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 10899,
@@ -10494,6 +11433,12 @@
   "user" : "carol19",
   "timestamp" : 10899,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -10531,6 +11476,12 @@
   "timestamp" : 10909,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 10919,
@@ -10566,6 +11517,12 @@
   "user" : "emily30",
   "timestamp" : 10919,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -10603,6 +11560,12 @@
   "timestamp" : 10929,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 10939,
@@ -10638,6 +11601,12 @@
   "user" : "grace25",
   "timestamp" : 10939,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -10675,6 +11644,12 @@
   "timestamp" : 10949,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 10959,
@@ -10710,6 +11685,12 @@
   "user" : "irene33",
   "timestamp" : 10959,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -10747,6 +11728,12 @@
   "timestamp" : 10969,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 10979,
@@ -10782,6 +11769,12 @@
   "user" : "alice22",
   "timestamp" : 10979,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -10819,6 +11812,12 @@
   "timestamp" : 10989,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 10999,
@@ -10854,6 +11853,12 @@
   "user" : "carol19",
   "timestamp" : 10999,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -10891,6 +11896,12 @@
   "timestamp" : 11009,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 11019,
@@ -10926,6 +11937,12 @@
   "user" : "emily30",
   "timestamp" : 11019,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -10963,6 +11980,12 @@
   "timestamp" : 11029,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 11039,
@@ -10998,6 +12021,12 @@
   "user" : "grace25",
   "timestamp" : 11039,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -11035,6 +12064,12 @@
   "timestamp" : 11049,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 11059,
@@ -11070,6 +12105,12 @@
   "user" : "irene33",
   "timestamp" : 11059,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -11107,6 +12148,12 @@
   "timestamp" : 11069,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 11079,
@@ -11142,6 +12189,12 @@
   "user" : "alice22",
   "timestamp" : 11079,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -11179,6 +12232,12 @@
   "timestamp" : 11089,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 11099,
@@ -11214,6 +12273,12 @@
   "user" : "carol19",
   "timestamp" : 11099,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -11251,6 +12316,12 @@
   "timestamp" : 11109,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 11119,
@@ -11286,6 +12357,12 @@
   "user" : "emily30",
   "timestamp" : 11119,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -11323,6 +12400,12 @@
   "timestamp" : 11129,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 11139,
@@ -11358,6 +12441,12 @@
   "user" : "grace25",
   "timestamp" : 11139,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -11395,6 +12484,12 @@
   "timestamp" : 11149,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 11159,
@@ -11430,6 +12525,12 @@
   "user" : "irene33",
   "timestamp" : 11159,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -11467,6 +12568,12 @@
   "timestamp" : 11169,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 11179,
@@ -11502,6 +12609,12 @@
   "user" : "alice22",
   "timestamp" : 11179,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -11539,6 +12652,12 @@
   "timestamp" : 11189,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 11199,
@@ -11574,6 +12693,12 @@
   "user" : "carol19",
   "timestamp" : 11199,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -11611,6 +12736,12 @@
   "timestamp" : 11209,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 11219,
@@ -11646,6 +12777,12 @@
   "user" : "emily30",
   "timestamp" : 11219,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -11683,6 +12820,12 @@
   "timestamp" : 11229,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 11239,
@@ -11718,6 +12861,12 @@
   "user" : "grace25",
   "timestamp" : 11239,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -11755,6 +12904,12 @@
   "timestamp" : 11249,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 11259,
@@ -11790,6 +12945,12 @@
   "user" : "irene33",
   "timestamp" : 11259,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -11827,6 +12988,12 @@
   "timestamp" : 11269,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 11279,
@@ -11862,6 +13029,12 @@
   "user" : "alice22",
   "timestamp" : 11279,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -11899,6 +13072,12 @@
   "timestamp" : 11289,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 11299,
@@ -11934,6 +13113,12 @@
   "user" : "carol19",
   "timestamp" : 11299,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -11971,6 +13156,12 @@
   "timestamp" : 11309,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 11319,
@@ -12006,6 +13197,12 @@
   "user" : "emily30",
   "timestamp" : 11319,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -12043,6 +13240,12 @@
   "timestamp" : 11329,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 11339,
@@ -12078,6 +13281,12 @@
   "user" : "grace25",
   "timestamp" : 11339,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -12115,6 +13324,12 @@
   "timestamp" : 11349,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 11359,
@@ -12150,6 +13365,12 @@
   "user" : "irene33",
   "timestamp" : 11359,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -12187,6 +13408,12 @@
   "timestamp" : 11369,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 11379,
@@ -12222,6 +13449,12 @@
   "user" : "alice22",
   "timestamp" : 11379,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -12259,6 +13492,12 @@
   "timestamp" : 11389,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 11399,
@@ -12294,6 +13533,12 @@
   "user" : "carol19",
   "timestamp" : 11399,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -12331,6 +13576,12 @@
   "timestamp" : 11409,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 11419,
@@ -12366,6 +13617,12 @@
   "user" : "emily30",
   "timestamp" : 11419,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -12403,6 +13660,12 @@
   "timestamp" : 11429,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 11439,
@@ -12438,6 +13701,12 @@
   "user" : "grace25",
   "timestamp" : 11439,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -12475,6 +13744,12 @@
   "timestamp" : 11449,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 11459,
@@ -12510,6 +13785,12 @@
   "user" : "irene33",
   "timestamp" : 11459,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -12547,6 +13828,12 @@
   "timestamp" : 11469,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 11479,
@@ -12582,6 +13869,12 @@
   "user" : "alice22",
   "timestamp" : 11479,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -12619,6 +13912,12 @@
   "timestamp" : 11489,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 11499,
@@ -12654,6 +13953,12 @@
   "user" : "carol19",
   "timestamp" : 11499,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -12691,6 +13996,12 @@
   "timestamp" : 11509,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 11519,
@@ -12726,6 +14037,12 @@
   "user" : "emily30",
   "timestamp" : 11519,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -12763,6 +14080,12 @@
   "timestamp" : 11529,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 11539,
@@ -12798,6 +14121,12 @@
   "user" : "grace25",
   "timestamp" : 11539,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -12835,6 +14164,12 @@
   "timestamp" : 11549,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 11559,
@@ -12870,6 +14205,12 @@
   "user" : "irene33",
   "timestamp" : 11559,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -12907,6 +14248,12 @@
   "timestamp" : 11569,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 11579,
@@ -12942,6 +14289,12 @@
   "user" : "alice22",
   "timestamp" : 11579,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -12979,6 +14332,12 @@
   "timestamp" : 11589,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 11599,
@@ -13014,6 +14373,12 @@
   "user" : "carol19",
   "timestamp" : 11599,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -13051,6 +14416,12 @@
   "timestamp" : 11609,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 11619,
@@ -13086,6 +14457,12 @@
   "user" : "emily30",
   "timestamp" : 11619,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -13123,6 +14500,12 @@
   "timestamp" : 11629,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 11639,
@@ -13158,6 +14541,12 @@
   "user" : "grace25",
   "timestamp" : 11639,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -13195,6 +14584,12 @@
   "timestamp" : 11649,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 11659,
@@ -13230,6 +14625,12 @@
   "user" : "irene33",
   "timestamp" : 11659,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -13267,6 +14668,12 @@
   "timestamp" : 11669,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 11679,
@@ -13302,6 +14709,12 @@
   "user" : "alice22",
   "timestamp" : 11679,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -13339,6 +14752,12 @@
   "timestamp" : 11689,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 11699,
@@ -13374,6 +14793,12 @@
   "user" : "carol19",
   "timestamp" : 11699,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -13411,6 +14836,12 @@
   "timestamp" : 11709,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 11719,
@@ -13447,6 +14878,12 @@
   "timestamp" : 11719,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 11729,
@@ -13483,6 +14920,12 @@
   "timestamp" : 11729,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 11739,
@@ -13519,6 +14962,12 @@
   "timestamp" : 11739,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 11749,
@@ -13555,6 +15004,12 @@
   "timestamp" : 11749,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 11759,
@@ -13591,6 +15046,12 @@
   "timestamp" : 11759,
   "message" : "Please load a source before liking or unliking."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 11769,
@@ -13626,6 +15087,10 @@
   "user" : "jack29",
   "timestamp" : 11769,
   "message" : "Please load a source before liking or unliking."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -13637,6 +15102,17 @@
   "user" : "alice22",
   "timestamp" : 11769,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 11769,
+  "message" : "jacobdean has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -13649,6 +15125,17 @@
   "timestamp" : 11779,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "amanda16",
+  "timestamp" : 11779,
+  "message" : "amanda16 has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 11789,
@@ -13659,6 +15146,17 @@
   "user" : "carol19",
   "timestamp" : 11789,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 11789,
+  "message" : "jacobdean has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -13671,6 +15169,17 @@
   "timestamp" : 11799,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 11799,
+  "message" : "jacobdean has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 11809,
@@ -13681,6 +15190,17 @@
   "user" : "emily30",
   "timestamp" : 11809,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "cbutler",
+  "timestamp" : 11809,
+  "message" : "cbutler has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -13693,6 +15213,14 @@
   "timestamp" : 11819,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The username conniealvarez doesn't exist."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 11829,
@@ -13703,6 +15231,17 @@
   "user" : "grace25",
   "timestamp" : 11829,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 11829,
+  "message" : "jacobdean has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -13715,6 +15254,17 @@
   "timestamp" : 11839,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "barmstrong",
+  "timestamp" : 11839,
+  "message" : "barmstrong has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 11849,
@@ -13725,6 +15275,17 @@
   "user" : "irene33",
   "timestamp" : 11849,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "barmstrong",
+  "timestamp" : 11849,
+  "message" : "barmstrong has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -13737,6 +15298,17 @@
   "timestamp" : 11859,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "amanda16",
+  "timestamp" : 11859,
+  "message" : "amanda16 has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 11869,
@@ -13747,6 +15319,14 @@
   "user" : "alice22",
   "timestamp" : 11869,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The username conniealvarez doesn't exist."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -13759,6 +15339,17 @@
   "timestamp" : 11879,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "amanda16",
+  "timestamp" : 11879,
+  "message" : "amanda16 has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 11889,
@@ -13769,6 +15360,17 @@
   "user" : "carol19",
   "timestamp" : 11889,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 11889,
+  "message" : "jacobdean has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -13781,6 +15383,17 @@
   "timestamp" : 11899,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "matthewfernandez",
+  "timestamp" : 11899,
+  "message" : "matthewfernandez has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 11909,
@@ -13791,6 +15404,17 @@
   "user" : "emily30",
   "timestamp" : 11909,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "leslie27",
+  "timestamp" : 11909,
+  "message" : "leslie27 has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -13803,6 +15427,17 @@
   "timestamp" : 11919,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "leslie27",
+  "timestamp" : 11919,
+  "message" : "leslie27 has another album with the same name."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 11929,
@@ -13813,6 +15448,17 @@
   "user" : "grace25",
   "timestamp" : 11929,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 11929,
+  "message" : "jacobdean has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -13825,6 +15471,17 @@
   "timestamp" : 11939,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "matthewfernandez",
+  "timestamp" : 11939,
+  "message" : "matthewfernandez has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 11949,
@@ -13835,6 +15492,14 @@
   "user" : "irene33",
   "timestamp" : 11949,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The username conniealvarez doesn't exist."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -13847,6 +15512,17 @@
   "timestamp" : 11959,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "matthewfernandez",
+  "timestamp" : 11959,
+  "message" : "matthewfernandez has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 11969,
@@ -13857,6 +15533,17 @@
   "user" : "alice22",
   "timestamp" : 11969,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "amanda16",
+  "timestamp" : 11969,
+  "message" : "amanda16 has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -13869,6 +15556,17 @@
   "timestamp" : 11979,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "barmstrong",
+  "timestamp" : 11979,
+  "message" : "barmstrong has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 11989,
@@ -13879,6 +15577,17 @@
   "user" : "carol19",
   "timestamp" : 11989,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "amanda16",
+  "timestamp" : 11989,
+  "message" : "amanda16 has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -13891,6 +15600,17 @@
   "timestamp" : 11999,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 11999,
+  "message" : "jacobdean has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 12009,
@@ -13901,6 +15621,17 @@
   "user" : "emily30",
   "timestamp" : 12009,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "barmstrong",
+  "timestamp" : 12009,
+  "message" : "barmstrong has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -13913,6 +15644,17 @@
   "timestamp" : 12019,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "leslie27",
+  "timestamp" : 12019,
+  "message" : "leslie27 has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 12029,
@@ -13923,6 +15665,17 @@
   "user" : "grace25",
   "timestamp" : 12029,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 12029,
+  "message" : "jacobdean has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -13935,6 +15688,14 @@
   "timestamp" : 12039,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The username conniealvarez doesn't exist."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 12049,
@@ -13945,6 +15706,17 @@
   "user" : "irene33",
   "timestamp" : 12049,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "barmstrong",
+  "timestamp" : 12049,
+  "message" : "barmstrong has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -13957,6 +15729,17 @@
   "timestamp" : 12059,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "leslie27",
+  "timestamp" : 12059,
+  "message" : "leslie27 has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 12069,
@@ -13967,6 +15750,17 @@
   "user" : "alice22",
   "timestamp" : 12069,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 12069,
+  "message" : "jacobdean has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -13979,6 +15773,17 @@
   "timestamp" : 12079,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "cbutler",
+  "timestamp" : 12079,
+  "message" : "cbutler has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 12089,
@@ -13989,6 +15794,14 @@
   "user" : "carol19",
   "timestamp" : 12089,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The username conniealvarez doesn't exist."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -14001,6 +15814,17 @@
   "timestamp" : 12099,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 12099,
+  "message" : "jacobdean has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 12109,
@@ -14011,6 +15835,17 @@
   "user" : "emily30",
   "timestamp" : 12109,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "amanda16",
+  "timestamp" : 12109,
+  "message" : "amanda16 has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -14023,6 +15858,14 @@
   "timestamp" : 12119,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The username conniealvarez doesn't exist."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 12129,
@@ -14033,6 +15876,17 @@
   "user" : "grace25",
   "timestamp" : 12129,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "barmstrong",
+  "timestamp" : 12129,
+  "message" : "barmstrong has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -14045,6 +15899,14 @@
   "timestamp" : 12139,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The username conniealvarez doesn't exist."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 12149,
@@ -14055,6 +15917,17 @@
   "user" : "irene33",
   "timestamp" : 12149,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 12149,
+  "message" : "jacobdean has another album with the same name."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -14067,6 +15940,14 @@
   "timestamp" : 12159,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The username conniealvarez doesn't exist."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 12169,
@@ -14077,6 +15958,17 @@
   "user" : "alice22",
   "timestamp" : 12169,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "amanda16",
+  "timestamp" : 12169,
+  "message" : "amanda16 has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -14089,6 +15981,17 @@
   "timestamp" : 12179,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "matthewfernandez",
+  "timestamp" : 12179,
+  "message" : "matthewfernandez has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 12189,
@@ -14099,6 +16002,17 @@
   "user" : "carol19",
   "timestamp" : 12189,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "amanda16",
+  "timestamp" : 12189,
+  "message" : "amanda16 has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -14111,6 +16025,17 @@
   "timestamp" : 12199,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "amanda16",
+  "timestamp" : 12199,
+  "message" : "amanda16 has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 12209,
@@ -14121,6 +16046,17 @@
   "user" : "emily30",
   "timestamp" : 12209,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "amanda16",
+  "timestamp" : 12209,
+  "message" : "amanda16 has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -14133,6 +16069,17 @@
   "timestamp" : 12219,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "leslie27",
+  "timestamp" : 12219,
+  "message" : "leslie27 has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 12229,
@@ -14143,6 +16090,17 @@
   "user" : "grace25",
   "timestamp" : 12229,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "barmstrong",
+  "timestamp" : 12229,
+  "message" : "barmstrong has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -14155,6 +16113,17 @@
   "timestamp" : 12239,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "barmstrong",
+  "timestamp" : 12239,
+  "message" : "barmstrong has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 12249,
@@ -14165,6 +16134,17 @@
   "user" : "irene33",
   "timestamp" : 12249,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "amanda16",
+  "timestamp" : 12249,
+  "message" : "amanda16 has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -14177,6 +16157,14 @@
   "timestamp" : 12259,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The username conniealvarez doesn't exist."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 12269,
@@ -14187,6 +16175,17 @@
   "user" : "alice22",
   "timestamp" : 12269,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "matthewfernandez",
+  "timestamp" : 12269,
+  "message" : "matthewfernandez has the same song at least twice in this album."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -14199,6 +16198,17 @@
   "timestamp" : 12279,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "leslie27",
+  "timestamp" : 12279,
+  "message" : "leslie27 has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 12289,
@@ -14209,6 +16219,14 @@
   "user" : "carol19",
   "timestamp" : 12289,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The username conniealvarez doesn't exist."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -14221,6 +16239,17 @@
   "timestamp" : 12299,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "jenningsbeth",
+  "timestamp" : 12299,
+  "message" : "jenningsbeth has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 12309,
@@ -14231,6 +16260,17 @@
   "user" : "emily30",
   "timestamp" : 12309,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "matthewfernandez",
+  "timestamp" : 12309,
+  "message" : "matthewfernandez has another album with the same name."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -14243,6 +16283,17 @@
   "timestamp" : 12319,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "cbutler",
+  "timestamp" : 12319,
+  "message" : "cbutler has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 12329,
@@ -14253,6 +16304,17 @@
   "user" : "grace25",
   "timestamp" : 12329,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "barmstrong",
+  "timestamp" : 12329,
+  "message" : "barmstrong has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -14265,6 +16327,14 @@
   "timestamp" : 12339,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The username conniealvarez doesn't exist."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 12349,
@@ -14275,6 +16345,17 @@
   "user" : "irene33",
   "timestamp" : 12349,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 12349,
+  "message" : "jacobdean has another album with the same name."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -14287,6 +16368,17 @@
   "timestamp" : 12359,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "matthewfernandez",
+  "timestamp" : 12359,
+  "message" : "matthewfernandez has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 12369,
@@ -14297,6 +16389,17 @@
   "user" : "alice22",
   "timestamp" : 12369,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "amanda16",
+  "timestamp" : 12369,
+  "message" : "amanda16 has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -14309,6 +16412,14 @@
   "timestamp" : 12379,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The username conniealvarez doesn't exist."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 12389,
@@ -14319,6 +16430,17 @@
   "user" : "carol19",
   "timestamp" : 12389,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "matthewfernandez",
+  "timestamp" : 12389,
+  "message" : "matthewfernandez has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -14331,6 +16453,17 @@
   "timestamp" : 12399,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "matthewfernandez",
+  "timestamp" : 12399,
+  "message" : "matthewfernandez has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 12409,
@@ -14341,6 +16474,17 @@
   "user" : "emily30",
   "timestamp" : 12409,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 12409,
+  "message" : "jacobdean has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -14353,6 +16497,17 @@
   "timestamp" : 12419,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "cbutler",
+  "timestamp" : 12419,
+  "message" : "cbutler has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 12429,
@@ -14363,6 +16518,17 @@
   "user" : "grace25",
   "timestamp" : 12429,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "barmstrong",
+  "timestamp" : 12429,
+  "message" : "barmstrong has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -14375,6 +16541,17 @@
   "timestamp" : 12439,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 12439,
+  "message" : "jacobdean has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 12449,
@@ -14385,6 +16562,17 @@
   "user" : "irene33",
   "timestamp" : 12449,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "cbutler",
+  "timestamp" : 12449,
+  "message" : "cbutler has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -14397,6 +16585,17 @@
   "timestamp" : 12459,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "matthewfernandez",
+  "timestamp" : 12459,
+  "message" : "matthewfernandez has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 12469,
@@ -14407,6 +16606,14 @@
   "user" : "alice22",
   "timestamp" : 12469,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The username conniealvarez doesn't exist."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -14419,6 +16626,17 @@
   "timestamp" : 12479,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "matthewfernandez",
+  "timestamp" : 12479,
+  "message" : "matthewfernandez has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 12489,
@@ -14429,6 +16647,17 @@
   "user" : "carol19",
   "timestamp" : 12489,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "amanda16",
+  "timestamp" : 12489,
+  "message" : "amanda16 has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -14441,6 +16670,14 @@
   "timestamp" : 12499,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The username conniealvarez doesn't exist."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 12509,
@@ -14451,6 +16688,14 @@
   "user" : "emily30",
   "timestamp" : 12509,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The username conniealvarez doesn't exist."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -14463,6 +16708,17 @@
   "timestamp" : 12519,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "amanda16",
+  "timestamp" : 12519,
+  "message" : "amanda16 has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 12529,
@@ -14473,6 +16729,17 @@
   "user" : "grace25",
   "timestamp" : 12529,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "barmstrong",
+  "timestamp" : 12529,
+  "message" : "barmstrong has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -14485,6 +16752,14 @@
   "timestamp" : 12539,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The username conniealvarez doesn't exist."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 12549,
@@ -14495,6 +16770,14 @@
   "user" : "irene33",
   "timestamp" : 12549,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The username conniealvarez doesn't exist."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -14507,6 +16790,17 @@
   "timestamp" : 12559,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "cbutler",
+  "timestamp" : 12559,
+  "message" : "cbutler has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 12569,
@@ -14517,6 +16811,17 @@
   "user" : "alice22",
   "timestamp" : 12569,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "barmstrong",
+  "timestamp" : 12569,
+  "message" : "barmstrong has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -14529,6 +16834,17 @@
   "timestamp" : 12579,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "amanda16",
+  "timestamp" : 12579,
+  "message" : "amanda16 has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 12589,
@@ -14539,6 +16855,17 @@
   "user" : "carol19",
   "timestamp" : 12589,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "barmstrong",
+  "timestamp" : 12589,
+  "message" : "barmstrong has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -14551,6 +16878,17 @@
   "timestamp" : 12599,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "barmstrong",
+  "timestamp" : 12599,
+  "message" : "barmstrong has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 12609,
@@ -14561,6 +16899,17 @@
   "user" : "emily30",
   "timestamp" : 12609,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "barmstrong",
+  "timestamp" : 12609,
+  "message" : "barmstrong has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -14573,6 +16922,17 @@
   "timestamp" : 12619,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "matthewfernandez",
+  "timestamp" : 12619,
+  "message" : "matthewfernandez has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 12629,
@@ -14583,6 +16943,17 @@
   "user" : "grace25",
   "timestamp" : 12629,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "matthewfernandez",
+  "timestamp" : 12629,
+  "message" : "matthewfernandez has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -14595,6 +16966,14 @@
   "timestamp" : 12639,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The username conniealvarez doesn't exist."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 12649,
@@ -14605,6 +16984,17 @@
   "user" : "irene33",
   "timestamp" : 12649,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "barmstrong",
+  "timestamp" : 12649,
+  "message" : "barmstrong has another album with the same name."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -14617,6 +17007,17 @@
   "timestamp" : 12659,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "cbutler",
+  "timestamp" : 12659,
+  "message" : "cbutler has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 12669,
@@ -14627,6 +17028,17 @@
   "user" : "alice22",
   "timestamp" : 12669,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "barmstrong",
+  "timestamp" : 12669,
+  "message" : "barmstrong has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -14639,6 +17051,17 @@
   "timestamp" : 12679,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "amanda16",
+  "timestamp" : 12679,
+  "message" : "amanda16 has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 12689,
@@ -14649,6 +17072,17 @@
   "user" : "carol19",
   "timestamp" : 12689,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "barmstrong",
+  "timestamp" : 12689,
+  "message" : "barmstrong has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -14661,6 +17095,17 @@
   "timestamp" : 12699,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "amanda16",
+  "timestamp" : 12699,
+  "message" : "amanda16 has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 12709,
@@ -14671,6 +17116,17 @@
   "user" : "emily30",
   "timestamp" : 12709,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "barmstrong",
+  "timestamp" : 12709,
+  "message" : "barmstrong has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -14683,6 +17139,17 @@
   "timestamp" : 12719,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 12719,
+  "message" : "jacobdean has another album with the same name."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 12729,
@@ -14693,6 +17160,14 @@
   "user" : "grace25",
   "timestamp" : 12729,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The username conniealvarez doesn't exist."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -14705,6 +17180,17 @@
   "timestamp" : 12739,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "barmstrong",
+  "timestamp" : 12739,
+  "message" : "barmstrong has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 12749,
@@ -14715,6 +17201,17 @@
   "user" : "irene33",
   "timestamp" : 12749,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "leslie27",
+  "timestamp" : 12749,
+  "message" : "leslie27 has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -14727,6 +17224,17 @@
   "timestamp" : 12759,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 12759,
+  "message" : "jacobdean has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 12769,
@@ -14737,6 +17245,17 @@
   "user" : "alice22",
   "timestamp" : 12769,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "cbutler",
+  "timestamp" : 12769,
+  "message" : "cbutler has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -14749,6 +17268,17 @@
   "timestamp" : 12779,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "matthewfernandez",
+  "timestamp" : 12779,
+  "message" : "matthewfernandez has another album with the same name."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 12789,
@@ -14759,6 +17289,17 @@
   "user" : "carol19",
   "timestamp" : 12789,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "matthewfernandez",
+  "timestamp" : 12789,
+  "message" : "matthewfernandez has another album with the same name."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -14771,6 +17312,17 @@
   "timestamp" : 12799,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 12799,
+  "message" : "jacobdean has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 12809,
@@ -14781,6 +17333,17 @@
   "user" : "emily30",
   "timestamp" : 12809,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 12809,
+  "message" : "jacobdean has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -14793,6 +17356,17 @@
   "timestamp" : 12819,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "matthewfernandez",
+  "timestamp" : 12819,
+  "message" : "matthewfernandez has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 12829,
@@ -14803,6 +17377,17 @@
   "user" : "grace25",
   "timestamp" : 12829,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 12829,
+  "message" : "jacobdean has another album with the same name."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -14815,6 +17400,17 @@
   "timestamp" : 12839,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "matthewfernandez",
+  "timestamp" : 12839,
+  "message" : "matthewfernandez has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 12849,
@@ -14825,6 +17421,17 @@
   "user" : "irene33",
   "timestamp" : 12849,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "matthewfernandez",
+  "timestamp" : 12849,
+  "message" : "matthewfernandez has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -14837,6 +17444,17 @@
   "timestamp" : 12859,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 12859,
+  "message" : "jacobdean has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 12869,
@@ -14847,6 +17465,14 @@
   "user" : "alice22",
   "timestamp" : 12869,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The username conniealvarez doesn't exist."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -14859,6 +17485,17 @@
   "timestamp" : 12879,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "matthewfernandez",
+  "timestamp" : 12879,
+  "message" : "matthewfernandez has another album with the same name."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 12889,
@@ -14869,6 +17506,17 @@
   "user" : "carol19",
   "timestamp" : 12889,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "matthewfernandez",
+  "timestamp" : 12889,
+  "message" : "matthewfernandez has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -14881,6 +17529,17 @@
   "timestamp" : 12899,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 12899,
+  "message" : "jacobdean has another album with the same name."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 12909,
@@ -14891,6 +17550,17 @@
   "user" : "emily30",
   "timestamp" : 12909,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "barmstrong",
+  "timestamp" : 12909,
+  "message" : "barmstrong has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -14903,6 +17573,17 @@
   "timestamp" : 12919,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "matthewfernandez",
+  "timestamp" : 12919,
+  "message" : "matthewfernandez has another album with the same name."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 12929,
@@ -14913,6 +17594,17 @@
   "user" : "grace25",
   "timestamp" : 12929,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "barmstrong",
+  "timestamp" : 12929,
+  "message" : "barmstrong has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -14925,6 +17617,17 @@
   "timestamp" : 12939,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "leslie27",
+  "timestamp" : 12939,
+  "message" : "leslie27 has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 12949,
@@ -14935,6 +17638,17 @@
   "user" : "irene33",
   "timestamp" : 12949,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "matthewfernandez",
+  "timestamp" : 12949,
+  "message" : "matthewfernandez has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -14947,6 +17661,17 @@
   "timestamp" : 12959,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 12959,
+  "message" : "jacobdean has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 12969,
@@ -14957,6 +17682,14 @@
   "user" : "alice22",
   "timestamp" : 12969,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The username conniealvarez doesn't exist."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -14969,6 +17702,17 @@
   "timestamp" : 12979,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 12979,
+  "message" : "jacobdean has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 12989,
@@ -14979,6 +17723,17 @@
   "user" : "carol19",
   "timestamp" : 12989,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "matthewfernandez",
+  "timestamp" : 12989,
+  "message" : "matthewfernandez has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -14991,6 +17746,14 @@
   "timestamp" : 12999,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The username conniealvarez doesn't exist."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 13009,
@@ -15001,6 +17764,17 @@
   "user" : "emily30",
   "timestamp" : 13009,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "cbutler",
+  "timestamp" : 13009,
+  "message" : "cbutler has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -15013,6 +17787,17 @@
   "timestamp" : 13019,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "barmstrong",
+  "timestamp" : 13019,
+  "message" : "barmstrong has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 13029,
@@ -15023,6 +17808,17 @@
   "user" : "grace25",
   "timestamp" : 13029,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "amanda16",
+  "timestamp" : 13029,
+  "message" : "amanda16 has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -15035,6 +17831,17 @@
   "timestamp" : 13039,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 13039,
+  "message" : "jacobdean has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 13049,
@@ -15045,6 +17852,17 @@
   "user" : "irene33",
   "timestamp" : 13049,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 13049,
+  "message" : "jacobdean has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -15057,6 +17875,17 @@
   "timestamp" : 13059,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 13059,
+  "message" : "jacobdean has another album with the same name."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 13069,
@@ -15067,6 +17896,17 @@
   "user" : "alice22",
   "timestamp" : 13069,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "cbutler",
+  "timestamp" : 13069,
+  "message" : "cbutler has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -15079,6 +17919,17 @@
   "timestamp" : 13079,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "amanda16",
+  "timestamp" : 13079,
+  "message" : "amanda16 has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 13089,
@@ -15089,6 +17940,17 @@
   "user" : "carol19",
   "timestamp" : 13089,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "barmstrong",
+  "timestamp" : 13089,
+  "message" : "barmstrong has another album with the same name."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -15101,6 +17963,17 @@
   "timestamp" : 13099,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "barmstrong",
+  "timestamp" : 13099,
+  "message" : "barmstrong has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 13109,
@@ -15111,6 +17984,17 @@
   "user" : "emily30",
   "timestamp" : 13109,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 13109,
+  "message" : "jacobdean has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -15123,6 +18007,14 @@
   "timestamp" : 13119,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The username conniealvarez doesn't exist."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 13129,
@@ -15133,6 +18025,17 @@
   "user" : "grace25",
   "timestamp" : 13129,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "jenningsbeth",
+  "timestamp" : 13129,
+  "message" : "jenningsbeth has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -15145,6 +18048,17 @@
   "timestamp" : 13139,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "leslie27",
+  "timestamp" : 13139,
+  "message" : "leslie27 has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 13149,
@@ -15155,6 +18069,17 @@
   "user" : "irene33",
   "timestamp" : 13149,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "amanda16",
+  "timestamp" : 13149,
+  "message" : "amanda16 has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -15167,6 +18092,17 @@
   "timestamp" : 13159,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "leslie27",
+  "timestamp" : 13159,
+  "message" : "leslie27 has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 13169,
@@ -15177,6 +18113,17 @@
   "user" : "alice22",
   "timestamp" : 13169,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 13169,
+  "message" : "jacobdean has another album with the same name."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -15189,6 +18136,17 @@
   "timestamp" : 13179,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "barmstrong",
+  "timestamp" : 13179,
+  "message" : "barmstrong has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 13189,
@@ -15199,6 +18157,17 @@
   "user" : "carol19",
   "timestamp" : 13189,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "leslie27",
+  "timestamp" : 13189,
+  "message" : "leslie27 has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -15211,6 +18180,17 @@
   "timestamp" : 13199,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 13199,
+  "message" : "jacobdean has another album with the same name."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 13209,
@@ -15221,6 +18201,17 @@
   "user" : "emily30",
   "timestamp" : 13209,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "leslie27",
+  "timestamp" : 13209,
+  "message" : "leslie27 has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -15233,6 +18224,17 @@
   "timestamp" : 13219,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "jacobdean",
+  "timestamp" : 13219,
+  "message" : "jacobdean has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 13229,
@@ -15243,6 +18245,17 @@
   "user" : "grace25",
   "timestamp" : 13229,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "barmstrong",
+  "timestamp" : 13229,
+  "message" : "barmstrong has another album with the same name."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -15255,6 +18268,17 @@
   "timestamp" : 13239,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "matthewfernandez",
+  "timestamp" : 13239,
+  "message" : "matthewfernandez has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 13249,
@@ -15266,6 +18290,17 @@
   "timestamp" : 13249,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "matthewfernandez",
+  "timestamp" : 13249,
+  "message" : "matthewfernandez has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 13259,
@@ -15276,6 +18311,17 @@
   "user" : "jack29",
   "timestamp" : 13259,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "command" : "addAlbum",
+  "user" : "matthewfernandez",
+  "timestamp" : 13259,
+  "message" : "matthewfernandez has added new album successfully."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "alice22",

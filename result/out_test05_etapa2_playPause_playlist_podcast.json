@@ -26,6 +26,11 @@
     "paused" : false
   }
 }, {
+  "command" : "addUser",
+  "timestamp" : 50,
+  "user" : "soundseeker",
+  "message" : "The username soundseeker has been added successfully."
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 55,
@@ -36,6 +41,8 @@
   "user" : "alice22",
   "timestamp" : 57,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -149,6 +156,16 @@
   "timestamp" : 3245,
   "message" : "Playback loaded successfully."
 }, {
+  "command" : "addUser",
+  "timestamp" : 3247,
+  "user" : "magichost",
+  "message" : "The username magichost has been added successfully."
+}, {
+  "command" : "addUser",
+  "timestamp" : 3247,
+  "user" : "magichost",
+  "message" : "The username magichost has been added successfully."
+}, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
   "timestamp" : 3250,
@@ -180,6 +197,8 @@
     "shuffle" : false,
     "paused" : false
   }
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "status",
   "user" : "alice22",

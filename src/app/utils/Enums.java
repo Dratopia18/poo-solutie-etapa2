@@ -28,4 +28,11 @@ public class Enums { // diferite enumuri, le-am gurpat pe toate intr-un loc
     public enum PlayerSourceType {
         LIBRARY, PLAYLIST, PODCAST
     }
+
+    public enum PageType {
+        HOMEPAGE,
+        LIKEDCONTENTPAGE,
+        ARTISTPAGE,
+        HOSTPAGE
+    }
 }

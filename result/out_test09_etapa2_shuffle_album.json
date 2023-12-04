@@ -10,6 +10,16 @@
   "message" : "Search returned 1 results",
   "results" : [ "Nothing Else Matters" ]
 }, {
+  "command" : "addUser",
+  "timestamp" : 171,
+  "user" : "melodymaster",
+  "message" : "The username melodymaster has been added successfully."
+}, {
+  "command" : "addAlbum",
+  "user" : "melodymaster",
+  "timestamp" : 172,
+  "message" : "melodymaster has another album with the same name."
+}, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 190,
@@ -103,6 +113,8 @@
   "user" : "bob35",
   "timestamp" : 430,
   "message" : "Successfully added to playlist."
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -210,6 +222,8 @@
   "user" : "bob35",
   "timestamp" : 2450,
   "message" : "Successfully selected I Don't Wanna Live Forever."
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "load",
   "user" : "bob35",
@@ -349,6 +363,8 @@
     "paused" : true
   }
 }, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 4000,
@@ -392,6 +408,8 @@
   "timestamp" : 4360,
   "message" : "Shuffle function activated successfully."
 }, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 4410,
@@ -413,6 +431,8 @@
     "shuffle" : false,
     "paused" : true
   }
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "status",
   "user" : "bob35",

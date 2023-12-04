@@ -1,4 +1,14 @@
 [ {
+  "command" : "addUser",
+  "timestamp" : 1,
+  "user" : "melodymaster",
+  "message" : "The username melodymaster has been added successfully."
+}, {
+  "command" : "addAlbum",
+  "user" : "melodymaster",
+  "timestamp" : 2,
+  "message" : "melodymaster has another album with the same name."
+}, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 6,
@@ -269,11 +279,15 @@
     "paused" : false
   }
 }, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 1039,
   "message" : "Search returned 0 results",
   "results" : [ ]
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "status",
   "user" : "alice22",
@@ -338,6 +352,8 @@
     "shuffle" : false,
     "paused" : false
   }
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "status",
   "user" : "alice22",

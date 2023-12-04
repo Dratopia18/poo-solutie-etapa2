@@ -1,4 +1,38 @@
 [ {
+  "command" : "addUser",
+  "timestamp" : 5,
+  "user" : "melodymaster",
+  "message" : "The username melodymaster has been added successfully."
+}, {
+  "command" : "addUser",
+  "timestamp" : 10,
+  "user" : "rhythmrider",
+  "message" : "The username rhythmrider has been added successfully."
+}, {
+  "command" : "addUser",
+  "timestamp" : 15,
+  "user" : "beatblazer",
+  "message" : "The username beatblazer has been added successfully."
+}, {
+  "command" : "addUser",
+  "timestamp" : 20,
+  "user" : "harmonichero",
+  "message" : "The username harmonichero has been added successfully."
+}, {
+  "command" : "getOnlineUsers",
+  "timestamp" : 25,
+  "result" : [ "alice22", "bob35", "carol19", "david27", "emily30", "frank21", "grace25", "henry26", "irene33", "jack29" ]
+}, {
+  "command" : "addAlbum",
+  "user" : "melodymaster",
+  "timestamp" : 35,
+  "message" : "melodymaster has another album with the same name."
+}, {
+  "command" : "showAlbums",
+  "user" : "beatblazer",
+  "timestamp" : 40,
+  "result" : [ ]
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 65,
@@ -10,15 +44,17 @@
   "timestamp" : 70,
   "message" : "The selected ID is too high."
 }, {
+  "error" : "The user is not a normal user"
+}, {
   "command" : "switchConnectionStatus",
   "user" : "alice22",
   "timestamp" : 87,
-  "message" : "alice22 is not a normal user."
+  "message" : "alice22 has changed status successfully."
 }, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 105,
-  "message" : "Search returned 0 results",
+  "message" : "alice22 is offline.",
   "results" : [ ]
 }, {
   "command" : "search",
@@ -31,4 +67,8 @@
   "user" : "bob35",
   "timestamp" : 110,
   "message" : "The selected ID is too high."
+}, {
+  "error" : "The user is not a normal user"
+}, {
+  "error" : "The user is not a normal user"
 } ]

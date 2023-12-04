@@ -320,20 +320,26 @@ public class User {
     }
     public String SwitchConnectionStatus(String targetUsername) {
         User targetUser = Admin.getUser(targetUsername);
-        if(targetUser == null) {
-            return "The username " + targetUsername + "doesn't exist.";
-        }
-        if(!(targetUser instanceof NormalUser normalUser)) {
+        List<User> normalUsers = Admin.getNormalUsers();
+        if(!normalUsers.contains(targetUser)) {
             return targetUsername + " is not a normal user.";
         }
-        normalUser.switchOnlineStatus();
-        if(!normalUser.isOnline()) {
-            player.stop();
-            searchBar.clearSelection();
-        }
+        assert targetUser != null;
+        targetUser.switchOnlineStatus();
         return targetUsername + " has changed status successfully.";
     }
+    public void switchOnlineStatus() {
+        onlineStatus = !onlineStatus;
+    }
+    public boolean getOnlineStatus() {
+        return onlineStatus;
+    }
     public void simulateTime(int time) {
-        player.simulatePlayer(time);
+        if(onlineStatus) {
+            player.simulatePlayer(time);
+        } else if (player.getCurrentAudioFile() != null && !player.getPaused()) {
+            int remainingTime = player.getStats().getRemainedTime() - time;
+            player.getStats().setRemainedTime(Math.max(0, remainingTime));
+        }
     }
 }

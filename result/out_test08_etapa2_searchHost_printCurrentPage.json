@@ -26,11 +26,18 @@
     "paused" : false
   }
 }, {
+  "command" : "addUser",
+  "timestamp" : 50,
+  "user" : "soundseeker",
+  "message" : "The username soundseeker has been added successfully."
+}, {
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 50,
   "message" : "Search returned 0 results",
   "results" : [ ]
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -90,6 +97,8 @@
     "shuffle" : false,
     "paused" : true
   }
+}, {
+  "error" : "The user is not a normal user"
 }, {
   "command" : "playPause",
   "user" : "alice22",
@@ -155,10 +164,20 @@
   "timestamp" : 3245,
   "message" : "Playback loaded successfully."
 }, {
+  "command" : "addUser",
+  "timestamp" : 3247,
+  "user" : "magichost",
+  "message" : "The username magichost has been added successfully."
+}, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 3247,
   "message" : "Successfully selected 2010 hits."
+}, {
+  "command" : "addUser",
+  "timestamp" : 3247,
+  "user" : "magichost",
+  "message" : "The username magichost has been added successfully."
 }, {
   "command" : "follow",
   "user" : "david27",
