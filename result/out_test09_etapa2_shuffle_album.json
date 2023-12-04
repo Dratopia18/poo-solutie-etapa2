@@ -18,7 +18,7 @@
   "command" : "addAlbum",
   "user" : "melodymaster",
   "timestamp" : 172,
-  "message" : "melodymaster has another album with the same name."
+  "message" : "melodymaster has added new album successfully."
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -70,8 +70,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 340,
-  "message" : "Search returned 5 results",
-  "results" : [ "Radio Ga Ga", "Retro Rhythms", "Rhythm Rise", "Reverberating Beats", "Rapid Rhythms" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Radio Ga Ga", "Retro Rhythms" ]
 }, {
   "command" : "select",
   "user" : "bob35",

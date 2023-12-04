@@ -147,7 +147,7 @@
   "command" : "addAlbum",
   "user" : "amanda16",
   "timestamp" : 129,
-  "message" : "amanda16 has another album with the same name."
+  "message" : "amanda16 has the same song at least twice in this album."
 }, {
   "command" : "addAlbum",
   "user" : "barmstrong",
@@ -199,7 +199,7 @@
   "command" : "addAlbum",
   "user" : "barmstrong",
   "timestamp" : 140,
-  "message" : "barmstrong has another album with the same name."
+  "message" : "barmstrong has added new album successfully."
 }, {
   "command" : "addAlbum",
   "user" : "fwebb",
@@ -234,7 +234,7 @@
   "command" : "addAlbum",
   "user" : "barmstrong",
   "timestamp" : 147,
-  "message" : "barmstrong has another album with the same name."
+  "message" : "barmstrong has the same song at least twice in this album."
 }, {
   "command" : "addAlbum",
   "user" : "john99",
@@ -301,10 +301,7 @@
   "timestamp" : 160,
   "message" : "barmstrong has added new album successfully."
 }, {
-  "command" : "addAlbum",
-  "user" : "matthewporter",
-  "timestamp" : 161,
-  "message" : "matthewporter has added new album successfully."
+  "error" : "The username matthewporter doesn't exist."
 }, {
   "command" : "addAlbum",
   "user" : "jsimpson",
@@ -316,10 +313,7 @@
   "timestamp" : 163,
   "message" : "jsimpson has added new album successfully."
 }, {
-  "command" : "addAlbum",
-  "user" : "matthewporter",
-  "timestamp" : 164,
-  "message" : "matthewporter has the same song at least twice in this album."
+  "error" : "The username matthewporter doesn't exist."
 }, {
   "command" : "addAlbum",
   "user" : "mccarthyluis",
@@ -336,20 +330,14 @@
   "timestamp" : 167,
   "message" : "mccarthyluis has the same song at least twice in this album."
 }, {
-  "command" : "addAlbum",
-  "user" : "matthewporter",
-  "timestamp" : 168,
-  "message" : "matthewporter has added new album successfully."
+  "error" : "The username matthewporter doesn't exist."
 }, {
   "command" : "addAlbum",
   "user" : "jsimpson",
   "timestamp" : 169,
   "message" : "jsimpson has the same song at least twice in this album."
 }, {
-  "command" : "addAlbum",
-  "user" : "matthewporter",
-  "timestamp" : 170,
-  "message" : "matthewporter has the same song at least twice in this album."
+  "error" : "The username matthewporter doesn't exist."
 }, {
   "command" : "addAlbum",
   "user" : "amanda16",
@@ -366,10 +354,7 @@
   "timestamp" : 173,
   "message" : "barmstrong has the same song at least twice in this album."
 }, {
-  "command" : "addAlbum",
-  "user" : "matthewporter",
-  "timestamp" : 174,
-  "message" : "matthewporter has added new album successfully."
+  "error" : "The username matthewporter doesn't exist."
 }, {
   "command" : "showAlbums",
   "user" : "jsimpson",
@@ -386,11 +371,11 @@
   "user" : "mccarthyluis",
   "timestamp" : 176,
   "result" : [ {
-    "name" : "Groovy Harmonies",
-    "songs" : [ "Night Aurora", "Sunset Celestial", "Pinnacle Bliss", "Dream Radiance", "Odyssey Cascade", "Cascade Harmony", "Solitude Dance", "Eclipse Heart", "Soul Pulse", "Reflection Lullaby", "Radiance Paradox", "Colors Enigma", "Glow Whisper" ]
-  }, {
     "name" : "Bad Revolution",
     "songs" : [ "Rapture Echo", "Essence Crescendo", "Eclipse Tranquility", "Serendipity Serenade", "Adventure Eclipse", "Serendipity Radiance", "Heart Night", "Adventure Solitude", "Celestial Utopia" ]
+  }, {
+    "name" : "Groovy Harmonies",
+    "songs" : [ "Night Aurora", "Sunset Celestial", "Pinnacle Bliss", "Dream Radiance", "Odyssey Cascade", "Cascade Harmony", "Solitude Dance", "Eclipse Heart", "Soul Pulse", "Reflection Lullaby", "Radiance Paradox", "Colors Enigma", "Glow Whisper" ]
   }, {
     "name" : "Teen Harmonies",
     "songs" : [ "Mystique Echo", "Pandora Odyssey", "Paradox Dance", "Cascade Glow", "Dance Twilight", "Pulse Crescendo", "Melody Soul", "Mystique Euphoria", "Solitude Harmonize", "Pinnacle Odyssey" ]
@@ -400,11 +385,11 @@
   "user" : "mccarthyluis",
   "timestamp" : 177,
   "result" : [ {
-    "name" : "Groovy Harmonies",
-    "songs" : [ "Night Aurora", "Sunset Celestial", "Pinnacle Bliss", "Dream Radiance", "Odyssey Cascade", "Cascade Harmony", "Solitude Dance", "Eclipse Heart", "Soul Pulse", "Reflection Lullaby", "Radiance Paradox", "Colors Enigma", "Glow Whisper" ]
-  }, {
     "name" : "Bad Revolution",
     "songs" : [ "Rapture Echo", "Essence Crescendo", "Eclipse Tranquility", "Serendipity Serenade", "Adventure Eclipse", "Serendipity Radiance", "Heart Night", "Adventure Solitude", "Celestial Utopia" ]
+  }, {
+    "name" : "Groovy Harmonies",
+    "songs" : [ "Night Aurora", "Sunset Celestial", "Pinnacle Bliss", "Dream Radiance", "Odyssey Cascade", "Cascade Harmony", "Solitude Dance", "Eclipse Heart", "Soul Pulse", "Reflection Lullaby", "Radiance Paradox", "Colors Enigma", "Glow Whisper" ]
   }, {
     "name" : "Teen Harmonies",
     "songs" : [ "Mystique Echo", "Pandora Odyssey", "Paradox Dance", "Cascade Glow", "Dance Twilight", "Pulse Crescendo", "Melody Soul", "Mystique Euphoria", "Solitude Harmonize", "Pinnacle Odyssey" ]
@@ -425,11 +410,11 @@
   "user" : "mccarthyluis",
   "timestamp" : 179,
   "result" : [ {
-    "name" : "Groovy Harmonies",
-    "songs" : [ "Night Aurora", "Sunset Celestial", "Pinnacle Bliss", "Dream Radiance", "Odyssey Cascade", "Cascade Harmony", "Solitude Dance", "Eclipse Heart", "Soul Pulse", "Reflection Lullaby", "Radiance Paradox", "Colors Enigma", "Glow Whisper" ]
-  }, {
     "name" : "Bad Revolution",
     "songs" : [ "Rapture Echo", "Essence Crescendo", "Eclipse Tranquility", "Serendipity Serenade", "Adventure Eclipse", "Serendipity Radiance", "Heart Night", "Adventure Solitude", "Celestial Utopia" ]
+  }, {
+    "name" : "Groovy Harmonies",
+    "songs" : [ "Night Aurora", "Sunset Celestial", "Pinnacle Bliss", "Dream Radiance", "Odyssey Cascade", "Cascade Harmony", "Solitude Dance", "Eclipse Heart", "Soul Pulse", "Reflection Lullaby", "Radiance Paradox", "Colors Enigma", "Glow Whisper" ]
   }, {
     "name" : "Teen Harmonies",
     "songs" : [ "Mystique Echo", "Pandora Odyssey", "Paradox Dance", "Cascade Glow", "Dance Twilight", "Pulse Crescendo", "Melody Soul", "Mystique Euphoria", "Solitude Harmonize", "Pinnacle Odyssey" ]
@@ -458,92 +443,17 @@
   "user" : "jacobdean",
   "timestamp" : 185,
   "result" : [ {
-    "name" : "Groovy Dreams",
-    "songs" : [ "Dance Pandora", "Crescendo Sunset", "Cascade Harmony", "Twilight Serendipity", "Crescendo Pandora", "Night Sunset", "Paradox Dance" ]
-  }, {
-    "name" : "Groovy View",
-    "songs" : [ "Velvet Pinnacle", "Soul Harmony", "Harmony Colors", "Adventure Dream", "Serendipity Pinnacle", "Mystique Heart", "Heart Serenade", "Colors Harmonize", "Radiance Adventure" ]
-  }, {
-    "name" : "Breezy Harmonies",
-    "songs" : [ "Voyage Melody", "Utopia Voyage", "Reflection Utopia", "Bliss Harmonize", "Luminescence Aurora", "Celestial Enigma", "Euphoria Pandora", "Rhythm Celestial", "Radiance Voyage", "Soul Bliss", "Rapture Tranquility", "Whirlwind Enigma", "Rhythm Night" ]
-  }, {
-    "name" : "Dynamic Funeral ",
-    "songs" : [ "Reflection Aurora", "Pulse Glow", "Serendipity Utopia", "Crescendo Luminescence", "Starlight Rhythm", "Tranquility Tranquility", "Utopia Voyage", "Luminescence Melody", "Enigma Serenade", "Celestial Ethereal", "Twilight Bliss", "Utopia Reflection", "Reflection Rapture" ]
-  }, {
-    "name" : "Dynamic Dirt",
-    "songs" : [ "Adventure Rhythm", "Pandora Utopia", "Adventure Serendipity", "Whisper Infinity", "Serendipity Pulse", "Celestial Serenade", "Velvet Zephyr", "Luminescence Enigma", "Eclipse Bliss", "Radiance Dream", "Aurora Voyage", "Mystique Whisper", "Infinity Solitude" ]
-  }, {
-    "name" : "Dynamic Dreams",
-    "songs" : [ "Paradox Love", "Colors Velvet", "Dance Crescendo", "Odyssey Euphoria", "Love Starlight", "Odyssey Odyssey", "Echo Ethereal", "Colors Starlight", "Essence Night" ]
-  }, {
-    "name" : "Breezy View",
-    "songs" : [ "Love Dream", "Voyage Utopia", "Harmony Echo", "Glow Dream", "Night Lullaby", "Cascade Crescendo", "Crescendo Essence", "Odyssey Echo", "Heart Cascade", "Bliss Dream", "Glow Starlight" ]
-  }, {
-    "name" : "Chill Revolution",
-    "songs" : [ "Solitude Cascade", "Heart Colors", "Utopia Ethereal", "Pandora Whirlwind", "Reflection Colors", "Radiance Dance", "Starlight Odyssey", "Odyssey Enigma", "Utopia Solitude", "Zephyr Infinity", "Rapture Melody" ]
-  }, {
-    "name" : "Dynamic Technology",
-    "songs" : [ "Echo Bliss", "Pulse Reflection", "Heart Zephyr", "Velvet Pandora", "Heart Eclipse", "Solitude Odyssey", "Night Solitude", "Serenade Crescendo", "Essence Sunset", "Tranquility Odyssey", "Pandora Crescendo", "Dance Soul", "Celestial Essence" ]
-  }, {
-    "name" : "Blue Dreams",
-    "songs" : [ "Aurora Serenade", "Adventure Serendipity", "Voyage Velvet", "Zephyr Essence", "Cascade Echo", "Reflection Echo", "Aurora Eclipse", "Heart Rapture", "Melody Solitude", "Reflection Dream", "Heart Velvet", "Essence Ethereal", "Whirlwind Whisper" ]
-  }, {
-    "name" : "Bad Revolution",
-    "songs" : [ "Mystique Solitude", "Solitude Cascade", "Cascade Mystique", "Love Twilight", "Heart Aurora", "Celestial Rhythm", "Heart Starlight", "Melody Serenade", "Essence Rhythm", "Heart Enigma", "Eclipse Sunset", "Night Soul", "Enigma Luminescence" ]
-  }, {
-    "name" : "Blue Autumn",
-    "songs" : [ "Starlight Solitude", "Lullaby Whirlwind", "Cascade Heart", "Night Soul", "Colors Starlight", "Aurora Dance", "Serenade Melody", "Harmonize Paradox" ]
-  }, {
-    "name" : "Bad Autumn",
-    "songs" : [ "Infinity Serenade", "Infinity Mystique", "Celestial Twilight", "Cascade Pinnacle", "Whirlwind Serenade", "Serendipity Aurora", "Euphoria Melody", "Ethereal Solitude", "Rapture Rapture", "Bliss Glow", "Enigma Velvet" ]
-  }, {
-    "name" : "Groovy Dirt",
-    "songs" : [ "Mystique Cascade", "Crescendo Bliss", "Reflection Reflection", "Tranquility Celestial", "Reflection Night", "Tranquility Whirlwind", "Essence Dream", "Solitude Cascade" ]
-  }, {
     "name" : "Electric Funeral ",
     "songs" : [ "Voyage Paradox", "Night Harmony", "Colors Melody", "Ethereal Heart", "Serenade Dance", "Tranquility Serenade", "Essence Pandora", "Odyssey Love", "Pinnacle Colors", "Night Velvet", "Whirlwind Aurora" ]
-  }, {
-    "name" : "Bad Guide",
-    "songs" : [ "Celestial Soul", "Utopia Harmony", "Dream Infinity", "Ethereal Velvet", "Soul Mystique", "Love Colors", "Celestial Dream", "Tranquility Zephyr" ]
-  }, {
-    "name" : "Blue View",
-    "songs" : [ "Melody Twilight", "Serendipity Velvet", "Serenade Dance", "Melody Rhythm", "Voyage Essence", "Odyssey Serendipity", "Pinnacle Zephyr" ]
-  }, {
-    "name" : "Breezy Autumn",
-    "songs" : [ "Whisper Paradox", "Radiance Voyage", "Euphoria Eclipse", "Pandora Mystique", "Cascade Serendipity", "Pulse Whisper", "Paradox Pulse", "Whirlwind Pulse", "Dance Harmonize", "Reflection Night", "Voyage Velvet", "Colors Serendipity" ]
-  }, {
-    "name" : "Groovy Technology",
-    "songs" : [ "Heart Love", "Odyssey Celestial", "Tranquility Rhythm", "Pinnacle Harmonize", "Pulse Dance", "Serenade Pulse", "Euphoria Harmonize" ]
   }, {
     "name" : "Bad Dirt",
     "songs" : [ "Soul Pandora", "Adventure Infinity", "Night Ethereal", "Heart Adventure", "Paradox Pulse", "Velvet Dance", "Soul Paradox", "Harmony Rapture", "Cascade Pulse", "Harmony Velvet", "Rhythm Bliss", "Eclipse Glow" ]
   }, {
-    "name" : "Teen Harmonies",
-    "songs" : [ "Cascade Euphoria", "Twilight Crescendo", "Euphoria Whirlwind", "Pandora Infinity", "Lullaby Mystique", "Sunset Heart", "Cascade Celestial", "Paradox Voyage", "Rapture Melody" ]
-  }, {
-    "name" : "Bad Harmonies",
-    "songs" : [ "Sunset Night", "Tranquility Cascade", "Sunset Rapture", "Odyssey Sunset", "Odyssey Pinnacle", "Bliss Starlight", "Echo Luminescence", "Radiance Reflection", "Twilight Pandora", "Whisper Velvet", "Glow Serenade", "Rhythm Echo" ]
-  }, {
     "name" : "Bad Dreams",
     "songs" : [ "Crescendo Twilight", "Odyssey Reflection", "Euphoria Harmonize", "Adventure Reflection", "Lullaby Starlight", "Zephyr Enigma", "Pandora Adventure", "Radiance Mystique", "Pinnacle Soul", "Voyage Reflection", "Starlight Pinnacle", "Love Aurora" ]
   }, {
-    "name" : "Electric Dirt",
-    "songs" : [ "Rhythm Celestial", "Echo Velvet", "Luminescence Eclipse", "Dance Cascade", "Zephyr Utopia", "Mystique Dance", "Aurora Harmony", "Colors Crescendo" ]
-  }, {
-    "name" : "Alone Hood",
-    "songs" : [ "Essence Serendipity", "Essence Celestial", "Serendipity Rapture", "Radiance Tranquility", "Tranquility Crescendo", "Night Radiance", "Colors Whirlwind" ]
-  }, {
-    "name" : "Chill Funeral ",
-    "songs" : [ "Serendipity Serendipity", "Melody Sunset", "Rapture Odyssey", "Mystique Radiance", "Cascade Mystique", "Dance Pinnacle", "Essence Cascade", "Radiance Starlight" ]
-  }, {
-    "name" : "Blue Harmonies",
-    "songs" : [ "Colors Odyssey", "Echo Starlight", "Paradox Lullaby", "Tranquility Melody", "Dance Enigma", "Enigma Cascade", "Essence Love", "Aurora Crescendo" ]
-  }, {
-    "name" : "Electric View",
-    "songs" : [ "Echo Love", "Starlight Mystique", "Soul Starlight", "Whirlwind Tranquility", "Night Crescendo", "Echo Zephyr", "Sunset Soul", "Paradox Glow", "Adventure Mystique", "Harmony Heart", "Dance Twilight", "Enigma Dance", "Radiance Pinnacle" ]
-  }, {
-    "name" : "Electric Technology",
-    "songs" : [ "Odyssey Rhythm", "Zephyr Pinnacle", "Rapture Harmonize", "Cascade Rapture", "Luminescence Serendipity", "Odyssey Eclipse", "Whirlwind Twilight" ]
+    "name" : "Dynamic Dirt",
+    "songs" : [ "Adventure Rhythm", "Pandora Utopia", "Adventure Serendipity", "Whisper Infinity", "Serendipity Pulse", "Celestial Serenade", "Velvet Zephyr", "Luminescence Enigma", "Eclipse Bliss", "Radiance Dream", "Aurora Voyage", "Mystique Whisper", "Infinity Solitude" ]
   } ]
 }, {
   "command" : "showAlbums",
@@ -558,119 +468,17 @@
   "user" : "amanda16",
   "timestamp" : 187,
   "result" : [ {
-    "name" : "Blue Dreams",
-    "songs" : [ "Starlight Serenade", "Starlight Bliss", "Whirlwind Bliss", "Lullaby Whisper", "Whirlwind Essence", "Adventure Euphoria", "Serendipity Velvet", "Harmony Reflection", "Rapture Enigma", "Aurora Velvet" ]
-  }, {
-    "name" : "Dynamic Hood",
-    "songs" : [ "Harmony Bliss", "Rhythm Solitude", "Radiance Mystique", "Bliss Eclipse", "Solitude Melody", "Pulse Utopia", "Night Celestial" ]
-  }, {
-    "name" : "Teen Hood",
-    "songs" : [ "Reflection Enigma", "Essence Twilight", "Pinnacle Adventure", "Twilight Harmony", "Velvet Ethereal", "Pinnacle Harmony", "Love Crescendo", "Bliss Odyssey", "Lullaby Utopia", "Whirlwind Serendipity", "Odyssey Pinnacle" ]
-  }, {
-    "name" : "Dynamic Technology",
-    "songs" : [ "Starlight Bliss", "Essence Velvet", "Adventure Love", "Starlight Radiance", "Eclipse Serenade", "Heart Essence", "Bliss Ethereal", "Zephyr Harmony", "Infinity Glow" ]
-  }, {
-    "name" : "Electric Dreams",
-    "songs" : [ "Cascade Ethereal", "Eclipse Essence", "Ethereal Starlight", "Pinnacle Twilight", "Glow Twilight", "Odyssey Essence", "Night Solitude", "Sunset Melody", "Serendipity Twilight", "Reflection Essence", "Zephyr Reflection", "Soul Odyssey" ]
-  }, {
-    "name" : "Groovy Funeral ",
-    "songs" : [ "Essence Soul", "Adventure Eclipse", "Rhythm Lullaby", "Adventure Echo", "Luminescence Starlight", "Pinnacle Glow", "Voyage Love", "Radiance Solitude", "Zephyr Glow", "Harmony Echo", "Essence Ethereal", "Ethereal Lullaby", "Soul Adventure" ]
-  }, {
-    "name" : "Teen Dirt",
-    "songs" : [ "Rapture Lullaby", "Dance Dream", "Echo Reflection", "Rapture Ethereal", "Essence Celestial", "Dream Utopia", "Sunset Dance", "Night Ethereal", "Paradox Solitude", "Mystique Colors", "Velvet Radiance" ]
-  }, {
-    "name" : "Electric Revolution",
-    "songs" : [ "Reflection Infinity", "Love Serendipity", "Cascade Rapture", "Euphoria Radiance", "Voyage Celestial", "Colors Lullaby", "Twilight Voyage", "Celestial Reflection", "Cascade Echo", "Whirlwind Essence" ]
-  }, {
-    "name" : "Electric Harmonies",
-    "songs" : [ "Love Bliss", "Velvet Pinnacle", "Mystique Pulse", "Serenade Cascade", "Dance Utopia", "Echo Radiance", "Odyssey Harmony", "Serendipity Pulse", "Adventure Sunset", "Whirlwind Dance", "Essence Twilight", "Harmonize Dream", "Dance Bliss" ]
-  }, {
-    "name" : "Heroic Hood",
-    "songs" : [ "Ethereal Rapture", "Whirlwind Whirlwind", "Echo Odyssey", "Eclipse Luminescence", "Adventure Essence", "Essence Rhythm", "Sunset Pinnacle", "Crescendo Ethereal", "Rapture Harmonize", "Melody Whisper", "Dance Harmony" ]
-  }, {
-    "name" : "Alone Funeral ",
-    "songs" : [ "Echo Cascade", "Utopia Melody", "Celestial Enigma", "Bliss Dream", "Bliss Echo", "Aurora Dream", "Twilight Pinnacle", "Serendipity Pinnacle", "Serendipity Colors", "Whisper Solitude", "Zephyr Colors", "Pandora Tranquility", "Adventure Aurora" ]
-  }, {
-    "name" : "Groovy Harmonies",
-    "songs" : [ "Pinnacle Night", "Adventure Bliss", "Heart Essence", "Tranquility Heart", "Twilight Reflection", "Euphoria Velvet", "Velvet Infinity", "Odyssey Night" ]
-  }, {
-    "name" : "Electric View",
-    "songs" : [ "Velvet Essence", "Ethereal Serenade", "Eclipse Tranquility", "Cascade Mystique", "Reflection Rhythm", "Euphoria Cascade", "Dance Zephyr", "Pinnacle Ethereal", "Pinnacle Luminescence", "Night Rapture", "Echo Melody", "Paradox Colors", "Ethereal Rhythm" ]
-  }, {
-    "name" : "Teen Guide",
-    "songs" : [ "Utopia Twilight", "Melody Reflection", "Twilight Night", "Sunset Glow", "Cascade Enigma", "Solitude Rapture", "Solitude Rhythm" ]
-  }, {
-    "name" : "Alone Dirt",
-    "songs" : [ "Serenade Soul", "Utopia Eclipse", "Luminescence Starlight", "Harmonize Essence", "Lullaby Lullaby", "Enigma Enigma", "Harmonize Cascade", "Glow Rapture", "Radiance Dream", "Essence Adventure", "Zephyr Serenade", "Colors Radiance", "Colors Serendipity" ]
-  }, {
-    "name" : "Chill Guide",
-    "songs" : [ "Utopia Lullaby", "Aurora Aurora", "Twilight Serendipity", "Celestial Luminescence", "Night Pandora", "Rhythm Crescendo", "Serendipity Love", "Aurora Rhythm" ]
-  }, {
-    "name" : "Chill Revolution",
-    "songs" : [ "Heart Echo", "Luminescence Dream", "Pandora Euphoria", "Ethereal Love", "Mystique Zephyr", "Echo Tranquility", "Paradox Infinity", "Voyage Ethereal", "Pandora Eclipse", "Tranquility Enigma", "Dream Ethereal", "Sunset Euphoria" ]
-  }, {
-    "name" : "Heroic Revolution",
-    "songs" : [ "Twilight Odyssey", "Paradox Serenade", "Tranquility Colors", "Serenade Luminescence", "Dance Dance", "Luminescence Rapture", "Twilight Zephyr", "Starlight Paradox", "Cascade Crescendo", "Rhythm Aurora" ]
-  }, {
-    "name" : "Heroic Guide",
-    "songs" : [ "Zephyr Night", "Cascade Starlight", "Solitude Utopia", "Tranquility Euphoria", "Pandora Radiance", "Glow Odyssey", "Utopia Serenade", "Harmony Zephyr", "Whirlwind Sunset", "Melody Harmonize", "Night Reflection", "Eclipse Whisper" ]
-  }, {
-    "name" : "Blue Revolution",
-    "songs" : [ "Aurora Rhythm", "Mystique Adventure", "Serenade Aurora", "Paradox Whisper", "Celestial Glow", "Reflection Paradox", "Voyage Echo" ]
-  }, {
-    "name" : "Bad Harmonies",
-    "songs" : [ "Odyssey Serendipity", "Sunset Essence", "Soul Celestial", "Ethereal Starlight", "Sunset Infinity", "Rapture Twilight", "Infinity Euphoria", "Voyage Pulse" ]
-  }, {
     "name" : "Groovy Hood",
     "songs" : [ "Dream Bliss", "Bliss Sunset", "Cascade Soul", "Colors Velvet", "Velvet Odyssey", "Enigma Cascade", "Whisper Aurora", "Zephyr Paradox" ]
   }, {
-    "name" : "Blue Technology",
-    "songs" : [ "Cascade Cascade", "Serenade Luminescence", "Radiance Cascade", "Pulse Melody", "Radiance Soul", "Dance Whisper", "Twilight Glow", "Velvet Serenade", "Tranquility Essence", "Paradox Odyssey", "Aurora Heart", "Reflection Radiance", "Whirlwind Radiance" ]
-  }, {
-    "name" : "Teen Dreams",
-    "songs" : [ "Luminescence Crescendo", "Bliss Rhythm", "Echo Pinnacle", "Zephyr Eclipse", "Voyage Solitude", "Sunset Melody", "Colors Rapture" ]
-  }, {
-    "name" : "Chill Hood",
-    "songs" : [ "Eclipse Aurora", "Echo Zephyr", "Night Whirlwind", "Colors Dance", "Soul Sunset", "Zephyr Dream", "Love Sunset", "Zephyr Pinnacle", "Velvet Whirlwind" ]
+    "name" : "Teen Guide",
+    "songs" : [ "Utopia Twilight", "Melody Reflection", "Twilight Night", "Sunset Glow", "Cascade Enigma", "Solitude Rapture", "Solitude Rhythm" ]
   } ]
 }, {
   "command" : "showAlbums",
   "user" : "cbutler",
   "timestamp" : 189,
   "result" : [ {
-    "name" : "Heroic Harmonies",
-    "songs" : [ "Heart Bliss", "Pinnacle Euphoria", "Whirlwind Solitude", "Sunset Night", "Whirlwind Serenade", "Enigma Euphoria", "Essence Voyage", "Adventure Cascade", "Aurora Voyage", "Zephyr Twilight" ]
-  }, {
-    "name" : "Bad Dirt",
-    "songs" : [ "Whisper Echo", "Melody Celestial", "Radiance Euphoria", "Starlight Paradox", "Ethereal Utopia", "Utopia Eclipse", "Cascade Whisper", "Cascade Odyssey", "Soul Lullaby" ]
-  }, {
-    "name" : "Heroic Revolution",
-    "songs" : [ "Dream Dream", "Lullaby Voyage", "Melody Enigma", "Starlight Radiance", "Sunset Whirlwind", "Night Radiance", "Heart Voyage", "Dance Sunset", "Pulse Reflection", "Whisper Pinnacle", "Voyage Colors", "Voyage Aurora", "Glow Harmony" ]
-  }, {
-    "name" : "Bad View",
-    "songs" : [ "Colors Night", "Velvet Celestial", "Rapture Crescendo", "Tranquility Cascade", "Glow Rapture", "Rapture Serenade", "Infinity Rapture", "Euphoria Radiance", "Starlight Pulse" ]
-  }, {
-    "name" : "Dynamic Autumn",
-    "songs" : [ "Rapture Essence", "Pandora Crescendo", "Harmony Glow", "Essence Euphoria", "Heart Love", "Love Celestial", "Pinnacle Reflection" ]
-  }, {
-    "name" : "Alone Autumn",
-    "songs" : [ "Colors Ethereal", "Sunset Celestial", "Euphoria Dream", "Reflection Cascade", "Whisper Voyage", "Cascade Voyage", "Reflection Twilight", "Love Cascade", "Serenade Crescendo" ]
-  }, {
-    "name" : "Chill Guide",
-    "songs" : [ "Ethereal Celestial", "Soul Velvet", "Utopia Tranquility", "Luminescence Infinity", "Crescendo Dream", "Enigma Odyssey", "Aurora Dream" ]
-  }, {
-    "name" : "Alone Revolution",
-    "songs" : [ "Harmonize Ethereal", "Melody Enigma", "Utopia Paradox", "Love Bliss", "Glow Rapture", "Radiance Euphoria", "Pinnacle Harmony", "Serenade Mystique", "Luminescence Tranquility", "Lullaby Serenade" ]
-  }, {
-    "name" : "Dynamic Harmonies",
-    "songs" : [ "Bliss Mystique", "Dream Soul", "Starlight Odyssey", "Soul Solitude", "Bliss Pinnacle", "Paradox Whisper", "Echo Mystique", "Cascade Night", "Euphoria Voyage", "Ethereal Celestial", "Euphoria Soul", "Odyssey Radiance" ]
-  }, {
-    "name" : "Teen Hood",
-    "songs" : [ "Colors Serenade", "Dream Dream", "Aurora Soul", "Pinnacle Ethereal", "Adventure Odyssey", "Colors Paradox", "Euphoria Velvet" ]
-  }, {
-    "name" : "Electric Harmonies",
-    "songs" : [ "Ethereal Dance", "Heart Utopia", "Radiance Harmony", "Harmony Cascade", "Starlight Celestial", "Luminescence Lullaby", "Eclipse Melody", "Pandora Echo", "Pinnacle Cascade", "Echo Cascade", "Odyssey Starlight", "Harmonize Utopia", "Glow Soul" ]
-  }, {
     "name" : "Breezy View",
     "songs" : [ "Heart Utopia", "Solitude Reflection", "Mystique Colors", "Rhythm Whisper", "Twilight Sunset", "Eclipse Radiance", "Zephyr Whisper", "Cascade Serendipity", "Soul Serendipity", "Love Reflection", "Adventure Velvet", "Bliss Solitude", "Harmony Pandora" ]
   } ]
@@ -16654,10 +16462,7 @@
   "timestamp" : 11790,
   "message" : "Liked songs:\n\t[Whatever You Need, Blank Space]\n\nFollowed playlists:\n\t[]"
 }, {
-  "command" : "addAlbum",
-  "user" : "matthewporter",
-  "timestamp" : 11790,
-  "message" : "matthewporter has added new album successfully."
+  "error" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "carol19",
@@ -17023,10 +16828,7 @@
   "timestamp" : 11910,
   "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
-  "command" : "addAlbum",
-  "user" : "matthewporter",
-  "timestamp" : 11910,
-  "message" : "matthewporter has added new album successfully."
+  "error" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "emily30",
@@ -17054,10 +16856,7 @@
   "timestamp" : 11920,
   "message" : "Liked songs:\n\t[Love Story]\n\nFollowed playlists:\n\t[]"
 }, {
-  "command" : "addAlbum",
-  "user" : "matthewporter",
-  "timestamp" : 11920,
-  "message" : "matthewporter has added new album successfully."
+  "error" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "frank21",
@@ -17206,10 +17005,7 @@
   "timestamp" : 11970,
   "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
-  "command" : "addAlbum",
-  "user" : "matthewporter",
-  "timestamp" : 11970,
-  "message" : "matthewporter has added new album successfully."
+  "error" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "alice22",
@@ -17268,10 +17064,7 @@
   "timestamp" : 11990,
   "message" : "Liked songs:\n\t[Whatever You Need, Blank Space]\n\nFollowed playlists:\n\t[]"
 }, {
-  "command" : "addAlbum",
-  "user" : "matthewporter",
-  "timestamp" : 11990,
-  "message" : "matthewporter has added new album successfully."
+  "error" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "carol19",
@@ -17609,10 +17402,7 @@
   "timestamp" : 12100,
   "message" : "Liked songs:\n\t[Don't]\n\nFollowed playlists:\n\t[]"
 }, {
-  "command" : "addAlbum",
-  "user" : "matthewporter",
-  "timestamp" : 12100,
-  "message" : "matthewporter has added new album successfully."
+  "error" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "david27",
@@ -17733,10 +17523,7 @@
   "timestamp" : 12140,
   "message" : "Liked songs:\n\t[Happier]\n\nFollowed playlists:\n\t[]"
 }, {
-  "command" : "addAlbum",
-  "user" : "matthewporter",
-  "timestamp" : 12140,
-  "message" : "matthewporter has added new album successfully."
+  "error" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "henry26",
@@ -17857,10 +17644,7 @@
   "timestamp" : 12180,
   "message" : "Liked songs:\n\t[Paint It Black]\n\nFollowed playlists:\n\t[]"
 }, {
-  "command" : "addAlbum",
-  "user" : "matthewporter",
-  "timestamp" : 12180,
-  "message" : "matthewporter has added new album successfully."
+  "error" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "bob35",
@@ -17981,10 +17765,7 @@
   "timestamp" : 12220,
   "message" : "Liked songs:\n\t[Love Story]\n\nFollowed playlists:\n\t[]"
 }, {
-  "command" : "addAlbum",
-  "user" : "matthewporter",
-  "timestamp" : 12220,
-  "message" : "matthewporter has added new album successfully."
+  "error" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "frank21",
@@ -18015,7 +17796,7 @@
   "command" : "addAlbum",
   "user" : "barmstrong",
   "timestamp" : 12230,
-  "message" : "barmstrong has another album with the same name."
+  "message" : "barmstrong has added new album successfully."
 }, {
   "command" : "printCurrentPage",
   "user" : "grace25",
@@ -18043,10 +17824,7 @@
   "timestamp" : 12240,
   "message" : "Liked songs:\n\t[Happier]\n\nFollowed playlists:\n\t[]"
 }, {
-  "command" : "addAlbum",
-  "user" : "matthewporter",
-  "timestamp" : 12240,
-  "message" : "matthewporter has added new album successfully."
+  "error" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "henry26",
@@ -18077,7 +17855,7 @@
   "command" : "addAlbum",
   "user" : "cbutler",
   "timestamp" : 12250,
-  "message" : "cbutler has another album with the same name."
+  "message" : "cbutler has added new album successfully."
 }, {
   "command" : "printCurrentPage",
   "user" : "irene33",
@@ -18164,10 +17942,7 @@
   "timestamp" : 12280,
   "message" : "Liked songs:\n\t[Paint It Black]\n\nFollowed playlists:\n\t[]"
 }, {
-  "command" : "addAlbum",
-  "user" : "matthewporter",
-  "timestamp" : 12280,
-  "message" : "matthewporter has added new album successfully."
+  "error" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "bob35",
@@ -18226,10 +18001,7 @@
   "timestamp" : 12300,
   "message" : "Liked songs:\n\t[Don't]\n\nFollowed playlists:\n\t[]"
 }, {
-  "command" : "addAlbum",
-  "user" : "matthewporter",
-  "timestamp" : 12300,
-  "message" : "matthewporter has another album with the same name."
+  "error" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "david27",
@@ -18381,10 +18153,7 @@
   "timestamp" : 12350,
   "message" : "Liked songs:\n\t[The Man]\n\nFollowed playlists:\n\t[]"
 }, {
-  "command" : "addAlbum",
-  "user" : "matthewporter",
-  "timestamp" : 12350,
-  "message" : "matthewporter has added new album successfully."
+  "error" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "irene33",
@@ -18412,10 +18181,7 @@
   "timestamp" : 12360,
   "message" : "Liked songs:\n\t[Delicate, Start Me Up]\n\nFollowed playlists:\n\t[]"
 }, {
-  "command" : "addAlbum",
-  "user" : "matthewporter",
-  "timestamp" : 12360,
-  "message" : "matthewporter has added new album successfully."
+  "error" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "jack29",
@@ -18508,7 +18274,7 @@
   "command" : "addAlbum",
   "user" : "barmstrong",
   "timestamp" : 12390,
-  "message" : "barmstrong has another album with the same name."
+  "message" : "barmstrong has added new album successfully."
 }, {
   "command" : "printCurrentPage",
   "user" : "carol19",
@@ -18936,10 +18702,7 @@
   "timestamp" : 12530,
   "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
-  "command" : "addAlbum",
-  "user" : "matthewporter",
-  "timestamp" : 12530,
-  "message" : "matthewporter has added new album successfully."
+  "error" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "grace25",
@@ -19029,10 +18792,7 @@
   "timestamp" : 12560,
   "message" : "Liked songs:\n\t[Delicate, Start Me Up]\n\nFollowed playlists:\n\t[]"
 }, {
-  "command" : "addAlbum",
-  "user" : "matthewporter",
-  "timestamp" : 12560,
-  "message" : "matthewporter has the same song at least twice in this album."
+  "error" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "jack29",
@@ -19187,7 +18947,7 @@
   "command" : "addAlbum",
   "user" : "barmstrong",
   "timestamp" : 12610,
-  "message" : "barmstrong has another album with the same name."
+  "message" : "barmstrong has added new album successfully."
 }, {
   "command" : "printCurrentPage",
   "user" : "emily30",
@@ -19249,7 +19009,7 @@
   "command" : "addAlbum",
   "user" : "barmstrong",
   "timestamp" : 12630,
-  "message" : "barmstrong has another album with the same name."
+  "message" : "barmstrong has added new album successfully."
 }, {
   "command" : "printCurrentPage",
   "user" : "grace25",
@@ -19463,10 +19223,7 @@
   "timestamp" : 12700,
   "message" : "Liked songs:\n\t[Don't]\n\nFollowed playlists:\n\t[]"
 }, {
-  "command" : "addAlbum",
-  "user" : "matthewporter",
-  "timestamp" : 12700,
-  "message" : "matthewporter has added new album successfully."
+  "error" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "david27",
@@ -19556,7 +19313,7 @@
   "command" : "addAlbum",
   "user" : "cbutler",
   "timestamp" : 12730,
-  "message" : "cbutler has another album with the same name."
+  "message" : "cbutler has added new album successfully."
 }, {
   "command" : "printCurrentPage",
   "user" : "grace25",
@@ -19829,10 +19586,7 @@
   "timestamp" : 12820,
   "message" : "Liked songs:\n\t[Love Story]\n\nFollowed playlists:\n\t[]"
 }, {
-  "command" : "addAlbum",
-  "user" : "matthewporter",
-  "timestamp" : 12820,
-  "message" : "matthewporter has added new album successfully."
+  "error" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "frank21",
@@ -20015,10 +19769,7 @@
   "timestamp" : 12880,
   "message" : "Liked songs:\n\t[Paint It Black]\n\nFollowed playlists:\n\t[]"
 }, {
-  "command" : "addAlbum",
-  "user" : "matthewporter",
-  "timestamp" : 12880,
-  "message" : "matthewporter has added new album successfully."
+  "error" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "bob35",
@@ -20232,10 +19983,7 @@
   "timestamp" : 12950,
   "message" : "Liked songs:\n\t[The Man]\n\nFollowed playlists:\n\t[]"
 }, {
-  "command" : "addAlbum",
-  "user" : "matthewporter",
-  "timestamp" : 12950,
-  "message" : "matthewporter has added new album successfully."
+  "error" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "irene33",
@@ -20325,10 +20073,7 @@
   "timestamp" : 12980,
   "message" : "Liked songs:\n\t[Paint It Black]\n\nFollowed playlists:\n\t[]"
 }, {
-  "command" : "addAlbum",
-  "user" : "matthewporter",
-  "timestamp" : 12980,
-  "message" : "matthewporter has added new album successfully."
+  "error" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "bob35",
@@ -20632,10 +20377,7 @@
   "timestamp" : 13080,
   "message" : "Liked songs:\n\t[Paint It Black]\n\nFollowed playlists:\n\t[]"
 }, {
-  "command" : "addAlbum",
-  "user" : "matthewporter",
-  "timestamp" : 13080,
-  "message" : "matthewporter has added new album successfully."
+  "error" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "bob35",
@@ -20725,10 +20467,7 @@
   "timestamp" : 13110,
   "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
-  "command" : "addAlbum",
-  "user" : "matthewporter",
-  "timestamp" : 13110,
-  "message" : "matthewporter has another album with the same name."
+  "error" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "emily30",
@@ -20756,10 +20495,7 @@
   "timestamp" : 13120,
   "message" : "Liked songs:\n\t[Love Story]\n\nFollowed playlists:\n\t[]"
 }, {
-  "command" : "addAlbum",
-  "user" : "matthewporter",
-  "timestamp" : 13120,
-  "message" : "matthewporter has another album with the same name."
+  "error" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "frank21",
@@ -20818,10 +20554,7 @@
   "timestamp" : 13140,
   "message" : "Liked songs:\n\t[Happier]\n\nFollowed playlists:\n\t[]"
 }, {
-  "command" : "addAlbum",
-  "user" : "matthewporter",
-  "timestamp" : 13140,
-  "message" : "matthewporter has added new album successfully."
+  "error" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "henry26",
@@ -20911,10 +20644,7 @@
   "timestamp" : 13170,
   "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
-  "command" : "addAlbum",
-  "user" : "matthewporter",
-  "timestamp" : 13170,
-  "message" : "matthewporter has added new album successfully."
+  "error" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "alice22",

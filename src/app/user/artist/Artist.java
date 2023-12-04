@@ -5,6 +5,7 @@ import app.user.User;
 import lombok.Getter;
 
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -13,7 +14,7 @@ public class Artist extends User {
     private Set<Album> albums;
     public Artist(String username, int age, String city) {
         super(username, age, city);
-        this.albums = new HashSet<>();
+        this.albums = new LinkedHashSet<>();
     }
 
     public String addAlbum(String name, String releaseYear, String description, List<Song> songs) {
@@ -35,9 +36,11 @@ public class Artist extends User {
 
         return getUsername() + " has added new album successfully.";
     }
-//    public String addEvent(String eventName, String eventDescription, String eventDate) {
-//
-//    }
+
+    public void clearAlbums() {
+        albums.clear();
+    }
+
     public void setAlbums(Set<Album> albums) {
         this.albums = albums;
     }

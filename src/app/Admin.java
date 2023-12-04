@@ -127,12 +127,7 @@ public class Admin {
         }
         return onlineUsers;
     }
-    public static void reset() {
-        users = new ArrayList<>();
-        songs = new ArrayList<>();
-        podcasts = new ArrayList<>();
-        timestamp = 0;
-    }
+
     public static List<User> getNormalUsers() {
         return new ArrayList<>(users);
     }
@@ -178,4 +173,16 @@ public class Admin {
         return albumsInfo;
     }
 
+    public static void reset() {
+        users.clear();
+        songs.clear();
+        podcasts.clear();
+        artists.clear();
+        hosts.clear();
+        timestamp = 0;
+
+        for (Artist artist : artists) {
+            artist.clearAlbums();
+        }
+    }
 }

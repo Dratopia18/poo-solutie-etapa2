@@ -339,17 +339,17 @@
   "user" : "barmstrong",
   "timestamp" : 175,
   "result" : [ {
-    "name" : "Groovy Revolution",
-    "songs" : [ "Mystique Harmonize", "Harmony Mystique", "Whisper Pandora", "Pulse Solitude", "Harmony Glow", "Pinnacle Celestial", "Paradox Echo", "Heart Tranquility", "Serendipity Twilight" ]
+    "name" : "Teen Technology",
+    "songs" : [ "Paradox Aurora", "Heart Ethereal", "Colors Bliss", "Euphoria Eclipse", "Cascade Solitude", "Cascade Sunset", "Odyssey Pinnacle", "Dance Infinity", "Euphoria Aurora", "Whisper Echo", "Celestial Crescendo" ]
   }, {
     "name" : "Chill Hood",
     "songs" : [ "Enigma Glow", "Euphoria Twilight", "Colors Echo", "Infinity Soul", "Twilight Lullaby", "Luminescence Zephyr", "Dream Whisper", "Odyssey Rapture", "Serenade Infinity", "Tranquility Odyssey", "Harmony Rapture", "Lullaby Melody", "Rapture Euphoria" ]
   }, {
-    "name" : "Teen Technology",
-    "songs" : [ "Paradox Aurora", "Heart Ethereal", "Colors Bliss", "Euphoria Eclipse", "Cascade Solitude", "Cascade Sunset", "Odyssey Pinnacle", "Dance Infinity", "Euphoria Aurora", "Whisper Echo", "Celestial Crescendo" ]
-  }, {
     "name" : "Blue Dirt",
     "songs" : [ "Love Love", "Soul Love", "Mystique Bliss", "Melody Colors", "Infinity Paradox", "Harmony Bliss", "Euphoria Celestial", "Serendipity Enigma", "Essence Colors", "Twilight Serenade" ]
+  }, {
+    "name" : "Groovy Revolution",
+    "songs" : [ "Mystique Harmonize", "Harmony Mystique", "Whisper Pandora", "Pulse Solitude", "Harmony Glow", "Pinnacle Celestial", "Paradox Echo", "Heart Tranquility", "Serendipity Twilight" ]
   } ]
 }, {
   "command" : "showAlbums",
@@ -383,11 +383,11 @@
   "user" : "jacobdean",
   "timestamp" : 180,
   "result" : [ {
-    "name" : "Bad Guide",
-    "songs" : [ "Celestial Soul", "Utopia Harmony", "Dream Infinity", "Ethereal Velvet", "Soul Mystique", "Love Colors", "Celestial Dream", "Tranquility Zephyr" ]
-  }, {
     "name" : "Chill Funeral ",
     "songs" : [ "Serendipity Serendipity", "Melody Sunset", "Rapture Odyssey", "Mystique Radiance", "Cascade Mystique", "Dance Pinnacle", "Essence Cascade", "Radiance Starlight" ]
+  }, {
+    "name" : "Bad Guide",
+    "songs" : [ "Celestial Soul", "Utopia Harmony", "Dream Infinity", "Ethereal Velvet", "Soul Mystique", "Love Colors", "Celestial Dream", "Tranquility Zephyr" ]
   }, {
     "name" : "Breezy Autumn",
     "songs" : [ "Whisper Paradox", "Radiance Voyage", "Euphoria Eclipse", "Pandora Mystique", "Cascade Serendipity", "Pulse Whisper", "Paradox Pulse", "Whirlwind Pulse", "Dance Harmonize", "Reflection Night", "Voyage Velvet", "Colors Serendipity" ]
@@ -397,11 +397,11 @@
   "user" : "jacobdean",
   "timestamp" : 181,
   "result" : [ {
-    "name" : "Bad Guide",
-    "songs" : [ "Celestial Soul", "Utopia Harmony", "Dream Infinity", "Ethereal Velvet", "Soul Mystique", "Love Colors", "Celestial Dream", "Tranquility Zephyr" ]
-  }, {
     "name" : "Chill Funeral ",
     "songs" : [ "Serendipity Serendipity", "Melody Sunset", "Rapture Odyssey", "Mystique Radiance", "Cascade Mystique", "Dance Pinnacle", "Essence Cascade", "Radiance Starlight" ]
+  }, {
+    "name" : "Bad Guide",
+    "songs" : [ "Celestial Soul", "Utopia Harmony", "Dream Infinity", "Ethereal Velvet", "Soul Mystique", "Love Colors", "Celestial Dream", "Tranquility Zephyr" ]
   }, {
     "name" : "Breezy Autumn",
     "songs" : [ "Whisper Paradox", "Radiance Voyage", "Euphoria Eclipse", "Pandora Mystique", "Cascade Serendipity", "Pulse Whisper", "Paradox Pulse", "Whirlwind Pulse", "Dance Harmonize", "Reflection Night", "Voyage Velvet", "Colors Serendipity" ]
@@ -422,14 +422,14 @@
   "user" : "leslie27",
   "timestamp" : 184,
   "result" : [ {
+    "name" : "Electric Harmonies",
+    "songs" : [ "Celestial Lullaby", "Harmonize Eclipse", "Euphoria Sunset", "Dream Love", "Glow Whisper", "Celestial Heart", "Love Echo", "Zephyr Reflection", "Rapture Dream", "Rapture Infinity" ]
+  }, {
     "name" : "Bad Hood",
     "songs" : [ "Night Utopia", "Celestial Harmony", "Harmonize Enigma", "Melody Melody", "Melody Paradox", "Cascade Reflection", "Essence Mystique", "Serendipity Melody", "Heart Utopia", "Pulse Infinity" ]
   }, {
     "name" : "Groovy View",
     "songs" : [ "Whisper Pulse", "Radiance Euphoria", "Odyssey Rapture", "Dream Rhythm", "Euphoria Luminescence", "Voyage Cascade", "Dance Harmonize", "Ethereal Solitude", "Aurora Velvet" ]
-  }, {
-    "name" : "Electric Harmonies",
-    "songs" : [ "Celestial Lullaby", "Harmonize Eclipse", "Euphoria Sunset", "Dream Love", "Glow Whisper", "Celestial Heart", "Love Echo", "Zephyr Reflection", "Rapture Dream", "Rapture Infinity" ]
   }, {
     "name" : "Teen Funeral ",
     "songs" : [ "Melody Echo", "Paradox Echo", "Luminescence Rhythm", "Zephyr Velvet", "Serendipity Love", "Night Cascade", "Mystique Voyage", "Soul Soul", "Sunset Whisper" ]
@@ -453,14 +453,14 @@
   "user" : "leslie27",
   "timestamp" : 186,
   "result" : [ {
+    "name" : "Electric Harmonies",
+    "songs" : [ "Celestial Lullaby", "Harmonize Eclipse", "Euphoria Sunset", "Dream Love", "Glow Whisper", "Celestial Heart", "Love Echo", "Zephyr Reflection", "Rapture Dream", "Rapture Infinity" ]
+  }, {
     "name" : "Bad Hood",
     "songs" : [ "Night Utopia", "Celestial Harmony", "Harmonize Enigma", "Melody Melody", "Melody Paradox", "Cascade Reflection", "Essence Mystique", "Serendipity Melody", "Heart Utopia", "Pulse Infinity" ]
   }, {
     "name" : "Groovy View",
     "songs" : [ "Whisper Pulse", "Radiance Euphoria", "Odyssey Rapture", "Dream Rhythm", "Euphoria Luminescence", "Voyage Cascade", "Dance Harmonize", "Ethereal Solitude", "Aurora Velvet" ]
-  }, {
-    "name" : "Electric Harmonies",
-    "songs" : [ "Celestial Lullaby", "Harmonize Eclipse", "Euphoria Sunset", "Dream Love", "Glow Whisper", "Celestial Heart", "Love Echo", "Zephyr Reflection", "Rapture Dream", "Rapture Infinity" ]
   }, {
     "name" : "Teen Funeral ",
     "songs" : [ "Melody Echo", "Paradox Echo", "Luminescence Rhythm", "Zephyr Velvet", "Serendipity Love", "Night Cascade", "Mystique Voyage", "Soul Soul", "Sunset Whisper" ]

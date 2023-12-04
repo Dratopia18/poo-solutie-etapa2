@@ -26,7 +26,7 @@
   "command" : "addAlbum",
   "user" : "melodymaster",
   "timestamp" : 35,
-  "message" : "melodymaster has another album with the same name."
+  "message" : "melodymaster has added new album successfully."
 }, {
   "command" : "showAlbums",
   "user" : "beatblazer",

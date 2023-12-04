@@ -7,7 +7,7 @@
   "command" : "addAlbum",
   "user" : "melodymaster",
   "timestamp" : 2,
-  "message" : "melodymaster has another album with the same name."
+  "message" : "melodymaster has added new album successfully."
 }, {
   "command" : "addUser",
   "timestamp" : 30,

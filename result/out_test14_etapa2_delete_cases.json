@@ -47,7 +47,7 @@
   "command" : "addAlbum",
   "user" : "sonicpainter",
   "timestamp" : 310,
-  "message" : "sonicpainter has another album with the same name."
+  "message" : "sonicpainter has added new album successfully."
 }, {
   "command" : "search",
   "user" : "melodicwanderer",
