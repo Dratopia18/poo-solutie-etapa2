@@ -37,7 +37,10 @@
   "message" : "Search returned 0 results",
   "results" : [ ]
 }, {
-  "error" : "The user is not a normal user"
+  "command" : "printCurrentPage",
+  "user" : "jack29",
+  "timestamp" : 53,
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -98,7 +101,10 @@
     "paused" : true
   }
 }, {
-  "error" : "The user is not a normal user"
+  "command" : "printCurrentPage",
+  "user" : "jack29",
+  "timestamp" : 90,
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "playPause",
   "user" : "alice22",

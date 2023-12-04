@@ -1,6 +1,7 @@
 package app.user;
 
 import app.Admin;
+import app.Page;
 import app.audio.Collections.AudioCollection;
 import app.audio.Collections.Playlist;
 import app.audio.Collections.PlaylistOutput;
@@ -13,6 +14,7 @@ import app.searchBar.Filters;
 import app.searchBar.SearchBar;
 import app.utils.Enums;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,6 +36,8 @@ public class User {
     private final SearchBar searchBar;
     private boolean lastSearched;
     private boolean onlineStatus;
+    @Getter @Setter
+    private String currentPage;
     public User(String username, int age, String city) {
         this.username = username;
         this.age = age;
@@ -45,6 +49,7 @@ public class User {
         searchBar = new SearchBar(username);
         lastSearched = false;
         onlineStatus = true;
+        currentPage = "HomePage";
     }
 
     public ArrayList<String> search(Filters filters, String type) {
@@ -333,6 +338,13 @@ public class User {
     }
     public boolean getOnlineStatus() {
         return onlineStatus;
+    }
+    public String printCurrentPage() {
+        return switch (currentPage) {
+            case "HomePage" -> Page.generateHomePage(this);
+            case "LikedContentPage" -> Page.generateLikedContentPage(this);
+            default -> "Invalid page.";
+        };
     }
     public void simulateTime(int time) {
         if(onlineStatus) {

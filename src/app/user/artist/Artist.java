@@ -1,14 +1,16 @@
-package app.user;
+package app.user.artist;
 
-import app.audio.Collections.Album;
 import app.audio.Files.Song;
+import app.user.User;
+import lombok.Getter;
+
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+@Getter
 public class Artist extends User {
     private Set<Album> albums;
-
     public Artist(String username, int age, String city) {
         super(username, age, city);
         this.albums = new HashSet<>();
@@ -33,11 +35,9 @@ public class Artist extends User {
 
         return getUsername() + " has added new album successfully.";
     }
-
-    public Set<Album> getAlbums() {
-        return albums;
-    }
-
+//    public String addEvent(String eventName, String eventDescription, String eventDate) {
+//
+//    }
     public void setAlbums(Set<Album> albums) {
         this.albums = albums;
     }

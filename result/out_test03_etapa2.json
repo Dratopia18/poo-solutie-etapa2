@@ -44,7 +44,10 @@
   "timestamp" : 70,
   "message" : "The selected ID is too high."
 }, {
-  "error" : "The user is not a normal user"
+  "command" : "printCurrentPage",
+  "user" : "alice22",
+  "timestamp" : 75,
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "switchConnectionStatus",
   "user" : "alice22",
@@ -68,7 +71,13 @@
   "timestamp" : 110,
   "message" : "The selected ID is too high."
 }, {
-  "error" : "The user is not a normal user"
+  "command" : "printCurrentPage",
+  "user" : "alice22",
+  "timestamp" : 115,
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
-  "error" : "The user is not a normal user"
+  "command" : "printCurrentPage",
+  "user" : "bob35",
+  "timestamp" : 120,
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 } ]

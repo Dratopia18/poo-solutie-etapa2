@@ -52,8 +52,8 @@
   "command" : "search",
   "user" : "melodicmind42",
   "timestamp" : 60,
-  "message" : "Search returned 1 results",
-  "results" : [ "Radio Ga Ga" ]
+  "message" : "Search returned 4 results",
+  "results" : [ "Radio Ga Ga", "Retro Rhythms", "Rhythm Rise", "Rhythmic Revolution" ]
 }, {
   "command" : "select",
   "user" : "alice22",
@@ -63,33 +63,33 @@
   "command" : "select",
   "user" : "melodicmind42",
   "timestamp" : 70,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Rhythm Rise."
 }, {
   "command" : "load",
   "user" : "melodicmind42",
   "timestamp" : 75,
-  "message" : "Please select a source before attempting to load."
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "status",
   "user" : "melodicmind42",
   "timestamp" : 90,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "Rhythm Rise",
+    "remainedTime" : 205,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "like",
   "user" : "melodicmind42",
   "timestamp" : 120,
-  "message" : "Please load a source before liking or unliking."
+  "message" : "Like registered successfully."
 }, {
   "command" : "printCurrentPage",
   "user" : "melodicmind42",
   "timestamp" : 135,
-  "message" : "Liked songs:\n\t[Song1, Song2]\n\nFollowed playlists:\n\t[Playlist1, Playlist2]"
+  "message" : "Liked songs:\n\t[Rhythm Rise]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -115,26 +115,26 @@
   "command" : "search",
   "user" : "melodicmind42",
   "timestamp" : 1385,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Rapid Rhythms", "Rapid Fire" ]
 }, {
   "command" : "select",
   "user" : "melodicmind42",
   "timestamp" : 1390,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Rapid Rhythms."
 }, {
   "command" : "load",
   "user" : "melodicmind42",
   "timestamp" : 1440,
-  "message" : "Please select a source before attempting to load."
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "like",
   "user" : "melodicmind42",
   "timestamp" : 1455,
-  "message" : "Please load a source before liking or unliking."
+  "message" : "Like registered successfully."
 }, {
   "command" : "printCurrentPage",
   "user" : "melodicmind42",
   "timestamp" : 1480,
-  "message" : "Liked songs:\n\t[Song1, Song2]\n\nFollowed playlists:\n\t[Playlist1, Playlist2]"
+  "message" : "Liked songs:\n\t[Rhythm Rise, Rapid Rhythms]\n\nFollowed playlists:\n\t[]"
 } ]

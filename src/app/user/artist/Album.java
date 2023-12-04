@@ -1,13 +1,17 @@
-package app.audio.Collections;
+package app.user.artist;
 
 import app.audio.Files.Song;
+import lombok.Getter;
 
 import java.util.List;
 
 public class Album {
     private String albumName;
+    @Getter
     private String releaseYear;
+    @Getter
     private String description;
+    @Getter
     private List<Song> songs;
 
     public Album(String albumName, String releaseYear, String description, List<Song> songs) {
@@ -25,24 +29,12 @@ public class Album {
         this.albumName = albumName;
     }
 
-    public String getReleaseYear() {
-        return releaseYear;
-    }
-
     public void setReleaseYear(String releaseYear) {
         this.releaseYear = releaseYear;
     }
 
-    public String getDescription() {
-        return description;
-    }
-
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public List<Song> getSongs() {
-        return songs;
     }
 
     public void setSongs(List<Song> songs) {

@@ -42,7 +42,10 @@
   "timestamp" : 57,
   "message" : "The selected ID is too high."
 }, {
-  "error" : "The user is not a normal user"
+  "command" : "printCurrentPage",
+  "user" : "alice22",
+  "timestamp" : 58,
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -198,7 +201,10 @@
     "paused" : false
   }
 }, {
-  "error" : "The user is not a normal user"
+  "command" : "printCurrentPage",
+  "user" : "alice22",
+  "timestamp" : 3275,
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "status",
   "user" : "alice22",

@@ -1,13 +1,12 @@
 package app;
 
-import app.audio.Collections.Album;
+import app.user.artist.Album;
 import app.audio.Collections.Playlist;
 import app.audio.Collections.Podcast;
 import app.audio.Files.Episode;
 import app.audio.Files.Song;
-import app.user.Artist;
-import app.user.Host;
-import app.user.NormalUser;
+import app.user.artist.Artist;
+import app.user.host.Host;
 import app.user.User;
 import fileio.input.*;
 
@@ -152,7 +151,7 @@ public class Admin {
         int age = commandInput.getAge();
         String city = commandInput.getCity();
         switch (type) {
-            case "user" -> users.add(new NormalUser(username, age, city));
+            case "user" -> users.add(new User(username, age, city));
             case "artist" -> artists.add(new Artist(username, age, city));
             case "host" -> hosts.add(new Host(username, age, city));
         }

@@ -4,8 +4,7 @@ import app.audio.Collections.PlaylistOutput;
 import app.audio.Files.Song;
 import app.player.PlayerStats;
 import app.searchBar.Filters;
-import app.user.Artist;
-import app.user.NormalUser;
+import app.user.artist.Artist;
 import app.user.User;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
@@ -540,11 +539,7 @@ public class CommandRunner {
             return createErrorResponse("User not found");
         }
 
-        if (!(user instanceof NormalUser normalUser)) {
-            return createErrorResponse("The user is not a normal user");
-        }
-
-        String pageContent = normalUser.printCurrentPage();
+        String pageContent = user.printCurrentPage();
 
         ObjectNode objectNode = objectMapper.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
