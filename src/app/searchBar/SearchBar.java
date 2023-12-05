@@ -107,6 +107,22 @@ public class SearchBar {
                 break;
             case "artist":
                 entries = new ArrayList<>();
+                for(Artist artist : Admin.getArtists()) {
+                    LibraryEntry artistEntry = new LibraryEntry(artist.getUsername()) {
+                        @Override
+                        public boolean matchesName(String name) {
+                            return super.matchesName(name) || matchesArtist(name);
+                        }
+                        @Override
+                        public boolean matchesArtist(String artistName) {
+                            return artist.getUsername().toLowerCase().startsWith(artistName.toLowerCase());
+                        }
+                    };
+                    entries.add(artistEntry);
+                    if (filters.getName() != null) {
+                        entries = filterByArtist(entries, filters.getName());
+                    }
+                }
                 break;
             case "host":
                 entries = new ArrayList<>();

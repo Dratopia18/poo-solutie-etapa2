@@ -482,17 +482,13 @@ public class CommandRunner {
         if (artist == null) {
             User user = Admin.getUser(commandInput.getUsername());
             if (user == null) {
-                return createErrorResponse("The username " + commandInput.getUsername() + " doesn't exist.");
+                return createErrorResponse("addAlbum", commandInput.getUsername(), commandInput.getTimestamp(), "The username " + commandInput.getUsername() + " doesn't exist.");
             } else {
-                return createErrorResponse(commandInput.getUsername() + " is not an artist.");
+                return createErrorResponse("addAlbum", commandInput.getUsername(), commandInput.getTimestamp(), commandInput.getUsername() + " is not an artist.");
             }
         }
 
         List<SongInput> songInputs = commandInput.getSongs();
-        if (songInputs == null) {
-            return createErrorResponse("Album songs data is missing or invalid.");
-        }
-
         List<Song> songs = songInputs.stream()
                 .map(songInput -> new Song(songInput.getName(), songInput.getDuration(), songInput.getAlbum(),
                         songInput.getTags(), songInput.getLyrics(), songInput.getGenre(),
@@ -536,23 +532,78 @@ public class CommandRunner {
     public static ObjectNode printCurrentPage(CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
         if (user == null) {
-            return createErrorResponse("User not found");
+            return createErrorResponse("printCurrentPage", commandInput.getUsername(), commandInput.getTimestamp(), "User not found");
         }
-
-        String pageContent = user.printCurrentPage();
 
         ObjectNode objectNode = objectMapper.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("user", commandInput.getUsername());
         objectNode.put("timestamp", commandInput.getTimestamp());
-        objectNode.put("message", pageContent);
+        if (!user.getOnlineStatus()) {
+            objectNode.put("message", commandInput.getUsername() + " is offline.");
+        } else {
+            String pageContent = user.printCurrentPage();
+            objectNode.put("message", pageContent);
+        }
 
         return objectNode;
     }
 
-    private static ObjectNode createErrorResponse(String message) {
+    public static ObjectNode addEvent(CommandInput commandInput) {
+        Artist artist = Admin.getArtist(commandInput.getUsername());
+        if (artist == null) {
+            User user = Admin.getUser(commandInput.getUsername());
+            if (user == null) {
+                return createErrorResponse("addEvent", commandInput.getUsername(), commandInput.getTimestamp(), "The username " + commandInput.getUsername() + " doesn't exist.");
+            } else {
+                return createErrorResponse("addEvent", commandInput.getUsername(), commandInput.getTimestamp(), commandInput.getUsername() + " is not an artist.");
+            }
+        }
+
+        String message = artist.addEvent(
+                commandInput.getName(),
+                commandInput.getDescription(),
+                commandInput.getDate());
+
         ObjectNode objectNode = objectMapper.createObjectNode();
-        objectNode.put("error", message);
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("user", commandInput.getUsername());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.put("message", message);
+
         return objectNode;
     }
+    public static ObjectNode addMerch(CommandInput commandInput) {
+        Artist artist = Admin.getArtist(commandInput.getUsername());
+        if (artist == null) {
+            User user = Admin.getUser(commandInput.getUsername());
+            if (user == null) {
+                return createErrorResponse("addMerch", commandInput.getUsername(), commandInput.getTimestamp(), "The username " + commandInput.getUsername() + " doesn't exist.");
+            } else {
+                return createErrorResponse("addMerch", commandInput.getUsername(), commandInput.getTimestamp(), commandInput.getUsername() + " is not an artist.");
+            }
+        }
+
+        String message = artist.addMerch(
+                commandInput.getName(),
+                commandInput.getDescription(),
+                commandInput.getPrice());
+
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("user", commandInput.getUsername());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.put("message", message);
+
+        return objectNode;
+    }
+    private static ObjectNode createErrorResponse(String command, String username, Integer timestamp, String message) {
+        ObjectNode errorNode = objectMapper.createObjectNode();
+        errorNode.put("command", command);
+        errorNode.put("user", username);
+        errorNode.put("timestamp", timestamp);
+        errorNode.put("message", message);
+        return errorNode;
+    }
+
 }

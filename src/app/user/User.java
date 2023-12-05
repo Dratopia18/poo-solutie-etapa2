@@ -12,6 +12,7 @@ import app.player.Player;
 import app.player.PlayerStats;
 import app.searchBar.Filters;
 import app.searchBar.SearchBar;
+import app.user.artist.Artist;
 import app.utils.Enums;
 import lombok.Getter;
 import lombok.Setter;
@@ -67,6 +68,7 @@ public class User {
     }
 
     public String select(int itemNumber) {
+        List<Artist> artists = Admin.getArtists();
         if (!lastSearched)
             return "Please conduct a search before making a selection.";
 
@@ -76,7 +78,12 @@ public class User {
 
         if (selected == null)
             return "The selected ID is too high.";
-
+        for (Artist artist : artists) {
+            if (artists.contains(selected.getName())) {
+                setCurrentPage("ArtistPage");
+                return "Successfully selected %s's page.".formatted(selected.getName());
+            }
+        }
         return "Successfully selected %s.".formatted(selected.getName());
     }
 
@@ -343,6 +350,7 @@ public class User {
         return switch (currentPage) {
             case "HomePage" -> Page.generateHomePage(this);
             case "LikedContentPage" -> Page.generateLikedContentPage(this);
+            case "ArtistPage" -> Page.generateArtistPage((Artist) this);
             default -> "Invalid page.";
         };
     }

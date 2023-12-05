@@ -3,8 +3,13 @@ package app;
 import app.audio.Collections.Playlist;
 import app.audio.Files.Song;
 import app.user.User;
+import app.user.artist.Album;
+import app.user.artist.Artist;
+import app.user.artist.Event;
+import app.user.artist.Merch;
 
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 public class Page {
@@ -26,5 +31,21 @@ public class Page {
                 "\n\nFollowed playlists:\n\t" +
                 followedPlaylists.stream().map(playlist -> playlist.getName() + " - " + playlist.getOwner())
                         .collect(Collectors.joining(", "));
+    }
+    public static String generateArtistPage(Artist artist) {
+        Set<Album> albums = artist.getAlbums();
+        Set<Merch> merchandise = artist.getMerchandise();
+        Set<Event> events = artist.getEvents();
+        return "Albums:\n\t[" +
+                albums.stream().map(Album::getName).collect(Collectors.joining(", ")) +
+                "]\n\nMerch:\n\t[" +
+                merchandise.stream().map(merch -> merch.getName() + " - " + merch.getPrice()
+                                + ":\n\t" + merch.getDescription())
+                        .collect(Collectors.joining(", ")) +
+                "]\n\nEvent:\n\t[" +
+                events.stream().map(event -> event.getDate() + " - " + event.getDate()
+                                + ":\n\t" + event.getDescription())
+                        .collect(Collectors.joining(", ")) + "]";
+
     }
 }

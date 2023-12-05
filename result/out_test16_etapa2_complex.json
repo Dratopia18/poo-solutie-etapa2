@@ -189,7 +189,10 @@
   "timestamp" : 137,
   "message" : "john99 has added new album successfully."
 }, {
-  "error" : "The username charlesgarcia doesn't exist."
+  "command" : "addAlbum",
+  "user" : "charlesgarcia",
+  "timestamp" : 138,
+  "message" : "The username charlesgarcia doesn't exist."
 }, {
   "command" : "addAlbum",
   "user" : "john99",
@@ -301,7 +304,10 @@
   "timestamp" : 160,
   "message" : "barmstrong has added new album successfully."
 }, {
-  "error" : "The username matthewporter doesn't exist."
+  "command" : "addAlbum",
+  "user" : "matthewporter",
+  "timestamp" : 161,
+  "message" : "The username matthewporter doesn't exist."
 }, {
   "command" : "addAlbum",
   "user" : "jsimpson",
@@ -313,7 +319,10 @@
   "timestamp" : 163,
   "message" : "jsimpson has added new album successfully."
 }, {
-  "error" : "The username matthewporter doesn't exist."
+  "command" : "addAlbum",
+  "user" : "matthewporter",
+  "timestamp" : 164,
+  "message" : "The username matthewporter doesn't exist."
 }, {
   "command" : "addAlbum",
   "user" : "mccarthyluis",
@@ -330,14 +339,20 @@
   "timestamp" : 167,
   "message" : "mccarthyluis has the same song at least twice in this album."
 }, {
-  "error" : "The username matthewporter doesn't exist."
+  "command" : "addAlbum",
+  "user" : "matthewporter",
+  "timestamp" : 168,
+  "message" : "The username matthewporter doesn't exist."
 }, {
   "command" : "addAlbum",
   "user" : "jsimpson",
   "timestamp" : 169,
   "message" : "jsimpson has the same song at least twice in this album."
 }, {
-  "error" : "The username matthewporter doesn't exist."
+  "command" : "addAlbum",
+  "user" : "matthewporter",
+  "timestamp" : 170,
+  "message" : "The username matthewporter doesn't exist."
 }, {
   "command" : "addAlbum",
   "user" : "amanda16",
@@ -354,7 +369,10 @@
   "timestamp" : 173,
   "message" : "barmstrong has the same song at least twice in this album."
 }, {
-  "error" : "The username matthewporter doesn't exist."
+  "command" : "addAlbum",
+  "user" : "matthewporter",
+  "timestamp" : 174,
+  "message" : "The username matthewporter doesn't exist."
 }, {
   "command" : "showAlbums",
   "user" : "jsimpson",
@@ -16387,13 +16405,13 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 11770,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "fwebb" ]
 }, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 11770,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected fwebb."
 }, {
   "command" : "printCurrentPage",
   "user" : "alice22",
@@ -16418,13 +16436,13 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 11780,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 11780,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected jacobdean."
 }, {
   "command" : "printCurrentPage",
   "user" : "bob35",
@@ -16462,7 +16480,10 @@
   "timestamp" : 11790,
   "message" : "Liked songs:\n\t[Whatever You Need, Blank Space]\n\nFollowed playlists:\n\t[]"
 }, {
-  "error" : "The username matthewporter doesn't exist."
+  "command" : "addAlbum",
+  "user" : "matthewporter",
+  "timestamp" : 11790,
+  "message" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "carol19",
@@ -16477,13 +16498,13 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 11800,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "john99" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 11800,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected john99."
 }, {
   "command" : "printCurrentPage",
   "user" : "david27",
@@ -16508,13 +16529,13 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 11810,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 3 results",
+  "results" : [ "mccarthyluis", "mccarthyluis", "mccarthyluis" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 11810,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected mccarthyluis."
 }, {
   "command" : "printCurrentPage",
   "user" : "emily30",
@@ -16539,13 +16560,13 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 11820,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "fwebb" ]
 }, {
   "command" : "select",
   "user" : "frank21",
   "timestamp" : 11820,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected fwebb."
 }, {
   "command" : "printCurrentPage",
   "user" : "frank21",
@@ -16570,13 +16591,13 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 11830,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "john99" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 11830,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected john99."
 }, {
   "command" : "printCurrentPage",
   "user" : "grace25",
@@ -16601,13 +16622,13 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 11840,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 2 results",
+  "results" : [ "jsimpson", "jsimpson" ]
 }, {
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 11840,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected jsimpson."
 }, {
   "command" : "printCurrentPage",
   "user" : "henry26",
@@ -16632,13 +16653,13 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 11850,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 3 results",
+  "results" : [ "mccarthyluis", "mccarthyluis", "mccarthyluis" ]
 }, {
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 11850,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected mccarthyluis."
 }, {
   "command" : "printCurrentPage",
   "user" : "irene33",
@@ -16663,13 +16684,13 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 11860,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "fwebb" ]
 }, {
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 11860,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected fwebb."
 }, {
   "command" : "printCurrentPage",
   "user" : "jack29",
@@ -16694,13 +16715,13 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 11870,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "glester" ]
 }, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 11870,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected glester."
 }, {
   "command" : "printCurrentPage",
   "user" : "alice22",
@@ -16725,13 +16746,13 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 11880,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "john99" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 11880,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected john99."
 }, {
   "command" : "printCurrentPage",
   "user" : "bob35",
@@ -16769,7 +16790,10 @@
   "timestamp" : 11890,
   "message" : "Liked songs:\n\t[Whatever You Need, Blank Space]\n\nFollowed playlists:\n\t[]"
 }, {
-  "error" : "The username charlesgarcia doesn't exist."
+  "command" : "addAlbum",
+  "user" : "charlesgarcia",
+  "timestamp" : 11890,
+  "message" : "The username charlesgarcia doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "carol19",
@@ -16784,13 +16808,13 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 11900,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "john99" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 11900,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected john99."
 }, {
   "command" : "printCurrentPage",
   "user" : "david27",
@@ -16828,7 +16852,10 @@
   "timestamp" : 11910,
   "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
-  "error" : "The username matthewporter doesn't exist."
+  "command" : "addAlbum",
+  "user" : "matthewporter",
+  "timestamp" : 11910,
+  "message" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "emily30",
@@ -16856,7 +16883,10 @@
   "timestamp" : 11920,
   "message" : "Liked songs:\n\t[Love Story]\n\nFollowed playlists:\n\t[]"
 }, {
-  "error" : "The username matthewporter doesn't exist."
+  "command" : "addAlbum",
+  "user" : "matthewporter",
+  "timestamp" : 11920,
+  "message" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "frank21",
@@ -16871,13 +16901,13 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 11930,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "cbutler" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 11930,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected cbutler."
 }, {
   "command" : "printCurrentPage",
   "user" : "grace25",
@@ -16902,13 +16932,13 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 11940,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 2 results",
+  "results" : [ "anthony22", "anthony22" ]
 }, {
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 11940,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected anthony22."
 }, {
   "command" : "printCurrentPage",
   "user" : "henry26",
@@ -16933,13 +16963,13 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 11950,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 3 results",
+  "results" : [ "mccarthyluis", "mccarthyluis", "mccarthyluis" ]
 }, {
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 11950,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected mccarthyluis."
 }, {
   "command" : "printCurrentPage",
   "user" : "irene33",
@@ -16977,7 +17007,10 @@
   "timestamp" : 11960,
   "message" : "Liked songs:\n\t[Delicate, Start Me Up]\n\nFollowed playlists:\n\t[]"
 }, {
-  "error" : "The username charlesgarcia doesn't exist."
+  "command" : "addAlbum",
+  "user" : "charlesgarcia",
+  "timestamp" : 11960,
+  "message" : "The username charlesgarcia doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "jack29",
@@ -17005,7 +17038,10 @@
   "timestamp" : 11970,
   "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
-  "error" : "The username matthewporter doesn't exist."
+  "command" : "addAlbum",
+  "user" : "matthewporter",
+  "timestamp" : 11970,
+  "message" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "alice22",
@@ -17020,13 +17056,13 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 11980,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 11980,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected jacobdean."
 }, {
   "command" : "printCurrentPage",
   "user" : "bob35",
@@ -17064,7 +17100,10 @@
   "timestamp" : 11990,
   "message" : "Liked songs:\n\t[Whatever You Need, Blank Space]\n\nFollowed playlists:\n\t[]"
 }, {
-  "error" : "The username matthewporter doesn't exist."
+  "command" : "addAlbum",
+  "user" : "matthewporter",
+  "timestamp" : 11990,
+  "message" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "carol19",
@@ -17079,13 +17118,13 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 12000,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 3 results",
+  "results" : [ "mccarthyluis", "mccarthyluis", "mccarthyluis" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 12000,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected mccarthyluis."
 }, {
   "command" : "printCurrentPage",
   "user" : "david27",
@@ -17110,13 +17149,13 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 12010,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 3 results",
+  "results" : [ "mccarthyluis", "mccarthyluis", "mccarthyluis" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 12010,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected mccarthyluis."
 }, {
   "command" : "printCurrentPage",
   "user" : "emily30",
@@ -17141,13 +17180,13 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 12020,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "glester" ]
 }, {
   "command" : "select",
   "user" : "frank21",
   "timestamp" : 12020,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected glester."
 }, {
   "command" : "printCurrentPage",
   "user" : "frank21",
@@ -17172,13 +17211,13 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 12030,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "john99" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 12030,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected john99."
 }, {
   "command" : "printCurrentPage",
   "user" : "grace25",
@@ -17203,13 +17242,13 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 12040,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "glester" ]
 }, {
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 12040,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected glester."
 }, {
   "command" : "printCurrentPage",
   "user" : "henry26",
@@ -17234,13 +17273,13 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 12050,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "john99" ]
 }, {
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 12050,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected john99."
 }, {
   "command" : "printCurrentPage",
   "user" : "irene33",
@@ -17265,13 +17304,13 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 12060,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 12060,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected jacobdean."
 }, {
   "command" : "printCurrentPage",
   "user" : "jack29",
@@ -17296,13 +17335,13 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 12070,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "john99" ]
 }, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 12070,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected john99."
 }, {
   "command" : "printCurrentPage",
   "user" : "alice22",
@@ -17327,13 +17366,13 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 12080,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 12080,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected jacobdean."
 }, {
   "command" : "printCurrentPage",
   "user" : "bob35",
@@ -17358,13 +17397,13 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 12090,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 2 results",
+  "results" : [ "jsimpson", "jsimpson" ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 12090,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected jsimpson."
 }, {
   "command" : "printCurrentPage",
   "user" : "carol19",
@@ -17402,7 +17441,10 @@
   "timestamp" : 12100,
   "message" : "Liked songs:\n\t[Don't]\n\nFollowed playlists:\n\t[]"
 }, {
-  "error" : "The username matthewporter doesn't exist."
+  "command" : "addAlbum",
+  "user" : "matthewporter",
+  "timestamp" : 12100,
+  "message" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "david27",
@@ -17417,13 +17459,13 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 12110,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "glester" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 12110,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected glester."
 }, {
   "command" : "printCurrentPage",
   "user" : "emily30",
@@ -17448,13 +17490,13 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 12120,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "fwebb" ]
 }, {
   "command" : "select",
   "user" : "frank21",
   "timestamp" : 12120,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected fwebb."
 }, {
   "command" : "printCurrentPage",
   "user" : "frank21",
@@ -17479,13 +17521,13 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 12130,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "cbutler" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 12130,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected cbutler."
 }, {
   "command" : "printCurrentPage",
   "user" : "grace25",
@@ -17523,7 +17565,10 @@
   "timestamp" : 12140,
   "message" : "Liked songs:\n\t[Happier]\n\nFollowed playlists:\n\t[]"
 }, {
-  "error" : "The username matthewporter doesn't exist."
+  "command" : "addAlbum",
+  "user" : "matthewporter",
+  "timestamp" : 12140,
+  "message" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "henry26",
@@ -17538,13 +17583,13 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 12150,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 12150,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected jacobdean."
 }, {
   "command" : "printCurrentPage",
   "user" : "irene33",
@@ -17569,13 +17614,13 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 12160,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "glester" ]
 }, {
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 12160,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected glester."
 }, {
   "command" : "printCurrentPage",
   "user" : "jack29",
@@ -17600,13 +17645,13 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 12170,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "john99" ]
 }, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 12170,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected john99."
 }, {
   "command" : "printCurrentPage",
   "user" : "alice22",
@@ -17644,7 +17689,10 @@
   "timestamp" : 12180,
   "message" : "Liked songs:\n\t[Paint It Black]\n\nFollowed playlists:\n\t[]"
 }, {
-  "error" : "The username matthewporter doesn't exist."
+  "command" : "addAlbum",
+  "user" : "matthewporter",
+  "timestamp" : 12180,
+  "message" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "bob35",
@@ -17659,13 +17707,13 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 12190,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 3 results",
+  "results" : [ "mccarthyluis", "mccarthyluis", "mccarthyluis" ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 12190,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected mccarthyluis."
 }, {
   "command" : "printCurrentPage",
   "user" : "carol19",
@@ -17690,13 +17738,13 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 12200,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "john99" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 12200,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected john99."
 }, {
   "command" : "printCurrentPage",
   "user" : "david27",
@@ -17721,13 +17769,13 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 12210,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "cbutler" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 12210,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected cbutler."
 }, {
   "command" : "printCurrentPage",
   "user" : "emily30",
@@ -17765,7 +17813,10 @@
   "timestamp" : 12220,
   "message" : "Liked songs:\n\t[Love Story]\n\nFollowed playlists:\n\t[]"
 }, {
-  "error" : "The username matthewporter doesn't exist."
+  "command" : "addAlbum",
+  "user" : "matthewporter",
+  "timestamp" : 12220,
+  "message" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "frank21",
@@ -17780,13 +17831,13 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 12230,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 2 results",
+  "results" : [ "barmstrong", "barmstrong" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 12230,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected barmstrong."
 }, {
   "command" : "printCurrentPage",
   "user" : "grace25",
@@ -17824,7 +17875,10 @@
   "timestamp" : 12240,
   "message" : "Liked songs:\n\t[Happier]\n\nFollowed playlists:\n\t[]"
 }, {
-  "error" : "The username matthewporter doesn't exist."
+  "command" : "addAlbum",
+  "user" : "matthewporter",
+  "timestamp" : 12240,
+  "message" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "henry26",
@@ -17839,13 +17893,13 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 12250,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "cbutler" ]
 }, {
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 12250,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected cbutler."
 }, {
   "command" : "printCurrentPage",
   "user" : "irene33",
@@ -17870,13 +17924,13 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 12260,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 2 results",
+  "results" : [ "anthony22", "anthony22" ]
 }, {
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 12260,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected anthony22."
 }, {
   "command" : "printCurrentPage",
   "user" : "jack29",
@@ -17914,7 +17968,10 @@
   "timestamp" : 12270,
   "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
-  "error" : "The username charlesgarcia doesn't exist."
+  "command" : "addAlbum",
+  "user" : "charlesgarcia",
+  "timestamp" : 12270,
+  "message" : "The username charlesgarcia doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "alice22",
@@ -17942,7 +17999,10 @@
   "timestamp" : 12280,
   "message" : "Liked songs:\n\t[Paint It Black]\n\nFollowed playlists:\n\t[]"
 }, {
-  "error" : "The username matthewporter doesn't exist."
+  "command" : "addAlbum",
+  "user" : "matthewporter",
+  "timestamp" : 12280,
+  "message" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "bob35",
@@ -17957,13 +18017,13 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 12290,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "cbutler" ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 12290,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected cbutler."
 }, {
   "command" : "printCurrentPage",
   "user" : "carol19",
@@ -18001,7 +18061,10 @@
   "timestamp" : 12300,
   "message" : "Liked songs:\n\t[Don't]\n\nFollowed playlists:\n\t[]"
 }, {
-  "error" : "The username matthewporter doesn't exist."
+  "command" : "addAlbum",
+  "user" : "matthewporter",
+  "timestamp" : 12300,
+  "message" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "david27",
@@ -18016,13 +18079,13 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 12310,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 12310,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected jacobdean."
 }, {
   "command" : "printCurrentPage",
   "user" : "emily30",
@@ -18047,13 +18110,13 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 12320,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "fwebb" ]
 }, {
   "command" : "select",
   "user" : "frank21",
   "timestamp" : 12320,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected fwebb."
 }, {
   "command" : "printCurrentPage",
   "user" : "frank21",
@@ -18078,13 +18141,13 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 12330,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "john99" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 12330,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected john99."
 }, {
   "command" : "printCurrentPage",
   "user" : "grace25",
@@ -18109,13 +18172,13 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 12340,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 3 results",
+  "results" : [ "mccarthyluis", "mccarthyluis", "mccarthyluis" ]
 }, {
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 12340,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected mccarthyluis."
 }, {
   "command" : "printCurrentPage",
   "user" : "henry26",
@@ -18153,7 +18216,10 @@
   "timestamp" : 12350,
   "message" : "Liked songs:\n\t[The Man]\n\nFollowed playlists:\n\t[]"
 }, {
-  "error" : "The username matthewporter doesn't exist."
+  "command" : "addAlbum",
+  "user" : "matthewporter",
+  "timestamp" : 12350,
+  "message" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "irene33",
@@ -18181,7 +18247,10 @@
   "timestamp" : 12360,
   "message" : "Liked songs:\n\t[Delicate, Start Me Up]\n\nFollowed playlists:\n\t[]"
 }, {
-  "error" : "The username matthewporter doesn't exist."
+  "command" : "addAlbum",
+  "user" : "matthewporter",
+  "timestamp" : 12360,
+  "message" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "jack29",
@@ -18196,13 +18265,13 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 12370,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 3 results",
+  "results" : [ "mccarthyluis", "mccarthyluis", "mccarthyluis" ]
 }, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 12370,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected mccarthyluis."
 }, {
   "command" : "printCurrentPage",
   "user" : "alice22",
@@ -18227,13 +18296,13 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 12380,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "glester" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 12380,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected glester."
 }, {
   "command" : "printCurrentPage",
   "user" : "bob35",
@@ -18258,13 +18327,13 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 12390,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 2 results",
+  "results" : [ "barmstrong", "barmstrong" ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 12390,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected barmstrong."
 }, {
   "command" : "printCurrentPage",
   "user" : "carol19",
@@ -18289,13 +18358,13 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 12400,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "john99" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 12400,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected john99."
 }, {
   "command" : "printCurrentPage",
   "user" : "david27",
@@ -18320,13 +18389,13 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 12410,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 12410,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected jacobdean."
 }, {
   "command" : "printCurrentPage",
   "user" : "emily30",
@@ -18351,13 +18420,13 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 12420,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "john99" ]
 }, {
   "command" : "select",
   "user" : "frank21",
   "timestamp" : 12420,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected john99."
 }, {
   "command" : "printCurrentPage",
   "user" : "frank21",
@@ -18382,13 +18451,13 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 12430,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 2 results",
+  "results" : [ "barmstrong", "barmstrong" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 12430,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected barmstrong."
 }, {
   "command" : "printCurrentPage",
   "user" : "grace25",
@@ -18413,13 +18482,13 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 12440,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 3 results",
+  "results" : [ "mccarthyluis", "mccarthyluis", "mccarthyluis" ]
 }, {
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 12440,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected mccarthyluis."
 }, {
   "command" : "printCurrentPage",
   "user" : "henry26",
@@ -18444,13 +18513,13 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 12450,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 2 results",
+  "results" : [ "barmstrong", "barmstrong" ]
 }, {
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 12450,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected barmstrong."
 }, {
   "command" : "printCurrentPage",
   "user" : "irene33",
@@ -18475,13 +18544,13 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 12460,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "john99" ]
 }, {
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 12460,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected john99."
 }, {
   "command" : "printCurrentPage",
   "user" : "jack29",
@@ -18506,13 +18575,13 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 12470,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 12470,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected jacobdean."
 }, {
   "command" : "printCurrentPage",
   "user" : "alice22",
@@ -18537,13 +18606,13 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 12480,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "john99" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 12480,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected john99."
 }, {
   "command" : "printCurrentPage",
   "user" : "bob35",
@@ -18568,13 +18637,13 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 12490,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "cbutler" ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 12490,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected cbutler."
 }, {
   "command" : "printCurrentPage",
   "user" : "carol19",
@@ -18599,13 +18668,13 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 12500,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "cbutler" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 12500,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected cbutler."
 }, {
   "command" : "printCurrentPage",
   "user" : "david27",
@@ -18630,13 +18699,13 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 12510,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "glester" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 12510,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected glester."
 }, {
   "command" : "printCurrentPage",
   "user" : "emily30",
@@ -18674,7 +18743,10 @@
   "timestamp" : 12520,
   "message" : "Liked songs:\n\t[Love Story]\n\nFollowed playlists:\n\t[]"
 }, {
-  "error" : "The username charlesgarcia doesn't exist."
+  "command" : "addAlbum",
+  "user" : "charlesgarcia",
+  "timestamp" : 12520,
+  "message" : "The username charlesgarcia doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "frank21",
@@ -18702,7 +18774,10 @@
   "timestamp" : 12530,
   "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
-  "error" : "The username matthewporter doesn't exist."
+  "command" : "addAlbum",
+  "user" : "matthewporter",
+  "timestamp" : 12530,
+  "message" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "grace25",
@@ -18717,13 +18792,13 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 12540,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "john99" ]
 }, {
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 12540,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected john99."
 }, {
   "command" : "printCurrentPage",
   "user" : "henry26",
@@ -18748,13 +18823,13 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 12550,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "glester" ]
 }, {
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 12550,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected glester."
 }, {
   "command" : "printCurrentPage",
   "user" : "irene33",
@@ -18792,7 +18867,10 @@
   "timestamp" : 12560,
   "message" : "Liked songs:\n\t[Delicate, Start Me Up]\n\nFollowed playlists:\n\t[]"
 }, {
-  "error" : "The username matthewporter doesn't exist."
+  "command" : "addAlbum",
+  "user" : "matthewporter",
+  "timestamp" : 12560,
+  "message" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "jack29",
@@ -18807,13 +18885,13 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 12570,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "glester" ]
 }, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 12570,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected glester."
 }, {
   "command" : "printCurrentPage",
   "user" : "alice22",
@@ -18838,13 +18916,13 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 12580,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "cbutler" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 12580,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected cbutler."
 }, {
   "command" : "printCurrentPage",
   "user" : "bob35",
@@ -18869,13 +18947,13 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 12590,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 12590,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected jacobdean."
 }, {
   "command" : "printCurrentPage",
   "user" : "carol19",
@@ -18900,13 +18978,13 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 12600,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 3 results",
+  "results" : [ "mccarthyluis", "mccarthyluis", "mccarthyluis" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 12600,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected mccarthyluis."
 }, {
   "command" : "printCurrentPage",
   "user" : "david27",
@@ -18931,13 +19009,13 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 12610,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 2 results",
+  "results" : [ "barmstrong", "barmstrong" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 12610,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected barmstrong."
 }, {
   "command" : "printCurrentPage",
   "user" : "emily30",
@@ -18962,13 +19040,13 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 12620,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "glester" ]
 }, {
   "command" : "select",
   "user" : "frank21",
   "timestamp" : 12620,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected glester."
 }, {
   "command" : "printCurrentPage",
   "user" : "frank21",
@@ -18993,13 +19071,13 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 12630,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 2 results",
+  "results" : [ "barmstrong", "barmstrong" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 12630,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected barmstrong."
 }, {
   "command" : "printCurrentPage",
   "user" : "grace25",
@@ -19024,13 +19102,13 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 12640,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "fwebb" ]
 }, {
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 12640,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected fwebb."
 }, {
   "command" : "printCurrentPage",
   "user" : "henry26",
@@ -19055,13 +19133,13 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 12650,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "john99" ]
 }, {
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 12650,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected john99."
 }, {
   "command" : "printCurrentPage",
   "user" : "irene33",
@@ -19086,13 +19164,13 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 12660,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "john99" ]
 }, {
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 12660,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected john99."
 }, {
   "command" : "printCurrentPage",
   "user" : "jack29",
@@ -19117,13 +19195,13 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 12670,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "cbutler" ]
 }, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 12670,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected cbutler."
 }, {
   "command" : "printCurrentPage",
   "user" : "alice22",
@@ -19148,13 +19226,13 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 12680,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 12680,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected jacobdean."
 }, {
   "command" : "printCurrentPage",
   "user" : "bob35",
@@ -19179,13 +19257,13 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 12690,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 12690,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected jacobdean."
 }, {
   "command" : "printCurrentPage",
   "user" : "carol19",
@@ -19223,7 +19301,10 @@
   "timestamp" : 12700,
   "message" : "Liked songs:\n\t[Don't]\n\nFollowed playlists:\n\t[]"
 }, {
-  "error" : "The username matthewporter doesn't exist."
+  "command" : "addAlbum",
+  "user" : "matthewporter",
+  "timestamp" : 12700,
+  "message" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "david27",
@@ -19238,13 +19319,13 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 12710,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "john99" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 12710,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected john99."
 }, {
   "command" : "printCurrentPage",
   "user" : "emily30",
@@ -19282,7 +19363,10 @@
   "timestamp" : 12720,
   "message" : "Liked songs:\n\t[Love Story]\n\nFollowed playlists:\n\t[]"
 }, {
-  "error" : "The username charlesgarcia doesn't exist."
+  "command" : "addAlbum",
+  "user" : "charlesgarcia",
+  "timestamp" : 12720,
+  "message" : "The username charlesgarcia doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "frank21",
@@ -19297,13 +19381,13 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 12730,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "cbutler" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 12730,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected cbutler."
 }, {
   "command" : "printCurrentPage",
   "user" : "grace25",
@@ -19341,7 +19425,10 @@
   "timestamp" : 12740,
   "message" : "Liked songs:\n\t[Happier]\n\nFollowed playlists:\n\t[]"
 }, {
-  "error" : "The username charlesgarcia doesn't exist."
+  "command" : "addAlbum",
+  "user" : "charlesgarcia",
+  "timestamp" : 12740,
+  "message" : "The username charlesgarcia doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "henry26",
@@ -19356,13 +19443,13 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 12750,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "john99" ]
 }, {
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 12750,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected john99."
 }, {
   "command" : "printCurrentPage",
   "user" : "irene33",
@@ -19387,13 +19474,13 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 12760,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "fwebb" ]
 }, {
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 12760,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected fwebb."
 }, {
   "command" : "printCurrentPage",
   "user" : "jack29",
@@ -19418,13 +19505,13 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 12770,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 3 results",
+  "results" : [ "mccarthyluis", "mccarthyluis", "mccarthyluis" ]
 }, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 12770,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected mccarthyluis."
 }, {
   "command" : "printCurrentPage",
   "user" : "alice22",
@@ -19449,13 +19536,13 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 12780,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 2 results",
+  "results" : [ "anthony22", "anthony22" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 12780,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected anthony22."
 }, {
   "command" : "printCurrentPage",
   "user" : "bob35",
@@ -19480,13 +19567,13 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 12790,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "john99" ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 12790,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected john99."
 }, {
   "command" : "printCurrentPage",
   "user" : "carol19",
@@ -19511,13 +19598,13 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 12800,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 3 results",
+  "results" : [ "mccarthyluis", "mccarthyluis", "mccarthyluis" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 12800,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected mccarthyluis."
 }, {
   "command" : "printCurrentPage",
   "user" : "david27",
@@ -19542,13 +19629,13 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 12810,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 12810,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected jacobdean."
 }, {
   "command" : "printCurrentPage",
   "user" : "emily30",
@@ -19586,7 +19673,10 @@
   "timestamp" : 12820,
   "message" : "Liked songs:\n\t[Love Story]\n\nFollowed playlists:\n\t[]"
 }, {
-  "error" : "The username matthewporter doesn't exist."
+  "command" : "addAlbum",
+  "user" : "matthewporter",
+  "timestamp" : 12820,
+  "message" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "frank21",
@@ -19601,13 +19691,13 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 12830,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 3 results",
+  "results" : [ "mccarthyluis", "mccarthyluis", "mccarthyluis" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 12830,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected mccarthyluis."
 }, {
   "command" : "printCurrentPage",
   "user" : "grace25",
@@ -19632,13 +19722,13 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 12840,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 3 results",
+  "results" : [ "mccarthyluis", "mccarthyluis", "mccarthyluis" ]
 }, {
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 12840,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected mccarthyluis."
 }, {
   "command" : "printCurrentPage",
   "user" : "henry26",
@@ -19663,13 +19753,13 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 12850,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 12850,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected jacobdean."
 }, {
   "command" : "printCurrentPage",
   "user" : "irene33",
@@ -19694,13 +19784,13 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 12860,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "john99" ]
 }, {
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 12860,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected john99."
 }, {
   "command" : "printCurrentPage",
   "user" : "jack29",
@@ -19725,13 +19815,13 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 12870,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "cbutler" ]
 }, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 12870,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected cbutler."
 }, {
   "command" : "printCurrentPage",
   "user" : "alice22",
@@ -19769,7 +19859,10 @@
   "timestamp" : 12880,
   "message" : "Liked songs:\n\t[Paint It Black]\n\nFollowed playlists:\n\t[]"
 }, {
-  "error" : "The username matthewporter doesn't exist."
+  "command" : "addAlbum",
+  "user" : "matthewporter",
+  "timestamp" : 12880,
+  "message" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "bob35",
@@ -19784,13 +19877,13 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 12890,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "glester" ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 12890,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected glester."
 }, {
   "command" : "printCurrentPage",
   "user" : "carol19",
@@ -19815,13 +19908,13 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 12900,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "john99" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 12900,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected john99."
 }, {
   "command" : "printCurrentPage",
   "user" : "david27",
@@ -19846,13 +19939,13 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 12910,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 3 results",
+  "results" : [ "mccarthyluis", "mccarthyluis", "mccarthyluis" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 12910,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected mccarthyluis."
 }, {
   "command" : "printCurrentPage",
   "user" : "emily30",
@@ -19877,13 +19970,13 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 12920,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "john99" ]
 }, {
   "command" : "select",
   "user" : "frank21",
   "timestamp" : 12920,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected john99."
 }, {
   "command" : "printCurrentPage",
   "user" : "frank21",
@@ -19908,13 +20001,13 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 12930,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "john99" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 12930,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected john99."
 }, {
   "command" : "printCurrentPage",
   "user" : "grace25",
@@ -19939,13 +20032,13 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 12940,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "john99" ]
 }, {
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 12940,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected john99."
 }, {
   "command" : "printCurrentPage",
   "user" : "henry26",
@@ -19983,7 +20076,10 @@
   "timestamp" : 12950,
   "message" : "Liked songs:\n\t[The Man]\n\nFollowed playlists:\n\t[]"
 }, {
-  "error" : "The username matthewporter doesn't exist."
+  "command" : "addAlbum",
+  "user" : "matthewporter",
+  "timestamp" : 12950,
+  "message" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "irene33",
@@ -19998,13 +20094,13 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 12960,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 2 results",
+  "results" : [ "jsimpson", "jsimpson" ]
 }, {
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 12960,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected jsimpson."
 }, {
   "command" : "printCurrentPage",
   "user" : "jack29",
@@ -20029,13 +20125,13 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 12970,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "fwebb" ]
 }, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 12970,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected fwebb."
 }, {
   "command" : "printCurrentPage",
   "user" : "alice22",
@@ -20073,7 +20169,10 @@
   "timestamp" : 12980,
   "message" : "Liked songs:\n\t[Paint It Black]\n\nFollowed playlists:\n\t[]"
 }, {
-  "error" : "The username matthewporter doesn't exist."
+  "command" : "addAlbum",
+  "user" : "matthewporter",
+  "timestamp" : 12980,
+  "message" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "bob35",
@@ -20088,13 +20187,13 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 12990,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "glester" ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 12990,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected glester."
 }, {
   "command" : "printCurrentPage",
   "user" : "carol19",
@@ -20119,13 +20218,13 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 13000,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "cbutler" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 13000,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected cbutler."
 }, {
   "command" : "printCurrentPage",
   "user" : "david27",
@@ -20163,7 +20262,10 @@
   "timestamp" : 13010,
   "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
-  "error" : "The username charlesgarcia doesn't exist."
+  "command" : "addAlbum",
+  "user" : "charlesgarcia",
+  "timestamp" : 13010,
+  "message" : "The username charlesgarcia doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "emily30",
@@ -20178,13 +20280,13 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 13020,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "cbutler" ]
 }, {
   "command" : "select",
   "user" : "frank21",
   "timestamp" : 13020,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected cbutler."
 }, {
   "command" : "printCurrentPage",
   "user" : "frank21",
@@ -20209,13 +20311,13 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 13030,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "fwebb" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 13030,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected fwebb."
 }, {
   "command" : "printCurrentPage",
   "user" : "grace25",
@@ -20240,13 +20342,13 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 13040,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 13040,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected jacobdean."
 }, {
   "command" : "printCurrentPage",
   "user" : "henry26",
@@ -20271,13 +20373,13 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 13050,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 3 results",
+  "results" : [ "mccarthyluis", "mccarthyluis", "mccarthyluis" ]
 }, {
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 13050,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected mccarthyluis."
 }, {
   "command" : "printCurrentPage",
   "user" : "irene33",
@@ -20302,13 +20404,13 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 13060,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 13060,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected jacobdean."
 }, {
   "command" : "printCurrentPage",
   "user" : "jack29",
@@ -20333,13 +20435,13 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 13070,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "cbutler" ]
 }, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 13070,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected cbutler."
 }, {
   "command" : "printCurrentPage",
   "user" : "alice22",
@@ -20377,7 +20479,10 @@
   "timestamp" : 13080,
   "message" : "Liked songs:\n\t[Paint It Black]\n\nFollowed playlists:\n\t[]"
 }, {
-  "error" : "The username matthewporter doesn't exist."
+  "command" : "addAlbum",
+  "user" : "matthewporter",
+  "timestamp" : 13080,
+  "message" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "bob35",
@@ -20392,13 +20497,13 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 13090,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 3 results",
+  "results" : [ "mccarthyluis", "mccarthyluis", "mccarthyluis" ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 13090,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected mccarthyluis."
 }, {
   "command" : "printCurrentPage",
   "user" : "carol19",
@@ -20423,13 +20528,13 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 13100,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "john99" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 13100,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected john99."
 }, {
   "command" : "printCurrentPage",
   "user" : "david27",
@@ -20467,7 +20572,10 @@
   "timestamp" : 13110,
   "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
-  "error" : "The username matthewporter doesn't exist."
+  "command" : "addAlbum",
+  "user" : "matthewporter",
+  "timestamp" : 13110,
+  "message" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "emily30",
@@ -20495,7 +20603,10 @@
   "timestamp" : 13120,
   "message" : "Liked songs:\n\t[Love Story]\n\nFollowed playlists:\n\t[]"
 }, {
-  "error" : "The username matthewporter doesn't exist."
+  "command" : "addAlbum",
+  "user" : "matthewporter",
+  "timestamp" : 13120,
+  "message" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "frank21",
@@ -20510,13 +20621,13 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 13130,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "john99" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 13130,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected john99."
 }, {
   "command" : "printCurrentPage",
   "user" : "grace25",
@@ -20554,7 +20665,10 @@
   "timestamp" : 13140,
   "message" : "Liked songs:\n\t[Happier]\n\nFollowed playlists:\n\t[]"
 }, {
-  "error" : "The username matthewporter doesn't exist."
+  "command" : "addAlbum",
+  "user" : "matthewporter",
+  "timestamp" : 13140,
+  "message" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "henry26",
@@ -20569,13 +20683,13 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 13150,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 3 results",
+  "results" : [ "mccarthyluis", "mccarthyluis", "mccarthyluis" ]
 }, {
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 13150,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected mccarthyluis."
 }, {
   "command" : "printCurrentPage",
   "user" : "irene33",
@@ -20600,13 +20714,13 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 13160,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "glester" ]
 }, {
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 13160,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected glester."
 }, {
   "command" : "printCurrentPage",
   "user" : "jack29",
@@ -20644,7 +20758,10 @@
   "timestamp" : 13170,
   "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
-  "error" : "The username matthewporter doesn't exist."
+  "command" : "addAlbum",
+  "user" : "matthewporter",
+  "timestamp" : 13170,
+  "message" : "The username matthewporter doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "alice22",
@@ -20659,13 +20776,13 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 13180,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "cbutler" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 13180,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected cbutler."
 }, {
   "command" : "printCurrentPage",
   "user" : "bob35",
@@ -20690,13 +20807,13 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 13190,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "john99" ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 13190,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected john99."
 }, {
   "command" : "printCurrentPage",
   "user" : "carol19",
@@ -20721,13 +20838,13 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 13200,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 3 results",
+  "results" : [ "mccarthyluis", "mccarthyluis", "mccarthyluis" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 13200,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected mccarthyluis."
 }, {
   "command" : "printCurrentPage",
   "user" : "david27",
@@ -20752,13 +20869,13 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 13210,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 2 results",
+  "results" : [ "barmstrong", "barmstrong" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 13210,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected barmstrong."
 }, {
   "command" : "printCurrentPage",
   "user" : "emily30",
@@ -20783,13 +20900,13 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 13220,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "frank21",
   "timestamp" : 13220,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected jacobdean."
 }, {
   "command" : "printCurrentPage",
   "user" : "frank21",
@@ -20814,13 +20931,13 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 13230,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 2 results",
+  "results" : [ "barmstrong", "barmstrong" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 13230,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected barmstrong."
 }, {
   "command" : "printCurrentPage",
   "user" : "grace25",
@@ -20845,13 +20962,13 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 13240,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 13240,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected amanda16."
 }, {
   "command" : "printCurrentPage",
   "user" : "henry26",
@@ -20876,13 +20993,13 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 13250,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 2 results",
+  "results" : [ "barmstrong", "barmstrong" ]
 }, {
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 13250,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected barmstrong."
 }, {
   "command" : "printCurrentPage",
   "user" : "irene33",
@@ -20907,13 +21024,13 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 13260,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "fwebb" ]
 }, {
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 13260,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected fwebb."
 }, {
   "command" : "printCurrentPage",
   "user" : "jack29",
