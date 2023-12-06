@@ -37,10 +37,30 @@
   "message" : "Search returned 0 results",
   "results" : [ ]
 }, {
+  "command" : "addPodcast",
+  "user" : "soundseeker",
+  "timestamp" : 51,
+  "message" : "soundseeker has added new podcast successfully."
+}, {
+  "command" : "addPodcast",
+  "user" : "alice22",
+  "timestamp" : 52,
+  "message" : "alice22 is not an artist."
+}, {
+  "command" : "addPodcast",
+  "user" : "soundseeker",
+  "timestamp" : 53,
+  "message" : "soundseeker has added new podcast successfully."
+}, {
   "command" : "printCurrentPage",
   "user" : "jack29",
   "timestamp" : 53,
   "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
+}, {
+  "command" : "addPodcast",
+  "user" : "soundseeker",
+  "timestamp" : 53,
+  "message" : "soundseeker has another podcast with the same name."
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -211,6 +231,11 @@
   "message" : "Search returned 1 results",
   "results" : [ "2010 hits" ]
 }, {
+  "command" : "deleteUser",
+  "user" : "david27",
+  "timestamp" : 3257,
+  "message" : "david27 can't be deleted."
+}, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 3260,
@@ -280,6 +305,11 @@
     "followers" : 1
   } ]
 }, {
+  "command" : "deleteUser",
+  "user" : "soundseeker",
+  "timestamp" : 4010,
+  "message" : "soundseeker can't be deleted."
+}, {
   "command" : "status",
   "user" : "carol19",
   "timestamp" : 4500,
@@ -290,4 +320,9 @@
     "shuffle" : false,
     "paused" : true
   }
+}, {
+  "command" : "deleteUser",
+  "user" : "soundseeker",
+  "timestamp" : 100000,
+  "message" : "soundseeker can't be deleted."
 } ]

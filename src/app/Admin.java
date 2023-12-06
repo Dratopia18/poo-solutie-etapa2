@@ -79,6 +79,14 @@ public class Admin {
         }
         return null;
     }
+    public static Host getHost(String username) {
+        for (Host host : hosts) {
+            if (host.getUsername().equals(username)) {
+                return host;
+            }
+        }
+        return null;
+    }
     public static void updateTimestamp(int newTimestamp) {
         int elapsed = newTimestamp - timestamp;
         timestamp = newTimestamp;
@@ -127,6 +135,19 @@ public class Admin {
         }
         return onlineUsers;
     }
+    public static List<String> getAllUsers() {
+        List<String> allUsers = new ArrayList<>();
+        for (User user : users) {
+            allUsers.add(user.getUsername());
+        }
+        for (Artist artist : artists) {
+            allUsers.add(artist.getUsername());
+        }
+        for (Host host : hosts) {
+            allUsers.add(host.getUsername());
+        }
+        return allUsers;
+    }
 
     public static List<User> getNormalUsers() {
         return new ArrayList<>(users);
@@ -152,7 +173,39 @@ public class Admin {
         }
         return "The username " + username + " has been added successfully.";
     }
-
+    public static String deleteUser(CommandInput commandInput) {
+        String username = commandInput.getUsername();
+        User userToDelete = getUser(username);
+        Artist artistToDelete = getArtist(username);
+        Host hostToDelete = getHost(username);
+        if (userToDelete == null && artistToDelete == null && hostToDelete == null) {
+            return "The username " + username + " doesn't exist.";
+        }
+        if (!hasOngoingProcess(userToDelete) && !hasOngoingProcess(artistToDelete)
+                && !hasOngoingProcess(hostToDelete)) {
+            return username + " can't be deleted.";
+        }
+        if (userToDelete != null) {
+            removeUser(userToDelete);
+        } else if (artistToDelete != null) {
+            removeUser(artistToDelete);
+        } else if (hostToDelete != null) {
+            removeUser(hostToDelete);
+        }
+        return username + " was successfully deleted.";
+    }
+    public static boolean hasOngoingProcess(User user) {
+        return false;
+    }
+    public static void removeUser(User user) {
+        if (user instanceof Artist) {
+            artists.remove(user);
+        } else if (user instanceof Host) {
+            hosts.remove(user);
+        } else {
+            users.remove(user);
+        }
+    }
     public static List<Map<String, Object>> showAlbums(String artistUsername) {
         Artist artist = getArtist(artistUsername);
         if (artist == null) {

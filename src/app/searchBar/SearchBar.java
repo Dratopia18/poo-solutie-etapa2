@@ -39,7 +39,7 @@ public class SearchBar {
             case "song":
                 entries = new ArrayList<>(Admin.getSongs());
                 for (Artist artist : Admin.getArtists()) {
-                    for(Album album : artist.getAlbums()) {
+                    for (Album album : artist.getAlbums()) {
                         entries.addAll(album.getSongs());
                     }
                 }

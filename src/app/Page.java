@@ -42,8 +42,8 @@ public class Page {
                 merchandise.stream().map(merch -> merch.getName() + " - " + merch.getPrice()
                                 + ":\n\t" + merch.getDescription())
                         .collect(Collectors.joining(", ")) +
-                "]\n\nEvent:\n\t[" +
-                events.stream().map(event -> event.getDate() + " - " + event.getDate()
+                "]\n\nEvents:\n\t[" +
+                events.stream().map(event -> event.getName() + " - " + event.getDate()
                                 + ":\n\t" + event.getDescription())
                         .collect(Collectors.joining(", ")) + "]";
 

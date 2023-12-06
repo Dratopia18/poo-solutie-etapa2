@@ -13,13 +13,13 @@ import java.util.*;
 public class Artist extends User{
     private Set<Album> albums;
     private Set<Event> events;
-    private Set<Merch> merchandise;
+    private final Set<Merch> merchandise;
 
     public Artist(String username, int age, String city) {
         super(username, age, city);
         this.albums = new LinkedHashSet<>();
-        this.events = new HashSet<>();
-        this.merchandise = new HashSet<>();
+        this.events = new LinkedHashSet<>();
+        this.merchandise = new LinkedHashSet<>();
     }
 
     public String addAlbum(String name, String releaseYear, String description, List<Song> songs) {

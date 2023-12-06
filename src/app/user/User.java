@@ -39,6 +39,7 @@ public class User {
     private boolean onlineStatus;
     @Getter @Setter
     private String currentPage;
+    private Artist selectedArtist;
     public User(String username, int age, String city) {
         this.username = username;
         this.age = age;
@@ -52,7 +53,9 @@ public class User {
         onlineStatus = true;
         currentPage = "HomePage";
     }
-
+    public void setSelectedArtist(Artist artist) {
+        this.selectedArtist = artist;
+    }
     public ArrayList<String> search(Filters filters, String type) {
         searchBar.clearSelection();
         player.stop();
@@ -79,8 +82,9 @@ public class User {
         if (selected == null)
             return "The selected ID is too high.";
         for (Artist artist : artists) {
-            if (artists.contains(selected.getName())) {
+            if (artist.getUsername().equals(selected.getName())) {
                 setCurrentPage("ArtistPage");
+                setSelectedArtist(artist);
                 return "Successfully selected %s's page.".formatted(selected.getName());
             }
         }
@@ -350,7 +354,13 @@ public class User {
         return switch (currentPage) {
             case "HomePage" -> Page.generateHomePage(this);
             case "LikedContentPage" -> Page.generateLikedContentPage(this);
-            case "ArtistPage" -> Page.generateArtistPage((Artist) this);
+            case "ArtistPage" -> {
+                if (selectedArtist != null) {
+                    yield Page.generateArtistPage(selectedArtist);
+                } else {
+                    yield "No artist selected";
+                }
+            }
             default -> "Invalid page.";
         };
     }

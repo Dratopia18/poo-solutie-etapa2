@@ -1,15 +1,19 @@
 package app;
 
 import app.audio.Collections.PlaylistOutput;
+import app.audio.Files.Episode;
 import app.audio.Files.Song;
 import app.player.PlayerStats;
 import app.searchBar.Filters;
 import app.user.artist.Artist;
 import app.user.User;
+import app.user.host.Host;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import fileio.input.CommandInput;
+import fileio.input.EpisodeInput;
+import fileio.input.PodcastInput;
 import fileio.input.SongInput;
 
 import java.util.ArrayList;
@@ -461,7 +465,27 @@ public class CommandRunner {
         ObjectNode objectNode = objectMapper.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("timestamp", commandInput.getTimestamp());
-        objectNode.put("result", objectMapper.valueToTree(onlineUsers));
+        objectNode.set("result", objectMapper.valueToTree(onlineUsers));
+
+        return objectNode;
+    }
+    public static ObjectNode getAllUsers(CommandInput commandInput) {
+        List<String> allUsers = Admin.getAllUsers();
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.set("result", objectMapper.valueToTree(allUsers));
+
+        return objectNode;
+    }
+    public static ObjectNode deleteUser(CommandInput commandInput) {
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("user", commandInput.getUsername());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+
+        String message = Admin.deleteUser(commandInput);
+        objectNode.put("message", message);
 
         return objectNode;
     }
@@ -498,6 +522,28 @@ public class CommandRunner {
         String message = artist.addAlbum(commandInput.getName(), commandInput.getReleaseYear(),
                 commandInput.getDescription(), songs);
 
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("user", commandInput.getUsername());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.put("message", message);
+
+        return objectNode;
+    }
+    public static ObjectNode addPodcast(CommandInput commandInput) {
+        Host host = Admin.getHost(commandInput.getUsername());
+        if (host == null) {
+            User user = Admin.getUser(commandInput.getUsername());
+            if (user == null) {
+                return createErrorResponse("addPodcast", commandInput.getUsername(), commandInput.getTimestamp(), "The username " + commandInput.getUsername() + " doesn't exist.");
+            } else {
+                return createErrorResponse("addPodcast", commandInput.getUsername(), commandInput.getTimestamp(), commandInput.getUsername() + " is not an artist.");
+            }
+        }
+        List<EpisodeInput> episodeInputs = commandInput.getEpisodes();
+        List<Episode> episodes = episodeInputs.stream().map(episodeInput -> new Episode(episodeInput.getName(),
+                episodeInput.getDuration(), episodeInput.getDescription())).toList();
+        String message = host.addPodcast(commandInput.getName(), commandInput.getUsername(), episodes);
         ObjectNode objectNode = objectMapper.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("user", commandInput.getUsername());
