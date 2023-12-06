@@ -17,7 +17,7 @@
   "command" : "addUser",
   "timestamp" : 103,
   "user" : "nancymontgomery",
-  "message" : "The username nancymontgomery has been added successfully."
+  "message" : "The username nancymontgomery is already taken."
 }, {
   "command" : "addUser",
   "timestamp" : 104,
@@ -32,7 +32,7 @@
   "command" : "addUser",
   "timestamp" : 106,
   "user" : "barmstrong",
-  "message" : "The username barmstrong has been added successfully."
+  "message" : "The username barmstrong is already taken."
 }, {
   "command" : "addUser",
   "timestamp" : 107,
@@ -47,7 +47,7 @@
   "command" : "addUser",
   "timestamp" : 109,
   "user" : "jacobdean",
-  "message" : "The username jacobdean has been added successfully."
+  "message" : "The username jacobdean is already taken."
 }, {
   "command" : "addUser",
   "timestamp" : 110,
@@ -57,17 +57,17 @@
   "command" : "addUser",
   "timestamp" : 111,
   "user" : "conniealvarez",
-  "message" : "The username conniealvarez has been added successfully."
+  "message" : "The username conniealvarez is already taken."
 }, {
   "command" : "addUser",
   "timestamp" : 112,
   "user" : "conniealvarez",
-  "message" : "The username conniealvarez has been added successfully."
+  "message" : "The username conniealvarez is already taken."
 }, {
   "command" : "addUser",
   "timestamp" : 113,
   "user" : "nancymontgomery",
-  "message" : "The username nancymontgomery has been added successfully."
+  "message" : "The username nancymontgomery is already taken."
 }, {
   "command" : "addUser",
   "timestamp" : 114,
@@ -77,7 +77,7 @@
   "command" : "addUser",
   "timestamp" : 115,
   "user" : "jenningsbeth",
-  "message" : "The username jenningsbeth has been added successfully."
+  "message" : "The username jenningsbeth is already taken."
 }, {
   "command" : "addUser",
   "timestamp" : 116,
@@ -92,37 +92,37 @@
   "command" : "addUser",
   "timestamp" : 118,
   "user" : "amanda16",
-  "message" : "The username amanda16 has been added successfully."
+  "message" : "The username amanda16 is already taken."
 }, {
   "command" : "addUser",
   "timestamp" : 119,
   "user" : "jacobdean",
-  "message" : "The username jacobdean has been added successfully."
+  "message" : "The username jacobdean is already taken."
 }, {
   "command" : "addUser",
   "timestamp" : 120,
   "user" : "conniealvarez",
-  "message" : "The username conniealvarez has been added successfully."
+  "message" : "The username conniealvarez is already taken."
 }, {
   "command" : "addUser",
   "timestamp" : 121,
   "user" : "leslie27",
-  "message" : "The username leslie27 has been added successfully."
+  "message" : "The username leslie27 is already taken."
 }, {
   "command" : "addUser",
   "timestamp" : 122,
   "user" : "amanda16",
-  "message" : "The username amanda16 has been added successfully."
+  "message" : "The username amanda16 is already taken."
 }, {
   "command" : "addUser",
   "timestamp" : 123,
   "user" : "amanda16",
-  "message" : "The username amanda16 has been added successfully."
+  "message" : "The username amanda16 is already taken."
 }, {
   "command" : "addUser",
   "timestamp" : 124,
   "user" : "matthewfernandez",
-  "message" : "The username matthewfernandez has been added successfully."
+  "message" : "The username matthewfernandez is already taken."
 }, {
   "command" : "addAlbum",
   "user" : "jacobdean",
@@ -152,7 +152,7 @@
   "command" : "addAlbum",
   "user" : "jenningsbeth",
   "timestamp" : 130,
-  "message" : "jenningsbeth has the same song at least twice in this album."
+  "message" : "The username jenningsbeth doesn't exist."
 }, {
   "command" : "addAlbum",
   "user" : "conniealvarez",
@@ -177,7 +177,7 @@
   "command" : "addAlbum",
   "user" : "jenningsbeth",
   "timestamp" : 135,
-  "message" : "jenningsbeth has added new album successfully."
+  "message" : "The username jenningsbeth doesn't exist."
 }, {
   "command" : "addAlbum",
   "user" : "conniealvarez",
@@ -187,7 +187,7 @@
   "command" : "addAlbum",
   "user" : "nancymontgomery",
   "timestamp" : 137,
-  "message" : "nancymontgomery has the same song at least twice in this album."
+  "message" : "The username nancymontgomery doesn't exist."
 }, {
   "command" : "addAlbum",
   "user" : "matthewfernandez",
@@ -307,7 +307,7 @@
   "command" : "addAlbum",
   "user" : "jenningsbeth",
   "timestamp" : 161,
-  "message" : "jenningsbeth has the same song at least twice in this album."
+  "message" : "The username jenningsbeth doesn't exist."
 }, {
   "command" : "addAlbum",
   "user" : "leslie27",
@@ -337,7 +337,7 @@
   "command" : "addAlbum",
   "user" : "jenningsbeth",
   "timestamp" : 167,
-  "message" : "jenningsbeth has the same song at least twice in this album."
+  "message" : "The username jenningsbeth doesn't exist."
 }, {
   "command" : "addAlbum",
   "user" : "conniealvarez",
@@ -357,7 +357,7 @@
   "command" : "addAlbum",
   "user" : "jenningsbeth",
   "timestamp" : 171,
-  "message" : "jenningsbeth has the same song at least twice in this album."
+  "message" : "The username jenningsbeth doesn't exist."
 }, {
   "command" : "addAlbum",
   "user" : "cbutler",
@@ -16489,8 +16489,8 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 11769,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "alice22",
@@ -16520,8 +16520,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 11779,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -16551,8 +16551,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 11789,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -16582,8 +16582,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 11799,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -16675,8 +16675,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 11829,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "grace25",
@@ -16768,8 +16768,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 11859,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -16830,8 +16830,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 11879,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -16861,8 +16861,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 11889,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -16923,8 +16923,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 11909,
-  "message" : "Search returned 2 results",
-  "results" : [ "leslie27", "leslie27" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "leslie27" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -16954,8 +16954,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 11919,
-  "message" : "Search returned 2 results",
-  "results" : [ "leslie27", "leslie27" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "leslie27" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -16985,8 +16985,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 11929,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "grace25",
@@ -17109,8 +17109,8 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 11969,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "alice22",
@@ -17171,8 +17171,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 11989,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -17202,8 +17202,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 11999,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -17264,8 +17264,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 12019,
-  "message" : "Search returned 2 results",
-  "results" : [ "leslie27", "leslie27" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "leslie27" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -17295,8 +17295,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 12029,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "grace25",
@@ -17388,8 +17388,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 12059,
-  "message" : "Search returned 2 results",
-  "results" : [ "leslie27", "leslie27" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "leslie27" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -17419,8 +17419,8 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 12069,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "alice22",
@@ -17512,8 +17512,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 12099,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -17543,8 +17543,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 12109,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -17667,8 +17667,8 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 12149,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "irene33",
@@ -17729,8 +17729,8 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 12169,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "alice22",
@@ -17791,8 +17791,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 12189,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -17822,8 +17822,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 12199,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -17853,8 +17853,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 12209,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -17884,8 +17884,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 12219,
-  "message" : "Search returned 2 results",
-  "results" : [ "leslie27", "leslie27" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "leslie27" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -17977,8 +17977,8 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 12249,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "irene33",
@@ -18070,8 +18070,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 12279,
-  "message" : "Search returned 2 results",
-  "results" : [ "leslie27", "leslie27" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "leslie27" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -18132,33 +18132,33 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 12299,
-  "message" : "Search returned 1 results",
-  "results" : [ "jenningsbeth" ]
+  "message" : "Search returned 0 results",
+  "results" : [ ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 12299,
-  "message" : "Successfully selected jenningsbeth's page."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "printCurrentPage",
   "user" : "david27",
   "timestamp" : 12299,
-  "message" : "Albums:\n\t[Chill View]\n\nMerch:\n\t[]\n\nEvents:\n\t[]"
+  "message" : "Albums:\n\t[Heroic Hood, Bad Harmonies, Teen Dreams, Groovy Funeral , Blue Technology, Heroic Guide, Teen Dirt, Chill Guide, Chill Revolution, Teen Hood, Blue Dreams, Electric Dreams, Dynamic Hood, Heroic Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t[]"
 }, {
   "command" : "addAlbum",
   "user" : "jenningsbeth",
   "timestamp" : 12299,
-  "message" : "jenningsbeth has added new album successfully."
+  "message" : "The username jenningsbeth doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "david27",
   "timestamp" : 12299,
-  "message" : "Albums:\n\t[Chill View, Electric Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t[]"
+  "message" : "Albums:\n\t[Heroic Hood, Bad Harmonies, Teen Dreams, Groovy Funeral , Blue Technology, Heroic Guide, Teen Dirt, Chill Guide, Chill Revolution, Teen Hood, Blue Dreams, Electric Dreams, Dynamic Hood, Heroic Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t[]"
 }, {
   "command" : "printCurrentPage",
   "user" : "david27",
   "timestamp" : 12299,
-  "message" : "Albums:\n\t[Chill View, Electric Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t[]"
+  "message" : "Albums:\n\t[Heroic Hood, Bad Harmonies, Teen Dreams, Groovy Funeral , Blue Technology, Heroic Guide, Teen Dirt, Chill Guide, Chill Revolution, Teen Hood, Blue Dreams, Electric Dreams, Dynamic Hood, Heroic Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t[]"
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -18287,8 +18287,8 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 12349,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "irene33",
@@ -18349,8 +18349,8 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 12369,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "alice22",
@@ -18473,8 +18473,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 12409,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -18566,8 +18566,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 12439,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -18721,8 +18721,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 12489,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -18814,8 +18814,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 12519,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -19000,8 +19000,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 12579,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -19310,8 +19310,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 12679,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -19372,8 +19372,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 12699,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -19434,8 +19434,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 12719,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -19527,8 +19527,8 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 12749,
-  "message" : "Search returned 2 results",
-  "results" : [ "leslie27", "leslie27" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "leslie27" ]
 }, {
   "command" : "select",
   "user" : "irene33",
@@ -19558,8 +19558,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 12759,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -19682,8 +19682,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 12799,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -19713,8 +19713,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 12809,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -19775,8 +19775,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 12829,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "grace25",
@@ -19868,8 +19868,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 12859,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -19992,8 +19992,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 12899,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -20116,8 +20116,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 12939,
-  "message" : "Search returned 2 results",
-  "results" : [ "leslie27", "leslie27" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "leslie27" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -20178,8 +20178,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 12959,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -20240,8 +20240,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 12979,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -20395,8 +20395,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 13029,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "grace25",
@@ -20426,8 +20426,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 13039,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -20457,8 +20457,8 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 13049,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "irene33",
@@ -20488,8 +20488,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 13059,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -20550,8 +20550,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 13079,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -20643,8 +20643,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 13109,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -20705,39 +20705,39 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 13129,
-  "message" : "Search returned 1 results",
-  "results" : [ "jenningsbeth" ]
+  "message" : "Search returned 0 results",
+  "results" : [ ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 13129,
-  "message" : "Successfully selected jenningsbeth's page."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "printCurrentPage",
   "user" : "grace25",
   "timestamp" : 13129,
-  "message" : "Albums:\n\t[Chill View, Electric Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t[]"
+  "message" : "Albums:\n\t[Heroic Hood, Bad Harmonies, Teen Dreams, Groovy Funeral , Blue Technology, Heroic Guide, Teen Dirt, Chill Guide, Chill Revolution, Teen Hood, Blue Dreams, Electric Dreams, Dynamic Hood, Heroic Revolution, Alone Funeral , Electric Revolution, Groovy Harmonies, Electric View, Blue Revolution, Electric Harmonies, Alone Dirt, Chill Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t[]"
 }, {
   "command" : "addAlbum",
   "user" : "jenningsbeth",
   "timestamp" : 13129,
-  "message" : "jenningsbeth has added new album successfully."
+  "message" : "The username jenningsbeth doesn't exist."
 }, {
   "command" : "printCurrentPage",
   "user" : "grace25",
   "timestamp" : 13129,
-  "message" : "Albums:\n\t[Chill View, Electric Autumn, Electric Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n\t[]"
+  "message" : "Albums:\n\t[Heroic Hood, Bad Harmonies, Teen Dreams, Groovy Funeral , Blue Technology, Heroic Guide, Teen Dirt, Chill Guide, Chill Revolution, Teen Hood, Blue Dreams, Electric Dreams, Dynamic Hood, Heroic Revolution, Alone Funeral , Electric Revolution, Groovy Harmonies, Electric View, Blue Revolution, Electric Harmonies, Alone Dirt, Chill Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t[]"
 }, {
   "command" : "printCurrentPage",
   "user" : "grace25",
   "timestamp" : 13129,
-  "message" : "Albums:\n\t[Chill View, Electric Autumn, Electric Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n\t[]"
+  "message" : "Albums:\n\t[Heroic Hood, Bad Harmonies, Teen Dreams, Groovy Funeral , Blue Technology, Heroic Guide, Teen Dirt, Chill Guide, Chill Revolution, Teen Hood, Blue Dreams, Electric Dreams, Dynamic Hood, Heroic Revolution, Alone Funeral , Electric Revolution, Groovy Harmonies, Electric View, Blue Revolution, Electric Harmonies, Alone Dirt, Chill Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t[]"
 }, {
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 13139,
-  "message" : "Search returned 2 results",
-  "results" : [ "leslie27", "leslie27" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "leslie27" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -20767,8 +20767,8 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 13149,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "irene33",
@@ -20798,8 +20798,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 13159,
-  "message" : "Search returned 2 results",
-  "results" : [ "leslie27", "leslie27" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "leslie27" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -20829,8 +20829,8 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 13169,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "alice22",
@@ -20891,8 +20891,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 13189,
-  "message" : "Search returned 2 results",
-  "results" : [ "leslie27", "leslie27" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "leslie27" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -20922,8 +20922,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 13199,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -20953,8 +20953,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 13209,
-  "message" : "Search returned 2 results",
-  "results" : [ "leslie27", "leslie27" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "leslie27" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -20984,8 +20984,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 13219,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -23738,7 +23738,7 @@
 }, {
   "command" : "getAllUsers",
   "timestamp" : 14849,
-  "result" : [ "alice22", "bob35", "carol19", "david27", "emily30", "frank21", "grace25", "henry26", "irene33", "jack29", "barmstrong", "matthewporter", "nancymontgomery", "amanda16", "cbutler", "jacobdean", "jacobdean", "jenningsbeth", "matthewfernandez", "leslie27", "amanda16", "leslie27", "amanda16", "amanda16", "nancymontgomery", "conniealvarez", "barmstrong", "jenningsbeth", "conniealvarez", "conniealvarez", "nancymontgomery", "charlesgarcia", "jacobdean", "conniealvarez", "matthewfernandez" ]
+  "result" : [ "alice22", "bob35", "carol19", "david27", "emily30", "frank21", "grace25", "henry26", "irene33", "jack29", "barmstrong", "matthewporter", "amanda16", "cbutler", "jacobdean", "matthewfernandez", "leslie27", "nancymontgomery", "conniealvarez", "jenningsbeth", "charlesgarcia" ]
 }, {
   "command" : "getTop5Playlists",
   "timestamp" : 14849,

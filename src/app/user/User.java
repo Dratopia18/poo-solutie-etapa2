@@ -13,6 +13,7 @@ import app.player.PlayerStats;
 import app.searchBar.Filters;
 import app.searchBar.SearchBar;
 import app.user.artist.Artist;
+import app.user.host.Host;
 import app.utils.Enums;
 import lombok.Getter;
 import lombok.Setter;
@@ -40,6 +41,8 @@ public class User {
     @Getter @Setter
     private String currentPage;
     private Artist selectedArtist;
+    private Host selectedHost;
+    private long timestamp;
     public User(String username, int age, String city) {
         this.username = username;
         this.age = age;
@@ -55,6 +58,9 @@ public class User {
     }
     public void setSelectedArtist(Artist artist) {
         this.selectedArtist = artist;
+    }
+    public void setSelectedHost(Host host) {
+        this.selectedHost = host;
     }
     public ArrayList<String> search(Filters filters, String type) {
         searchBar.clearSelection();
@@ -72,6 +78,7 @@ public class User {
 
     public String select(int itemNumber) {
         List<Artist> artists = Admin.getArtists();
+        List<Host> hosts = Admin.getHosts();
         if (!lastSearched)
             return "Please conduct a search before making a selection.";
 
@@ -85,6 +92,13 @@ public class User {
             if (artist.getUsername().equals(selected.getName())) {
                 setCurrentPage("ArtistPage");
                 setSelectedArtist(artist);
+                return "Successfully selected %s's page.".formatted(selected.getName());
+            }
+        }
+        for (Host host : hosts) {
+            if (host.getUsername().equals(selected.getName())) {
+                setCurrentPage("HostPage");
+                setSelectedHost(host);
                 return "Successfully selected %s's page.".formatted(selected.getName());
             }
         }
@@ -359,6 +373,13 @@ public class User {
                     yield Page.generateArtistPage(selectedArtist);
                 } else {
                     yield "No artist selected";
+                }
+            }
+            case "HostPage" -> {
+                if (selectedHost != null) {
+                    yield Page.generateHostPage(selectedHost);
+                } else {
+                    yield "No host selected";
                 }
             }
             default -> "Invalid page.";

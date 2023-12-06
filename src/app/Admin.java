@@ -20,6 +20,7 @@ public class Admin {
     private static List<Artist> artists = new ArrayList<>();
     private static List<Host> hosts = new ArrayList<>();
     private static int timestamp = 0;
+    private static Set<String> usernamesInCurrentTest = new HashSet<>();
 
     public static void setUsers(List<UserInput> userInputList) {
         users = new ArrayList<>();
@@ -160,7 +161,11 @@ public class Admin {
     }
     public static String addUser(CommandInput commandInput) {
         String username = commandInput.getUsername();
-        if (getUser(username) != null) {
+        User existingUser = getUser(username);
+        if(usernamesInCurrentTest.contains(username)) {
+            return "The username " + username + " is already taken.";
+        }
+        if (existingUser != null) {
             return "The username " + username + " is already taken.";
         }
         String type = commandInput.getType();
@@ -171,6 +176,7 @@ public class Admin {
             case "artist" -> artists.add(new Artist(username, age, city));
             case "host" -> hosts.add(new Host(username, age, city));
         }
+        usernamesInCurrentTest.add(username);
         return "The username " + username + " has been added successfully.";
     }
     public static String deleteUser(CommandInput commandInput) {
@@ -225,6 +231,22 @@ public class Admin {
 
         return albumsInfo;
     }
+    public static List<Map<String, Object>> showPodcasts(String hostUsername) {
+        Host host = getHost(hostUsername);
+        if (host == null) {
+            return Collections.emptyList();
+        }
+        List<Map<String, Object>> podcastsInfo = new ArrayList<>();
+        for (Podcast podcast : host.getPodcasts()) {
+            Map<String, Object> podcastInfo = new HashMap<>();
+            podcastInfo.put("name", podcast.getName());
+            List<String> episodeNames = podcast.getEpisodes().stream()
+                    .map(Episode::getName).toList();
+            podcastInfo.put("episodes", episodeNames);
+            podcastsInfo.add(podcastInfo);
+        }
+        return podcastsInfo;
+    }
 
     public static void reset() {
         users.clear();
@@ -233,7 +255,7 @@ public class Admin {
         artists.clear();
         hosts.clear();
         timestamp = 0;
-
+        usernamesInCurrentTest.clear();
         for (Artist artist : artists) {
             artist.clearAlbums();
         }

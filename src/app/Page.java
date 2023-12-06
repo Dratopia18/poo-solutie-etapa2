@@ -1,12 +1,16 @@
 package app;
 
 import app.audio.Collections.Playlist;
+import app.audio.Collections.Podcast;
+import app.audio.Files.Episode;
 import app.audio.Files.Song;
 import app.user.User;
 import app.user.artist.Album;
 import app.user.artist.Artist;
 import app.user.artist.Event;
 import app.user.artist.Merch;
+import app.user.host.Announcement;
+import app.user.host.Host;
 
 import java.util.List;
 import java.util.Set;
@@ -47,5 +51,30 @@ public class Page {
                                 + ":\n\t" + event.getDescription())
                         .collect(Collectors.joining(", ")) + "]";
 
+    }
+    public static String generateHostPage(Host host) {
+        Set<Podcast> podcasts = host.getPodcasts();
+        Set<Announcement> announcements = host.getAnnouncements();
+        StringBuilder hostPage = new StringBuilder("Podcasts:\n\t[");
+        for (Podcast podcast : podcasts) {
+            hostPage.append(podcast.getName()).append(":\n\t[");
+            for (Episode episode : podcast.getEpisodes()) {
+                hostPage.append(episode.getName()).append(" - ")
+                        .append(episode.getDescription()).append(", ");
+            }
+            hostPage.deleteCharAt(hostPage.length() - 2);
+            hostPage.deleteCharAt(hostPage.length() - 1);
+            hostPage.append("]\n, ");
+        }
+        hostPage.deleteCharAt(hostPage.length() - 2);
+        hostPage.deleteCharAt(hostPage.length() - 1);
+        hostPage.append("]\n\n");
+        hostPage.append("Announcements:\n");
+        for (Announcement announcement : announcements) {
+            hostPage.append("\t[").append(announcement.getName()).append(":\n\t")
+                    .append(announcement.getDescription());
+        }
+        hostPage.append("\n]");
+        return hostPage.toString();
     }
 }

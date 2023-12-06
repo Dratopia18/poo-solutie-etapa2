@@ -2,9 +2,11 @@ package app.searchBar;
 
 
 import app.Admin;
+import app.audio.Collections.Podcast;
 import app.user.artist.Album;
 import app.audio.LibraryEntry;
 import app.user.artist.Artist;
+import app.user.host.Host;
 import lombok.Getter;
 
 import java.util.ArrayList;
@@ -92,7 +94,9 @@ public class SearchBar {
                 break;
             case "podcast":
                 entries = new ArrayList<>(Admin.getPodcasts());
-
+                for (Host host : Admin.getHosts()) {
+                    entries.addAll(host.getPodcasts());
+                }
                 if (filters.getName() != null) {
                     entries = filterByName(entries, filters.getName());
                 }
@@ -126,6 +130,22 @@ public class SearchBar {
                 break;
             case "host":
                 entries = new ArrayList<>();
+                for (Host host : Admin.getHosts()) {
+                    LibraryEntry hostEntry = new LibraryEntry(host.getUsername()) {
+                        @Override
+                        public boolean matchesName(String name) {
+                            return super.matchesName(name) || matchesArtist(name);
+                        }
+                        @Override
+                        public boolean matchesArtist(String hostName) {
+                            return host.getUsername().toLowerCase().startsWith(hostName.toLowerCase());
+                        }
+                    };
+                    entries.add(hostEntry);
+                    if (filters.getName() != null) {
+                        entries = filterByArtist(entries, filters.getName());
+                    }
+                }
                 break;
             default:
                 entries = new ArrayList<>();

@@ -112,10 +112,13 @@ public final class Main {
                 case "deleteUser" -> outputs.add(CommandRunner.deleteUser(command));
                 case "addAlbum" -> outputs.add(CommandRunner.addAlbum(command));
                 case "showAlbums" -> outputs.add(CommandRunner.showAlbums(command));
+                case "showPodcasts" -> outputs.add(CommandRunner.showPodcasts(command));
                 case "addPodcast" -> outputs.add(CommandRunner.addPodcast(command));
                 case "printCurrentPage" -> outputs.add(CommandRunner.printCurrentPage(command));
                 case "addEvent" -> outputs.add(CommandRunner.addEvent(command));
                 case "addMerch" -> outputs.add(CommandRunner.addMerch(command));
+                case "addAnnouncement" -> outputs.add(CommandRunner.addAnnouncement(command));
+                case "removeAnnouncement" -> outputs.add(CommandRunner.removeAnnouncement(command));
                 default -> System.out.println("Invalid command " + commandName);
             }
         }

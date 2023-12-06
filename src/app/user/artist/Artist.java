@@ -1,7 +1,6 @@
 package app.user.artist;
 
 import app.audio.Files.Song;
-import app.audio.LibraryEntry;
 import app.user.User;
 import lombok.Getter;
 
