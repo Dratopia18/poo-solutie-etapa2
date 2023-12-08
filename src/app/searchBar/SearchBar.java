@@ -108,6 +108,14 @@ public class SearchBar {
                 break;
             case "album":
                 entries = new ArrayList<>();
+                for (Artist artist : Admin.getArtists()) {
+                    for (Album album : artist.getAlbums()) {
+                        if ((filters.getOwner() == null || album.getOwner().equalsIgnoreCase(filters.getOwner())) &&
+                                (filters.getName() == null || album.getName().toLowerCase().contains(filters.getName().toLowerCase()))) {
+                            entries.add(album);
+                        }
+                    }
+                }
                 break;
             case "artist":
                 entries = new ArrayList<>();

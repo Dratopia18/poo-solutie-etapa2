@@ -1,5 +1,7 @@
 package app;
 
+import app.audio.LibraryEntry;
+import app.player.PlayerStats;
 import app.user.artist.Album;
 import app.audio.Collections.Playlist;
 import app.audio.Collections.Podcast;
@@ -88,6 +90,29 @@ public class Admin {
         }
         return null;
     }
+
+    public static User findUser(String username) {
+        for (User user : users) {
+            if (user.getUsername().equals(username)) {
+                return user;
+            }
+        }
+
+        for (Artist artist : artists) {
+            if (artist.getUsername().equals(username)) {
+                return artist;
+            }
+        }
+
+        for (Host host : hosts) {
+            if (host.getUsername().equals(username)) {
+                return host;
+            }
+        }
+
+        return null;
+    }
+
     public static void updateTimestamp(int newTimestamp) {
         int elapsed = newTimestamp - timestamp;
         timestamp = newTimestamp;
@@ -179,39 +204,90 @@ public class Admin {
         usernamesInCurrentTest.add(username);
         return "The username " + username + " has been added successfully.";
     }
+
     public static String deleteUser(CommandInput commandInput) {
         String username = commandInput.getUsername();
-        User userToDelete = getUser(username);
-        Artist artistToDelete = getArtist(username);
-        Host hostToDelete = getHost(username);
-        if (userToDelete == null && artistToDelete == null && hostToDelete == null) {
+        User userToDelete = findUser(username);
+        if (userToDelete == null) {
             return "The username " + username + " doesn't exist.";
         }
-        if (!hasOngoingProcess(userToDelete) && !hasOngoingProcess(artistToDelete)
-                && !hasOngoingProcess(hostToDelete)) {
+
+        List<LibraryEntry> associatedEntries = getAssociatedEntries(userToDelete);
+        if (isAnyUserInteractingWith(associatedEntries)) {
             return username + " can't be deleted.";
         }
-        if (userToDelete != null) {
-            removeUser(userToDelete);
-        } else if (artistToDelete != null) {
-            removeUser(artistToDelete);
-        } else if (hostToDelete != null) {
-            removeUser(hostToDelete);
-        }
+
+        removeUser(userToDelete);
         return username + " was successfully deleted.";
     }
-    public static boolean hasOngoingProcess(User user) {
+
+    public static List<LibraryEntry> getAssociatedEntries(User user) {
+        List<LibraryEntry> associatedEntries = new ArrayList<>();
+        if (user instanceof Artist artist) {
+            for (Album album : artist.getAlbums()) {
+                associatedEntries.add(album);
+                associatedEntries.addAll(album.getSongs());
+            }
+        } else if (user instanceof Host host) {
+            associatedEntries.addAll(host.getPodcasts());
+        }
+        return associatedEntries;
+    }
+
+    public static boolean isAnyUserInteractingWith(List<LibraryEntry> entries) {
+        for (String username : getAllUsers()) {
+            User user = findUser(username);
+            if (user != null && user.isInteractingWith(entries)) {
+                return true;
+            }
+        }
         return false;
     }
+
     public static void removeUser(User user) {
-        if (user instanceof Artist) {
-            artists.remove(user);
-        } else if (user instanceof Host) {
-            hosts.remove(user);
+        if (user instanceof Artist artist) {
+            artist.clearAlbums();
+            for (Album album : artist.getAlbums()) {
+                removeAlbum(album);
+            }
+            artists.remove(artist);
+
+            removeArtistSongsFromLikedSongs(artist);
+        } else if (user instanceof Host host) {
+            host.clearPodcasts();
+            for (Podcast podcast : host.getPodcasts()) {
+                removePodcast(podcast);
+            }
+            hosts.remove(host);
         } else {
+            removeUserPlaylists(user);
             users.remove(user);
         }
+        usernamesInCurrentTest.remove(user.getUsername());
     }
+
+    private static void removeAlbum(Album album) {
+        for (Song song : album.getSongs()) {
+            songs.remove(song);
+        }
+    }
+
+    private static void removePodcast(Podcast podcast) {
+        podcasts.remove(podcast);
+    }
+
+    private static void removeArtistSongsFromLikedSongs(Artist artist) {
+        for (User user : users) {
+            user.getLikedSongs().removeIf(song -> song.getArtist().equals(artist.getUsername()));
+        }
+    }
+
+    private static void removeUserPlaylists(User user) {
+        for (User u : users) {
+            u.getFollowedPlaylists().removeIf(playlist -> playlist.getOwner().equals(user.getUsername()));
+        }
+    }
+
     public static List<Map<String, Object>> showAlbums(String artistUsername) {
         Artist artist = getArtist(artistUsername);
         if (artist == null) {
@@ -258,6 +334,9 @@ public class Admin {
         usernamesInCurrentTest.clear();
         for (Artist artist : artists) {
             artist.clearAlbums();
+        }
+        for (Host host : hosts) {
+            host.clearPodcasts();
         }
     }
 }

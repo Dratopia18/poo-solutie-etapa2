@@ -35,7 +35,7 @@ public class Artist extends User{
             }
         }
 
-        Album newAlbum = new Album(name, releaseYear, description, songs);
+        Album newAlbum = new Album(name, getUsername(), releaseYear, description, songs);
         albums.add(newAlbum);
 
         return getUsername() + " has added new album successfully.";
@@ -83,6 +83,7 @@ public class Artist extends User{
             return false;
         }
     }
+
     public String addMerch(String name, String description, int price) {
         for (Merch item : merchandise) {
             if (item.getName().equals(name)) {
@@ -96,6 +97,7 @@ public class Artist extends User{
         merchandise.add(newMerch);
         return getUsername() + " has added new merchandise successfully.";
     }
+
     public void clearAlbums() {
         albums.clear();
     }

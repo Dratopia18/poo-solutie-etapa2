@@ -45,15 +45,12 @@ public class Player {
     }
 
     public static PlayerSource createSource(String type, LibraryEntry entry, List<PodcastBookmark> bookmarks) {
-        if ("song".equals(type)) {
-            return new PlayerSource(Enums.PlayerSourceType.LIBRARY, (AudioFile) entry);
-        } else if ("playlist".equals(type)) {
-            return new PlayerSource(Enums.PlayerSourceType.PLAYLIST, (AudioCollection) entry);
-        } else if ("podcast".equals(type)) {
-            return createPodcastSource((AudioCollection) entry, bookmarks);
-        }
-
-        return null;
+        return switch (type) {
+            case "song" -> new PlayerSource(Enums.PlayerSourceType.LIBRARY, (AudioFile) entry);
+            case "playlist", "album" -> new PlayerSource(Enums.PlayerSourceType.PLAYLIST, (AudioCollection) entry);
+            case "podcast" -> createPodcastSource((AudioCollection) entry, bookmarks);
+            default -> null;
+        };
     }
 
     private static PlayerSource createPodcastSource(AudioCollection collection, List<PodcastBookmark> bookmarks) {

@@ -1,12 +1,13 @@
 package app.user.artist;
 
+import app.audio.Collections.AudioCollection;
+import app.audio.Files.AudioFile;
 import app.audio.Files.Song;
 import lombok.Getter;
 
 import java.util.List;
 
-public class Album {
-    private String albumName;
+public class Album extends AudioCollection {
     @Getter
     private String releaseYear;
     @Getter
@@ -14,19 +15,11 @@ public class Album {
     @Getter
     private List<Song> songs;
 
-    public Album(String albumName, String releaseYear, String description, List<Song> songs) {
-        this.albumName = albumName;
+    public Album(String name, String owner, String releaseYear, String description, List<Song> songs) {
+        super(name, owner);
         this.releaseYear = releaseYear;
         this.description = description;
         this.songs = songs;
-    }
-
-    public String getName() {
-        return this.albumName;
-    }
-
-    public void setName(String albumName) {
-        this.albumName = albumName;
     }
 
     public void setReleaseYear(String releaseYear) {
@@ -39,5 +32,19 @@ public class Album {
 
     public void setSongs(List<Song> songs) {
         this.songs = songs;
+    }
+
+    @Override
+    public int getNumberOfTracks() {
+        return songs.size();
+    }
+
+    @Override
+    public AudioFile getTrackByIndex(int index) {
+        if (index >= 0 && index < songs.size()) {
+            return songs.get(index);
+        } else {
+            return null;
+        }
     }
 }

@@ -365,7 +365,7 @@ public class CommandRunner {
     }
 
     public static ObjectNode status(CommandInput commandInput) {
-        User user = Admin.getUser(commandInput.getUsername());
+        User user = Admin.findUser(commandInput.getUsername());
         if (user == null) {
             ObjectNode objectNode = objectMapper.createObjectNode();
             objectNode.put("error", "User not found");
@@ -610,7 +610,24 @@ public class CommandRunner {
 
         return objectNode;
     }
-
+    public static ObjectNode changePage(CommandInput commandInput) {
+        User user = Admin.getUser(commandInput.getUsername());
+        if (user == null) {
+            return createErrorResponse("changePage", commandInput.getUsername(), commandInput.getTimestamp(), "The username " + commandInput.getUsername() + " doesn't exist.");
+        }
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("user", commandInput.getUsername());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        if (!user.getOnlineStatus()) {
+            objectNode.put("message", commandInput.getUsername() + " is offline.");
+        } else {
+            String nextPage = commandInput.getNextPage();
+            String message = user.changePage(nextPage);
+            objectNode.put("message", message);
+        }
+        return objectNode;
+    }
     public static ObjectNode addEvent(CommandInput commandInput) {
         Artist artist = Admin.getArtist(commandInput.getUsername());
         if (artist == null) {

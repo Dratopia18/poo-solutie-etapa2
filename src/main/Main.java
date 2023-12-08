@@ -79,9 +79,16 @@ public final class Main {
         Admin.setPodcasts(library.getPodcasts());
 
         for (CommandInput command : commands) {
+            String commandName = command.getCommand();
+            String type = command.getType();
+            int timestamp = command.getTimestamp();
+            if(commandName.equals("load") && timestamp == 285)
+                System.out.println(timestamp);
+
             Admin.updateTimestamp(command.getTimestamp());
 
-            String commandName = command.getCommand();
+            if(Objects.equals(type, "album") && timestamp == 190)
+                System.out.println(type);
 
             switch (commandName) {
                 case "search" -> outputs.add(CommandRunner.search(command));
@@ -119,6 +126,7 @@ public final class Main {
                 case "addMerch" -> outputs.add(CommandRunner.addMerch(command));
                 case "addAnnouncement" -> outputs.add(CommandRunner.addAnnouncement(command));
                 case "removeAnnouncement" -> outputs.add(CommandRunner.removeAnnouncement(command));
+                case "changePage" -> outputs.add(CommandRunner.changePage(command));
                 default -> System.out.println("Invalid command " + commandName);
             }
         }

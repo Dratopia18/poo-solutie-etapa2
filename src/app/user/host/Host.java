@@ -53,4 +53,7 @@ public class Host extends User {
         }
         return getUsername() + " has no announcement with the given name.";
     }
+    public void clearPodcasts() {
+        podcasts.clear();
+    }
 }

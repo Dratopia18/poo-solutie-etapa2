@@ -29,12 +29,12 @@ public class Page {
     public static String generateLikedContentPage(User user) {
         List<Song> likedSongs = user.getLikedSongs();
         List<Playlist> followedPlaylists = user.getFollowedPlaylists();
-        return "Liked songs:\n\t" +
+        return "Liked songs:\n\t[" +
                 likedSongs.stream().map(song -> song.getName() + " - " + song.getArtist())
                         .collect(Collectors.joining(", ")) +
-                "\n\nFollowed playlists:\n\t" +
+                "]\n\nFollowed playlists:\n\t[" +
                 followedPlaylists.stream().map(playlist -> playlist.getName() + " - " + playlist.getOwner())
-                        .collect(Collectors.joining(", "));
+                        .collect(Collectors.joining(", ")) + "]";
     }
     public static String generateArtistPage(Artist artist) {
         Set<Album> albums = artist.getAlbums();

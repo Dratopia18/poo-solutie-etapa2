@@ -15,11 +15,13 @@ import app.searchBar.SearchBar;
 import app.user.artist.Artist;
 import app.user.host.Host;
 import app.utils.Enums;
+import fileio.input.CommandInput;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class User {
     @Getter
@@ -54,7 +56,7 @@ public class User {
         searchBar = new SearchBar(username);
         lastSearched = false;
         onlineStatus = true;
-        currentPage = "HomePage";
+        currentPage = "Home";
     }
     public void setSelectedArtist(Artist artist) {
         this.selectedArtist = artist;
@@ -109,15 +111,14 @@ public class User {
         if (searchBar.getLastSelected() == null)
             return "Please select a source before attempting to load.";
 
-        if (!searchBar.getLastSearchType().equals("song") && ((AudioCollection)searchBar.getLastSelected()).getNumberOfTracks() == 0) {
+        if (searchBar.getLastSelected() instanceof AudioCollection &&
+                ((AudioCollection) searchBar.getLastSelected()).getNumberOfTracks() == 0) {
             return "You can't load an empty audio collection!";
         }
 
         player.setSource(searchBar.getLastSelected(), searchBar.getLastSearchType());
         searchBar.clearSelection();
-
         player.pause();
-
         return "Playback loaded successfully.";
     }
 
@@ -348,6 +349,7 @@ public class User {
         String preferredGenre = mostLikedIndex != -1 ? genres[mostLikedIndex] : "unknown";
         return "This user's preferred genre is %s.".formatted(preferredGenre);
     }
+
     public String SwitchConnectionStatus(String targetUsername) {
         User targetUser = Admin.getUser(targetUsername);
         List<User> normalUsers = Admin.getNormalUsers();
@@ -358,16 +360,28 @@ public class User {
         targetUser.switchOnlineStatus();
         return targetUsername + " has changed status successfully.";
     }
+
+    public String changePage(String nextPage) {
+        if (Objects.equals(nextPage, "Home") || Objects.equals(nextPage, "LikedContent")) {
+            setCurrentPage(nextPage);
+            return getUsername() + " accessed " + nextPage + " successfully.";
+        } else {
+            return getUsername() + " is trying to access a non-existent page.";
+        }
+    }
+
     public void switchOnlineStatus() {
         onlineStatus = !onlineStatus;
     }
+
     public boolean getOnlineStatus() {
         return onlineStatus;
     }
+
     public String printCurrentPage() {
         return switch (currentPage) {
-            case "HomePage" -> Page.generateHomePage(this);
-            case "LikedContentPage" -> Page.generateLikedContentPage(this);
+            case "Home" -> Page.generateHomePage(this);
+            case "LikedContent" -> Page.generateLikedContentPage(this);
             case "ArtistPage" -> {
                 if (selectedArtist != null) {
                     yield Page.generateArtistPage(selectedArtist);
@@ -385,6 +399,7 @@ public class User {
             default -> "Invalid page.";
         };
     }
+
     public void simulateTime(int time) {
         if(onlineStatus) {
             player.simulatePlayer(time);
@@ -392,5 +407,17 @@ public class User {
             int remainingTime = player.getStats().getRemainedTime() - time;
             player.getStats().setRemainedTime(Math.max(0, remainingTime));
         }
+    }
+
+    public boolean isInteractingWith(List<LibraryEntry> entries) {
+        PlayerStats stats = this.getPlayerStats();
+        if (stats != null && stats.getRemainedTime() > 0) {
+            for (LibraryEntry entry : entries) {
+                if (entry.getName().equals(stats.getName())) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }
