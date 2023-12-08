@@ -428,7 +428,15 @@ public class CommandRunner {
 
         return objectNode;
     }
+    public static ObjectNode getTop5Albums(CommandInput commandInput) {
+        List<String> albums = Admin.getTop5Albums();
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.set("result", objectMapper.valueToTree(albums));
 
+        return objectNode;
+    }
     public static ObjectNode getTop5Playlists(CommandInput commandInput) {
         List<String> playlists = Admin.getTop5Playlists();
 
@@ -475,17 +483,6 @@ public class CommandRunner {
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("timestamp", commandInput.getTimestamp());
         objectNode.set("result", objectMapper.valueToTree(allUsers));
-
-        return objectNode;
-    }
-    public static ObjectNode deleteUser(CommandInput commandInput) {
-        ObjectNode objectNode = objectMapper.createObjectNode();
-        objectNode.put("command", commandInput.getCommand());
-        objectNode.put("user", commandInput.getUsername());
-        objectNode.put("timestamp", commandInput.getTimestamp());
-
-        String message = Admin.deleteUser(commandInput);
-        objectNode.put("message", message);
 
         return objectNode;
     }
@@ -552,7 +549,28 @@ public class CommandRunner {
 
         return objectNode;
     }
+    public static ObjectNode deleteUser(CommandInput commandInput) {
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("user", commandInput.getUsername());
+        objectNode.put("timestamp", commandInput.getTimestamp());
 
+        String message = Admin.deleteUser(commandInput);
+        objectNode.put("message", message);
+
+        return objectNode;
+    }
+    public static ObjectNode removeAlbum(CommandInput commandInput) {
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("user", commandInput.getUsername());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+
+        String message = Admin.removeAlbum(commandInput);
+        objectNode.put("message", message);
+
+        return objectNode;
+    }
     public static ObjectNode showAlbums(CommandInput commandInput) {
         List<Map<String, Object>> albums = Admin.showAlbums(commandInput.getUsername());
 

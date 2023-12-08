@@ -1,7 +1,6 @@
 package app;
 
 import app.audio.LibraryEntry;
-import app.player.PlayerStats;
 import app.user.artist.Album;
 import app.audio.Collections.Playlist;
 import app.audio.Collections.Podcast;
@@ -19,10 +18,10 @@ public class Admin {
     private static List<User> users = new ArrayList<>();
     private static List<Song> songs = new ArrayList<>();
     private static List<Podcast> podcasts = new ArrayList<>();
-    private static List<Artist> artists = new ArrayList<>();
-    private static List<Host> hosts = new ArrayList<>();
+    private static final List<Artist> artists = new ArrayList<>();
+    private static final List<Host> hosts = new ArrayList<>();
     private static int timestamp = 0;
-    private static Set<String> usernamesInCurrentTest = new HashSet<>();
+    private static final Set<String> usernamesInCurrentTest = new HashSet<>();
 
     public static void setUsers(List<UserInput> userInputList) {
         users = new ArrayList<>();
@@ -90,7 +89,13 @@ public class Admin {
         }
         return null;
     }
-
+    public static List<Album> getAlbums() {
+        List<Album> albums = new ArrayList<>();
+        for (Artist artist : artists) {
+            albums.addAll(artist.getAlbums());
+        }
+        return albums;
+    }
     public static User findUser(String username) {
         for (User user : users) {
             if (user.getUsername().equals(username)) {
@@ -127,6 +132,11 @@ public class Admin {
 
     public static List<String> getTop5Songs() {
         List<Song> sortedSongs = new ArrayList<>(songs);
+        for (Artist artist : getArtists()) {
+            for (Album album : artist.getAlbums()) {
+                sortedSongs.addAll(album.getSongs());
+            }
+        }
         sortedSongs.sort(Comparator.comparingInt(Song::getLikes).reversed());
         List<String> topSongs = new ArrayList<>();
         int count = 0;
@@ -151,6 +161,20 @@ public class Admin {
             count++;
         }
         return topPlaylists;
+    }
+    public static List<String> getTop5Albums() {
+        List<Album> sortedAlbums = new ArrayList<>(getAlbums());
+        sortedAlbums.sort(Comparator.comparingInt(Album::getTotalLikes).reversed()
+                .thenComparing(Album::getName));
+        List<String> topAlbums = new ArrayList<>();
+        int count = 0;
+        for (Album album : sortedAlbums) {
+            if (count >= 5) break;
+            topAlbums.add(album.getName());
+            count++;
+        }
+        return topAlbums;
+
     }
     public static List<String> getOnlineUsers() {
         List<String> onlineUsers = new ArrayList<>();
@@ -287,7 +311,34 @@ public class Admin {
             u.getFollowedPlaylists().removeIf(playlist -> playlist.getOwner().equals(user.getUsername()));
         }
     }
+    public static String removeAlbum(CommandInput commandInput) {
+        String username = commandInput.getUsername();
+        Artist artist = (Artist) findUser(username);
+        if (artist == null) {
+            return username + " is not an artist.";
+        }
+        String albumName = commandInput.getName();
+        Album albumToRemove = findAlbum(artist, albumName);
+        if (albumToRemove == null) {
+            return username + " doesn't have an album with the given name.";
+        }
+        List<LibraryEntry> associatedEntries = getAssociatedEntries(artist);
+        if (isAnyUserInteractingWith(associatedEntries)) {
+            return username + " can't delete this album.";
+        }
+        removeAlbum(albumToRemove);
 
+        return username + " deleted the album successfully.";
+
+    }
+    public static Album findAlbum(Artist artist, String albumName) {
+        for (Album album : artist.getAlbums()) {
+            if (album.getName().equals(albumName)) {
+                return album;
+            }
+        }
+        return null;
+    }
     public static List<Map<String, Object>> showAlbums(String artistUsername) {
         Artist artist = getArtist(artistUsername);
         if (artist == null) {

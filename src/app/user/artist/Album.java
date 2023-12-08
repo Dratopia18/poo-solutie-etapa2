@@ -47,4 +47,7 @@ public class Album extends AudioCollection {
             return null;
         }
     }
+    public int getTotalLikes() {
+        return songs.stream().mapToInt(Song::getLikes).sum();
+    }
 }
