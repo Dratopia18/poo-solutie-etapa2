@@ -37,9 +37,6 @@ public final class Playlist extends AudioCollection {
     public void removeSong(Song song) {
         songs.remove(song);
     }
-    public void removeSong(int index) {
-        songs.remove(index);
-    }
 
     public void switchVisibility() {
         if (visibility == Enums.Visibility.PUBLIC) {

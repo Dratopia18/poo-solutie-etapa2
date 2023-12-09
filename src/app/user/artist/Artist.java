@@ -1,5 +1,6 @@
 package app.user.artist;
 
+import app.Admin;
 import app.audio.Files.Song;
 import app.user.User;
 import lombok.Getter;
@@ -39,6 +40,28 @@ public class Artist extends User{
         albums.add(newAlbum);
 
         return getUsername() + " has added new album successfully.";
+    }
+
+    public String removeAlbum(String albumName) {
+        Album albumToRemove = null;
+        for (Album album : albums) {
+            if (album.getName().equals(albumName)) {
+                albumToRemove = album;
+                break;
+            }
+        }
+
+        if (albumToRemove == null) {
+            return getUsername() + " doesn't have an album with the given name.";
+        }
+
+        if (Admin.isAlbumInUse(albumToRemove)) {
+            return getUsername() + " can't delete this album.";
+        }
+
+        albums.remove(albumToRemove);
+        Admin.removeAlbum(albumToRemove);
+        return getUsername() + " deleted the album successfully.";
     }
 
     public boolean hasEvent(String eventName) {
@@ -83,7 +106,20 @@ public class Artist extends User{
             return false;
         }
     }
-
+    public String removeEvent(String eventName) {
+        if (!hasEvent(eventName)) {
+            return getUsername() + " doesn't have an event with the given name.";
+        }
+        Event eventToRemove = null;
+        for (Event event : events) {
+            if (event.getName().equals(eventName)) {
+                eventToRemove = event;
+                break;
+            }
+        }
+        events.remove(eventToRemove);
+        return getUsername() + " deleted the event successfully.";
+    }
     public String addMerch(String name, String description, int price) {
         for (Merch item : merchandise) {
             if (item.getName().equals(name)) {
@@ -101,7 +137,10 @@ public class Artist extends User{
     public void clearAlbums() {
         albums.clear();
     }
-
+    public int getTotalLikes() {
+        return albums.stream().flatMap(album -> album.getSongs().stream())
+                .mapToInt(Song::getLikes).sum();
+    }
     public void setAlbums(Set<Album> albums) {
         this.albums = albums;
     }

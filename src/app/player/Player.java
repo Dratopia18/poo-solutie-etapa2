@@ -83,7 +83,8 @@ public class Player {
             source.generateShuffleOrder(seed);
         }
 
-        if (source.getType() == Enums.PlayerSourceType.PLAYLIST) {
+        if (source.getType() == Enums.PlayerSourceType.PLAYLIST
+                || source.getType() == Enums.PlayerSourceType.ALBUM) {
             shuffle = !shuffle;
             if (shuffle) {
                 source.updateShuffleIndex();
@@ -186,5 +187,12 @@ public class Player {
         }
 
         return new PlayerStats(filename, duration, repeatMode, shuffle, paused);
+    }
+
+    public LibraryEntry getCurrentSource() {
+        if (source == null) {
+            return null;
+        }
+        return source.getAudioFile();
     }
 }

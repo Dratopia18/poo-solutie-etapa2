@@ -174,7 +174,18 @@ public class Admin {
             count++;
         }
         return topAlbums;
-
+    }
+    public static List<String> getTop5Artists() {
+        List<Artist> sortedArtists = new ArrayList<>(getArtists());
+        sortedArtists.sort(Comparator.comparingInt(Artist::getTotalLikes).reversed());
+        List<String> topArtists = new ArrayList<>();
+        int count = 0;
+        for (Artist artist : sortedArtists) {
+            if (count >= 5) break;
+            topArtists.add(artist.getUsername());
+            count++;
+        }
+        return topArtists;
     }
     public static List<String> getOnlineUsers() {
         List<String> onlineUsers = new ArrayList<>();
@@ -235,7 +246,9 @@ public class Admin {
         if (userToDelete == null) {
             return "The username " + username + " doesn't exist.";
         }
-
+        if (isAnyUserInteractingWithPages(userToDelete)) {
+            return username + " can't be deleted.";
+        }
         List<LibraryEntry> associatedEntries = getAssociatedEntries(userToDelete);
         if (isAnyUserInteractingWith(associatedEntries)) {
             return username + " can't be deleted.";
@@ -253,7 +266,10 @@ public class Admin {
                 associatedEntries.addAll(album.getSongs());
             }
         } else if (user instanceof Host host) {
-            associatedEntries.addAll(host.getPodcasts());
+            for (Podcast podcast : host.getPodcasts()) {
+                associatedEntries.add(podcast);
+                associatedEntries.addAll(podcast.getEpisodes());
+            }
         }
         return associatedEntries;
     }
@@ -267,7 +283,16 @@ public class Admin {
         }
         return false;
     }
-
+    public static boolean isAnyUserInteractingWithPages(User user) {
+        for (String username : getAllUsers()) {
+            User interactingUser = findUser(username);
+            if (interactingUser != null
+                    && interactingUser.isOnArtistOrHostPage(user.getUsername())) {
+                    return true;
+            }
+        }
+        return false;
+    }
     public static void removeUser(User user) {
         if (user instanceof Artist artist) {
             artist.clearAlbums();
@@ -284,16 +309,13 @@ public class Admin {
             }
             hosts.remove(host);
         } else {
+            for (Playlist playlist : user.getFollowedPlaylists()) {
+                playlist.decreaseFollowers();
+            }
             removeUserPlaylists(user);
             users.remove(user);
         }
         usernamesInCurrentTest.remove(user.getUsername());
-    }
-
-    private static void removeAlbum(Album album) {
-        for (Song song : album.getSongs()) {
-            songs.remove(song);
-        }
     }
 
     private static void removePodcast(Podcast podcast) {
@@ -311,34 +333,7 @@ public class Admin {
             u.getFollowedPlaylists().removeIf(playlist -> playlist.getOwner().equals(user.getUsername()));
         }
     }
-    public static String removeAlbum(CommandInput commandInput) {
-        String username = commandInput.getUsername();
-        Artist artist = (Artist) findUser(username);
-        if (artist == null) {
-            return username + " is not an artist.";
-        }
-        String albumName = commandInput.getName();
-        Album albumToRemove = findAlbum(artist, albumName);
-        if (albumToRemove == null) {
-            return username + " doesn't have an album with the given name.";
-        }
-        List<LibraryEntry> associatedEntries = getAssociatedEntries(artist);
-        if (isAnyUserInteractingWith(associatedEntries)) {
-            return username + " can't delete this album.";
-        }
-        removeAlbum(albumToRemove);
 
-        return username + " deleted the album successfully.";
-
-    }
-    public static Album findAlbum(Artist artist, String albumName) {
-        for (Album album : artist.getAlbums()) {
-            if (album.getName().equals(albumName)) {
-                return album;
-            }
-        }
-        return null;
-    }
     public static List<Map<String, Object>> showAlbums(String artistUsername) {
         Artist artist = getArtist(artistUsername);
         if (artist == null) {
@@ -373,6 +368,18 @@ public class Admin {
             podcastsInfo.add(podcastInfo);
         }
         return podcastsInfo;
+    }
+
+    public static boolean isAlbumInUse(Album album) {
+        for (User user : users) {
+            if (user.isUsingAlbum(album)) {
+                return true;
+            }
+        }
+        return false;
+    }
+    public static void removeAlbum(Album album) {
+        songs.removeAll(album.getSongs());
     }
 
     public static void reset() {

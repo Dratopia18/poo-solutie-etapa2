@@ -5,6 +5,7 @@ import app.Page;
 import app.audio.Collections.AudioCollection;
 import app.audio.Collections.Playlist;
 import app.audio.Collections.PlaylistOutput;
+import app.audio.Collections.Podcast;
 import app.audio.Files.AudioFile;
 import app.audio.Files.Song;
 import app.audio.LibraryEntry;
@@ -12,10 +13,10 @@ import app.player.Player;
 import app.player.PlayerStats;
 import app.searchBar.Filters;
 import app.searchBar.SearchBar;
+import app.user.artist.Album;
 import app.user.artist.Artist;
 import app.user.host.Host;
 import app.utils.Enums;
-import fileio.input.CommandInput;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -42,9 +43,10 @@ public class User {
     private boolean onlineStatus;
     @Getter @Setter
     private String currentPage;
+    @Setter
     private Artist selectedArtist;
+    @Setter
     private Host selectedHost;
-    private long timestamp;
     public User(String username, int age, String city) {
         this.username = username;
         this.age = age;
@@ -58,12 +60,7 @@ public class User {
         onlineStatus = true;
         currentPage = "Home";
     }
-    public void setSelectedArtist(Artist artist) {
-        this.selectedArtist = artist;
-    }
-    public void setSelectedHost(Host host) {
-        this.selectedHost = host;
-    }
+
     public ArrayList<String> search(Filters filters, String type) {
         searchBar.clearSelection();
         player.stop();
@@ -156,7 +153,7 @@ public class User {
         if (player.getCurrentAudioFile() == null)
             return "Please load a source before using the shuffle function.";
 
-        if (!player.getType().equals("playlist"))
+        if (!player.getType().equals("playlist") && !player.getType().equals("album"))
             return "The loaded source is not a playlist.";
 
         player.shuffle(seed);
@@ -386,14 +383,14 @@ public class User {
                 if (selectedArtist != null) {
                     yield Page.generateArtistPage(selectedArtist);
                 } else {
-                    yield "No artist selected";
+                    yield "No artist selected.";
                 }
             }
             case "HostPage" -> {
                 if (selectedHost != null) {
                     yield Page.generateHostPage(selectedHost);
                 } else {
-                    yield "No host selected";
+                    yield "No host selected.";
                 }
             }
             default -> "Invalid page.";
@@ -417,6 +414,33 @@ public class User {
                     return true;
                 }
             }
+        }
+        return false;
+    }
+    public boolean isOnArtistOrHostPage(String artistOrHostUsername) {
+        if (selectedArtist != null && selectedArtist.getUsername().equals(artistOrHostUsername)) {
+            return true;
+        }
+        if (selectedHost != null && selectedHost.getUsername().equals(artistOrHostUsername)) {
+            return true;
+        }
+        return false;
+    }
+    public boolean isUsingAlbum(Album album) {
+        if (this.player.getCurrentAudioFile() == null) {
+            return false;
+        }
+
+        AudioFile currentTrack = this.player.getCurrentAudioFile();
+        return album.getSongs().contains(currentTrack);
+    }
+
+    public boolean isCurrentlyPlaying(LibraryEntry entry) {
+        LibraryEntry currentSource = player.getCurrentSource();
+        if (currentSource != null && entry instanceof Podcast) {
+            return currentSource.getName().equals(entry.getName());
+        } else if (currentSource instanceof Album && entry instanceof Album) {
+            return currentSource.getName().equals(entry.getName());
         }
         return false;
     }

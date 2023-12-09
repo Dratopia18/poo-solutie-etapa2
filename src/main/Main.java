@@ -80,15 +80,7 @@ public final class Main {
 
         for (CommandInput command : commands) {
             String commandName = command.getCommand();
-            String type = command.getType();
-            int timestamp = command.getTimestamp();
-            if(commandName.equals("load") && timestamp == 285)
-                System.out.println(timestamp);
-
             Admin.updateTimestamp(command.getTimestamp());
-
-            if(Objects.equals(type, "album") && timestamp == 190)
-                System.out.println(type);
 
             switch (commandName) {
                 case "search" -> outputs.add(CommandRunner.search(command));
@@ -113,6 +105,7 @@ public final class Main {
                 case "getTop5Songs" -> outputs.add(CommandRunner.getTop5Songs(command));
                 case "getTop5Playlists" -> outputs.add(CommandRunner.getTop5Playlists(command));
                 case "getTop5Albums" -> outputs.add(CommandRunner.getTop5Albums(command));
+                case "getTop5Artists" -> outputs.add(CommandRunner.getTop5Artists(command));
                 case "switchConnectionStatus" -> outputs.add(CommandRunner.switchConnectionStatus(command));
                 case "getOnlineUsers" -> outputs.add(CommandRunner.getOnlineUsers(command));
                 case "getAllUsers" -> outputs.add(CommandRunner.getAllUsers(command));
@@ -124,10 +117,13 @@ public final class Main {
                 case "addPodcast" -> outputs.add(CommandRunner.addPodcast(command));
                 case "printCurrentPage" -> outputs.add(CommandRunner.printCurrentPage(command));
                 case "addEvent" -> outputs.add(CommandRunner.addEvent(command));
+                case "removeEvent" -> outputs.add(CommandRunner.removeEvent(command));
                 case "addMerch" -> outputs.add(CommandRunner.addMerch(command));
                 case "addAnnouncement" -> outputs.add(CommandRunner.addAnnouncement(command));
                 case "removeAnnouncement" -> outputs.add(CommandRunner.removeAnnouncement(command));
                 case "changePage" -> outputs.add(CommandRunner.changePage(command));
+                case "removeAlbum" -> outputs.add(CommandRunner.removeAlbum(command));
+                case "removePodcast" -> outputs.add(CommandRunner.removePodcast(command));
                 default -> System.out.println("Invalid command " + commandName);
             }
         }
