@@ -137,7 +137,10 @@ public class Admin {
                 sortedSongs.addAll(album.getSongs());
             }
         }
-        sortedSongs.sort(Comparator.comparingInt(Song::getLikes).reversed());
+
+        sortedSongs.sort(Comparator.comparingInt(Song::getLikes).reversed()
+                .thenComparing(sortedSongs::indexOf));
+
         List<String> topSongs = new ArrayList<>();
         int count = 0;
         for (Song song : sortedSongs) {
