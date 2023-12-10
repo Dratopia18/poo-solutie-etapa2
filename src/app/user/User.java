@@ -154,7 +154,7 @@ public class User {
             return "Please load a source before using the shuffle function.";
 
         if (!player.getType().equals("playlist") && !player.getType().equals("album"))
-            return "The loaded source is not a playlist.";
+            return "The loaded source is not a playlist or an album.";
 
         player.shuffle(seed);
 
@@ -418,13 +418,12 @@ public class User {
         return false;
     }
     public boolean isOnArtistOrHostPage(String artistOrHostUsername) {
-        if (selectedArtist != null && selectedArtist.getUsername().equals(artistOrHostUsername)) {
+        if (Objects.equals(currentPage, "ArtistPage") && selectedArtist != null
+                && selectedArtist.getUsername().equals(artistOrHostUsername)) {
             return true;
         }
-        if (selectedHost != null && selectedHost.getUsername().equals(artistOrHostUsername)) {
-            return true;
-        }
-        return false;
+        return Objects.equals(currentPage, "HostPage") && selectedHost != null
+                && selectedHost.getUsername().equals(artistOrHostUsername);
     }
     public boolean isUsingAlbum(Album album) {
         if (this.player.getCurrentAudioFile() == null) {
@@ -434,11 +433,20 @@ public class User {
         AudioFile currentTrack = this.player.getCurrentAudioFile();
         return album.getSongs().contains(currentTrack);
     }
-
+    public boolean hasAlbumSongInPlaylist(Album album) {
+        for (Playlist playlist : playlists) {
+            for (Song song : album.getSongs()) {
+                if (playlist.containsSong(song)) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
     public boolean isCurrentlyPlaying(LibraryEntry entry) {
         LibraryEntry currentSource = player.getCurrentSource();
-        if (currentSource != null && entry instanceof Podcast) {
-            return currentSource.getName().equals(entry.getName());
+        if (currentSource != null && entry instanceof Podcast podcast) {
+            return podcast.getEpisodes().contains(currentSource);
         } else if (currentSource instanceof Album && entry instanceof Album) {
             return currentSource.getName().equals(entry.getName());
         }

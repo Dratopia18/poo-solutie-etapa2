@@ -4,6 +4,7 @@ import app.Admin;
 import app.audio.Files.Song;
 import app.user.User;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -11,7 +12,10 @@ import java.util.*;
 
 @Getter
 public class Artist extends User{
+    @Getter
+    @Setter
     private Set<Album> albums;
+    @Getter
     private Set<Event> events;
     private final Set<Merch> merchandise;
 
@@ -140,17 +144,6 @@ public class Artist extends User{
     public int getTotalLikes() {
         return albums.stream().flatMap(album -> album.getSongs().stream())
                 .mapToInt(Song::getLikes).sum();
-    }
-    public void setAlbums(Set<Album> albums) {
-        this.albums = albums;
-    }
-
-    public Set<Album> getAlbums() {
-        return albums;
-    }
-
-    public Set<Event> getEvents() {
-        return events;
     }
 
     public void setEvents(Set<Event> events) {

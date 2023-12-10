@@ -18,8 +18,8 @@ public class Admin {
     private static List<User> users = new ArrayList<>();
     private static List<Song> songs = new ArrayList<>();
     private static List<Podcast> podcasts = new ArrayList<>();
-    private static final List<Artist> artists = new ArrayList<>();
-    private static final List<Host> hosts = new ArrayList<>();
+    private static final List<Artist> Artists = new ArrayList<>();
+    private static final List<Host> Hosts = new ArrayList<>();
     private static int timestamp = 0;
     private static final Set<String> usernamesInCurrentTest = new HashSet<>();
 
@@ -74,7 +74,7 @@ public class Admin {
         return null;
     }
     public static Artist getArtist(String username) {
-        for (Artist artist : artists) {
+        for (Artist artist : Artists) {
             if (artist.getUsername().equals(username)) {
                 return artist;
             }
@@ -82,7 +82,7 @@ public class Admin {
         return null;
     }
     public static Host getHost(String username) {
-        for (Host host : hosts) {
+        for (Host host : Hosts) {
             if (host.getUsername().equals(username)) {
                 return host;
             }
@@ -91,7 +91,7 @@ public class Admin {
     }
     public static List<Album> getAlbums() {
         List<Album> albums = new ArrayList<>();
-        for (Artist artist : artists) {
+        for (Artist artist : Artists) {
             albums.addAll(artist.getAlbums());
         }
         return albums;
@@ -103,13 +103,13 @@ public class Admin {
             }
         }
 
-        for (Artist artist : artists) {
+        for (Artist artist : Artists) {
             if (artist.getUsername().equals(username)) {
                 return artist;
             }
         }
 
-        for (Host host : hosts) {
+        for (Host host : Hosts) {
             if (host.getUsername().equals(username)) {
                 return host;
             }
@@ -201,10 +201,10 @@ public class Admin {
         for (User user : users) {
             allUsers.add(user.getUsername());
         }
-        for (Artist artist : artists) {
+        for (Artist artist : Artists) {
             allUsers.add(artist.getUsername());
         }
-        for (Host host : hosts) {
+        for (Host host : Hosts) {
             allUsers.add(host.getUsername());
         }
         return allUsers;
@@ -214,10 +214,10 @@ public class Admin {
         return new ArrayList<>(users);
     }
     public static List<Artist> getArtists() {
-        return new ArrayList<>(artists);
+        return new ArrayList<>(Artists);
     }
     public static List<Host> getHosts() {
-        return new ArrayList<>(hosts);
+        return new ArrayList<>(Hosts);
     }
     public static String addUser(CommandInput commandInput) {
         String username = commandInput.getUsername();
@@ -233,8 +233,8 @@ public class Admin {
         String city = commandInput.getCity();
         switch (type) {
             case "user" -> users.add(new User(username, age, city));
-            case "artist" -> artists.add(new Artist(username, age, city));
-            case "host" -> hosts.add(new Host(username, age, city));
+            case "artist" -> Artists.add(new Artist(username, age, city));
+            case "host" -> Hosts.add(new Host(username, age, city));
         }
         usernamesInCurrentTest.add(username);
         return "The username " + username + " has been added successfully.";
@@ -270,6 +270,11 @@ public class Admin {
                 associatedEntries.add(podcast);
                 associatedEntries.addAll(podcast.getEpisodes());
             }
+        } else {
+            for (Playlist playlist : user.getPlaylists()) {
+                associatedEntries.add(playlist);
+                associatedEntries.addAll(playlist.getSongs());
+            }
         }
         return associatedEntries;
     }
@@ -299,7 +304,7 @@ public class Admin {
             for (Album album : artist.getAlbums()) {
                 removeAlbum(album);
             }
-            artists.remove(artist);
+            Artists.remove(artist);
 
             removeArtistSongsFromLikedSongs(artist);
         } else if (user instanceof Host host) {
@@ -307,7 +312,7 @@ public class Admin {
             for (Podcast podcast : host.getPodcasts()) {
                 removePodcast(podcast);
             }
-            hosts.remove(host);
+            Hosts.remove(host);
         } else {
             for (Playlist playlist : user.getFollowedPlaylists()) {
                 playlist.decreaseFollowers();
@@ -372,7 +377,7 @@ public class Admin {
 
     public static boolean isAlbumInUse(Album album) {
         for (User user : users) {
-            if (user.isUsingAlbum(album)) {
+            if (user.isUsingAlbum(album) || user.hasAlbumSongInPlaylist(album)) {
                 return true;
             }
         }
@@ -386,14 +391,14 @@ public class Admin {
         users.clear();
         songs.clear();
         podcasts.clear();
-        artists.clear();
-        hosts.clear();
+        Artists.clear();
+        Hosts.clear();
         timestamp = 0;
         usernamesInCurrentTest.clear();
-        for (Artist artist : artists) {
+        for (Artist artist : Artists) {
             artist.clearAlbums();
         }
-        for (Host host : hosts) {
+        for (Host host : Hosts) {
             host.clearPodcasts();
         }
     }

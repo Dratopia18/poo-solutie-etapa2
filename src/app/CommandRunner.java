@@ -16,7 +16,6 @@ import fileio.input.EpisodeInput;
 import fileio.input.SongInput;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -37,14 +36,14 @@ public class CommandRunner {
         objectNode.put("timestamp", commandInput.getTimestamp());
         if (!user.getOnlineStatus()) {
             objectNode.put("message", commandInput.getUsername() + " is offline.");
-            objectNode.put("results", objectMapper.createArrayNode());
+            objectNode.set("results", objectMapper.createArrayNode());
         } else {
             Filters filters = new Filters(commandInput.getFilters());
             String type = commandInput.getType();
             ArrayList<String> results = user.search(filters, type);
             String message = "Search returned " + results.size() + " results";
             objectNode.put("message", message);
-            objectNode.put("results", objectMapper.valueToTree(results));
+            objectNode.set("results", objectMapper.valueToTree(results));
         }
 
         return objectNode;
@@ -339,7 +338,7 @@ public class CommandRunner {
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("user", commandInput.getUsername());
         objectNode.put("timestamp", commandInput.getTimestamp());
-        objectNode.put("result", objectMapper.valueToTree(playlists));
+        objectNode.set("result", objectMapper.valueToTree(playlists));
 
         return objectNode;
     }
@@ -377,7 +376,7 @@ public class CommandRunner {
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("user", commandInput.getUsername());
         objectNode.put("timestamp", commandInput.getTimestamp());
-        objectNode.put("stats", objectMapper.valueToTree(stats));
+        objectNode.set("stats", objectMapper.valueToTree(stats));
 
         return objectNode;
     }
@@ -395,7 +394,7 @@ public class CommandRunner {
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("user", commandInput.getUsername());
         objectNode.put("timestamp", commandInput.getTimestamp());
-        objectNode.put("result", objectMapper.valueToTree(songs));
+        objectNode.set("result", objectMapper.valueToTree(songs));
 
         return objectNode;
     }
@@ -413,7 +412,7 @@ public class CommandRunner {
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("user", commandInput.getUsername());
         objectNode.put("timestamp", commandInput.getTimestamp());
-        objectNode.put("result", objectMapper.valueToTree(preferredGenre));
+        objectNode.set("result", objectMapper.valueToTree(preferredGenre));
 
         return objectNode;
     }
@@ -424,7 +423,7 @@ public class CommandRunner {
         ObjectNode objectNode = objectMapper.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("timestamp", commandInput.getTimestamp());
-        objectNode.put("result", objectMapper.valueToTree(songs));
+        objectNode.set("result", objectMapper.valueToTree(songs));
 
         return objectNode;
     }
@@ -445,7 +444,7 @@ public class CommandRunner {
         ObjectNode objectNode = objectMapper.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("timestamp", commandInput.getTimestamp());
-        objectNode.put("result", objectMapper.valueToTree(playlists));
+        objectNode.set("result", objectMapper.valueToTree(playlists));
 
         return objectNode;
     }
@@ -455,7 +454,7 @@ public class CommandRunner {
         ObjectNode objectNode = objectMapper.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("timestamp", commandInput.getTimestamp());
-        objectNode.put("result", objectMapper.valueToTree(playlists));
+        objectNode.set("result", objectMapper.valueToTree(playlists));
 
         return objectNode;
     }

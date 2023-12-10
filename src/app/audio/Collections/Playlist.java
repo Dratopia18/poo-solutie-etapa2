@@ -12,7 +12,7 @@ public final class Playlist extends AudioCollection {
     private final ArrayList<Song> songs;
     private Enums.Visibility visibility;
     private Integer followers;
-    private int timestamp;
+    private final int timestamp;
 
     public Playlist(String name, String owner) {
         this(name, owner, 0);
