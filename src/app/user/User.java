@@ -21,7 +21,6 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
 
@@ -35,7 +34,7 @@ public class User {
     @Getter
     private ArrayList<Playlist> playlists;
     @Getter
-    private LinkedList<Song> likedSongs;
+    private ArrayList<Song> likedSongs;
     @Getter
     private ArrayList<Playlist> followedPlaylists;
     private final Player player;
@@ -53,7 +52,7 @@ public class User {
         this.age = age;
         this.city = city;
         playlists = new ArrayList<>();
-        likedSongs = new LinkedList<>();
+        likedSongs = new ArrayList<>();
         followedPlaylists = new ArrayList<>();
         player = new Player();
         searchBar = new SearchBar(username);

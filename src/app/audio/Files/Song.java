@@ -76,6 +76,9 @@ public final class Song extends AudioFile {
         }
     }
 
+    public Integer getLikesCount() {
+        return likes;
+    }
 
     public void like() {
         likes++;

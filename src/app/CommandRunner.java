@@ -647,8 +647,8 @@ public class CommandRunner {
         }
 
         ObjectNode objectNode = objectMapper.createObjectNode();
-        objectNode.put("command", commandInput.getCommand());
         objectNode.put("user", commandInput.getUsername());
+        objectNode.put("command", commandInput.getCommand());
         objectNode.put("timestamp", commandInput.getTimestamp());
         if (!user.getOnlineStatus()) {
             objectNode.put("message", commandInput.getUsername() + " is offline.");

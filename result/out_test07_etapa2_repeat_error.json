@@ -235,8 +235,8 @@
   "timestamp" : 3295,
   "message" : "Please load a source before setting the repeat status."
 }, {
-  "command" : "printCurrentPage",
   "user" : "rhythmicrider58",
+  "command" : "printCurrentPage",
   "timestamp" : 3300,
   "message" : "Liked songs:\n\t[Synth Symphony - melodymaster]\n\nFollowed playlists:\n\t[My favourite songs - emily30]"
 }, {
@@ -329,8 +329,8 @@
   "timestamp" : 3445,
   "message" : "Like registered successfully."
 }, {
-  "command" : "printCurrentPage",
   "user" : "rhythmicrider58",
+  "command" : "printCurrentPage",
   "timestamp" : 7000,
   "message" : "Liked songs:\n\t[Shape of You]\n\nFollowed playlists:\n\t[]"
 } ]

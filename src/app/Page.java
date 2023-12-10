@@ -12,30 +12,71 @@ import app.user.artist.Merch;
 import app.user.host.Announcement;
 import app.user.host.Host;
 
+import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
 public class Page {
     public static String generateHomePage(User user) {
-        List<Song> likedSongs = user.getLikedSongs();
-        List<Playlist> followedPlaylists = user.getFollowedPlaylists();
-        return "Liked songs:\n\t[" +
-                likedSongs.stream().map(Song::getName).collect(Collectors.joining(", ")) +
-                "]\n\nFollowed playlists:\n\t[" +
-                followedPlaylists.stream().map(Playlist::getName).collect(Collectors.joining(", "))
-                + "]";
+        List<Song> likedSongsCopy = new ArrayList<>(user.getLikedSongs());
+        List<Playlist> followedPlaylistsCopy = new ArrayList<>(user.getFollowedPlaylists());
+
+        likedSongsCopy.sort(Comparator.comparing(Song::getLikesCount).reversed());
+        followedPlaylistsCopy.sort(Comparator.comparing(Playlist::getTotalLikesCount).reversed());
+
+        StringBuilder homePageMessage = new StringBuilder("Liked songs:\n\t[");
+
+        int count = Math.min(likedSongsCopy.size(), 5);
+        for (int i = 0; i < count; i++) {
+            homePageMessage.append(likedSongsCopy.get(i).getName()).append(", ");
+        }
+        if (!likedSongsCopy.isEmpty()) {
+            homePageMessage.setLength(homePageMessage.length() - 2);
+        }
+        homePageMessage.append("]\n\nFollowed playlists:\n\t[");
+
+        count = Math.min(followedPlaylistsCopy.size(), 5);
+        for (int i = 0; i < count; i++) {
+            homePageMessage.append(followedPlaylistsCopy.get(i).getName()).append(", ");
+        }
+        if (!followedPlaylistsCopy.isEmpty()) {
+            homePageMessage.setLength(homePageMessage.length() - 2);
+        }
+        homePageMessage.append("]");
+
+        return homePageMessage.toString();
     }
+
     public static String generateLikedContentPage(User user) {
         List<Song> likedSongs = user.getLikedSongs();
+        StringBuilder likedSongsMessage = new StringBuilder("Liked songs:\n\t[");
+
+        for (Song song : likedSongs) {
+            likedSongsMessage.append(song.getName()).append(" - ").append(song.getArtist()).append(", ");
+        }
+
+        if (!likedSongs.isEmpty()) {
+            likedSongsMessage.setLength(likedSongsMessage.length() - 2);
+        }
+
+        likedSongsMessage.append("]\n\nFollowed playlists:\n\t[");
+
         List<Playlist> followedPlaylists = user.getFollowedPlaylists();
-        return "Liked songs:\n\t[" +
-                likedSongs.stream().map(song -> song.getName() + " - " + song.getArtist())
-                        .collect(Collectors.joining(", ")) +
-                "]\n\nFollowed playlists:\n\t[" +
-                followedPlaylists.stream().map(playlist -> playlist.getName() + " - " + playlist.getOwner())
-                        .collect(Collectors.joining(", ")) + "]";
+        for (Playlist playlist : followedPlaylists) {
+            likedSongsMessage.append(playlist.getName()).append(" - ").append(playlist.getOwner()).append(", ");
+        }
+
+        if (!followedPlaylists.isEmpty()) {
+            likedSongsMessage.setLength(likedSongsMessage.length() - 2);
+        }
+
+        likedSongsMessage.append("]");
+
+        return likedSongsMessage.toString();
     }
+
     public static String generateArtistPage(Artist artist) {
         Set<Album> albums = artist.getAlbums();
         Set<Merch> merchandise = artist.getMerchandise();

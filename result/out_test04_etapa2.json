@@ -90,8 +90,8 @@
   "timestamp" : 120,
   "message" : "Like registered successfully."
 }, {
-  "command" : "printCurrentPage",
   "user" : "melodicmind42",
+  "command" : "printCurrentPage",
   "timestamp" : 135,
   "message" : "Liked songs:\n\t[Rhythmic Revolution]\n\nFollowed playlists:\n\t[]"
 }, {
@@ -152,8 +152,8 @@
   "timestamp" : 1455,
   "message" : "Like registered successfully."
 }, {
-  "command" : "printCurrentPage",
   "user" : "melodicmind42",
+  "command" : "printCurrentPage",
   "timestamp" : 1480,
   "message" : "Liked songs:\n\t[Rapid Rhythms]\n\nFollowed playlists:\n\t[]"
 } ]

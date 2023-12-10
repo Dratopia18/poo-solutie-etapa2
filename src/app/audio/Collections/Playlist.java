@@ -46,6 +46,14 @@ public final class Playlist extends AudioCollection {
         }
     }
 
+    public Integer getTotalLikesCount() {
+        int totalLikes = 0;
+        for (Song song : songs) {
+            totalLikes += song.getLikesCount();
+        }
+        return totalLikes;
+    }
+
     public void increaseFollowers() {
         followers++;
     }
