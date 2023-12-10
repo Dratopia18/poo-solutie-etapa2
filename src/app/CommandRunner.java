@@ -462,12 +462,13 @@ public class CommandRunner {
         User user = Admin.getUser(commandInput.getUsername());
         String targetUser = commandInput.getUsername();
         if (user == null) {
-            ObjectNode objectNode = objectMapper.createObjectNode();
-            objectNode.put("command", commandInput.getCommand());
-            objectNode.put("user", commandInput.getUsername());
-            objectNode.put("timestamp", commandInput.getTimestamp());
-            objectNode.put("message", "The username " + targetUser + " doesn't exist.");
-            return objectNode;
+            Artist artist = Admin.getArtist(commandInput.getUsername());
+            Host host = Admin.getHost(commandInput.getUsername());
+            if (artist == null && host == null) {
+                return createErrorResponse("switchConnectionStatus", commandInput.getUsername(), commandInput.getTimestamp(), "The username " + commandInput.getUsername() + " doesn't exist.");
+            } else {
+                return createErrorResponse("switchConnectionStatus", commandInput.getUsername(), commandInput.getTimestamp(), commandInput.getUsername() + " is not a normal user.");
+            }
         }
         String message = user.SwitchConnectionStatus(targetUser);
 
@@ -516,7 +517,8 @@ public class CommandRunner {
         Artist artist = Admin.getArtist(commandInput.getUsername());
         if (artist == null) {
             User user = Admin.getUser(commandInput.getUsername());
-            if (user == null) {
+            Host host = Admin.getHost(commandInput.getUsername());
+            if (user == null && host == null) {
                 return createErrorResponse("addAlbum", commandInput.getUsername(), commandInput.getTimestamp(), "The username " + commandInput.getUsername() + " doesn't exist.");
             } else {
                 return createErrorResponse("addAlbum", commandInput.getUsername(), commandInput.getTimestamp(), commandInput.getUsername() + " is not an artist.");
@@ -580,12 +582,13 @@ public class CommandRunner {
     public static ObjectNode removeAlbum(CommandInput commandInput) {
         Artist artist = Admin.getArtist(commandInput.getUsername());
         if (artist == null) {
-            return createErrorResponse(
-                    commandInput.getCommand(),
-                    commandInput.getUsername(),
-                    commandInput.getTimestamp(),
-                    "The username " + commandInput.getUsername() + " doesn't exist."
-            );
+            User user = Admin.getUser(commandInput.getUsername());
+            Host host = Admin.getHost(commandInput.getUsername());
+            if (user == null && host == null) {
+                return createErrorResponse("removeAlbum", commandInput.getUsername(), commandInput.getTimestamp(), "The username " + commandInput.getUsername() + " doesn't exist.");
+            } else {
+                return createErrorResponse("removeAlbum", commandInput.getUsername(), commandInput.getTimestamp(), commandInput.getUsername() + " is not an artist.");
+            }
         }
 
         String message = artist.removeAlbum(commandInput.getName());

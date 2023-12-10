@@ -15,6 +15,7 @@ public class Artist extends User{
     @Getter
     @Setter
     private Set<Album> albums;
+    @Setter
     @Getter
     private Set<Event> events;
     private final Set<Merch> merchandise;
@@ -146,7 +147,4 @@ public class Artist extends User{
                 .mapToInt(Song::getLikes).sum();
     }
 
-    public void setEvents(Set<Event> events) {
-        this.events = events;
-    }
 }

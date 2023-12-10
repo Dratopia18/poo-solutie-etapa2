@@ -21,6 +21,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
 
@@ -34,7 +35,7 @@ public class User {
     @Getter
     private ArrayList<Playlist> playlists;
     @Getter
-    private ArrayList<Song> likedSongs;
+    private LinkedList<Song> likedSongs;
     @Getter
     private ArrayList<Playlist> followedPlaylists;
     private final Player player;
@@ -52,7 +53,7 @@ public class User {
         this.age = age;
         this.city = city;
         playlists = new ArrayList<>();
-        likedSongs = new ArrayList<>();
+        likedSongs = new LinkedList<>();
         followedPlaylists = new ArrayList<>();
         player = new Player();
         searchBar = new SearchBar(username);
@@ -191,7 +192,8 @@ public class User {
         if (player.getCurrentAudioFile() == null)
             return "Please load a source before liking or unliking.";
 
-        if (!player.getType().equals("song") && !player.getType().equals("playlist"))
+        if (!player.getType().equals("song") && !player.getType().equals("playlist")
+        && !player.getType().equals("album"))
             return "Loaded source is not a song.";
 
         Song song = (Song) player.getCurrentAudioFile();
