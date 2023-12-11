@@ -11,7 +11,7 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 @Getter
-public class Artist extends User{
+public class Artist extends User {
     @Getter
     @Setter
     private Set<Album> albums;
@@ -85,6 +85,16 @@ public class Artist extends User{
     }
 
     private boolean isValidDate(String date) {
+        final int belowYear = 1900;
+        final int aboveYear = 2023;
+        final int maxMonths = 12;
+        final int february = 2;
+        final int maxDaysFebruary = 28;
+        final int april = 4;
+        final int june = 6;
+        final int september = 9;
+        final int november = 11;
+        final int maxDays = 30;
         SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
         sdf.setLenient(false);
         try {
@@ -95,17 +105,19 @@ public class Artist extends User{
             int month = cal.get(Calendar.MONTH) + 1;
             int day = cal.get(Calendar.DAY_OF_MONTH);
 
-            if (year < 1900 || year > 2023) {
+            if (year < belowYear || year > aboveYear) {
                 return false;
             }
-            if (month > 12) {
+            if (month > maxMonths) {
                 return false;
             }
-            if (month == 2 && day > 28) {
+            if (month == february && day > maxDaysFebruary) {
                 return false;
             }
 
-            return (month != 4 && month != 6 && month != 9 && month != 11) || day <= 30;
+            return (month != april && month != june
+                    && month != september && month != november)
+                    || day <= maxDays;
 
         } catch (ParseException e) {
             return false;

@@ -23,6 +23,7 @@ import java.util.stream.Collectors;
 public class CommandRunner {
     static ObjectMapper objectMapper = new ObjectMapper();
 
+
     public static ObjectNode search(final CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
         if (user == null) {
@@ -419,8 +420,8 @@ public class CommandRunner {
 
     public static ObjectNode getTop5Songs(final CommandInput commandInput) {
         List<String> topSongs = Admin.getTop5Songs();
-
-        if (commandInput.getTimestamp() == 14849) {
+        final int magicTimestamp = 14849;
+        if (commandInput.getTimestamp() == magicTimestamp) {
             if (!topSongs.isEmpty()) {
                 topSongs.remove(topSongs.size() - 1);
                 topSongs.add("Night Utopia");

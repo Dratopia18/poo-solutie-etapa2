@@ -22,15 +22,16 @@ public final class Admin {
     private static final List<Host> Hosts = new ArrayList<>();
     private static int timestamp = 0;
     private static final Set<String> usernamesInCurrentTest = new HashSet<>();
+    private static final int maxNumber = 5;
 
-    public static void setUsers(List<UserInput> userInputList) {
+    public static void setUsers(final List<UserInput> userInputList) {
         users = new ArrayList<>();
         for (UserInput userInput : userInputList) {
             users.add(new User(userInput.getUsername(), userInput.getAge(), userInput.getCity()));
         }
     }
 
-    public static void setSongs(List<SongInput> songInputList) {
+    public static void setSongs(final List<SongInput> songInputList) {
         songs = new ArrayList<>();
         for (SongInput songInput : songInputList) {
             songs.add(new Song(songInput.getName(), songInput.getDuration(), songInput.getAlbum(),
@@ -39,7 +40,7 @@ public final class Admin {
         }
     }
 
-    public static void setPodcasts(List<PodcastInput> podcastInputList) {
+    public static void setPodcasts(final List<PodcastInput> podcastInputList) {
         podcasts = new ArrayList<>();
         for (PodcastInput podcastInput : podcastInputList) {
             List<Episode> episodes = new ArrayList<>();
@@ -67,7 +68,7 @@ public final class Admin {
         }
         return playlists;
     }
-    public static User getUser(String username) {
+    public static User getUser(final String username) {
         for (User user : users) {
             if (user.getUsername().equals(username)) {
                 return user;
@@ -75,7 +76,7 @@ public final class Admin {
         }
         return null;
     }
-    public static Artist getArtist(String username) {
+    public static Artist getArtist(final String username) {
         for (Artist artist : Artists) {
             if (artist.getUsername().equals(username)) {
                 return artist;
@@ -83,7 +84,7 @@ public final class Admin {
         }
         return null;
     }
-    public static Host getHost(String username) {
+    public static Host getHost(final String username) {
         for (Host host : Hosts) {
             if (host.getUsername().equals(username)) {
                 return host;
@@ -98,7 +99,7 @@ public final class Admin {
         }
         return albums;
     }
-    public static User findUser(String username) {
+    public static User findUser(final String username) {
         for (User user : users) {
             if (user.getUsername().equals(username)) {
                 return user;
@@ -120,7 +121,7 @@ public final class Admin {
         return null;
     }
 
-    public static void updateTimestamp(int newTimestamp) {
+    public static void updateTimestamp(final int newTimestamp) {
         int elapsed = newTimestamp - timestamp;
         timestamp = newTimestamp;
         if (elapsed == 0) {
@@ -146,7 +147,7 @@ public final class Admin {
         List<String> topSongs = new ArrayList<>();
         int count = 0;
         for (Song song : sortedSongs) {
-            if (count >= 5) break;
+            if (count >= maxNumber) break;
             topSongs.add(song.getName());
             count++;
         }
@@ -161,7 +162,7 @@ public final class Admin {
         List<String> topPlaylists = new ArrayList<>();
         int count = 0;
         for (Playlist playlist : sortedPlaylists) {
-            if (count >= 5) break;
+            if (count >= maxNumber) break;
             topPlaylists.add(playlist.getName());
             count++;
         }
@@ -174,7 +175,7 @@ public final class Admin {
         List<String> topAlbums = new ArrayList<>();
         int count = 0;
         for (Album album : sortedAlbums) {
-            if (count >= 5) break;
+            if (count >= maxNumber) break;
             topAlbums.add(album.getName());
             count++;
         }
@@ -186,7 +187,7 @@ public final class Admin {
         List<String> topArtists = new ArrayList<>();
         int count = 0;
         for (Artist artist : sortedArtists) {
-            if (count >= 5) break;
+            if (count >= maxNumber) break;
             topArtists.add(artist.getUsername());
             count++;
         }
@@ -194,8 +195,8 @@ public final class Admin {
     }
     public static List<String> getOnlineUsers() {
         List<String> onlineUsers = new ArrayList<>();
-        for(User user: users) {
-            if(user.getOnlineStatus()) {
+        for (User user: users) {
+            if (user.getOnlineStatus()) {
                 onlineUsers.add(user.getUsername());
             }
         }
@@ -224,10 +225,10 @@ public final class Admin {
     public static List<Host> getHosts() {
         return new ArrayList<>(Hosts);
     }
-    public static String addUser(CommandInput commandInput) {
+    public static String addUser(final CommandInput commandInput) {
         String username = commandInput.getUsername();
         User existingUser = getUser(username);
-        if(usernamesInCurrentTest.contains(username)) {
+        if (usernamesInCurrentTest.contains(username)) {
             return "The username " + username + " is already taken.";
         }
         if (existingUser != null) {
@@ -240,12 +241,15 @@ public final class Admin {
             case "user" -> users.add(new User(username, age, city));
             case "artist" -> Artists.add(new Artist(username, age, city));
             case "host" -> Hosts.add(new Host(username, age, city));
+            default -> {
+                return "Type doesn't exist";
+            }
         }
         usernamesInCurrentTest.add(username);
         return "The username " + username + " has been added successfully.";
     }
 
-    public static String deleteUser(CommandInput commandInput) {
+    public static String deleteUser(final CommandInput commandInput) {
         String username = commandInput.getUsername();
         User userToDelete = findUser(username);
         if (userToDelete == null) {
@@ -263,7 +267,7 @@ public final class Admin {
         return username + " was successfully deleted.";
     }
 
-    public static List<LibraryEntry> getAssociatedEntries(User user) {
+    public static List<LibraryEntry> getAssociatedEntries(final User user) {
         List<LibraryEntry> associatedEntries = new ArrayList<>();
         if (user instanceof Artist artist) {
             for (Album album : artist.getAlbums()) {
@@ -284,7 +288,7 @@ public final class Admin {
         return associatedEntries;
     }
 
-    public static boolean isAnyUserInteractingWith(List<LibraryEntry> entries) {
+    public static boolean isAnyUserInteractingWith(final List<LibraryEntry> entries) {
         for (String username : getAllUsers()) {
             User user = findUser(username);
             if (user != null && user.isInteractingWith(entries)) {
@@ -293,7 +297,7 @@ public final class Admin {
         }
         return false;
     }
-    public static boolean isAnyUserInteractingWithPages(User user) {
+    public static boolean isAnyUserInteractingWithPages(final User user) {
         for (String username : getAllUsers()) {
             User interactingUser = findUser(username);
             if (interactingUser != null
@@ -303,7 +307,7 @@ public final class Admin {
         }
         return false;
     }
-    public static void removeUser(User user) {
+    public static void removeUser(final User user) {
         if (user instanceof Artist artist) {
             artist.clearAlbums();
             for (Album album : artist.getAlbums()) {
@@ -328,25 +332,25 @@ public final class Admin {
         usernamesInCurrentTest.remove(user.getUsername());
     }
 
-    private static void removePodcast(Podcast podcast) {
+    private static void removePodcast(final Podcast podcast) {
         podcasts.remove(podcast);
     }
 
-    private static void removeArtistSongsFromLikedSongs(Artist artist) {
+    private static void removeArtistSongsFromLikedSongs(final Artist artist) {
         for (User user : users) {
             user.getLikedSongs()
                     .removeIf(song -> song.getArtist().equals(artist.getUsername()));
         }
     }
 
-    private static void removeUserPlaylists(User user) {
+    private static void removeUserPlaylists(final User user) {
         for (User u : users) {
             u.getFollowedPlaylists().
                     removeIf(playlist -> playlist.getOwner().equals(user.getUsername()));
         }
     }
 
-    public static List<Map<String, Object>> showAlbums(String artistUsername) {
+    public static List<Map<String, Object>> showAlbums(final String artistUsername) {
         Artist artist = getArtist(artistUsername);
         if (artist == null) {
             return Collections.emptyList();
@@ -365,7 +369,7 @@ public final class Admin {
 
         return albumsInfo;
     }
-    public static List<Map<String, Object>> showPodcasts(String hostUsername) {
+    public static List<Map<String, Object>> showPodcasts(final String hostUsername) {
         Host host = getHost(hostUsername);
         if (host == null) {
             return Collections.emptyList();
@@ -382,7 +386,7 @@ public final class Admin {
         return podcastsInfo;
     }
 
-    public static boolean isAlbumInUse(Album album) {
+    public static boolean isAlbumInUse(final Album album) {
         for (User user : users) {
             if (user.isUsingAlbum(album) || user.hasAlbumSongInPlaylist(album)) {
                 return true;
@@ -390,7 +394,7 @@ public final class Admin {
         }
         return false;
     }
-    public static void removeAlbum(Album album) {
+    public static void removeAlbum(final Album album) {
         songs.removeAll(album.getSongs());
     }
 

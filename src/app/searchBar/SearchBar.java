@@ -2,7 +2,6 @@ package app.searchBar;
 
 
 import app.Admin;
-import app.audio.Collections.Podcast;
 import app.user.artist.Album;
 import app.audio.LibraryEntry;
 import app.user.artist.Artist;
@@ -119,7 +118,7 @@ public class SearchBar {
                 break;
             case "artist":
                 entries = new ArrayList<>();
-                for(Artist artist : Admin.getArtists()) {
+                for (Artist artist : Admin.getArtists()) {
                     LibraryEntry artistEntry = new LibraryEntry(artist.getUsername()) {
                         @Override
                         public boolean matchesName(String name) {

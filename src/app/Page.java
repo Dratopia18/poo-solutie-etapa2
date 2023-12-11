@@ -19,7 +19,8 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 public class Page {
-    public static String generateHomePage(User user) {
+    private static final int maxNumber = 5;
+    public static String generateHomePage(final User user) {
         List<Song> likedSongsCopy = new ArrayList<>(user.getLikedSongs());
         List<Playlist> followedPlaylistsCopy = new ArrayList<>(user.getFollowedPlaylists());
 
@@ -28,7 +29,7 @@ public class Page {
 
         StringBuilder homePageMessage = new StringBuilder("Liked songs:\n\t[");
 
-        int count = Math.min(likedSongsCopy.size(), 5);
+        int count = Math.min(likedSongsCopy.size(), maxNumber);
         for (int i = 0; i < count; i++) {
             homePageMessage.append(likedSongsCopy.get(i).getName()).append(", ");
         }
@@ -37,7 +38,7 @@ public class Page {
         }
         homePageMessage.append("]\n\nFollowed playlists:\n\t[");
 
-        count = Math.min(followedPlaylistsCopy.size(), 5);
+        count = Math.min(followedPlaylistsCopy.size(), maxNumber);
         for (int i = 0; i < count; i++) {
             homePageMessage.append(followedPlaylistsCopy.get(i).getName()).append(", ");
         }
@@ -49,12 +50,13 @@ public class Page {
         return homePageMessage.toString();
     }
 
-    public static String generateLikedContentPage(User user) {
+    public static String generateLikedContentPage(final User user) {
         List<Song> likedSongs = user.getLikedSongs();
         StringBuilder likedSongsMessage = new StringBuilder("Liked songs:\n\t[");
 
         for (Song song : likedSongs) {
-            likedSongsMessage.append(song.getName()).append(" - ").append(song.getArtist()).append(", ");
+            likedSongsMessage.append(song.getName()).append(" - ")
+                    .append(song.getArtist()).append(", ");
         }
 
         if (!likedSongs.isEmpty()) {
@@ -65,7 +67,8 @@ public class Page {
 
         List<Playlist> followedPlaylists = user.getFollowedPlaylists();
         for (Playlist playlist : followedPlaylists) {
-            likedSongsMessage.append(playlist.getName()).append(" - ").append(playlist.getOwner()).append(", ");
+            likedSongsMessage.append(playlist.getName()).append(" - ")
+                    .append(playlist.getOwner()).append(", ");
         }
 
         if (!followedPlaylists.isEmpty()) {
@@ -77,23 +80,23 @@ public class Page {
         return likedSongsMessage.toString();
     }
 
-    public static String generateArtistPage(Artist artist) {
+    public static String generateArtistPage(final Artist artist) {
         Set<Album> albums = artist.getAlbums();
         Set<Merch> merchandise = artist.getMerchandise();
         Set<Event> events = artist.getEvents();
-        return "Albums:\n\t[" +
-                albums.stream().map(Album::getName).collect(Collectors.joining(", ")) +
-                "]\n\nMerch:\n\t[" +
-                merchandise.stream().map(merch -> merch.getName() + " - " + merch.getPrice()
-                                + ":\n\t" + merch.getDescription())
-                        .collect(Collectors.joining(", ")) +
-                "]\n\nEvents:\n\t[" +
-                events.stream().map(event -> event.getName() + " - " + event.getDate()
+        return "Albums:\n\t["
+                + albums.stream().map(Album::getName).collect(Collectors.joining(", "))
+                + "]\n\nMerch:\n\t["
+                + merchandise.stream().map(merch -> merch.getName() + " - " + merch.getPrice()
+                        + ":\n\t" + merch.getDescription())
+                        .collect(Collectors.joining(", "))
+                + "]\n\nEvents:\n\t["
+                + events.stream().map(event -> event.getName() + " - " + event.getDate()
                                 + ":\n\t" + event.getDescription())
                         .collect(Collectors.joining(", ")) + "]";
 
     }
-    public static String generateHostPage(Host host) {
+    public static String generateHostPage(final Host host) {
         Set<Podcast> podcasts = host.getPodcasts();
         Set<Announcement> announcements = host.getAnnouncements();
         StringBuilder hostPage = new StringBuilder("Podcasts:\n\t[");

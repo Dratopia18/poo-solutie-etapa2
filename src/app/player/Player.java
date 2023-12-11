@@ -17,7 +17,7 @@ public class Player {
     @Getter
     private String type;
 
-    private ArrayList<PodcastBookmark> bookmarks = new ArrayList<>();
+    private final ArrayList<PodcastBookmark> bookmarks = new ArrayList<>();
 
 
     public Player() {
@@ -151,14 +151,16 @@ public class Player {
     }
 
     public void skipNext() {
+        final int forwardNumber = -90;
         if (source.getType() == Enums.PlayerSourceType.PODCAST) {
-            skip(-90);
+            skip(forwardNumber);
         }
     }
 
     public void skipPrev() {
+        final int backwardNumber = 90;
         if (source.getType() == Enums.PlayerSourceType.PODCAST) {
-            skip(90);
+            skip(backwardNumber);
         }
     }
 

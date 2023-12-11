@@ -138,7 +138,7 @@ public class User {
         Enums.RepeatMode repeatMode = player.repeat();
         String repeatStatus = "";
 
-        switch(repeatMode) {
+        switch (repeatMode) {
             case NO_REPEAT -> repeatStatus = "no repeat";
             case REPEAT_ONCE -> repeatStatus = "repeat once";
             case REPEAT_ALL -> repeatStatus = "repeat all";
@@ -150,16 +150,20 @@ public class User {
     }
 
     public String shuffle(Integer seed) {
-        if (player.getCurrentAudioFile() == null)
+        if (player.getCurrentAudioFile() == null) {
             return "Please load a source before using the shuffle function.";
+        }
 
-        if (!player.getType().equals("playlist") && !player.getType().equals("album"))
+        if (!player.getType().equals("playlist") && !player.getType().equals("album")) {
             return "The loaded source is not a playlist or an album.";
+        }
+
 
         player.shuffle(seed);
 
-        if (player.getShuffle())
+        if (player.getShuffle()) {
             return "Shuffle function activated successfully.";
+        }
         return "Shuffle function deactivated successfully.";
     }
 
@@ -351,7 +355,7 @@ public class User {
     public String SwitchConnectionStatus(String targetUsername) {
         User targetUser = Admin.getUser(targetUsername);
         List<User> normalUsers = Admin.getNormalUsers();
-        if(!normalUsers.contains(targetUser)) {
+        if (!normalUsers.contains(targetUser)) {
             return targetUsername + " is not a normal user.";
         }
         assert targetUser != null;
@@ -399,7 +403,7 @@ public class User {
     }
 
     public void simulateTime(int time) {
-        if(onlineStatus) {
+        if (onlineStatus) {
             player.simulatePlayer(time);
         } else if (player.getCurrentAudioFile() != null && !player.getPaused()) {
             int remainingTime = player.getStats().getRemainedTime() - time;

@@ -9,15 +9,19 @@ import java.util.Objects;
 public abstract class AudioFile extends LibraryEntry {
     private final Integer duration;
 
-    public AudioFile(String name, Integer duration) {
+    public AudioFile(final String name, final Integer duration) {
         super(name);
         this.duration = duration;
     }
 
     @Override
-    public boolean equals(Object obj) {
-        if (this == obj) return true;
-        if (obj == null || getClass() != obj.getClass()) return false;
+    public boolean equals(final Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
         AudioFile audioFile = (AudioFile) obj;
         return Objects.equals(this.getName(), audioFile.getName());
     }
