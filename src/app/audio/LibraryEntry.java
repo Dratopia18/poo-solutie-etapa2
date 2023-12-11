@@ -12,8 +12,8 @@ public abstract class LibraryEntry {
         this.name = name;
     }
 
-    public boolean matchesName(final String name) {
-        return getName().toLowerCase().startsWith(name.toLowerCase());
+    public boolean matchesName(final String name1) {
+        return getName().toLowerCase().startsWith(name1.toLowerCase());
     }
     public boolean matchesAlbum(final String album) {
         return false;
@@ -24,8 +24,12 @@ public abstract class LibraryEntry {
     public boolean matchesLyrics(final String lyrics) {
         return false;
     }
-    public boolean matchesGenre(final String genre) { return false; }
-    public boolean matchesArtist(final String artist) { return false; }
+    public boolean matchesGenre(final String genre) {
+        return false;
+    }
+    public boolean matchesArtist(final String artist) {
+        return false;
+    }
     public boolean matchesReleaseYear(final String releaseYear) {
         return false;
     }

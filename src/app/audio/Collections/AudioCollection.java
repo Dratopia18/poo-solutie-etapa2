@@ -15,7 +15,7 @@ public abstract class AudioCollection extends LibraryEntry {
 
     public abstract int getNumberOfTracks();
 
-    public abstract AudioFile getTrackByIndex(final int index);
+    public abstract AudioFile getTrackByIndex(int index);
 
     @Override
     public boolean matchesOwner(final String user) {

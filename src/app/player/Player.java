@@ -44,7 +44,8 @@ public class Player {
         }
     }
 
-    public static PlayerSource createSource(String type, LibraryEntry entry, List<PodcastBookmark> bookmarks) {
+    public static PlayerSource createSource(final String type, final LibraryEntry entry,
+                                            final List<PodcastBookmark> bookmarks) {
         return switch (type) {
             case "song" -> new PlayerSource(Enums.PlayerSourceType.LIBRARY, (AudioFile) entry);
             case "playlist", "album" -> new PlayerSource(Enums.PlayerSourceType.PLAYLIST, (AudioCollection) entry);
@@ -53,7 +54,8 @@ public class Player {
         };
     }
 
-    private static PlayerSource createPodcastSource(AudioCollection collection, List<PodcastBookmark> bookmarks) {
+    private static PlayerSource createPodcastSource(final AudioCollection collection,
+                                                    final List<PodcastBookmark> bookmarks) {
         for (PodcastBookmark bookmark : bookmarks) {
             if (bookmark.getName().equals(collection.getName())) {
                 return new PlayerSource(Enums.PlayerSourceType.PODCAST, collection, bookmark);
@@ -62,13 +64,13 @@ public class Player {
         return new PlayerSource(Enums.PlayerSourceType.PODCAST, collection);
     }
 
-    public void setSource(LibraryEntry entry, String type) {
+    public void setSource(final LibraryEntry entry, final String type1) {
         if ("podcast".equals(this.type)) {
             bookmarkPodcast();
         }
 
-        this.type = type;
-        this.source = createSource(type, entry, bookmarks);
+        this.type = type1;
+        this.source = createSource(type1, entry, bookmarks);
         this.repeatMode = Enums.RepeatMode.NO_REPEAT;
         this.shuffle = false;
         this.paused = true;
@@ -78,7 +80,7 @@ public class Player {
         paused = !paused;
     }
 
-    public void shuffle (Integer seed) {
+    public void shuffle (final Integer seed) {
         if (seed != null) {
             source.generateShuffleOrder(seed);
         }
@@ -145,7 +147,7 @@ public class Player {
         paused = false;
     }
 
-    private void skip(int duration) {
+    private void skip(final int duration) {
         source.skip(duration);
         paused = false;
     }
@@ -165,8 +167,9 @@ public class Player {
     }
 
     public AudioFile getCurrentAudioFile() {
-        if (source == null)
+        if (source == null) {
             return null;
+        }
         return source.getAudioFile();
     }
 

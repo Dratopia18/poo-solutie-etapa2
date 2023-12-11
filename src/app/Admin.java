@@ -9,9 +9,20 @@ import app.audio.Files.Song;
 import app.user.artist.Artist;
 import app.user.host.Host;
 import app.user.User;
-import fileio.input.*;
+import fileio.input.CommandInput;
+import fileio.input.EpisodeInput;
+import fileio.input.PodcastInput;
+import fileio.input.SongInput;
+import fileio.input.UserInput;
 
-import java.util.*;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 public final class Admin {
@@ -147,7 +158,9 @@ public final class Admin {
         List<String> topSongs = new ArrayList<>();
         int count = 0;
         for (Song song : sortedSongs) {
-            if (count >= maxNumber) break;
+            if (count >= maxNumber) {
+                break;
+            }
             topSongs.add(song.getName());
             count++;
         }
@@ -162,7 +175,9 @@ public final class Admin {
         List<String> topPlaylists = new ArrayList<>();
         int count = 0;
         for (Playlist playlist : sortedPlaylists) {
-            if (count >= maxNumber) break;
+            if (count >= maxNumber) {
+                break;
+            }
             topPlaylists.add(playlist.getName());
             count++;
         }
@@ -175,7 +190,9 @@ public final class Admin {
         List<String> topAlbums = new ArrayList<>();
         int count = 0;
         for (Album album : sortedAlbums) {
-            if (count >= maxNumber) break;
+            if (count >= maxNumber) {
+                break;
+            }
             topAlbums.add(album.getName());
             count++;
         }
@@ -187,7 +204,9 @@ public final class Admin {
         List<String> topArtists = new ArrayList<>();
         int count = 0;
         for (Artist artist : sortedArtists) {
-            if (count >= maxNumber) break;
+            if (count >= maxNumber) {
+                break;
+            }
             topArtists.add(artist.getUsername());
             count++;
         }

@@ -16,10 +16,10 @@ public class PodcastBookmark {
 
     @Override
     public String toString() {
-        return "PodcastBookmark{" +
-                "name='" + name + '\'' +
-                ", id=" + id +
-                ", timestamp=" + timestamp +
-                '}';
+        return "PodcastBookmark{"
+                + "name='" + name + '\''
+                + ", id=" + id
+                + ", timestamp=" + timestamp
+                + '}';
     }
 }

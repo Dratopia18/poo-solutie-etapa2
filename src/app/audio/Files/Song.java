@@ -29,18 +29,18 @@ public final class Song extends AudioFile {
     }
 
     @Override
-    public boolean matchesAlbum(final String album) {
-        return this.getAlbum().equalsIgnoreCase(album);
+    public boolean matchesAlbum(final String album1) {
+        return this.getAlbum().equalsIgnoreCase(album1);
     }
 
     @Override
-    public boolean matchesTags(final ArrayList<String> tags) {
+    public boolean matchesTags(final ArrayList<String> tags1) {
         List<String> songTags = new ArrayList<>();
         for (String tag : this.getTags()) {
             songTags.add(tag.toLowerCase());
         }
 
-        for (String tag : tags) {
+        for (String tag : tags1) {
             if (!songTags.contains(tag.toLowerCase())) {
                 return false;
             }
@@ -48,23 +48,23 @@ public final class Song extends AudioFile {
         return true;
     }
     @Override
-    public boolean matchesLyrics(final String lyrics) {
-        return this.getLyrics().toLowerCase().contains(lyrics.toLowerCase());
+    public boolean matchesLyrics(final String lyrics1) {
+        return this.getLyrics().toLowerCase().contains(lyrics1.toLowerCase());
     }
 
     @Override
-    public boolean matchesGenre(final String genre) {
-        return this.getGenre().equalsIgnoreCase(genre);
+    public boolean matchesGenre(final String genre1) {
+        return this.getGenre().equalsIgnoreCase(genre1);
     }
 
     @Override
-    public boolean matchesArtist(final String artist) {
-        return this.getArtist().equalsIgnoreCase(artist);
+    public boolean matchesArtist(final String artist1) {
+        return this.getArtist().equalsIgnoreCase(artist1);
     }
 
     @Override
-    public boolean matchesReleaseYear(final String releaseYear) {
-        return filterByYear(this.getReleaseYear(), releaseYear);
+    public boolean matchesReleaseYear(final String releaseYear1) {
+        return filterByYear(this.getReleaseYear(), releaseYear1);
     }
 
     private static boolean filterByYear(final int year, final String query) {

@@ -80,8 +80,8 @@ public final class Playlist extends AudioCollection {
     }
 
     @Override
-    public boolean matchesFollowers(final String followers) {
-        return filterByFollowersCount(this.getFollowers(), followers);
+    public boolean matchesFollowers(final String followers1) {
+        return filterByFollowersCount(this.getFollowers(), followers1);
     }
 
     private static boolean filterByFollowersCount(final int count, final String query) {
