@@ -12,16 +12,23 @@ import java.util.List;
 import java.util.Set;
 @Getter
 public class Host extends User {
-    Set<Podcast> podcasts;
-    Set<Announcement> announcements;
+    private final Set<Podcast> podcasts;
+    private final Set<Announcement> announcements;
 
-    public Host(String username, int age, String city) {
+    public Host(final String username, final int age, final String city) {
         super(username, age, city);
         this.podcasts = new LinkedHashSet<>();
         this.announcements = new LinkedHashSet<>();
     }
 
-    public String addPodcast(String name, String owner, List<Episode> episodes) {
+    /**
+     *
+     * @param name
+     * @param owner
+     * @param episodes
+     * @return
+     */
+    public String addPodcast(final String name, final String owner, final List<Episode> episodes) {
         for (Podcast podcast : podcasts) {
             if (podcast.getName().equals(name)) {
                 return getUsername() + " has another podcast with the same name.";
@@ -38,7 +45,12 @@ public class Host extends User {
         return getUsername() + " has added new podcast successfully.";
     }
 
-    public String removePodcast(String podcastName) {
+    /**
+     *
+     * @param podcastName
+     * @return
+     */
+    public String removePodcast(final String podcastName) {
         Podcast podcastToRemove = podcasts.stream()
                 .filter(podcast -> podcast.getName().equals(podcastName))
                 .findFirst()
@@ -59,7 +71,13 @@ public class Host extends User {
         return getUsername() + " deleted the podcast successfully.";
     }
 
-    public String addAnnouncement(String name, String description) {
+    /**
+     *
+     * @param name
+     * @param description
+     * @return
+     */
+    public String addAnnouncement(final String name, final String description) {
         for (Announcement announcement : announcements) {
             if (announcement.getName().equals(name)) {
                 return getUsername() + " has already added an announcement with this name.";
@@ -70,7 +88,12 @@ public class Host extends User {
         return getUsername() + " has successfully added new announcement.";
     }
 
-    public String removeAnnouncement(String name) {
+    /**
+     *
+     * @param name
+     * @return
+     */
+    public String removeAnnouncement(final String name) {
         for (Announcement announcement : announcements) {
             if (announcement.getName().equals(name)) {
                 announcements.remove(announcement);
@@ -80,6 +103,9 @@ public class Host extends User {
         return getUsername() + " has no announcement with the given name.";
     }
 
+    /**
+     * Sterge toate podcasturile.
+     */
     public void clearPodcasts() {
         podcasts.clear();
     }

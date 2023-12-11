@@ -18,8 +18,16 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class Page {
-    private static final int maxNumber = 5;
+public final class Page {
+    private static final int MAX_NUMBER = 5;
+    private Page() {
+    }
+
+    /**
+     *
+     * @param user
+     * @return
+     */
     public static String generateHomePage(final User user) {
         List<Song> likedSongsCopy = new ArrayList<>(user.getLikedSongs());
         List<Playlist> followedPlaylistsCopy = new ArrayList<>(user.getFollowedPlaylists());
@@ -29,7 +37,7 @@ public class Page {
 
         StringBuilder homePageMessage = new StringBuilder("Liked songs:\n\t[");
 
-        int count = Math.min(likedSongsCopy.size(), maxNumber);
+        int count = Math.min(likedSongsCopy.size(), MAX_NUMBER);
         for (int i = 0; i < count; i++) {
             homePageMessage.append(likedSongsCopy.get(i).getName()).append(", ");
         }
@@ -38,7 +46,7 @@ public class Page {
         }
         homePageMessage.append("]\n\nFollowed playlists:\n\t[");
 
-        count = Math.min(followedPlaylistsCopy.size(), maxNumber);
+        count = Math.min(followedPlaylistsCopy.size(), MAX_NUMBER);
         for (int i = 0; i < count; i++) {
             homePageMessage.append(followedPlaylistsCopy.get(i).getName()).append(", ");
         }
@@ -50,6 +58,11 @@ public class Page {
         return homePageMessage.toString();
     }
 
+    /**
+     *
+     * @param user
+     * @return
+     */
     public static String generateLikedContentPage(final User user) {
         List<Song> likedSongs = user.getLikedSongs();
         StringBuilder likedSongsMessage = new StringBuilder("Liked songs:\n\t[");
@@ -80,6 +93,11 @@ public class Page {
         return likedSongsMessage.toString();
     }
 
+    /**
+     *
+     * @param artist
+     * @return
+     */
     public static String generateArtistPage(final Artist artist) {
         Set<Album> albums = artist.getAlbums();
         Set<Merch> merchandise = artist.getMerchandise();
@@ -96,6 +114,12 @@ public class Page {
                         .collect(Collectors.joining(", ")) + "]";
 
     }
+
+    /**
+     *
+     * @param host
+     * @return
+     */
     public static String generateHostPage(final Host host) {
         Set<Podcast> podcasts = host.getPodcasts();
         Set<Announcement> announcements = host.getAnnouncements();

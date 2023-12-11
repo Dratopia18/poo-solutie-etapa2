@@ -2,10 +2,12 @@ package app.player;
 
 import app.utils.Enums;
 import lombok.Getter;
+import lombok.Setter;
 
 @Getter
 public class PlayerStats {
     private final String name;
+    @Setter
     private int remainedTime;
     private String repeat;
     private final boolean shuffle;
@@ -37,8 +39,5 @@ public class PlayerStats {
                 break;
         }
         this.shuffle = shuffle;
-    }
-    public void setRemainedTime(int remainedTime) {
-        this.remainedTime = remainedTime;
     }
 }

@@ -13,10 +13,24 @@ public abstract class AudioCollection extends LibraryEntry {
         this.owner = owner;
     }
 
+    /**
+     *
+     * @return
+     */
     public abstract int getNumberOfTracks();
 
+    /**
+     *
+     * @param index
+     * @return
+     */
     public abstract AudioFile getTrackByIndex(int index);
 
+    /**
+     *
+     * @param user
+     * @return
+     */
     @Override
     public boolean matchesOwner(final String user) {
         return this.getOwner().equals(user);

@@ -61,6 +61,12 @@ public class User {
         currentPage = "Home";
     }
 
+    /**
+     *
+     * @param filters
+     * @param type
+     * @return
+     */
     public ArrayList<String> search(final Filters filters, final String type) {
         searchBar.clearSelection();
         player.stop();
@@ -75,6 +81,11 @@ public class User {
         return results;
     }
 
+    /**
+     *
+     * @param itemNumber
+     * @return
+     */
     public String select(final int itemNumber) {
         List<Artist> artists = Admin.getArtists();
         List<Host> hosts = Admin.getHosts();
@@ -107,6 +118,10 @@ public class User {
         return "Successfully selected %s.".formatted(selected.getName());
     }
 
+    /**
+     *
+     * @return
+     */
     public String load() {
         if (searchBar.getLastSelected() == null) {
             return "Please select a source before attempting to load.";
@@ -123,6 +138,10 @@ public class User {
         return "Playback loaded successfully.";
     }
 
+    /**
+     *
+     * @return
+     */
     public String playPause() {
         if (player.getCurrentAudioFile() == null) {
             return "Please load a source before attempting to pause or resume playback.";
@@ -138,6 +157,10 @@ public class User {
 
     }
 
+    /**
+     *
+     * @return
+     */
     public String repeat() {
         if (player.getCurrentAudioFile() == null) {
             return "Please load a source before setting the repeat status.";
@@ -169,6 +192,11 @@ public class User {
         return "Repeat mode changed to %s.".formatted(repeatStatus);
     }
 
+    /**
+     *
+     * @param seed
+     * @return
+     */
     public String shuffle(final Integer seed) {
         if (player.getCurrentAudioFile() == null) {
             return "Please load a source before using the shuffle function.";
@@ -187,6 +215,10 @@ public class User {
         return "Shuffle function deactivated successfully.";
     }
 
+    /**
+     *
+     * @return
+     */
     public String forward() {
         if (player.getCurrentAudioFile() == null) {
             return "Please load a source before attempting to forward.";
@@ -201,6 +233,10 @@ public class User {
         return "Skipped forward successfully.";
     }
 
+    /**
+     *
+     * @return
+     */
     public String backward() {
         if (player.getCurrentAudioFile() == null) {
             return "Please select a source before rewinding.";
@@ -215,9 +251,12 @@ public class User {
         return "Rewound successfully.";
     }
 
+    /**
+     *
+     * @return
+     */
     public String like() {
-        if (player.getCurrentAudioFile() == null)
-        {
+        if (player.getCurrentAudioFile() == null) {
             return "Please load a source before liking or unliking.";
         }
 
@@ -241,6 +280,10 @@ public class User {
         return "Like registered successfully.";
     }
 
+    /**
+     *
+     * @return
+     */
     public String next() {
         if (player.getCurrentAudioFile() == null) {
             return "Please load a source before skipping to the next track.";
@@ -252,9 +295,14 @@ public class User {
             return "Please load a source before skipping to the next track.";
         }
 
-        return "Skipped to next track successfully. The current track is %s.".formatted(player.getCurrentAudioFile().getName());
+        return "Skipped to next track successfully. The current track is %s."
+                .formatted(player.getCurrentAudioFile().getName());
     }
 
+    /**
+     *
+     * @return
+     */
     public String prev() {
         if (player.getCurrentAudioFile() == null) {
             return "Please load a source before returning to the previous track.";
@@ -262,9 +310,16 @@ public class User {
 
         player.prev();
 
-        return "Returned to previous track successfully. The current track is %s.".formatted(player.getCurrentAudioFile().getName());
+        return "Returned to previous track successfully. The current track is %s."
+                .formatted(player.getCurrentAudioFile().getName());
     }
 
+    /**
+     *
+     * @param name
+     * @param timestamp
+     * @return
+     */
     public String createPlaylist(final String name, final int timestamp) {
         if (playlists.stream().anyMatch(playlist -> playlist.getName().equals(name))) {
             return "A playlist with the same name already exists.";
@@ -276,7 +331,12 @@ public class User {
         return "Playlist created successfully.";
     }
 
-    public String addRemoveInPlaylist(final int Id) {
+    /**
+     *
+     * @param id
+     * @return
+     */
+    public String addRemoveInPlaylist(final int id) {
         if (player.getCurrentAudioFile() == null) {
             return "Please load a source before adding to or removing from the playlist.";
         }
@@ -285,21 +345,26 @@ public class User {
             return "The loaded source is not a song.";
         }
 
-        if (Id > playlists.size()) {
+        if (id > playlists.size()) {
             return "The specified playlist does not exist.";
         }
 
-        Playlist playlist = playlists.get(Id - 1);
+        Playlist playlist = playlists.get(id - 1);
 
-        if (playlist.containsSong((Song)player.getCurrentAudioFile())) {
-            playlist.removeSong((Song)player.getCurrentAudioFile());
+        if (playlist.containsSong((Song) player.getCurrentAudioFile())) {
+            playlist.removeSong((Song) player.getCurrentAudioFile());
             return "Successfully removed from playlist.";
         }
 
-        playlist.addSong((Song)player.getCurrentAudioFile());
+        playlist.addSong((Song) player.getCurrentAudioFile());
         return "Successfully added to playlist.";
     }
 
+    /**
+     *
+     * @param playlistId
+     * @return
+     */
     public String switchPlaylistVisibility(final Integer playlistId) {
         if (playlistId > playlists.size()) {
             return "The specified playlist ID is too high.";
@@ -315,6 +380,10 @@ public class User {
         return "Visibility status updated successfully to private.";
     }
 
+    /**
+     *
+     * @return
+     */
     public ArrayList<PlaylistOutput> showPlaylists() {
         ArrayList<PlaylistOutput> playlistOutputs = new ArrayList<>();
         for (Playlist playlist : playlists) {
@@ -324,6 +393,10 @@ public class User {
         return playlistOutputs;
     }
 
+    /**
+     *
+     * @return
+     */
     public String follow() {
         LibraryEntry selection = searchBar.getLastSelected();
         String type = searchBar.getLastSearchType();
@@ -336,7 +409,7 @@ public class User {
             return "The selected source is not a playlist.";
         }
 
-        Playlist playlist = (Playlist)selection;
+        Playlist playlist = (Playlist) selection;
 
         if (playlist.getOwner().equals(username)) {
             return "You cannot follow or unfollow your own playlist.";
@@ -356,10 +429,18 @@ public class User {
         return "Playlist followed successfully.";
     }
 
+    /**
+     *
+     * @return
+     */
     public PlayerStats getPlayerStats() {
         return player.getStats();
     }
 
+    /**
+     *
+     * @return
+     */
     public ArrayList<String> showPreferredSongs() {
         ArrayList<String> results = new ArrayList<>();
         for (AudioFile audioFile : likedSongs) {
@@ -369,6 +450,10 @@ public class User {
         return results;
     }
 
+    /**
+     *
+     * @return
+     */
     public String getPreferredGenre() {
         String[] genres = {"pop", "rock", "rap"};
         int[] counts = new int[genres.length];
@@ -392,7 +477,12 @@ public class User {
         return "This user's preferred genre is %s.".formatted(preferredGenre);
     }
 
-    public String SwitchConnectionStatus(final String targetUsername) {
+    /**
+     *
+     * @param targetUsername
+     * @return
+     */
+    public String switchConnectionStatus(final String targetUsername) {
         User targetUser = Admin.getUser(targetUsername);
         List<User> normalUsers = Admin.getNormalUsers();
         if (!normalUsers.contains(targetUser)) {
@@ -403,6 +493,11 @@ public class User {
         return targetUsername + " has changed status successfully.";
     }
 
+    /**
+     *
+     * @param nextPage
+     * @return
+     */
     public String changePage(final String nextPage) {
         if (Objects.equals(nextPage, "Home") || Objects.equals(nextPage, "LikedContent")) {
             setCurrentPage(nextPage);
@@ -412,14 +507,25 @@ public class User {
         }
     }
 
+    /**
+     *
+     */
     public void switchOnlineStatus() {
         onlineStatus = !onlineStatus;
     }
 
+    /**
+     *
+     * @return
+     */
     public boolean getOnlineStatus() {
         return onlineStatus;
     }
 
+    /**
+     *
+     * @return
+     */
     public String printCurrentPage() {
         return switch (currentPage) {
             case "Home" -> Page.generateHomePage(this);
@@ -442,6 +548,10 @@ public class User {
         };
     }
 
+    /**
+     *
+     * @param time
+     */
     public void simulateTime(final int time) {
         if (onlineStatus) {
             player.simulatePlayer(time);
@@ -451,6 +561,11 @@ public class User {
         }
     }
 
+    /**
+     *
+     * @param entries
+     * @return
+     */
     public boolean isInteractingWith(final List<LibraryEntry> entries) {
         PlayerStats stats = this.getPlayerStats();
         if (stats != null && stats.getRemainedTime() > 0) {
@@ -462,6 +577,12 @@ public class User {
         }
         return false;
     }
+
+    /**
+     * Verifica daca utilizatorul este pe pagina unui artist sau a unui host
+     * @param artistOrHostUsername artistul sau hostul dat
+     * @return true daca este pe pagina artistului sau hostului, false altfel
+     */
     public boolean isOnArtistOrHostPage(final String artistOrHostUsername) {
         if (Objects.equals(currentPage, "ArtistPage") && selectedArtist != null
                 && selectedArtist.getUsername().equals(artistOrHostUsername)) {
@@ -470,6 +591,12 @@ public class User {
         return Objects.equals(currentPage, "HostPage") && selectedHost != null
                 && selectedHost.getUsername().equals(artistOrHostUsername);
     }
+
+    /**
+     * Verifica daca un album este folosit in momentul de fata
+     * @param album ia albumul respectiv
+     * @return true daca este folosit, false altfel
+     */
     public boolean isUsingAlbum(final Album album) {
         if (this.player.getCurrentAudioFile() == null) {
             return false;
@@ -478,6 +605,12 @@ public class User {
         AudioFile currentTrack = this.player.getCurrentAudioFile();
         return album.getSongs().contains(currentTrack);
     }
+
+    /**
+     * verifica daca un album are vreo melodie dintr-un playlist
+     * @param album ia albumul respectiv
+     * @return true daca are vreo melodie dintr-un playlist, false altfel
+     */
     public boolean hasAlbumSongInPlaylist(final Album album) {
         for (Playlist playlist : playlists) {
             for (Song song : album.getSongs()) {
@@ -488,6 +621,12 @@ public class User {
         }
         return false;
     }
+
+    /**
+     *
+     * @param entry
+     * @return
+     */
     public boolean isCurrentlyPlaying(final LibraryEntry entry) {
         LibraryEntry currentSource = player.getCurrentSource();
         if (currentSource != null && entry instanceof Podcast podcast) {

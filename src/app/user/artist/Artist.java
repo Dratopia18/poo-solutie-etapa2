@@ -8,7 +8,12 @@ import lombok.Setter;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.List;
+import java.util.Set;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.Date;
+import java.util.Calendar;
 
 @Getter
 public class Artist extends User {
@@ -20,14 +25,23 @@ public class Artist extends User {
     private Set<Event> events;
     private final Set<Merch> merchandise;
 
-    public Artist(String username, int age, String city) {
+    public Artist(final String username, final int age, final String city) {
         super(username, age, city);
         this.albums = new LinkedHashSet<>();
         this.events = new LinkedHashSet<>();
         this.merchandise = new LinkedHashSet<>();
     }
 
-    public String addAlbum(String name, String releaseYear, String description, List<Song> songs) {
+    /**
+     *
+     * @param name
+     * @param releaseYear
+     * @param description
+     * @param songs
+     * @return
+     */
+    public String addAlbum(final String name, final String releaseYear,
+                           final String description, final List<Song> songs) {
         for (Album album : albums) {
             if (album.getName().equals(name)) {
                 return getUsername() + " has another album with the same name.";
@@ -47,7 +61,12 @@ public class Artist extends User {
         return getUsername() + " has added new album successfully.";
     }
 
-    public String removeAlbum(String albumName) {
+    /**
+     *
+     * @param albumName
+     * @return
+     */
+    public String removeAlbum(final String albumName) {
         Album albumToRemove = null;
         for (Album album : albums) {
             if (album.getName().equals(albumName)) {
@@ -69,11 +88,23 @@ public class Artist extends User {
         return getUsername() + " deleted the album successfully.";
     }
 
-    public boolean hasEvent(String eventName) {
+    /**
+     *
+     * @param eventName
+     * @return
+     */
+    public boolean hasEvent(final String eventName) {
         return events.stream().anyMatch(event -> event.getName().equals(eventName));
     }
 
-    public String addEvent(String name, String description, String date) {
+    /**
+     *
+     * @param name
+     * @param description
+     * @param date
+     * @return
+     */
+    public String addEvent(final String name, final String description, final String date) {
         if (!isValidDate(date)) {
             return "Event for " + getUsername() + " does not have a valid date.";
         }
@@ -84,7 +115,12 @@ public class Artist extends User {
         return getUsername() + " has added new event successfully.";
     }
 
-    private boolean isValidDate(String date) {
+    /**
+     * Se verifica daca data respectiva este valida
+     * @param date ia data ce va fi verificata
+     * @return true daca data este valida, false altfel
+     */
+    private boolean isValidDate(final String date) {
         final int belowYear = 1900;
         final int aboveYear = 2023;
         final int maxMonths = 12;
@@ -123,7 +159,13 @@ public class Artist extends User {
             return false;
         }
     }
-    public String removeEvent(String eventName) {
+
+    /**
+     *
+     * @param eventName
+     * @return
+     */
+    public String removeEvent(final String eventName) {
         if (!hasEvent(eventName)) {
             return getUsername() + " doesn't have an event with the given name.";
         }
@@ -137,7 +179,15 @@ public class Artist extends User {
         events.remove(eventToRemove);
         return getUsername() + " deleted the event successfully.";
     }
-    public String addMerch(String name, String description, int price) {
+
+    /**
+     *
+     * @param name
+     * @param description
+     * @param price
+     * @return
+     */
+    public String addMerch(final String name, final String description, final int price) {
         for (Merch item : merchandise) {
             if (item.getName().equals(name)) {
                 return getUsername() + " has merchandise with the same name.";
@@ -151,9 +201,17 @@ public class Artist extends User {
         return getUsername() + " has added new merchandise successfully.";
     }
 
+    /**
+     *
+     */
     public void clearAlbums() {
         albums.clear();
     }
+
+    /**
+     * Ia numarul total de like-uri al albumelor artistului
+     * @return numarul total de like-uri
+     */
     public int getTotalLikes() {
         return albums.stream().flatMap(album -> album.getSongs().stream())
                 .mapToInt(Song::getLikes).sum();

@@ -25,6 +25,9 @@ public class Player {
         this.paused = true;
     }
 
+    /**
+     *
+     */
     public void stop() {
         if ("podcast".equals(this.type)) {
             bookmarkPodcast();
@@ -38,17 +41,27 @@ public class Player {
 
     private void bookmarkPodcast() {
         if (source != null && source.getAudioFile() != null) {
-            PodcastBookmark currentBookmark = new PodcastBookmark(source.getAudioCollection().getName(), source.getIndex(), source.getDuration());
+            PodcastBookmark currentBookmark =
+                    new PodcastBookmark(source.getAudioCollection().getName(),
+                            source.getIndex(), source.getDuration());
             bookmarks.removeIf(bookmark -> bookmark.getName().equals(currentBookmark.getName()));
             bookmarks.add(currentBookmark);
         }
     }
 
+    /**
+     *
+     * @param type
+     * @param entry
+     * @param bookmarks
+     * @return
+     */
     public static PlayerSource createSource(final String type, final LibraryEntry entry,
                                             final List<PodcastBookmark> bookmarks) {
         return switch (type) {
             case "song" -> new PlayerSource(Enums.PlayerSourceType.LIBRARY, (AudioFile) entry);
-            case "playlist", "album" -> new PlayerSource(Enums.PlayerSourceType.PLAYLIST, (AudioCollection) entry);
+            case "playlist", "album" -> new PlayerSource(Enums.PlayerSourceType.PLAYLIST,
+                    (AudioCollection) entry);
             case "podcast" -> createPodcastSource((AudioCollection) entry, bookmarks);
             default -> null;
         };
@@ -64,6 +77,11 @@ public class Player {
         return new PlayerSource(Enums.PlayerSourceType.PODCAST, collection);
     }
 
+    /**
+     *
+     * @param entry
+     * @param type1
+     */
     public void setSource(final LibraryEntry entry, final String type1) {
         if ("podcast".equals(this.type)) {
             bookmarkPodcast();
@@ -76,11 +94,18 @@ public class Player {
         this.paused = true;
     }
 
+    /**
+     *
+     */
     public void pause() {
         paused = !paused;
     }
 
-    public void shuffle (final Integer seed) {
+    /**
+     *
+     * @param seed
+     */
+    public void shuffle(final Integer seed) {
         if (seed != null) {
             source.generateShuffleOrder(seed);
         }
@@ -94,6 +119,10 @@ public class Player {
         }
     }
 
+    /**
+     *
+     * @return
+     */
     public Enums.RepeatMode repeat() {
         if (repeatMode == Enums.RepeatMode.NO_REPEAT) {
             if (source.getType() == Enums.PlayerSourceType.LIBRARY) {
@@ -116,21 +145,29 @@ public class Player {
         return repeatMode;
     }
 
-    public void simulatePlayer(int time) {
+    /**
+     *
+     * @param time
+     */
+    public void simulatePlayer(final int time) {
+        int elapsedTime = time;
         if (!paused) {
-            while (time >= source.getDuration()) {
-                time -= source.getDuration();
+            while (elapsedTime >= source.getDuration()) {
+                elapsedTime -= source.getDuration();
                 next();
                 if (paused) {
                     break;
                 }
             }
             if (!paused) {
-                source.skip(-time);
+                source.skip(-elapsedTime);
             }
         }
     }
 
+    /**
+     *
+     */
     public void next() {
         paused = source.setNextAudioFile(repeatMode, shuffle);
         if (repeatMode == Enums.RepeatMode.REPEAT_ONCE) {
@@ -142,16 +179,26 @@ public class Player {
         }
     }
 
+    /**
+     *
+     */
     public void prev() {
         source.setPrevAudioFile(shuffle);
         paused = false;
     }
 
+    /**
+     *
+     * @param duration
+     */
     private void skip(final int duration) {
         source.skip(duration);
         paused = false;
     }
 
+    /**
+     *
+     */
     public void skipNext() {
         final int forwardNumber = -90;
         if (source.getType() == Enums.PlayerSourceType.PODCAST) {
@@ -159,6 +206,9 @@ public class Player {
         }
     }
 
+    /**
+     *
+     */
     public void skipPrev() {
         final int backwardNumber = 90;
         if (source.getType() == Enums.PlayerSourceType.PODCAST) {
@@ -166,6 +216,10 @@ public class Player {
         }
     }
 
+    /**
+     *
+     * @return
+     */
     public AudioFile getCurrentAudioFile() {
         if (source == null) {
             return null;
@@ -173,14 +227,26 @@ public class Player {
         return source.getAudioFile();
     }
 
+    /**
+     *
+     * @return
+     */
     public boolean getPaused() {
         return paused;
     }
 
+    /**
+     *
+     * @return
+     */
     public boolean getShuffle() {
         return shuffle;
     }
 
+    /**
+     *
+     * @return
+     */
     public PlayerStats getStats() {
         String filename = "";
         int duration = 0;
@@ -194,6 +260,10 @@ public class Player {
         return new PlayerStats(filename, duration, repeatMode, shuffle, paused);
     }
 
+    /**
+     *
+     * @return
+     */
     public LibraryEntry getCurrentSource() {
         if (source == null) {
             return null;

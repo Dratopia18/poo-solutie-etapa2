@@ -81,10 +81,16 @@ public final class Song extends AudioFile {
         return likes;
     }
 
+    /**
+     * adauga un like de la o melodie
+     */
     public void like() {
         likes++;
     }
 
+    /**
+     * sterge un like de la o melodie
+     */
     public void dislike() {
         likes--;
     }

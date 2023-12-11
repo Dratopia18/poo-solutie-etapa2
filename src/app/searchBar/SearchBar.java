@@ -11,8 +11,16 @@ import lombok.Getter;
 import java.util.ArrayList;
 import java.util.List;
 
-import static app.searchBar.FilterUtils.*;
+import static app.searchBar.FilterUtils.filterByAlbum;
+import static app.searchBar.FilterUtils.filterByArtist;
 import static app.searchBar.FilterUtils.filterByFollowers;
+import static app.searchBar.FilterUtils.filterByGenre;
+import static app.searchBar.FilterUtils.filterByLyrics;
+import static app.searchBar.FilterUtils.filterByName;
+import static app.searchBar.FilterUtils.filterByOwner;
+import static app.searchBar.FilterUtils.filterByPlaylistVisibility;
+import static app.searchBar.FilterUtils.filterByReleaseYear;
+import static app.searchBar.FilterUtils.filterByTags;
 
 public class SearchBar {
     private List<LibraryEntry> results;
@@ -24,16 +32,26 @@ public class SearchBar {
     @Getter
     private LibraryEntry lastSelected;
 
-    public SearchBar(String user) {
+    public SearchBar(final String user) {
         this.results = new ArrayList<>();
         this.user = user;
     }
 
+    /**
+     *
+     */
     public void clearSelection() {
         lastSelected = null;
         lastSearchType = null;
     }
-    public List<LibraryEntry> search(Filters filters, String type) {
+
+    /**
+     *
+     * @param filters
+     * @param type
+     * @return
+     */
+    public List<LibraryEntry> search(final Filters filters, final String type) {
         List<LibraryEntry> entries;
 
         switch (type) {
@@ -109,8 +127,10 @@ public class SearchBar {
                 entries = new ArrayList<>();
                 for (Artist artist : Admin.getArtists()) {
                     for (Album album : artist.getAlbums()) {
-                        if ((filters.getOwner() == null || album.getOwner().equalsIgnoreCase(filters.getOwner())) &&
-                                (filters.getName() == null || album.getName().toLowerCase().contains(filters.getName().toLowerCase()))) {
+                        if ((filters.getOwner() == null || album.getOwner()
+                                .equalsIgnoreCase(filters.getOwner()))
+                                && (filters.getName() == null || album.getName().toLowerCase()
+                                .contains(filters.getName().toLowerCase()))) {
                             entries.add(album);
                         }
                     }
@@ -121,12 +141,13 @@ public class SearchBar {
                 for (Artist artist : Admin.getArtists()) {
                     LibraryEntry artistEntry = new LibraryEntry(artist.getUsername()) {
                         @Override
-                        public boolean matchesName(String name) {
+                        public boolean matchesName(final String name) {
                             return super.matchesName(name) || matchesArtist(name);
                         }
                         @Override
-                        public boolean matchesArtist(String artistName) {
-                            return artist.getUsername().toLowerCase().startsWith(artistName.toLowerCase());
+                        public boolean matchesArtist(final String artistName) {
+                            return artist.getUsername().toLowerCase()
+                                    .startsWith(artistName.toLowerCase());
                         }
                     };
                     entries.add(artistEntry);
@@ -140,12 +161,13 @@ public class SearchBar {
                 for (Host host : Admin.getHosts()) {
                     LibraryEntry hostEntry = new LibraryEntry(host.getUsername()) {
                         @Override
-                        public boolean matchesName(String name) {
+                        public boolean matchesName(final String name) {
                             return super.matchesName(name) || matchesArtist(name);
                         }
                         @Override
-                        public boolean matchesArtist(String hostName) {
-                            return host.getUsername().toLowerCase().startsWith(hostName.toLowerCase());
+                        public boolean matchesArtist(final String hostName) {
+                            return host.getUsername().toLowerCase()
+                                    .startsWith(hostName.toLowerCase());
                         }
                     };
                     entries.add(hostEntry);
@@ -167,7 +189,12 @@ public class SearchBar {
         return this.results;
     }
 
-    public LibraryEntry select(Integer itemNumber) {
+    /**
+     *
+     * @param itemNumber
+     * @return
+     */
+    public LibraryEntry select(final Integer itemNumber) {
         if (this.results.size() < itemNumber) {
             results.clear();
 

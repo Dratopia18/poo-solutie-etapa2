@@ -51,10 +51,20 @@ public class PlayerSource {
         this.audioFile = audioCollection.getTrackByIndex(index);
     }
 
+    /**
+     *
+     * @return
+     */
     public int getDuration() {
         return remainedDuration;
     }
 
+    /**
+     *
+     * @param repeatMode
+     * @param shuffle
+     * @return
+     */
     public boolean setNextAudioFile(final Enums.RepeatMode repeatMode,
                                     final boolean shuffle) {
         boolean isPaused = false;
@@ -108,6 +118,10 @@ public class PlayerSource {
         return isPaused;
     }
 
+    /**
+     *
+     * @param shuffle
+     */
     public void setPrevAudioFile(final boolean shuffle) {
         if (type == Enums.PlayerSourceType.LIBRARY) {
             remainedDuration = audioFile.getDuration();
@@ -133,6 +147,10 @@ public class PlayerSource {
         }
     }
 
+    /**
+     *
+     * @param seed
+     */
     public void generateShuffleOrder(final Integer seed) {
         indices.clear();
         Random random = new Random(seed);
@@ -142,6 +160,9 @@ public class PlayerSource {
         Collections.shuffle(indices, random);
     }
 
+    /**
+     *
+     */
     public void updateShuffleIndex() {
         for (int i = 0; i < indices.size(); i++) {
             if (indices.get(i) == index) {
@@ -151,6 +172,10 @@ public class PlayerSource {
         }
     }
 
+    /**
+     *
+     * @param duration
+     */
     public void skip(final int duration) {
         remainedDuration += duration;
         if (remainedDuration > audioFile.getDuration()) {
@@ -162,6 +187,9 @@ public class PlayerSource {
         }
     }
 
+    /**
+     *
+     */
     private void updateAudioFile() {
         setAudioFile(audioCollection.getTrackByIndex(index));
     }

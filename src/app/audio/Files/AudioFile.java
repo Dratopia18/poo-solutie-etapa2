@@ -14,6 +14,11 @@ public abstract class AudioFile extends LibraryEntry {
         this.duration = duration;
     }
 
+    /**
+     *
+     * @param obj
+     * @return
+     */
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -26,6 +31,10 @@ public abstract class AudioFile extends LibraryEntry {
         return Objects.equals(this.getName(), audioFile.getName());
     }
 
+    /**
+     *
+     * @return
+     */
     @Override
     public int hashCode() {
         return Objects.hash(this.getName());
