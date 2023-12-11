@@ -14,7 +14,7 @@ import fileio.input.*;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class Admin {
+public final class Admin {
     private static List<User> users = new ArrayList<>();
     private static List<Song> songs = new ArrayList<>();
     private static List<Podcast> podcasts = new ArrayList<>();
@@ -44,7 +44,9 @@ public class Admin {
         for (PodcastInput podcastInput : podcastInputList) {
             List<Episode> episodes = new ArrayList<>();
             for (EpisodeInput episodeInput : podcastInput.getEpisodes()) {
-                episodes.add(new Episode(episodeInput.getName(), episodeInput.getDuration(), episodeInput.getDescription()));
+                episodes.add(new Episode(episodeInput.getName(),
+                        episodeInput.getDuration(),
+                        episodeInput.getDescription()));
             }
             podcasts.add(new Podcast(podcastInput.getName(), podcastInput.getOwner(), episodes));
         }
@@ -332,13 +334,15 @@ public class Admin {
 
     private static void removeArtistSongsFromLikedSongs(Artist artist) {
         for (User user : users) {
-            user.getLikedSongs().removeIf(song -> song.getArtist().equals(artist.getUsername()));
+            user.getLikedSongs()
+                    .removeIf(song -> song.getArtist().equals(artist.getUsername()));
         }
     }
 
     private static void removeUserPlaylists(User user) {
         for (User u : users) {
-            u.getFollowedPlaylists().removeIf(playlist -> playlist.getOwner().equals(user.getUsername()));
+            u.getFollowedPlaylists().
+                    removeIf(playlist -> playlist.getOwner().equals(user.getUsername()));
         }
     }
 
