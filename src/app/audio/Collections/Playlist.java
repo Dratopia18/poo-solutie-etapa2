@@ -63,8 +63,9 @@ public final class Playlist extends AudioCollection {
     }
 
     /**
-     * Ia numarul de like-uri al playlist-ului
-     * @return
+     * Ia numarul de like-uri al playlist-ului,
+     * adica suma like-urilor melodiilor din playlist
+     * @return numarul de like-uri al playlist-ului
      */
     public Integer getTotalLikesCount() {
         int totalLikes = 0;
@@ -82,15 +83,15 @@ public final class Playlist extends AudioCollection {
     }
 
     /**
-     *
+     * Scade numarul de followeri al playlist-ului
      */
     public void decreaseFollowers() {
         followers--;
     }
 
     /**
-     *
-     * @return
+     * Ia numarul de melodii din playlist
+     * @return numarul de melodii din playlist
      */
     @Override
     public int getNumberOfTracks() {
@@ -98,9 +99,9 @@ public final class Playlist extends AudioCollection {
     }
 
     /**
-     *
-     * @param index
-     * @return
+     * Ia o melodie din playlist dupa index
+     * @param index ia indexul melodiei
+     * @return melodia de la indexul dat sau null daca indexul e invalid
      */
     @Override
     public AudioFile getTrackByIndex(final int index) {
@@ -108,9 +109,9 @@ public final class Playlist extends AudioCollection {
     }
 
     /**
-     *
-     * @param user
-     * @return
+     * Verificam daca playlistul este vizibil pentru userul dat.
+     * @param user userul cu care se compara
+     * @return true daca playlistul este vizibil pentru userul dat, false in caz contrar
      */
     @Override
     public boolean isVisibleToUser(final String user) {
@@ -120,9 +121,10 @@ public final class Playlist extends AudioCollection {
     }
 
     /**
-     *
-     * @param followers1
-     * @return
+     * Verificam daca followerii playlistului sunt egali cu followerii dati.
+     * @param followers1 followerii cu care se compara
+     * @return true daca followerii playlistului sunt egali cu followerii dati,
+     * false in caz contrar
      */
     @Override
     public boolean matchesFollowers(final String followers1) {
@@ -130,10 +132,10 @@ public final class Playlist extends AudioCollection {
     }
 
     /**
-     *
-     * @param count
-     * @param query
-     * @return
+     * Filtrare dupa numarul de followeri.
+     * @param count numarul de followeri
+     * @param query query-ul dupa care se filtreaza
+     * @return true daca numarul de followeri respecta query-ul, false in caz contrar
      */
     private static boolean filterByFollowersCount(final int count, final String query) {
         if (query.startsWith("<")) {

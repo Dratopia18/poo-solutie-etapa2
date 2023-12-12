@@ -15,9 +15,9 @@ public abstract class AudioFile extends LibraryEntry {
     }
 
     /**
-     *
-     * @param obj
-     * @return
+     * Se supra-scrie metoda equals pentru a compara doua obiecte de tip AudioFile.
+     * @param obj obiectul cu care se compara
+     * @return true daca obiectele sunt egale, false in caz contrar
      */
     @Override
     public boolean equals(final Object obj) {
@@ -32,8 +32,8 @@ public abstract class AudioFile extends LibraryEntry {
     }
 
     /**
-     *
-     * @return
+     * Se supra-scrie metoda hashCode pentru a calcula hash-ul unui obiect de tip AudioFile.
+     * @return hash-ul obiectului
      */
     @Override
     public int hashCode() {
