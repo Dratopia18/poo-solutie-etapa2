@@ -65,32 +65,33 @@ public final class Page {
      */
     public static String generateLikedContentPage(final User user) {
         List<Song> likedSongs = user.getLikedSongs();
-        StringBuilder likedSongsMessage = new StringBuilder("Liked songs:\n\t[");
+        List<Playlist> followedPlaylists = user.getFollowedPlaylists();
+        StringBuilder likedContentPageMessage = new StringBuilder("Liked songs:\n\t[");
 
         for (Song song : likedSongs) {
-            likedSongsMessage.append(song.getName()).append(" - ")
+            likedContentPageMessage.append(song.getName()).append(" - ")
                     .append(song.getArtist()).append(", ");
         }
 
         if (!likedSongs.isEmpty()) {
-            likedSongsMessage.setLength(likedSongsMessage.length() - 2);
+            likedContentPageMessage.setLength(likedContentPageMessage.length() - 2);
         }
 
-        likedSongsMessage.append("]\n\nFollowed playlists:\n\t[");
+        likedContentPageMessage.append("]\n\nFollowed playlists:\n\t[");
 
-        List<Playlist> followedPlaylists = user.getFollowedPlaylists();
+
         for (Playlist playlist : followedPlaylists) {
-            likedSongsMessage.append(playlist.getName()).append(" - ")
+            likedContentPageMessage.append(playlist.getName()).append(" - ")
                     .append(playlist.getOwner()).append(", ");
         }
 
         if (!followedPlaylists.isEmpty()) {
-            likedSongsMessage.setLength(likedSongsMessage.length() - 2);
+            likedContentPageMessage.setLength(likedContentPageMessage.length() - 2);
         }
 
-        likedSongsMessage.append("]");
+        likedContentPageMessage.append("]");
 
-        return likedSongsMessage.toString();
+        return likedContentPageMessage.toString();
     }
 
     /**
