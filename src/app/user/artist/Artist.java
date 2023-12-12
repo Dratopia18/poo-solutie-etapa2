@@ -33,12 +33,16 @@ public class Artist extends User {
     }
 
     /**
-     *
-     * @param name
-     * @param releaseYear
-     * @param description
-     * @param songs
-     * @return
+     * Adauga un nou album.
+     * @param name numele albumului
+     * @param releaseYear anul de lansare
+     * @param description descrierea albumului
+     * @param songs lista de melodii
+     * @return 3 cazuri:
+     * 1. Daca artistul are deja un album cu acelasi nume, se returneaza un mesaj corespunzator
+     * 2. Daca artistul are deja o melodie cu acelasi nume, se returneaza un mesaj corespunzator
+     * 3. Daca artistul nu are deja un album cu acelasi nume si nici o melodie cu acelasi nume,
+     * se adauga albumul si se returneaza un mesaj corespunzator
      */
     public String addAlbum(final String name, final String releaseYear,
                            final String description, final List<Song> songs) {
@@ -62,9 +66,13 @@ public class Artist extends User {
     }
 
     /**
-     *
-     * @param albumName
-     * @return
+     * Sterge un album.
+     * @param albumName numele albumului
+     * @return 3 cazuri:
+     * 1. Daca albumul nu exista, se returneaza un mesaj corespunzator
+     * 2. Daca albumul exista, dar il ruleaza un user, se returneaza un mesaj corespunzator
+     * 3. Daca albumul exista si nu e rulat de user,
+     * se sterge si se returneaza un mesaj corespunzator
      */
     public String removeAlbum(final String albumName) {
         Album albumToRemove = null;
@@ -89,20 +97,24 @@ public class Artist extends User {
     }
 
     /**
-     *
-     * @param eventName
-     * @return
+     * Se verifica daca artistul are un eveniment cu acelasi nume
+     * @param eventName numele evenimentului
+     * @return true daca artistul are un eveniment cu acelasi nume, false in caz contrar
      */
     public boolean hasEvent(final String eventName) {
         return events.stream().anyMatch(event -> event.getName().equals(eventName));
     }
 
     /**
-     *
-     * @param name
-     * @param description
-     * @param date
-     * @return
+     * Se adauga un nou eveniment
+     * @param name numele evenimentului
+     * @param description descrierea evenimentului
+     * @param date data evenimentului
+     * @return 3 cazuri:
+     * 1. Daca data nu este valida, se returneaza un mesaj corespunzator
+     * 2. Daca artistul are deja un eveniment cu acelasi nume, se returneaza un mesaj corespunzator
+     * 3. Daca artistul nu are deja un eveniment cu acelasi nume si data este valida,
+     * se adauga evenimentul si se returneaza un mesaj corespunzator
      */
     public String addEvent(final String name, final String description, final String date) {
         if (!isValidDate(date)) {
@@ -118,7 +130,7 @@ public class Artist extends User {
     /**
      * Se verifica daca data respectiva este valida
      * @param date ia data ce va fi verificata
-     * @return true daca data este valida, false altfel
+     * @return true daca data este valida, false in caz contrar
      */
     private boolean isValidDate(final String date) {
         final int belowYear = 1900;
@@ -161,9 +173,11 @@ public class Artist extends User {
     }
 
     /**
-     *
-     * @param eventName
-     * @return
+     * Sterge un eveniment
+     * @param eventName numele evenimentului
+     * @return 2 cazuri:
+     * 1. Daca evenimentul nu exista, se returneaza un mesaj corespunzator
+     * 2. Daca evenimentul exista, se sterge si se returneaza un mesaj corespunzator
      */
     public String removeEvent(final String eventName) {
         if (!hasEvent(eventName)) {
@@ -181,11 +195,16 @@ public class Artist extends User {
     }
 
     /**
-     *
-     * @param name
-     * @param description
-     * @param price
-     * @return
+     * Adauga un nou produs de merch
+     * @param name numele produsului
+     * @param description descrierea produsului
+     * @param price pretul produsului
+     * @return 3 cazuri:
+     * 1. Daca artistul are deja un produs de merch cu acelasi nume,
+     * se returneaza un mesaj corespunzator
+     * 2. Daca pretul este negativ, se returneaza un mesaj corespunzator
+     * 3. Daca artistul nu are deja un produs de merch cu acelasi nume si pretul este pozitiv,
+     * se adauga produsul de merch si se returneaza un mesaj corespunzator
      */
     public String addMerch(final String name, final String description, final int price) {
         for (Merch item : merchandise) {
@@ -202,14 +221,15 @@ public class Artist extends User {
     }
 
     /**
-     *
+     * Sterge toate albumele ale artistului
      */
     public void clearAlbums() {
         albums.clear();
     }
 
     /**
-     * Ia numarul total de like-uri al albumelor artistului
+     * Ia numarul total de like-uri al albumului artistului,
+     * adica suma like-urilor tuturor melodiilor din toate albumele artistului
      * @return numarul total de like-uri
      */
     public int getTotalLikes() {

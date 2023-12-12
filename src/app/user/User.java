@@ -62,10 +62,10 @@ public class User {
     }
 
     /**
-     *
-     * @param filters
-     * @param type
-     * @return
+     * Cauta o melodie, un podcast, un album, un playlist, un artist sau un host
+     * @param filters filtrele dupa care se face cautarea
+     * @param type tipul de obiect cautat
+     * @return lista de rezultate, dupa filtrare si tipul de obiect cautat
      */
     public ArrayList<String> search(final Filters filters, final String type) {
         searchBar.clearSelection();
@@ -82,9 +82,15 @@ public class User {
     }
 
     /**
-     *
-     * @param itemNumber
-     * @return
+     * Selecteaza un obiect din lista de rezultate
+     * @param itemNumber numarul obiectului selectat
+     * @return 5 cazuri:
+     * 1. Daca nu s-a facut nicio cautare, se returneaza un mesaj corespunzator
+     * 2. Daca numarul obiectului selectat este prea mare, se returneaza un mesaj corespunzator
+     * 3. Daca obiectul selectat este un artist, se seteaza pagina curenta pe ArtistPage
+     * 4. Daca obiectul selectat este un host, se seteaza pagina curenta pe HostPage
+     * 5. Daca obiectul selectat nu este nici artist, nici host,
+     * se returneaza un mesaj corespunzator
      */
     public String select(final int itemNumber) {
         List<Artist> artists = Admin.getArtists();
@@ -119,8 +125,13 @@ public class User {
     }
 
     /**
-     *
-     * @return
+     * Incarca un obiect selectat
+     * @return 3 cazuri:
+     * 1. Daca nu s-a facut nicio selectare de obiect, se returneaza un mesaj corespunzator
+     * 2. Daca obiectul selectat este o colectie de melodii si nu are melodii,
+     * se returneaza un mesaj corespunzator
+     * 3. Daca obiectul selectat este o colectie de melodii si are melodii,
+     * se incarca si se returneaza un mesaj corespunzator
      */
     public String load() {
         if (searchBar.getLastSelected() == null) {
@@ -139,8 +150,11 @@ public class User {
     }
 
     /**
-     *
-     * @return
+     * Porneste sau opreste redarea unui obiect incarcat
+     * @return 3 cazuri:
+     * 1. Daca nu s-a incarcat niciun obiect, se returneaza un mesaj corespunzator
+     * 2. Daca obiectul ruleaza, se opreste si se returneaza un mesaj corespunzator
+     * 3. Daca obiectul nu ruleaza, se porneste si se returneaza un mesaj corespunzator
      */
     public String playPause() {
         if (player.getCurrentAudioFile() == null) {
@@ -158,8 +172,19 @@ public class User {
     }
 
     /**
-     *
-     * @return
+     * Seteaza modul de repetare
+     * @return 6 cazuri:
+     * 1. Daca nu s-a incarcat niciun obiect, se returneaza un mesaj corespunzator
+     * 2. Daca modul de repetare este NO_REPEAT, se seteaza modul de repetare la no repeat
+     * si se returneaza un mesaj corespunzator
+     * 3. Daca modul de repetare este REPEAT_ONCE, se seteaza modul de repetare la repeat once
+     * si se returneaza un mesaj corespunzator
+     * 4. Daca modul de repetare este REPEAT_ALL, se seteaza modul de repetare la repeat all
+     * si se returneaza un mesaj corespunzator
+     * 5. Daca modul de repetare este REPEAT_INFINITE,
+     * se seteaza modul de repetare la repeat infinite, si se returneaza un mesaj corespunzator
+     * 6. Daca modul de repetare este REPEAT_CURRENT_SONG,
+     * se seteaza modul de repetare la repeat current song, si se returneaza un mesaj corespunzator
      */
     public String repeat() {
         if (player.getCurrentAudioFile() == null) {
@@ -193,9 +218,18 @@ public class User {
     }
 
     /**
-     *
-     * @param seed
-     * @return
+     * Seteaza modul de shuffle
+     * @param seed seed-ul pentru shuffle
+     * @return 4 cazuri:
+     * 1. Daca nu s-a incarcat niciun obiect, se returneaza un mesaj corespunzator
+     * 2. Daca obiectul incarcat nu este o colectie de melodii (playlist sau album),
+     * se returneaza un mesaj corespunzator
+     * 3. Daca obiectul incarcat este o colectie de melodii (playlist sau album)
+     * si nu este shuffle, se seteaza modul de shuffle la shuffle
+     * si se returneaza un mesaj corespunzator
+     * 4. Daca obiectul incarcat este o colectie de melodii (playlist sau album)
+     * si este shuffle, se seteaza modul de shuffle la no shuffle
+     * si se returneaza un mesaj corespunzator
      */
     public String shuffle(final Integer seed) {
         if (player.getCurrentAudioFile() == null) {
@@ -216,8 +250,12 @@ public class User {
     }
 
     /**
-     *
-     * @return
+     * Sare cu 90 de secunde inainte
+     * @return 3 cazuri:
+     * 1. Daca nu s-a incarcat niciun obiect, se returneaza un mesaj corespunzator
+     * 2. Daca obiectul incarcat nu este un podcast, se returneaza un mesaj corespunzator
+     * 3. Daca obiectul incarcat este un podcast, se sare cu 90 de secunde inainte
+     * si se returneaza un mesaj corespunzator
      */
     public String forward() {
         if (player.getCurrentAudioFile() == null) {
@@ -234,8 +272,12 @@ public class User {
     }
 
     /**
-     *
-     * @return
+     * Sare cu 90 de secunde inapoi
+     * @return 3 cazuri:
+     * 1. Daca nu s-a incarcat niciun obiect, se returneaza un mesaj corespunzator
+     * 2. Daca obiectul incarcat nu este un podcast, se returneaza un mesaj corespunzator
+     * 3. Daca obiectul incarcat este un podcast, se sare cu 90 de secunde inapoi
+     * si se returneaza un mesaj corespunzator
      */
     public String backward() {
         if (player.getCurrentAudioFile() == null) {
@@ -252,8 +294,14 @@ public class User {
     }
 
     /**
-     *
-     * @return
+     * Adauga sau sterge o melodie din lista de melodii liked
+     * @return 4 cazuri:
+     * 1. Daca nu s-a incarcat niciun obiect, se returneaza un mesaj corespunzator
+     * 2. Daca obiectul incarcat nu este o melodie, se returneaza un mesaj corespunzator
+     * 3. Daca obiectul incarcat este o melodie si este liked, se sterge din lista de melodii liked
+     * si se returneaza un mesaj corespunzator
+     * 4. Daca obiectul incarcat este o melodie si nu este liked,
+     * se adauga in lista de melodii liked si se returneaza un mesaj corespunzator
      */
     public String like() {
         if (player.getCurrentAudioFile() == null) {
@@ -281,8 +329,12 @@ public class User {
     }
 
     /**
-     *
-     * @return
+     * Sare la urmatoarul obiect din player
+     * @return 3 cazuri:
+     * 1. Daca nu s-a incarcat niciun obiect, se returneaza un mesaj corespunzator
+     * 2. Daca nu exista urmatorul obiect, se returneaza un mesaj corespunzator
+     * 3. Daca exista urmatorul obiect, se sare la urmatorul obiect
+     * si se returneaza un mesaj corespunzator
      */
     public String next() {
         if (player.getCurrentAudioFile() == null) {
@@ -300,8 +352,12 @@ public class User {
     }
 
     /**
-     *
-     * @return
+     * Sare la obiectul anterior din player
+     * @return 3 cazuri:
+     * 1. Daca nu s-a incarcat niciun obiect, se returneaza un mesaj corespunzator
+     * 2. Daca nu exista obiectul anterior, se returneaza un mesaj corespunzator
+     * 3. Daca exista obiectul anterior, se sare la obiectul anterior
+     * si se returneaza un mesaj corespunzator
      */
     public String prev() {
         if (player.getCurrentAudioFile() == null) {
@@ -315,10 +371,13 @@ public class User {
     }
 
     /**
-     *
-     * @param name
-     * @param timestamp
-     * @return
+     * Adauga un nou playlist
+     * @param name numele playlistului
+     * @param timestamp timestamp-ul la care a fost creat playlistul
+     * @return 2 cazuri:
+     * 1. Daca exista deja un playlist cu acelasi nume, se returneaza un mesaj corespunzator
+     * 2. Daca nu exista deja un playlist cu acelasi nume, se adauga playlistul
+     * si se returneaza un mesaj corespunzator
      */
     public String createPlaylist(final String name, final int timestamp) {
         if (playlists.stream().anyMatch(playlist -> playlist.getName().equals(name))) {
@@ -332,9 +391,16 @@ public class User {
     }
 
     /**
-     *
-     * @param id
-     * @return
+     * Adaugi / stergi o melodie dintr-un playlist
+     * @param id id-ul playlistului
+     * @return 5 cazuri:
+     * 1. Daca nu s-a incarcat niciun obiect, se returneaza un mesaj corespunzator
+     * 2. Daca obiectul incarcat nu este o melodie, se returneaza un mesaj corespunzator
+     * 3. Daca playlistul nu exista, se returneaza un mesaj corespunzator
+     * 4. Daca melodia este deja in playlist, se sterge din playlist
+     * si se returneaza un mesaj corespunzator
+     * 5. Daca melodia nu este in playlist, se adauga in playlist
+     * si se returneaza un mesaj corespunzator
      */
     public String addRemoveInPlaylist(final int id) {
         if (player.getCurrentAudioFile() == null) {
@@ -361,9 +427,14 @@ public class User {
     }
 
     /**
-     *
-     * @param playlistId
-     * @return
+     * Seteaza vizibilitatea unui playlist
+     * @param playlistId id-ul playlistului
+     * @return 3 cazuri:
+     * 1. Daca playlistul nu exista, se returneaza un mesaj corespunzator
+     * 2. Daca playlistul exista si este public, se seteaza vizibilitatea la private
+     * si se returneaza un mesaj corespunzator
+     * 3. Daca playlistul exista si este private, se seteaza vizibilitatea la public
+     * si se returneaza un mesaj corespunzator
      */
     public String switchPlaylistVisibility(final Integer playlistId) {
         if (playlistId > playlists.size()) {
@@ -381,8 +452,9 @@ public class User {
     }
 
     /**
-     *
-     * @return
+     * Se afiseaza toate playlisturile, cu melodiile lor
+     * vizibilitatea si numarul de followers al fiecarui playlist
+     * @return lista de playlisturi
      */
     public ArrayList<PlaylistOutput> showPlaylists() {
         ArrayList<PlaylistOutput> playlistOutputs = new ArrayList<>();
@@ -394,8 +466,15 @@ public class User {
     }
 
     /**
-     *
-     * @return
+     * Adauga sau sterge un playlist din lista de playlisturi urmarite
+     * @return 5 cazuri:
+     * 1. Daca nu s-a selectat niciun playlist, se returneaza un mesaj corespunzator
+     * 2. Daca playlistul selectat nu e playlist, se returneaza un mesaj corespunzator
+     * 3. Daca playlistul selectat este al userului, se returneaza un mesaj corespunzator
+     * 4. Daca playlistul selectat este deja urmarit, se sterge din lista de playlisturi urmarite
+     * si se returneaza un mesaj corespunzator
+     * 5. Daca playlistul selectat nu este urmarit, se adauga in lista de playlisturi urmarite
+     * si se returneaza un mesaj corespunzator
      */
     public String follow() {
         LibraryEntry selection = searchBar.getLastSelected();
@@ -430,16 +509,16 @@ public class User {
     }
 
     /**
-     *
-     * @return
+     * Afiseaza statistici despre player
+     * @return statistici despre player
      */
     public PlayerStats getPlayerStats() {
         return player.getStats();
     }
 
     /**
-     *
-     * @return
+     * Afiseaza toate melodiile preferate
+     * @return lista de melodii preferate
      */
     public ArrayList<String> showPreferredSongs() {
         ArrayList<String> results = new ArrayList<>();
@@ -451,8 +530,8 @@ public class User {
     }
 
     /**
-     *
-     * @return
+     * Se afiseaza toate genurile muzicale preferate
+     * @return lista de genuri muzicale preferate
      */
     public String getPreferredGenre() {
         String[] genres = {"pop", "rock", "rap"};
@@ -478,9 +557,12 @@ public class User {
     }
 
     /**
-     *
-     * @param targetUsername
-     * @return
+     * Se schimba statusul de online / offline al unui user
+     * @param targetUsername username-ul userului
+     * @return 2 cazuri:
+     * 1. Daca userul nu este un user normal, se returneaza un mesaj corespunzator
+     * 2. Daca userul este un user normal, se schimba statusul de online / offline
+     * si se returneaza un mesaj corespunzator
      */
     public String switchConnectionStatus(final String targetUsername) {
         User targetUser = Admin.getUser(targetUsername);
@@ -494,9 +576,12 @@ public class User {
     }
 
     /**
-     *
-     * @param nextPage
-     * @return
+     * Se schimba pagina curenta
+     * @param nextPage pagina urmatoare
+     * @return 2 cazuri:
+     * 1. Daca pagina urmatoare este Home sau LikedContent, se schimba pagina curenta
+     * si se returneaza un mesaj corespunzator
+     * 2. Daca pagina urmatoare nu este Home sau LikedContent, se returneaza un mesaj corespunzator
      */
     public String changePage(final String nextPage) {
         if (Objects.equals(nextPage, "Home") || Objects.equals(nextPage, "LikedContent")) {
@@ -508,23 +593,33 @@ public class User {
     }
 
     /**
-     *
+     * Se schimba statusul de online / offline
      */
     public void switchOnlineStatus() {
         onlineStatus = !onlineStatus;
     }
 
     /**
-     *
-     * @return
+     * Se afiseaza statusul de online / offline
+     * @return statusul de online / offline
      */
     public boolean getOnlineStatus() {
         return onlineStatus;
     }
 
     /**
-     *
-     * @return
+     * Se afiseaza pagina curenta
+     * @return 5 cazuri:
+     * 1. Daca pagina curenta este Home, se afiseaza pagina Home
+     * 2. Daca pagina curenta este LikedContent, se afiseaza pagina LikedContent
+     * 3. Daca pagina curenta este ArtistPage si artistul selectat nu este null,
+     * se afiseaza pagina ArtistPage, iar daca artistul selectat este null,
+     * se afiseaza un mesaj corespunzator
+     * 4. Daca pagina curenta este HostPage si hostul selectat nu este null,
+     * se afiseaza pagina HostPage, iar daca hostul selectat este null,
+     * se afiseaza un mesaj corespunzator
+     * 5. Daca pagina curenta nu este nici Home, nici LikedContent, nici ArtistPage, nici HostPage,
+     * se afiseaza un mesaj corespunzator
      */
     public String printCurrentPage() {
         return switch (currentPage) {
@@ -549,8 +644,8 @@ public class User {
     }
 
     /**
-     *
-     * @param time
+     * Simuleaza trecerea timpului
+     * @param time timpul care trece
      */
     public void simulateTime(final int time) {
         if (onlineStatus) {
@@ -562,9 +657,12 @@ public class User {
     }
 
     /**
-     *
-     * @param entries
-     * @return
+     * Verifica daca din chestiile create de un user
+     * (melodiile din playlist, melodiile din album, episoadele din podcast)
+     * sunt folosite in momentul de fata de un user
+     * @param entries lista de chestii create de un user
+     *                (melodiile din playlist, melodiile din album, episoadele din podcast)
+     * @return true daca sunt folosite, false in caz contrar
      */
     public boolean isInteractingWith(final List<LibraryEntry> entries) {
         PlayerStats stats = this.getPlayerStats();
@@ -623,9 +721,9 @@ public class User {
     }
 
     /**
-     *
-     * @param entry
-     * @return
+     * Verifica daca un album sau un podcast este folosit in momentul de fata
+     * @param entry ia albumul sau podcastul respectiv
+     * @return true daca este folosit, false in caz contrar
      */
     public boolean isCurrentlyPlaying(final LibraryEntry entry) {
         LibraryEntry currentSource = player.getCurrentSource();
