@@ -24,9 +24,9 @@ public final class Page {
     }
 
     /**
-     *
-     * @param user
-     * @return
+     * Genereaza pagina de start a aplicatiei pentru user
+     * @param user userul pentru care se genereaza pagina
+     * @return pagina de start a aplicatiei pentru user
      */
     public static String generateHomePage(final User user) {
         List<Song> likedSongsCopy = new ArrayList<>(user.getLikedSongs());
@@ -59,9 +59,9 @@ public final class Page {
     }
 
     /**
-     *
-     * @param user
-     * @return
+     * Genereaza pagina cu melodiile liked si playlisturile urmarite de user
+     * @param user userul pentru care se genereaza pagina
+     * @return pagina cu melodiile liked si playlisturile urmarite de user
      */
     public static String generateLikedContentPage(final User user) {
         List<Song> likedSongs = user.getLikedSongs();
@@ -94,9 +94,9 @@ public final class Page {
     }
 
     /**
-     *
-     * @param artist
-     * @return
+     * Genereaza pagina pentru artistul cautat de user
+     * @param artist artistul cautat de user
+     * @return pagina pentru artistul cautat de user
      */
     public static String generateArtistPage(final Artist artist) {
         Set<Album> albums = artist.getAlbums();
@@ -116,9 +116,9 @@ public final class Page {
     }
 
     /**
-     *
-     * @param host
-     * @return
+     * Genereaza pagina pentru hostul cautat de user
+     * @param host hostul cautat de user
+     * @return pagina pentru hostul cautat de user
      */
     public static String generateHostPage(final Host host) {
         Set<Podcast> podcasts = host.getPodcasts();

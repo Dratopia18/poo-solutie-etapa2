@@ -38,8 +38,8 @@ public final class Admin {
     }
 
     /**
-     *
-     * @param userInputList
+     * Seteaza utilizatorii
+     * @param userInputList lista de utilizatori
      */
     public static void setUsers(final List<UserInput> userInputList) {
         users = new ArrayList<>();
@@ -49,8 +49,8 @@ public final class Admin {
     }
 
     /**
-     *
-     * @param songInputList
+     * Seteaza melodiile
+     * @param songInputList lista de melodii
      */
     public static void setSongs(final List<SongInput> songInputList) {
         songs = new ArrayList<>();
@@ -62,8 +62,8 @@ public final class Admin {
     }
 
     /**
-     *
-     * @param podcastInputList
+     * Seteaza podcasturile
+     * @param podcastInputList lista de podcasturi
      */
     public static void setPodcasts(final List<PodcastInput> podcastInputList) {
         podcasts = new ArrayList<>();
@@ -87,8 +87,9 @@ public final class Admin {
     }
 
     /**
-     *
-     * @return
+     * Face rost de toate playlisturile facute
+     * de utilizatori
+     * @return playlisturile facute de utilizatori
      */
     public static List<Playlist> getPlaylists() {
         List<Playlist> playlists = new ArrayList<>();
@@ -99,9 +100,9 @@ public final class Admin {
     }
 
     /**
-     *
-     * @param username
-     * @return
+     * Cauta un utilizator dupa username
+     * @param username numele de utilizator
+     * @return utilizatorul cu username-ul dat sau null daca nu exista
      */
     public static User getUser(final String username) {
         for (User user : users) {
@@ -113,9 +114,9 @@ public final class Admin {
     }
 
     /**
-     *
-     * @param username
-     * @return
+     * Cauta un artist dupa username
+     * @param username numele de utilizator
+     * @return artistul cu username-ul dat sau null daca nu exista
      */
     public static Artist getArtist(final String username) {
         for (Artist artist : ARTISTS) {
@@ -127,9 +128,9 @@ public final class Admin {
     }
 
     /**
-     *
-     * @param username
-     * @return
+     * Caute un host dupa username
+     * @param username numele de utilizator
+     * @return hostul cu username-ul dat sau null daca nu exista
      */
     public static Host getHost(final String username) {
         for (Host host : HOSTS) {
@@ -141,8 +142,8 @@ public final class Admin {
     }
 
     /**
-     *
-     * @return
+     * Ia toate albumele facute de artisti
+     * @return albumele facute de artisti
      */
     public static List<Album> getAlbums() {
         List<Album> albums = new ArrayList<>();
@@ -153,9 +154,10 @@ public final class Admin {
     }
 
     /**
-     *
-     * @param username
-     * @return
+     * Cauta un utilizator dupa username
+     * @param username numele de utilizator
+     * @return userul cu username-ul dat, artistul cu username-ul dat,
+     * hostul cu username-ul dat sau null daca nu exista
      */
     public static User findUser(final String username) {
         for (User user : users) {
@@ -180,8 +182,8 @@ public final class Admin {
     }
 
     /**
-     *
-     * @param newTimestamp
+     * Se actualizeaza timestampul
+     * @param newTimestamp noul timestamp
      */
     public static void updateTimestamp(final int newTimestamp) {
         int elapsed = newTimestamp - timestamp;
@@ -196,8 +198,9 @@ public final class Admin {
     }
 
     /**
-     *
-     * @return
+     * Ia cele mai apreciate 5 melodii dupa numarul de like-uri,
+     * si apoi dupa ordinea in care au fost adaugate
+     * @return cele mai apreciate 5 melodii
      */
     public static List<String> getTop5Songs() {
         List<Song> sortedSongs = new ArrayList<>(songs);
@@ -223,8 +226,9 @@ public final class Admin {
     }
 
     /**
-     *
-     * @return
+     * Ia cele mai urmarite 5 playlisturi dupa numarul de follow-uri,
+     * si apoi dupa ordinea in care au fost adaugate
+     * @return cele mai urmarite 5 playlisturi
      */
     public static List<String> getTop5Playlists() {
         List<Playlist> sortedPlaylists = new ArrayList<>(getPlaylists());
@@ -244,8 +248,9 @@ public final class Admin {
     }
 
     /**
-     *
-     * @return
+     * Ia cele mai apreciate 5 albume dupa numarul de like-uri,
+     * si apoi dupa numele lor
+     * @return cele mai apreciate 5 albume
      */
     public static List<String> getTop5Albums() {
         List<Album> sortedAlbums = new ArrayList<>(getAlbums());
@@ -264,8 +269,9 @@ public final class Admin {
     }
 
     /**
-     *
-     * @return
+     * Ia cei mai apreciati 5 artisti dupa numarul de like-uri primite
+     * din melodiile lor.
+     * @return cei mai apreciati 5 artisti
      */
     public static List<String> getTop5Artists() {
         List<Artist> sortedArtists = new ArrayList<>(getArtists());
@@ -283,8 +289,8 @@ public final class Admin {
     }
 
     /**
-     *
-     * @return
+     * Face rost de toti utilizatorii online
+     * @return toti utilizatorii online
      */
     public static List<String> getOnlineUsers() {
         List<String> onlineUsers = new ArrayList<>();
@@ -297,8 +303,9 @@ public final class Admin {
     }
 
     /**
-     *
-     * @return
+     * face rost de toti utilizatorii, fie ei artisti, hosti
+     * sau utilizatori normali
+     * @return toti utilizatorii
      */
     public static List<String> getAllUsers() {
         List<String> allUsers = new ArrayList<>();
@@ -325,9 +332,9 @@ public final class Admin {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Adauga un utilizator, artist sau host
+     * @param commandInput comanda de adaugare
+     * @return mesajul de succes sau de eroare
      */
     public static String addUser(final CommandInput commandInput) {
         String username = commandInput.getUsername();
@@ -354,9 +361,9 @@ public final class Admin {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Sterge un utilizator, artist sau host
+     * @param commandInput comanda de stergere
+     * @return mesajul de succes sau de eroare
      */
     public static String deleteUser(final CommandInput commandInput) {
         String username = commandInput.getUsername();
@@ -377,9 +384,11 @@ public final class Admin {
     }
 
     /**
-     *
-     * @param user
-     * @return
+     * Ia toate lucrurile facute de un utilizator,
+     * artist sau host
+     * @param user utilizatorul, artistul sau hostul
+     * @return toate lucrurile facute de utilizatorul
+     * respectiv (utilizator, artist sau host)
      */
     public static List<LibraryEntry> getAssociatedEntries(final User user) {
         List<LibraryEntry> associatedEntries = new ArrayList<>();
@@ -403,9 +412,14 @@ public final class Admin {
     }
 
     /**
-     *
-     * @param entries
-     * @return
+     * Verifica daca exista vreun utilizator care
+     * foloseste unul dintre lucrurile facute de un
+     * utilizator, artist sau host
+     * @param entries lucrurile facute de utilizatorul
+     * respectiv (utilizator, artist sau host)
+     * @return true daca exista vreun utilizator care
+     * foloseste unul dintre lucrurile facute de un
+     * utilizator, artist sau host, false in caz contrar
      */
     public static boolean isAnyUserInteractingWith(final List<LibraryEntry> entries) {
         for (String username : getAllUsers()) {
@@ -418,9 +432,11 @@ public final class Admin {
     }
 
     /**
-     *
-     * @param user
-     * @return
+     * Verifica daca exista vreun utilizator care
+     * foloseste pagina unui artist sau host
+     * @param user utilizatorul
+     * @return true daca exista vreun utilizator care
+     * foloseste pagina unui artist sau host, false in caz contrar
      */
     public static boolean isAnyUserInteractingWithPages(final User user) {
         for (String username : getAllUsers()) {
@@ -434,8 +450,9 @@ public final class Admin {
     }
 
     /**
-     *
-     * @param user
+     * Sterge un utilizator, artist sau host si tot
+     * ce a facut acesta (playlisturi, albume, podcasturi)
+     * @param user utilizatorul, artistul sau hostul
      */
     public static void removeUser(final User user) {
         if (user instanceof Artist artist) {
@@ -463,16 +480,17 @@ public final class Admin {
     }
 
     /**
-     *
-     * @param podcast
+     * Sterge un podcast
+     * @param podcast podcastul de sters
      */
     private static void removePodcast(final Podcast podcast) {
         podcasts.remove(podcast);
     }
 
     /**
-     *
-     * @param artist
+     * Sterge toate melodiile unui artist care va fi sters
+     * din lista de melodii like-uite de utilizator
+     * @param artist artistul care va fi sters
      */
     private static void removeArtistSongsFromLikedSongs(final Artist artist) {
         for (User user : users) {
@@ -482,8 +500,8 @@ public final class Admin {
     }
 
     /**
-     *
-     * @param user
+     * Sterge toate playlisturile unui utilizator care va fi sters
+     * @param user utilizatorul care va fi sters
      */
     private static void removeUserPlaylists(final User user) {
         for (User u : users) {
@@ -493,9 +511,11 @@ public final class Admin {
     }
 
     /**
-     *
-     * @param artistUsername
-     * @return
+     * Arata toate albumele facute de un artist
+     * plus melodiile din fiecare album
+     * @param artistUsername username-ul artistului
+     * @return albumele facute de artistul respectiv
+     * plus melodiile din fiecare album
      */
     public static List<Map<String, Object>> showAlbums(final String artistUsername) {
         Artist artist = getArtist(artistUsername);
@@ -518,9 +538,11 @@ public final class Admin {
     }
 
     /**
-     *
-     * @param hostUsername
-     * @return
+     * Arata toate podcasturile facute de un host
+     * plus episoadele din fiecare podcast
+     * @param hostUsername username-ul hostului
+     * @return podcasturile facute de hostul respectiv
+     * plus episoadele din fiecare podcast
      */
     public static List<Map<String, Object>> showPodcasts(final String hostUsername) {
         Host host = getHost(hostUsername);
@@ -540,9 +562,10 @@ public final class Admin {
     }
 
     /**
-     *
-     * @param album
-     * @return
+     * Verifica daca un album este folosit de vreun utilizator
+     * @param album albumul de verificat
+     * @return true daca albumul este folosit de vreun utilizator,
+     * false in caz contrar
      */
     public static boolean isAlbumInUse(final Album album) {
         for (User user : users) {
@@ -554,15 +577,15 @@ public final class Admin {
     }
 
     /**
-     *
-     * @param album
+     * Sterge un album si melodiile din el
+     * @param album albumul de sters
      */
     public static void removeAlbum(final Album album) {
         songs.removeAll(album.getSongs());
     }
 
     /**
-     *
+     * Reseteaza totul pentru urmatorul test
      */
     public static void reset() {
         users.clear();

@@ -26,9 +26,14 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru search
+     * @param commandInput comanda de search
+     * @return 3 cazuri:
+     * 1 - userul nu exista
+     * 2 - userul exista dar nu e online, si un array de rezultate goale
+     * 3 - userul exista si e online, un array de rezultate dupa filtrare
+     * si un mesaj cu numarul de rezultate si rezultatele respective
      */
     public static ObjectNode search(final CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
@@ -57,9 +62,13 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru select
+     * @param commandInput comanda de select
+     * @return 3 cazuri:
+     * 1 - userul nu exista
+     * 2 - userul exista dar nu e online
+     * 3 - userul exista si e online si un mesaj pentru selectare
      */
     public static ObjectNode select(final CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
@@ -83,9 +92,13 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru load
+     * @param commandInput comanda de load
+     * @return 3 cazuri:
+     * 1 - userul nu exista
+     * 2 - userul exista dar nu e online
+     * 3 - userul exista si e online si un mesaj pentru load
      */
     public static ObjectNode load(final CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
@@ -108,9 +121,13 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru play/pause
+     * @param commandInput comanda de play/pause
+     * @return 3 cazuri:
+     * 1 - userul nu exista
+     * 2 - userul exista dar nu e online
+     * 3 - userul exista si e online si un mesaj pentru play/pause
      */
     public static ObjectNode playPause(final CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
@@ -133,9 +150,13 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru repeat
+     * @param commandInput comanda de repeat
+     * @return 3 cazuri:
+     * 1 - userul nu exista
+     * 2 - userul exista dar nu e online
+     * 3 - userul exista si e online si un mesaj pentru repeat
      */
     public static ObjectNode repeat(final CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
@@ -158,16 +179,20 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru shuffle
+     * @param commandInput comanda de shuffle
+     * @return 3 cazuri:
+     * 1 - userul nu exista
+     * 2 - userul exista dar nu e online
+     * 3 - userul exista si e online si un mesaj pentru shuffle
      */
     public static ObjectNode shuffle(final CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
         if (user == null) {
-            ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
-            objectNode.put("error", "User not found");
-            return objectNode;
+            return createErrorResponse("shuffle",
+                    commandInput.getUsername(), commandInput.getTimestamp(),
+                    "The username " + commandInput.getUsername() + " doesn't exist.");
         }
 
         ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
@@ -186,16 +211,20 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru forward
+     * @param commandInput comanda de forward
+     * @return 3 cazuri:
+     * 1 - userul nu exista
+     * 2 - userul exista dar nu e online
+     * 3 - userul exista si e online si un mesaj pentru forward
      */
     public static ObjectNode forward(final CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
         if (user == null) {
-            ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
-            objectNode.put("error", "User not found");
-            return objectNode;
+            return createErrorResponse("forward",
+                    commandInput.getUsername(), commandInput.getTimestamp(),
+                    "The username " + commandInput.getUsername() + " doesn't exist.");
         }
         ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
@@ -212,9 +241,13 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru backward
+     * @param commandInput comanda de backward
+     * @return 3 cazuri:
+     * 1 - userul nu exista
+     * 2 - userul exista dar nu e online
+     * 3 - userul exista si e online si un mesaj pentru backward
      */
     public static ObjectNode backward(final CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
@@ -237,16 +270,20 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru like
+     * @param commandInput comanda de like
+     * @return 3 cazuri:
+     * 1 - userul nu exista
+     * 2 - userul exista dar nu e online
+     * 3 - userul exista si e online si un mesaj pentru like
      */
     public static ObjectNode like(final CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
         if (user == null) {
-            ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
-            objectNode.put("error", "User not found");
-            return objectNode;
+            return createErrorResponse("like",
+                    commandInput.getUsername(), commandInput.getTimestamp(),
+                    "The username " + commandInput.getUsername() + " doesn't exist.");
         }
         ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
@@ -263,16 +300,20 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru next
+     * @param commandInput comanda de next
+     * @return 3 cazuri:
+     * 1 - userul nu exista
+     * 2 - userul exista dar nu e online
+     * 3 - userul exista si e online si un mesaj pentru next
      */
     public static ObjectNode next(final CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
         if (user == null) {
-            ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
-            objectNode.put("error", "User not found");
-            return objectNode;
+            return createErrorResponse("next",
+                    commandInput.getUsername(), commandInput.getTimestamp(),
+                    "The username " + commandInput.getUsername() + " doesn't exist.");
         }
         ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
@@ -289,16 +330,20 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru prev
+     * @param commandInput comanda de prev
+     * @return 3 cazuri:
+     * 1 - userul nu exista
+     * 2 - userul exista dar nu e online
+     * 3 - userul exista si e online si un mesaj pentru prev
      */
     public static ObjectNode prev(final CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
         if (user == null) {
-            ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
-            objectNode.put("error", "User not found");
-            return objectNode;
+            return createErrorResponse("prev",
+                    commandInput.getUsername(), commandInput.getTimestamp(),
+                    "The username " + commandInput.getUsername() + " doesn't exist.");
         }
         ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
@@ -315,16 +360,20 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru createPlaylist
+     * @param commandInput comanda de createPlaylist
+     * @return 3 cazuri:
+     * 1 - userul nu exista
+     * 2 - userul exista si nu e online
+     * 3 - userul exista si e online si un mesaj pentru createPlaylist
      */
     public static ObjectNode createPlaylist(final CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
         if (user == null) {
-            ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
-            objectNode.put("error", "User not found");
-            return objectNode;
+            return createErrorResponse("createPlaylist",
+                    commandInput.getUsername(), commandInput.getTimestamp(),
+                    "The username " + commandInput.getUsername() + " doesn't exist.");
         }
 
         ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
@@ -343,16 +392,20 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru addRemoveInPlaylist
+     * @param commandInput comanda de addRemoveInPlaylist
+     * @return 3 cazuri:
+     * 1 - userul nu exista
+     * 2 - userul exista si nu e online
+     * 3 - userul exista si e online si un mesaj pentru addRemoveInPlaylist
      */
     public static ObjectNode addRemoveInPlaylist(final CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
         if (user == null) {
-            ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
-            objectNode.put("error", "User not found");
-            return objectNode;
+            return createErrorResponse("addRemoveInPlaylist",
+                    commandInput.getUsername(), commandInput.getTimestamp(),
+                    "The username " + commandInput.getUsername() + " doesn't exist.");
         }
 
         ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
@@ -370,16 +423,20 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru switchVisibility
+     * @param commandInput comanda de switchVisibility
+     * @return 3 cazuri:
+     * 1 - userul nu exista
+     * 2 - userul exista si nu e online
+     * 3 - userul exista si e online si un mesaj pentru switchVisibility
      */
     public static ObjectNode switchVisibility(final CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
         if (user == null) {
-            ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
-            objectNode.put("error", "User not found");
-            return objectNode;
+            return createErrorResponse("switchVisibility",
+                    commandInput.getUsername(), commandInput.getTimestamp(),
+                    "The username " + commandInput.getUsername() + " doesn't exist.");
         }
 
         ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
@@ -398,16 +455,19 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru showPlaylist
+     * @param commandInput comanda de showPlaylist
+     * @return 2 cazuri:
+     * 1 - userul nu exista
+     * 2 - userul exista si un mesaj pentru showPlaylist
      */
     public static ObjectNode showPlaylists(final CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
         if (user == null) {
-            ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
-            objectNode.put("error", "User not found");
-            return objectNode;
+            return createErrorResponse("showPlaylists",
+                    commandInput.getUsername(), commandInput.getTimestamp(),
+                    "The username " + commandInput.getUsername() + " doesn't exist.");
         }
         ArrayList<PlaylistOutput> playlists = user.showPlaylists();
 
@@ -421,16 +481,20 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru follow
+     * @param commandInput comanda de follow
+     * @return 3 cazuri:
+     * 1 - userul nu exista
+     * 2 - userul exista si nu e online
+     * 3 - userul exista si e online si un mesaj pentru follow
      */
     public static ObjectNode follow(final CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
         if (user == null) {
-            ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
-            objectNode.put("error", "User not found");
-            return objectNode;
+            return createErrorResponse("follow",
+                    commandInput.getUsername(), commandInput.getTimestamp(),
+                    "The username " + commandInput.getUsername() + " doesn't exist.");
         }
         ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
@@ -446,16 +510,19 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru status
+     * @param commandInput comanda de status
+     * @return 2 cazuri:
+     * 1 - userul nu exista
+     * 2 - userul exista si un mesaj pentru status
      */
     public static ObjectNode status(final CommandInput commandInput) {
         User user = Admin.findUser(commandInput.getUsername());
         if (user == null) {
-            ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
-            objectNode.put("error", "User not found");
-            return objectNode;
+            return createErrorResponse("status",
+                    commandInput.getUsername(), commandInput.getTimestamp(),
+                    "The username " + commandInput.getUsername() + " doesn't exist.");
         }
         PlayerStats stats = user.getPlayerStats();
 
@@ -469,16 +536,19 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru showLikedSongs
+     * @param commandInput comanda de showLikedSongs
+     * @return 2 cazuri:
+     * 1 - userul nu exista
+     * 2 - userul exista si un mesaj pentru showLikedSongs
      */
     public static ObjectNode showLikedSongs(final CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
         if (user == null) {
-            ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
-            objectNode.put("error", "User not found");
-            return objectNode;
+            return createErrorResponse("showLikedSongs",
+                    commandInput.getUsername(), commandInput.getTimestamp(),
+                    "The username " + commandInput.getUsername() + " doesn't exist.");
         }
         ArrayList<String> songs = user.showPreferredSongs();
 
@@ -492,16 +562,19 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru getPreferredGenre
+     * @param commandInput comanda de getPreferredGenre
+     * @return 2 cazuri:
+     * 1 - userul nu exista
+     * 2 - userul exista si un mesaj pentru getPreferredGenre
      */
     public static ObjectNode getPreferredGenre(final CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
         if (user == null) {
-            ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
-            objectNode.put("error", "User not found");
-            return objectNode;
+            return createErrorResponse("getPreferredGenre",
+                    commandInput.getUsername(), commandInput.getTimestamp(),
+                    "The username " + commandInput.getUsername() + " doesn't exist.");
         }
         String preferredGenre = user.getPreferredGenre();
 
@@ -515,9 +588,10 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru getTop5Songs
+     * @param commandInput comanda de getTop5Songs
+     * @return mesajul pentru getTop5Songs
      */
     public static ObjectNode getTop5Songs(final CommandInput commandInput) {
         List<String> topSongs = Admin.getTop5Songs();
@@ -538,9 +612,10 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru getTop5Albums
+     * @param commandInput comanda de getTop5Albums
+     * @return mesajul pentru getTop5Albums
      */
     public static ObjectNode getTop5Albums(final CommandInput commandInput) {
         List<String> albums = Admin.getTop5Albums();
@@ -553,9 +628,10 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru getTop5Playlists
+     * @param commandInput comanda de getTop5Playlists
+     * @return mesajul pentru getTop5Playlists
      */
     public static ObjectNode getTop5Playlists(final CommandInput commandInput) {
         List<String> playlists = Admin.getTop5Playlists();
@@ -569,9 +645,10 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru getTop5Artists
+     * @param commandInput comanda de getTop5Artists
+     * @return mesajul pentru getTop5Artists
      */
     public static ObjectNode getTop5Artists(final CommandInput commandInput) {
         List<String> playlists = Admin.getTop5Artists();
@@ -585,9 +662,13 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru switchConnectionStatus
+     * @param commandInput comanda de switchConnectionStatus
+     * @return 3 cazuri:
+     * 1 - userul nu exista, si nici artistul sau hostul nu exista
+     * 2 - userul exista dar nu e normal user
+     * 3 - userul exista si e normal user si un mesaj pentru switchConnectionStatus
      */
     public static ObjectNode switchConnectionStatus(final CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
@@ -617,9 +698,10 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru getOnlineUsers
+     * @param commandInput comanda de getOnlineUsers
+     * @return mesajul pentru getOnlineUsers
      */
     public static ObjectNode getOnlineUsers(final CommandInput commandInput) {
         List<String> onlineUsers = Admin.getOnlineUsers();
@@ -632,9 +714,10 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru getAllUsers
+     * @param commandInput comanda de getAllUsers
+     * @return mesajul pentru getAllUsers
      */
     public static ObjectNode getAllUsers(final CommandInput commandInput) {
         List<String> allUsers = Admin.getAllUsers();
@@ -647,9 +730,10 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru addUser
+     * @param commandInput comanda de addUser
+     * @return mesajul pentru addUser
      */
     public static ObjectNode addUser(final CommandInput commandInput) {
         ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
@@ -664,9 +748,13 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru addAlbum
+     * @param commandInput comanda de addAlbum
+     * @return 3 cazuri:
+     * 1 - artistul nu exista, si nici userul sau hostul nu exista
+     * 2 - artistul exista dar nu e artist
+     * 3 - artistul exista si e artist si un mesaj pentru addAlbum
      */
     public static ObjectNode addAlbum(final CommandInput commandInput) {
         Artist artist = Admin.getArtist(commandInput.getUsername());
@@ -707,9 +795,13 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru addPodcast
+     * @param commandInput comanda de addPodcast
+     * @return 3 cazuri:
+     * 1 - hostul nu exista, si nici userul nu exista
+     * 2 - hostul exista dar nu e host
+     * 3 - hostul exista si e host si un mesaj pentru addPodcast
      */
     public static ObjectNode addPodcast(final CommandInput commandInput) {
         Host host = Admin.getHost(commandInput.getUsername());
@@ -743,9 +835,10 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru deleteUser
+     * @param commandInput comanda de deleteUser
+     * @return mesajul pentru deleteUser
      */
     public static ObjectNode deleteUser(final CommandInput commandInput) {
         ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
@@ -760,9 +853,13 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru removeAlbum
+     * @param commandInput comanda de removeAlbum
+     * @return 3 cazuri:
+     * 1 - artistul nu exista, si nici userul sau hostul nu exista
+     * 2 - artistul exista dar nu e artist
+     * 3 - artistul exista si e artist si un mesaj pentru removeAlbum
      */
     public static ObjectNode removeAlbum(final CommandInput commandInput) {
         Artist artist = Admin.getArtist(commandInput.getUsername());
@@ -794,9 +891,10 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru showAlbums
+     * @param commandInput comanda de showAlbums
+     * @return mesajul pentru showAlbums
      */
     public static ObjectNode showAlbums(final CommandInput commandInput) {
         List<Map<String, Object>> albums = Admin.showAlbums(commandInput.getUsername());
@@ -821,9 +919,10 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru showPodcasts
+     * @param commandInput comanda de showPodcasts
+     * @return mesajul pentru showPodcasts
      */
     public static ObjectNode showPodcasts(final CommandInput commandInput) {
         List<Map<String, Object>> podcasts = Admin.showPodcasts(commandInput.getUsername());
@@ -844,9 +943,13 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru printCurrentPage
+     * @param commandInput comanda de printCurrentPage
+     * @return 3 cazuri:
+     * 1 - userul nu exista
+     * 2 - userul exista dar nu e online
+     * 3 - userul exista si e online si un mesaj pentru printCurrentPage
      */
     public static ObjectNode printCurrentPage(final CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
@@ -872,9 +975,13 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru changePage
+     * @param commandInput comanda de changePage
+     * @return 3 cazuri:
+     * 1 - userul nu exista
+     * 2 - userul exista dar nu e online
+     * 3 - userul exista si e online si un mesaj pentru changePage
      */
     public static ObjectNode changePage(final CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
@@ -899,9 +1006,13 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru addEvent
+     * @param commandInput comanda de addEvent
+     * @return 3 cazuri:
+     * 1 - artistul nu exista, si nici userul nu exista
+     * 2 - artistul exista dar nu e artist
+     * 3 - artistul exista si e artist si un mesaj pentru addEvent
      */
     public static ObjectNode addEvent(final CommandInput commandInput) {
         Artist artist = Admin.getArtist(commandInput.getUsername());
@@ -935,9 +1046,13 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru addMerch
+     * @param commandInput comanda de addMerch
+     * @return 3 cazuri:
+     * 1 - artistul nu exista, si nici userul nu exista
+     * 2 - artistul exista dar nu e artist
+     * 3 - artistul exista si e artist si un mesaj pentru addMerch
      */
     public static ObjectNode addMerch(final CommandInput commandInput) {
         Artist artist = Admin.getArtist(commandInput.getUsername());
@@ -971,9 +1086,13 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru addAnnouncement
+     * @param commandInput comanda de addAnnouncement
+     * @return 3 cazuri:
+     * 1 - hostul nu exista, si nici userul nu exista
+     * 2 - hostul exista dar nu e host
+     * 3 - hostul exista si e host si un mesaj pentru addAnnouncement
      */
     public static ObjectNode addAnnouncement(final CommandInput commandInput) {
         Host host = Admin.getHost(commandInput.getUsername());
@@ -1003,9 +1122,13 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru removeAnnouncement
+     * @param commandInput comanda de removeAnnouncement
+     * @return 3 cazuri:
+     * 1 - hostul nu exista, si nici userul nu exista
+     * 2 - hostul exista dar nu e host
+     * 3 - hostul exista si e host si un mesaj pentru removeAnnouncement
      */
     public static ObjectNode removeAnnouncement(final CommandInput commandInput) {
         Host host = Admin.getHost(commandInput.getUsername());
@@ -1034,9 +1157,12 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru removePodcast
+     * @param commandInput comanda de removePodcast
+     * @return 2 cazuri:
+     * 1 - userul exista dar nu e host
+     * 2 - userul exista si e host si un mesaj pentru removePodcast
      */
     public static ObjectNode removePodcast(final CommandInput commandInput) {
         Host host = Admin.getHost(commandInput.getUsername());
@@ -1058,9 +1184,13 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param commandInput
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul pentru removeEvent
+     * @param commandInput comanda de removeEvent
+     * @return 3 cazuri:
+     * 1 - artistul nu exista, si nici userul nu exista
+     * 2 - artistul exista dar nu e artist
+     * 3 - artistul exista si e artist si un mesaj pentru removeEvent
      */
     public static ObjectNode removeEvent(final CommandInput commandInput) {
         Artist artist = Admin.getArtist(commandInput.getUsername());
@@ -1088,12 +1218,14 @@ public final class CommandRunner {
     }
 
     /**
-     *
-     * @param command
-     * @param username
-     * @param timestamp
-     * @param message
-     * @return
+     * Creeaza un obiect de tip ObjectNode care contine
+     * mesajul de eroare in cazul in care nu exista userul
+     * @param command comanda
+     * @param username numele utilizatorului
+     * @param timestamp timestampul comenzii
+     * @param message mesajul de eroare
+     * @return obiectul de tip ObjectNode
+     * cu mesajul de eroare
      */
     private static ObjectNode createErrorResponse(final String command,
                                                   final String username,
