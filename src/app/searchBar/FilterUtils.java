@@ -10,10 +10,10 @@ public final class FilterUtils {
     }
 
     /**
-     *
-     * @param entries
-     * @param name
-     * @return
+     * Filtreaza o lista de LibraryEntry-uri dupa nume.
+     * @param entries lista de LibraryEntry-uri
+     * @param name numele dupa care se filtreaza
+     * @return lista filtrata
      */
     public static List<LibraryEntry> filterByName(final List<LibraryEntry> entries,
                                                   final String name) {
@@ -27,10 +27,10 @@ public final class FilterUtils {
     }
 
     /**
-     *
-     * @param entries
-     * @param album
-     * @return
+     * Filtreaza o lista de LibraryEntry-uri dupa album.
+     * @param entries lista de LibraryEntry-uri
+     * @param album albumul dupa care se filtreaza
+     * @return lista filtrata
      */
     public static List<LibraryEntry> filterByAlbum(final List<LibraryEntry> entries,
                                                    final String album) {
@@ -38,10 +38,10 @@ public final class FilterUtils {
     }
 
     /**
-     *
-     * @param entries
-     * @param tags
-     * @return
+     * Filtreaza o lista de LibraryEntry-uri dupa taguri.
+     * @param entries lista de LibraryEntry-uri
+     * @param tags tagurile dupa care se filtreaza
+     * @return lista filtrata
      */
     public static List<LibraryEntry> filterByTags(final List<LibraryEntry> entries,
                                                   final ArrayList<String> tags) {
@@ -49,10 +49,10 @@ public final class FilterUtils {
     }
 
     /**
-     *
-     * @param entries
-     * @param lyrics
-     * @return
+     * Filtreaza o lista de LibraryEntry-uri dupa versuri.
+     * @param entries lista de LibraryEntry-uri
+     * @param lyrics versurile dupa care se filtreaza
+     * @return lista filtrata
      */
     public static List<LibraryEntry> filterByLyrics(final List<LibraryEntry> entries,
                                                     final String lyrics) {
@@ -60,10 +60,10 @@ public final class FilterUtils {
     }
 
     /**
-     *
-     * @param entries
-     * @param genre
-     * @return
+     * Filtreaza o lista de LibraryEntry-uri dupa genul muzical.
+     * @param entries lista de LibraryEntry-uri
+     * @param genre genul muzical dupa care se filtreaza
+     * @return lista filtrata
      */
     public static List<LibraryEntry> filterByGenre(final List<LibraryEntry> entries,
                                                    final String genre) {
@@ -71,10 +71,10 @@ public final class FilterUtils {
     }
 
     /**
-     *
-     * @param entries
-     * @param artist
-     * @return
+     * Filtreaza o lista de LibraryEntry-uri dupa artist.
+     * @param entries lista de LibraryEntry-uri
+     * @param artist artistul dupa care se filtreaza
+     * @return lista filtrata
      */
     public static List<LibraryEntry> filterByArtist(final List<LibraryEntry> entries,
                                                     final String artist) {
@@ -82,10 +82,10 @@ public final class FilterUtils {
     }
 
     /**
-     *
-     * @param entries
-     * @param releaseYear
-     * @return
+     * Filtreaza o lista de LibraryEntry-uri dupa anul de lansare.
+     * @param entries lista de LibraryEntry-uri
+     * @param releaseYear anul de lansare dupa care se filtreaza
+     * @return lista filtrata
      */
     public static List<LibraryEntry> filterByReleaseYear(final List<LibraryEntry> entries,
                                                          final String releaseYear) {
@@ -93,10 +93,10 @@ public final class FilterUtils {
     }
 
     /**
-     *
-     * @param entries
-     * @param user
-     * @return
+     * Filtreaza o lista de LibraryEntry-uri dupa owner.
+     * @param entries lista de LibraryEntry-uri
+     * @param user ownerul dupa care se filtreaza
+     * @return lista filtrata
      */
     public static List<LibraryEntry> filterByOwner(final List<LibraryEntry> entries,
                                                    final String user) {
@@ -104,10 +104,10 @@ public final class FilterUtils {
     }
 
     /**
-     *
-     * @param entries
-     * @param user
-     * @return
+     * Filtreaza o lista de LibraryEntry-uri dupa vizibilitatea playlistului.
+     * @param entries lista de LibraryEntry-uri
+     * @param user userul dupa care se filtreaza
+     * @return lista filtrata
      */
     public static List<LibraryEntry> filterByPlaylistVisibility(final List<LibraryEntry> entries,
                                                                 final String user) {
@@ -115,10 +115,10 @@ public final class FilterUtils {
     }
 
     /**
-     *
-     * @param entries
-     * @param followers
-     * @return
+     * Filtreaza o lista de LibraryEntry-uri dupa followers.
+     * @param entries lista de LibraryEntry-uri
+     * @param followers followers dupa care se filtreaza
+     * @return lista filtrata
      */
     public static List<LibraryEntry> filterByFollowers(final List<LibraryEntry> entries,
                                                        final String followers) {
@@ -126,10 +126,10 @@ public final class FilterUtils {
     }
 
     /**
-     *
-     * @param entries
-     * @param criteria
-     * @return
+     * Filtreaza o lista de LibraryEntry-uri dupa un criteriu.
+     * @param entries lista de LibraryEntry-uri
+     * @param criteria criteriul dupa care se filtreaza
+     * @return lista filtrata
      */
     private static List<LibraryEntry> filter(final List<LibraryEntry> entries,
                                              final FilterCriteria criteria) {

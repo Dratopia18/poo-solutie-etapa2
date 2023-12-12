@@ -46,10 +46,24 @@ public class SearchBar {
     }
 
     /**
+     * Cauta in baza de date dupa filtrele date.
+     * @param filters filtrele dupa care se cauta
+     * @param type tipul de obiect dupa care se cauta
+     * @return 7 cazuri:
+     * 1. Daca tipul de obiect nu este unul dintre cele 6, se returneaza o lista goala
+     * 2. Daca tipul de obiect este o melodie, se returneaza o lista cu toate melodiile
+     * filtrate dupa filtrele date
+     * 3. Daca tipul de obiect este o playlist, se returneaza o lista cu toate playlisturile
+     * filtrate dupa filtrele date
+     * 4. Daca tipul de obiect este un podcast, se returneaza o lista cu toate podcasturile
+     * filtrate dupa filtrele date
+     * 5. Daca tipul de obiect este un album, se returneaza o lista cu toate albumele
+     * filtrate dupa filtrele date
+     * 6. Daca tipul de obiect este un artist, se returneaza o lista cu toti artistii
+     * filtrati dupa filtrele date
+     * 7. Daca tipul de obiect este un host, se returneaza o lista cu toti hostii
+     * filtrati dupa filtrele date
      *
-     * @param filters
-     * @param type
-     * @return
      */
     public List<LibraryEntry> search(final Filters filters, final String type) {
         List<LibraryEntry> entries;
@@ -190,9 +204,9 @@ public class SearchBar {
     }
 
     /**
-     *
-     * @param itemNumber
-     * @return
+     * Selecteaza un obiect din lista de rezultate.
+     * @param itemNumber numarul obiectului selectat
+     * @return obiectul selectat
      */
     public LibraryEntry select(final Integer itemNumber) {
         if (this.results.size() < itemNumber) {
