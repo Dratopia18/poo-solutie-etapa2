@@ -26,7 +26,7 @@ public class Player {
     }
 
     /**
-     *
+     * Opreste player-ul.
      */
     public void stop() {
         if ("podcast".equals(this.type)) {
@@ -50,11 +50,18 @@ public class Player {
     }
 
     /**
-     *
-     * @param type
-     * @param entry
-     * @param bookmarks
-     * @return
+     * Creeaza o noua sursa pentru player.
+     * @param type tipul sursei
+     * @param entry melodia/playlistul/podcastul
+     * @param bookmarks lista de bookmark-uri
+     * @return 5 cazuri:
+     * 1. Daca tipul sursei este o melodie, se creeaza o sursa de tip LIBRARY
+     * 2. Daca tipul sursei este un playlist sau un album, se creeaza o sursa de tip PLAYLIST
+     * 3. Daca tipul sursei este un podcast si exista un bookmark pentru acel podcast,
+     * se creeaza o sursa de tip PODCAST cu bookmark-ul (createPodcastSource)
+     * 4. Daca tipul sursei este un podcast si nu exista un bookmark pentru acel podcast,
+     * se creeaza o sursa de tip PODCAST fara bookmark (createPodcastSource)
+     * 5. Daca tipul sursei nu este unul dintre cele 4, se returneaza null
      */
     public static PlayerSource createSource(final String type, final LibraryEntry entry,
                                             final List<PodcastBookmark> bookmarks) {
@@ -78,9 +85,9 @@ public class Player {
     }
 
     /**
-     *
-     * @param entry
-     * @param type1
+     * Seteaza sursa pentru player.
+     * @param entry melodia/playlistul/podcastul
+     * @param type1 tipul sursei
      */
     public void setSource(final LibraryEntry entry, final String type1) {
         if ("podcast".equals(this.type)) {
@@ -95,15 +102,15 @@ public class Player {
     }
 
     /**
-     *
+     * Da pause sau resume la player.
      */
     public void pause() {
         paused = !paused;
     }
 
     /**
-     *
-     * @param seed
+     * Amesteca melodiile din playlist sau album.
+     * @param seed seed-ul pentru amestecare
      */
     public void shuffle(final Integer seed) {
         if (seed != null) {
@@ -120,8 +127,8 @@ public class Player {
     }
 
     /**
-     *
-     * @return
+     * Seteaza modul de repetare.
+     * @return modul de repetare
      */
     public Enums.RepeatMode repeat() {
         if (repeatMode == Enums.RepeatMode.NO_REPEAT) {
@@ -146,8 +153,8 @@ public class Player {
     }
 
     /**
-     *
-     * @param time
+     * Simuleaza player-ul pentru un anumit timp.
+     * @param time timpul
      */
     public void simulatePlayer(final int time) {
         int elapsedTime = time;
@@ -166,7 +173,7 @@ public class Player {
     }
 
     /**
-     *
+     * Sare la urmatoarea sursa.
      */
     public void next() {
         paused = source.setNextAudioFile(repeatMode, shuffle);
@@ -180,7 +187,7 @@ public class Player {
     }
 
     /**
-     *
+     * Sare la sursa anterioara.
      */
     public void prev() {
         source.setPrevAudioFile(shuffle);
@@ -188,8 +195,8 @@ public class Player {
     }
 
     /**
-     *
-     * @param duration
+     * Sare la un anumit moment din melodie.
+     * @param duration durata cu care se sare
      */
     private void skip(final int duration) {
         source.skip(duration);
@@ -197,7 +204,7 @@ public class Player {
     }
 
     /**
-     *
+     * Sare cu 90 de secunde inainte.
      */
     public void skipNext() {
         final int forwardNumber = -90;
@@ -207,7 +214,7 @@ public class Player {
     }
 
     /**
-     *
+     * Sare cu 90 de secunde inapoi.
      */
     public void skipPrev() {
         final int backwardNumber = 90;
@@ -217,8 +224,8 @@ public class Player {
     }
 
     /**
-     *
-     * @return
+     * preluam audiofile-ul curent
+     * @return audiofile-ul curent sau null daca nu exista
      */
     public AudioFile getCurrentAudioFile() {
         if (source == null) {
@@ -228,24 +235,25 @@ public class Player {
     }
 
     /**
-     *
-     * @return
+     * Luam statutyl lui paused
+     * @return statutul lui paused
      */
     public boolean getPaused() {
         return paused;
     }
 
     /**
-     *
-     * @return
+     * Luam statutul lui shuffle
+     * @return statutul lui shuffle
      */
     public boolean getShuffle() {
         return shuffle;
     }
 
     /**
-     *
-     * @return
+     * Luam statisticile player-ului
+     * @return statisticile player-ului:
+     * Numele fisierului, durata, modul de repetare, modul de shuffle, modul de paused
      */
     public PlayerStats getStats() {
         String filename = "";
@@ -261,8 +269,8 @@ public class Player {
     }
 
     /**
-     *
-     * @return
+     * Luam sursa curenta
+     * @return sursa curenta sau null daca nu exista
      */
     public LibraryEntry getCurrentSource() {
         if (source == null) {

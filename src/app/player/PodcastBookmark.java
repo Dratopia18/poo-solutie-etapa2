@@ -15,8 +15,8 @@ public class PodcastBookmark {
     }
 
     /**
-     *
-     * @return
+     * Se returneaza un string cu informatiile despre bookmark.
+     * @return string cu informatiile despre bookmark
      */
     @Override
     public String toString() {

@@ -52,18 +52,18 @@ public class PlayerSource {
     }
 
     /**
-     *
-     * @return
+     * Returneaza durata ramasa din melodie.
+     * @return durata ramasa din melodie
      */
     public int getDuration() {
         return remainedDuration;
     }
 
     /**
-     *
-     * @param repeatMode
-     * @param shuffle
-     * @return
+     * Seteaza urmatorul fisier audio.
+     * @param repeatMode modul de repeat
+     * @param shuffle daca se da shuffle sau nu
+     * @return daca melodia este pauzata sau nu
      */
     public boolean setNextAudioFile(final Enums.RepeatMode repeatMode,
                                     final boolean shuffle) {
@@ -119,8 +119,8 @@ public class PlayerSource {
     }
 
     /**
-     *
-     * @param shuffle
+     * Seteaza fisierul audio anterior.
+     * @param shuffle daca se da shuffle sau nu
      */
     public void setPrevAudioFile(final boolean shuffle) {
         if (type == Enums.PlayerSourceType.LIBRARY) {
@@ -148,8 +148,8 @@ public class PlayerSource {
     }
 
     /**
-     *
-     * @param seed
+     * Genereaza un vector de indici pentru shuffle.
+     * @param seed seed-ul cu care se genereaza
      */
     public void generateShuffleOrder(final Integer seed) {
         indices.clear();
@@ -161,7 +161,7 @@ public class PlayerSource {
     }
 
     /**
-     *
+     * Se actualizeaza indexul melodiei curente in cazul in care se da shuffle.
      */
     public void updateShuffleIndex() {
         for (int i = 0; i < indices.size(); i++) {
@@ -173,8 +173,8 @@ public class PlayerSource {
     }
 
     /**
-     *
-     * @param duration
+     * Sare la un anumit moment din melodie.
+     * @param duration durata cu care se sare
      */
     public void skip(final int duration) {
         remainedDuration += duration;
@@ -188,7 +188,7 @@ public class PlayerSource {
     }
 
     /**
-     *
+     * Actualizeaza fisierul audio.
      */
     private void updateAudioFile() {
         setAudioFile(audioCollection.getTrackByIndex(index));
