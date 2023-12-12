@@ -24,8 +24,8 @@ public class Album extends AudioCollection {
     }
 
     /**
-     *
-     * @return
+     * Face rost de numarul de melodii din album.
+     * @return numarul de melodii din album
      */
     @Override
     public int getNumberOfTracks() {
@@ -33,9 +33,9 @@ public class Album extends AudioCollection {
     }
 
     /**
-     *
-     * @param index
-     * @return
+     * Ia o melodie din album dupa index.
+     * @param index indexul melodiei
+     * @return melodia de la indexul dat sau null daca indexul e invalid
      */
     @Override
     public AudioFile getTrackByIndex(final int index) {
@@ -47,8 +47,8 @@ public class Album extends AudioCollection {
     }
 
     /**
-     *
-     * @return
+     * Calculeaza numarul total de like-uri ale melodiilor din album.
+     * @return numarul total de like-uri ale melodiilor din album
      */
     public int getTotalLikes() {
         return songs.stream().mapToInt(Song::getLikes).sum();
