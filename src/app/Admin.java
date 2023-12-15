@@ -204,14 +204,8 @@ public final class Admin {
      */
     public static List<String> getTop5Songs() {
         List<Song> sortedSongs = new ArrayList<>(songs);
-        for (Artist artist : getArtists()) {
-            for (Album album : artist.getAlbums()) {
-                sortedSongs.addAll(album.getSongs());
-            }
-        }
 
-        sortedSongs.sort(Comparator.comparingInt(Song::getLikes).reversed()
-                .thenComparing(sortedSongs::indexOf));
+        sortedSongs.sort(Comparator.comparingInt(Song::getLikes).reversed());
 
         List<String> topSongs = new ArrayList<>();
         int count = 0;
@@ -443,7 +437,7 @@ public final class Admin {
             User interactingUser = findUser(username);
             if (interactingUser != null
                     && interactingUser.isOnArtistOrHostPage(user.getUsername())) {
-                    return true;
+                return true;
             }
         }
         return false;
@@ -456,8 +450,9 @@ public final class Admin {
      */
     public static void removeUser(final User user) {
         if (user instanceof Artist artist) {
+            List<Album> albumsToRemove = new ArrayList<>(artist.getAlbums());
             artist.clearAlbums();
-            for (Album album : artist.getAlbums()) {
+            for (Album album : albumsToRemove) {
                 removeAlbum(album);
             }
             ARTISTS.remove(artist);
@@ -582,6 +577,13 @@ public final class Admin {
      */
     public static void removeAlbum(final Album album) {
         songs.removeAll(album.getSongs());
+    }
+    /**
+     * Adauga un album si melodiile din el
+     * @param album albumul de sters
+     */
+    public static void addAlbum(final Album album) {
+        songs.addAll(album.getSongs());
     }
 
     /**

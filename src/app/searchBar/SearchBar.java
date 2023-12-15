@@ -73,7 +73,11 @@ public class SearchBar {
                 entries = new ArrayList<>(Admin.getSongs());
                 for (Artist artist : Admin.getArtists()) {
                     for (Album album : artist.getAlbums()) {
-                        entries.addAll(album.getSongs());
+                        for (LibraryEntry song : album.getSongs()) {
+                            if (!entries.contains(song)) {
+                                entries.add(song);
+                            }
+                        }
                     }
                 }
                 if (filters.getName() != null) {

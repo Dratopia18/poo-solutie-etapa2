@@ -61,7 +61,7 @@ public class Artist extends User {
 
         Album newAlbum = new Album(name, getUsername(), releaseYear, description, songs);
         albums.add(newAlbum);
-
+        Admin.addAlbum(newAlbum);
         return getUsername() + " has added new album successfully.";
     }
 

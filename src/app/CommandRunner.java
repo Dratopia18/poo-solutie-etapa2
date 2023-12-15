@@ -595,13 +595,6 @@ public final class CommandRunner {
      */
     public static ObjectNode getTop5Songs(final CommandInput commandInput) {
         List<String> topSongs = Admin.getTop5Songs();
-        final int magicTimestamp = 14849;
-        if (commandInput.getTimestamp() == magicTimestamp) {
-            if (!topSongs.isEmpty()) {
-                topSongs.remove(topSongs.size() - 1);
-                topSongs.add("Night Utopia");
-            }
-        }
 
         ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
